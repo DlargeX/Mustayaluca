@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>3009</id>
+	<defaultcontrol>35</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>345</posX>
+			<posY>140</posY>
+			<width>1230</width>
+			<height>800</height>
+			<texture>miniguide_background.png</texture>
+		</control>
+
+		<control Style="Time">
+			<description>On Now</description>
+			<type>label</type>
+			<id>4</id>
+			<posX>390</posX>
+			<posY>190</posY>
+			<width>500</width>
+			<label>10105</label>
+			<font>font3</font>
+		</control>
+
+		<control>
+			<description>Time</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>410</posX>
+			<posY>875</posY>
+			<width>100</width>
+			<label>#time</label>
+			<textcolor>ff9c9d9d</textcolor>
+			<shadowAngle>0</shadowAngle>
+			<shadowDistance>0</shadowDistance>
+			<shadowColor>00000000</shadowColor>
+		</control>
+
+		<control>
+			<description>exit button</description>
+			<type>button</type>
+			<id>34</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>10</width>
+			<height>10</height>
+			<textureFocus>-</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<label>-</label>
+			<label>-</label>
+			<onleft>36</onleft>
+			<onright>34</onright>
+			<ondown>35</ondown>
+			<onup>34</onup>
+		</control>
+
+		<control>
+			<description>list to show channels without channel state logos</description>
+			<type>listcontrol</type>
+			<id>35</id>
+			<posX>360</posX>
+			<posY>247</posY>       
+			<height>650</height>
+			<width>1200</width>
+			<textureFocus>miniguide_focus.png</textureFocus>
+			<textureNoFocus>miniguide_nofocus.png</textureNoFocus>
+			<spaceBetweenItems>0</spaceBetweenItems>
+			<font>font2</font>
+			<font2>font2</font2>
+			<font3>font3</font3>
+			<textXOff>33</textXOff>
+			<textYOff>49</textYOff>
+			<textXOff2>1193</textXOff2>
+			<textYOff2>49</textYOff2>
+			<textXOff3>100</textXOff3>
+			<textYOff3>8</textYOff3>
+			<itemWidth>57</itemWidth>
+			<itemHeight>57</itemHeight>
+			<IconXOff>15</IconXOff>
+			<IconYOff>15</IconYOff>
+			<PinIconXOff>1163</PinIconXOff>
+			<PinIconYOff>10</PinIconYOff>
+			<PinIconWidth>34</PinIconWidth>
+			<PinIconHeight>34</PinIconHeight>
+			<spinCanFocus>no</spinCanFocus>
+			<spinPosX>1490</spinPosX>
+			<spinPosY>875</spinPosY>
+			<spinAlign>Left</spinAlign>
+			<spinColor>ff9c9d9d</spinColor>
+			<textureUp>-</textureUp>
+			<textureDown>-</textureDown>
+			<textureUpFocus>-</textureUpFocus>
+			<textureDownFocus>-</textureDownFocus>
+			<textureHeight>87</textureHeight>
+			<unfocusedAlpha>255</unfocusedAlpha>
+			<textcolor>ffa9d0f7</textcolor>
+			<textcolor2>ffa9d0f7</textcolor2>
+			<textcolor3>ffffffff</textcolor3>
+			<remoteColor>ffa9d0f7</remoteColor>
+			<onleft>36</onleft>
+			<onright>36</onright>
+		</control>
+
+		<control>
+			<description>list to show channels with channel state logos</description>
+			<type>listcontrol</type>
+			<id>37</id>
+			<posX>360</posX>
+			<posY>247</posY>       
+			<height>650</height>
+			<width>1200</width>
+			<textureFocus>miniguide_focus.png</textureFocus>
+			<textureNoFocus>miniguide_nofocus.png</textureNoFocus>
+			<spaceBetweenItems>0</spaceBetweenItems>
+			<font>font2</font>
+			<font2>font2</font2>
+			<font3>font3</font3>
+			<textXOff>33</textXOff>
+			<textYOff>49</textYOff>
+			<textXOff2>1193</textXOff2>
+			<textYOff2>49</textYOff2>
+			<textXOff3>100</textXOff3>
+			<textYOff3>8</textYOff3>
+			<itemWidth>57</itemWidth>
+			<itemHeight>57</itemHeight>
+			<IconXOff>15</IconXOff>
+			<IconYOff>15</IconYOff>
+			<PinIconXOff>1160</PinIconXOff>
+			<PinIconYOff>5</PinIconYOff>
+			<PinIconWidth>34</PinIconWidth>
+			<PinIconHeight>34</PinIconHeight>
+			<spinCanFocus>no</spinCanFocus>
+			<spinPosX>1490</spinPosX>
+			<spinPosY>875</spinPosY>
+			<spinAlign>Left</spinAlign>
+			<spinColor>ff9c9d9d</spinColor>
+			<textureUp>-</textureUp>
+			<textureDown>-</textureDown>
+			<textureUpFocus>-</textureUpFocus>
+			<textureDownFocus>-</textureDownFocus>
+			<textureHeight>87</textureHeight>
+			<unfocusedAlpha>255</unfocusedAlpha>
+			<textcolor>ffa9d0f7</textcolor>
+			<textcolor2>ffa9d0f7</textcolor2>
+			<textcolor3>ffffffff</textcolor3>
+			<remoteColor>ffa9d0f7</remoteColor>
+			<onleft>36</onleft>
+			<onright>36</onright>
+		</control>
+
+		<control>
+			<description>groups spin control</description>
+			<type>spincontrol</type>
+			<id>36</id>
+			<posX>1375</posX>
+			<posY>867</posY>
+			<showrange>no</showrange>
+			<orientation>horizontal</orientation>
+			<font>font2</font>
+			<textcolor>ff9c9d9d</textcolor>
+			<textureUp>miniguide_spin_right_nofocus.png</textureUp>
+			<textureDown>miniguide_spin_left_nofocus.png</textureDown>
+			<textureUpFocus>miniguide_spin_right_focus</textureUpFocus>
+			<textureDownFocus>miniguide_spin_left_focus.png</textureDownFocus>
+			<ondown>35</ondown>
+			<onup>36</onup>
+			<onright>34</onright>
+			<onleft>36</onleft>
+			<width>44</width>
+			<height>44</height>
+			<align>right</align>
+			<shadowAngle>0</shadowAngle>
+			<shadowDistance>0</shadowDistance>
+			<shadowColor>00000000</shadowColor>
+		</control>
+
+	</controls>
+</window>

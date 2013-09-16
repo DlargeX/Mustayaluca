@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<controls>
+		<control>
+			<type>actiongroup</type>
+			<description>action menu</description>
+			<defaultcontrol>2</defaultcontrol>
+			<onexit>50</onexit>
+			<buttonX>0</buttonX>
+			<buttonY>0</buttonY>
+			<buttonwidth>106</buttonwidth>
+			<buttonheight>720</buttonheight>		  
+			<width>568</width>
+			<height>900</height>
+			<dimColor>00ffffff</dimColor>
+			<control>
+				<type>image</type>
+				<posX>0</posX>
+				<posY>0</posY>
+				<width>400</width>
+				<height>998</height>
+				<texture>hidden_menu_short_background.png</texture>
+				<colorDiffuse>fffffffff</colorDiffuse>
+				<visible>!Control.HasFocus(50)</visible>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>
+			<control>
+				<type>image</type>
+				<id>1</id>
+				<posX>272</posX>
+				<posY>60</posY>
+				<width>128</width>
+				<height>128</height>		  
+				<texture>logo_movies.png</texture>
+				<visible>!Control.HasFocus(50)</visible>		  
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>		 
+			<control>
+				<type>label</type>
+				<id>0</id>
+				<posX>370</posX>
+				<posY>178</posY>
+				<width>350</width>
+				<font>font3</font>
+				<label>#myfilms.config.pluginname / #myfilms.config.currentconfig</label>
+				<align>right</align>
+				<visible>!Control.HasFocus(50)</visible>		  
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>			
+			<control>
+				<description>group element</description>
+				<type>group</type>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+				<visible>!Control.HasFocus(50)</visible>
+				<control>
+					<description>button group</description>
+					<type>group</type>
+					<posX>0</posX>
+					<posY>230</posY>
+					<layout>StackLayout(0, Vertical, true)</layout>
+					<visible>!Control.HasFocus(50)</visible>
+					<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+					<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+					<control>
+						<type>button</type>
+						<description>Layout</description>
+						<id>2</id>
+						<onleft>10012</onleft>
+						<onright>50</onright>
+						<onup>17</onup>
+						<ondown>3</ondown>
+						<label>101</label>
+					</control>
+					<control>
+						<type>sortbutton</type>
+						<id>3</id>
+						<onleft>6</onleft>
+						<onright>50</onright>
+						<onup>2</onup>
+						<ondown>5</ondown>
+						<label>103</label>
+					</control>
+					<control>
+						<type>button</type>
+						<description>Switch view</description>
+						<id>5</id>
+						<onleft>2</onleft>
+						<onright>50</onright>
+						<onup>3</onup>
+						<ondown>4</ondown>
+						<label>457</label>
+					</control>
+					<control>
+						<type>button</type>
+						<description>Search</description>
+						<id>4</id>
+						<onleft>3</onleft>
+						<onright>50</onright>
+						<onup>5</onup>
+						<ondown>6</ondown>
+						<label>137</label>
+					</control>
+					<control>
+						<type>button</type>
+						<description>Options</description>
+						<id>6</id>
+						<onleft>4</onleft>
+						<onright>50</onright>
+						<onup>4</onup>
+						<ondown>7</ondown>
+						<label>496</label>
+					</control>
+					<control>
+						<type>button</type>
+						<description>Global Filter Options</description>
+						<id>7</id>
+						<onleft>5</onleft>
+						<onright>50</onright>
+						<onup>6</onup>
+						<ondown>10012</ondown>
+					</control>
+					<control>
+						<description>TV-Series</description>
+						<type>button</type>
+						<id>10012</id>
+						<hyperlink>9811</hyperlink>
+						<label>1300</label>
+						<onleft>6</onleft>
+						<onright>50</onright>
+						<onup>7</onup>
+						<ondown>10013</ondown>
+					</control>
+					<control>
+						<description>Trakt</description>
+						<type>button</type>
+						<id>10013</id>
+						<label>5906</label>
+						<onleft>7</onleft>
+						<onright>50</onright>
+						<ondown>10014</ondown>
+						<onup>10012</onup>
+						<hyperlink>87258</hyperlink>
+						<label>Trakt</label>
+						<visible>plugin.isenabled(Trakt)</visible>
+					</control>
+					<control>
+						<description>MPEIUPDATE:ceddd4d1_4cac_4846_9af5_f4daee1bbddc</description>
+						<type>button</type>  
+						<id>10014</id>  
+						<label>#MPEI.Translation.Update.Label</label> 
+						<ondown>10014</ondown> 
+						<onup>10013</onup>
+						<hyperlink>801</hyperlink>
+						<hyperlinkParameter>view:updates</hyperlinkParameter>
+						<visible>string.equals(#mpei.ceddd4d1_4cac_4846_9af5_f4daee1bbddc.haveupdate, true)</visible> 
+					</control>
+				</control>
+			</control>
+		</control>
+		<control>  
+			<description>Update Indicator</description>   
+			<type>image</type>   
+			<id>0</id>  
+			<posX>808</posX>  
+			<posY>961</posY> 
+			<width>304</width>   
+			<height>79</height>   
+			<texture>update_available.png</texture>
+			<animation effect="fade" time="1500">windowopen</animation>
+			<animation effect="fade" time="1000">visiblechange</animation>
+			<visible>string.equals(#mpei.ceddd4d1_4cac_4846_9af5_f4daee1bbddc.haveupdate, true)+!control.hasfocus(10014)</visible>
+		</control>
+	</controls>
+</window>

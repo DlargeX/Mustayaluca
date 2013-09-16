@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>9813</id>
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:136</define>
+	<controls>
+
+		<control>
+			<description>Default Background when no Fanart Displayed</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>backgrounds\tvshows\default.jpg</texture>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background.png</texture>
+			<visible>!facadeview.filmstrip</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background_top.png</texture>
+			<visible>facadeview.filmstrip</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay - Filmstrip</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_filmstrip.png</texture>
+			<visible>facadeview.filmstrip</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay - List View</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_music_list.png</texture>
+			<visible>facadeview.playlist</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay - Thumbs View</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_thumbs.png</texture>
+			<visible>[facadeview.smallicons|facadeview.largeicons]</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay Bar</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>998</posY>
+			<width>1920</width>
+			<height>82</height>
+			<texture>overlay_bar_bottom.png</texture>
+		</control>
+
+		<control>
+			<description>Episode Thumb Backround</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1315</posX>
+			<posY>234</posY>            
+			<width>550</width>
+			<height>368</height>
+			<texture>episode_thumb_background_reflect.png</texture>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<visible>facadeview.playlist+Control.HasFocus(50)+!string.equals(#TVSeries.Playlist.Count,0)</visible>
+		</control>		
+
+		<control>
+			<description>Default Episode Thumb</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1345</posX>
+			<posY>264</posY>            
+			<width>490</width>
+			<height>277</height>
+			<texture>default_pictures.png</texture>
+			<visible>facadeview.playlist+Control.HasFocus(50)+!string.equals(#TVSeries.Playlist.Count,0)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>Big Episode Thumb</description>
+			<type>image</type>
+			<id>67</id>
+			<posX>1345</posX>
+			<posY>264</posY>            
+			<width>490</width>
+			<height>277</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<zoom>yes</zoom>            
+			<visible>facadeview.playlist+Control.HasFocus(50)+!string.equals(#TVSeries.Playlist.Count,0)</visible>
+			<texture>#TVSeries.EpisodeImage</texture>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>Episode Thumb Backround</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1315</posX>
+			<posY>234</posY>            
+			<width>550</width>
+			<height>368</height>
+			<texture>episode_thumb_background_overlay_reflect.png+!string.equals(#TVSeries.Playlist.Count,0)</texture>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<visible>facadeview.playlist+Control.HasFocus(50)</visible>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Playlist</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#(L(136)) / #SkinTranslation.Translations.list.empty.Label</label>
+			<visible>Control.HasFocus(50)+!player.hasmedia+string.equals(#TVSeries.Playlist.Count,0)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Season Title</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#TVSeries.Episode.SeriesName / #TVSeries.Episode.SeasonLabel</label>
+			<visible>Control.HasFocus(50)+!player.hasmedia+!string.equals(#TVSeries.Playlist.Count,0)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailText">
+			<description>Episode Count</description>
+			<type>label</type>
+			<posX>1850</posX>
+			<posY>1030</posY>
+			<width>425</width>
+			<align>right</align>
+			<label>#TVSeries.Playlist.Count #TVSeries.Translation.Episodes.Label</label>
+			<id>0</id>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+			<visible>Control.HasFocus(50)</visible>
+		</control>
+
+		<control Style="BigTitle">
+			<type>label</type>
+			<id>0</id>
+			<posX>1850</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<align>right</align>
+			<label>#selectedindex/#TVSeries.Playlist.Count</label>
+			<visible>!player.hasmedia+!string.equals(#TVSeries.Playlist.Count,0)</visible>
+		</control>
+
+		<control>
+			<type>actiongroup</type>
+			<description>action menu</description>
+			<defaultcontrol>2</defaultcontrol>
+			<onexit>50</onexit>
+			<buttonX>0</buttonX>
+			<buttonY>0</buttonY>
+			<buttonwidth>106</buttonwidth>
+			<buttonheight>720</buttonheight>
+			<width>568</width>
+			<height>900</height>
+			<dimColor>00ffffff</dimColor>
+			<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+			<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			<control>
+				<type>image</type>
+				<posX>0</posX>
+				<posY>0</posY>
+				<width>400</width>
+				<height>998</height>
+				<texture>hidden_menu_short_background.png</texture>
+				<colorDiffuse>fffffffff</colorDiffuse>
+				<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>
+			<control>
+				<type>image</type>
+				<id>1</id>
+				<posX>262</posX>
+				<posY>60</posY>
+				<width>128</width>
+				<height>128</height>
+				<texture>logo_tv.png</texture>
+				<visible>!Control.HasFocus(50)+Control.IsVisible(50)</visible>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>
+			<control>
+				<type>label</type>
+				<id>0</id>
+				<posX>370</posX>
+				<posY>178</posY>
+				<width>300</width>
+				<font>font3</font>
+				<label>#(L(1300)) #(L(136))</label>
+				<align>right</align>
+				<visible>!Control.HasFocus(50)+Control.IsVisible(50)</visible>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>
+			<control>
+				<description>group element</description>
+				<type>group</type>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+				<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+				<control>
+					<description>button group</description>
+					<type>group</type>
+					<posX>0</posX>
+					<posY>230</posY>
+					<layout>StackLayout(0, Vertical, true)</layout>
+					<visible>!Control.HasFocus(50)</visible>
+					<control>
+						<description>View-As button</description>
+						<type>button</type>
+						<id>2</id>
+						<label>100</label>
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<onup>17</onup>
+					</control> 
+					<control>
+						<description>Shuffle button</description>
+						<type>button</type>
+						<id>20</id>
+						<label>191</label>
+						<onleft>50</onleft>
+						<onright>50</onright>
+					</control>
+					<control>
+						<description>Repeat on/off button</description>
+						<type>checkbutton</type>
+						<id>30</id>
+						<label>486</label>
+						<onleft>50</onleft>
+						<onright>50</onright>
+					</control>
+					<control>
+						<description>AutoPlay on/off button</description>
+						<type>checkbutton</type>
+						<id>40</id>					
+						<label>Auto Play</label>
+						<onleft>50</onleft>
+						<onright>50</onright>
+					</control>				
+					<control>
+						<description>Save button</description>
+						<type>button</type>
+						<id>21</id>
+						<label>190</label>
+						<onleft>50</onleft>
+						<onright>50</onright>
+					</control>	
+					<control>
+						<description>Clear button</description>
+						<type>button</type>
+						<id>22</id>
+						<label>192</label>
+						<onleft>50</onleft>
+						<onright>50</onright>
+					</control>	
+					<control>
+						<description>Play button</description>
+						<type>button</type>
+						<id>23</id>
+						<label>208</label>
+						<onleft>50</onleft>
+					</control>
+					<control>
+						<description>Next button</description>
+						<type>button</type>
+						<id>24</id>
+						<label>209</label>
+						<onleft>50</onleft>
+						<onright>50</onright>
+					</control>	
+					<control>
+						<description>Previous button</description>
+						<type>button</type>
+						<id>25</id>
+						<label>210</label>
+						<onleft>50</onleft>
+						<onright>50</onright>
+					</control>
+					<control>
+						<description>My Playlists</description>
+						<type>button</type>
+						<id>9</id>
+						<label>983</label>
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<ondown>2</ondown>
+					</control>
+				</control>
+			</control>
+		</control>
+
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<control>
+				<type>facadeview</type>
+				<id>50</id>				
+				<control>
+					<description>List Layout</description>
+					<type>listcontrol</type>
+					<id>50</id>				
+				</control>
+				<control>
+					<description>Filmstrip Layout</description>
+					<type>filmstrip</type>
+					<id>50</id>
+					<onup>2</onup>
+					<posX>70</posX>
+					<posY>745</posY>
+					<width>1920</width>
+					<textXOff>0</textXOff>
+					<textYOff>1500</textYOff>
+					<scrollOffset>3</scrollOffset>
+					<spinPosX>2100</spinPosX>
+					<spinCanFocus>no</spinCanFocus>
+					<itemWidth>250</itemWidth>
+					<itemHeight>180</itemHeight>
+					<textureWidth>240</textureWidth>
+					<textureHeight>180</textureHeight>
+					<thumbWidth>240</thumbWidth>
+					<thumbHeight>180</thumbHeight>
+					<thumbPosX>0</thumbPosX>
+					<thumbPosY>0</thumbPosY>
+					<thumbZoom>yes</thumbZoom>
+					<font>font2</font>
+					<InfoImage></InfoImage>
+					<imageFolder>-</imageFolder>
+					<imageFolderFocus>-</imageFolderFocus>
+					<thumbs mask="pic_thumb_frame_mask.png"></thumbs>
+					<InfoImage mask="pic_thumb_frame_mask.png"></InfoImage>
+					<unfocusedAlpha>255</unfocusedAlpha>
+					<frame>pic_thumb_frame_nofocus.png</frame>
+					<frameFocus>pic_thumb_frame_filmstrip_focus.png</frameFocus>
+					<showFrame>yes</showFrame>
+					<showFolder>yes</showFolder>
+					<showBackGround>no</showBackGround>
+					<showInfoImage>no</showInfoImage>
+					<scrollbarbg>scroll_bar_background.png</scrollbarbg>
+					<scrollbarLeft>scrollbar_bar_nib_left_hor.png</scrollbarLeft>
+					<scrollbarRight>scrollbar_bar_nib_right_hor.png</scrollbarRight>
+					<scrollbarwidth>1</scrollbarwidth>
+					<scrollbarYOff>416</scrollbarYOff>
+					<keepaspectratio>yes</keepaspectratio>
+					<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,860" time="200">focus</thumbAnimation>
+					<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,860" time="100">unfocus</thumbAnimation>				
+					<animation effect="slide" start="0" end="370"  tween="back" ease="easeout" time="300" reversible="false">unfocus</animation>
+					<animation effect="slide" start="370" end="0"  tween="back" ease="easeout" time="300" reversible="false">focus</animation>
+				</control>
+				<control>
+					<description>Thumbnail Panel</description>
+					<type>thumbnailpanel</type>
+					<id>50</id>
+					<onleft>2</onleft>
+					<onright>50</onright>				
+					<textureUp>-</textureUp>
+					<textureDown>-</textureDown>
+					<posX>70</posX>
+					<posY>200</posY>
+					<width>1850</width>
+					<height>800</height>
+					<scrollOffset>0</scrollOffset>
+					<itemWidth>180</itemWidth>
+					<itemHeight>155</itemHeight>
+					<textureWidth>160</textureWidth>
+					<textureHeight>120</textureHeight>
+					<thumbWidth>160</thumbWidth>
+					<thumbHeight>120</thumbHeight>
+					<thumbPosX>0</thumbPosX>
+					<thumbPosY>0</thumbPosY>
+					<itemWidthBig>255</itemWidthBig>
+					<itemHeightBig>190</itemHeightBig>
+					<textureWidthBig>240</textureWidthBig>
+					<textureHeightBig>180</textureHeightBig>
+					<thumbWidthBig>240</thumbWidthBig>
+					<thumbHeightBig>180</thumbHeightBig>
+					<thumbPosXBig>0</thumbPosXBig>
+					<thumbPosYBig>0</thumbPosYBig>
+					<zoomXPixels>48</zoomXPixels>
+					<zoomYPixels>48</zoomYPixels>
+					<hideUnfocusTexture>yes</hideUnfocusTexture>
+					<renderFocusText>no</renderFocusText>
+					<renderUnfocusText>no</renderUnfocusText>
+					<showFrame>true</showFrame>
+					<thumbZoom>yes</thumbZoom>
+					<enableFocusZoom>no</enableFocusZoom>
+					<keepaspectratio>no</keepaspectratio>
+					<textureMask>pic_thumb_frame_mask.png</textureMask>
+					<unfocusedAlpha>255</unfocusedAlpha>
+					<frameNoFocus>pic_thumb_frame_nofocus.png</frameNoFocus>
+					<frameFocus>pic_thumb_frame_focus.png</frameFocus>
+					<imageFolder>-</imageFolder>
+					<imageFolderFocus>-</imageFolderFocus>
+					<dimColor>ffffffff</dimColor>
+					<spinPosX>2500</spinPosX>
+					<spinCanFocus>no</spinCanFocus>
+					<keepaspectratio>yes</keepaspectratio>
+					<animation effect="slide" start="0" end="370"  tween="back" ease="easeout" time="300" reversible="false">unfocus</animation>
+					<animation effect="slide" start="370" end="0"  tween="back" ease="easeout" time="300" reversible="false">focus</animation>				</control>
+				<control>
+					<description>playlist listcontrol</description>
+					<type>playlistcontrol</type>
+					<id>50</id>
+					<onleft>2</onleft>
+					<onright>2</onright>
+					<animation effect="slide" start="0" end="335"  tween="back" ease="easeout" time="300" reversible="false">focus</animation>
+					<animation effect="slide" start="335" end="0"  tween="back" ease="easeout" time="300" reversible="false">unfocus</animation>
+				</control>
+			</control> 
+		</control>
+
+
+		<control Style="DetailTextDroid">
+			<description>Episode Plot</description>
+			<type>textboxscrollup</type>
+			<id>1</id>
+			<posX>1315</posX>
+			<posY>662</posY>
+			<width>570</width>
+			<height>240</height>
+			<seperator>-----------------------------------------------------------------------------------</seperator>
+			<label>#TVSeries.Episode.Summary</label>
+			<scrollStartDelaySec>10</scrollStartDelaySec>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<visible>facadeview.playlist+Control.HasFocus(50)</visible>
+		</control>
+
+		<control>
+			<description>TVDB Stars</description>
+			<type>image</type>
+			<posX>1345</posX>
+			<posY>596</posY>
+			<width>151</width>
+			<height>32</height>
+			<align>left</align>
+			<texture>#TVSeries.Episode.FiveStarRatingPath</texture>
+			<visible>facadeview.playlist+Control.HasFocus(50)</visible>
+		</control>
+
+		<control>
+			<description>TVDB Stars Unrated</description>
+			<type>image</type>
+			<posX>1345</posX>
+			<posY>596</posY>
+			<width>151</width>
+			<height>32</height>
+			<align>left</align>
+			<texture>logos/rating/0.png</texture>
+			<visible>facadeview.playlist+Control.HasFocus(50)+string.equals(#TVSeries.Episode.InfoPanelLine1Value,/10)</visible>
+		</control>
+		
+		<control Style="DetailTitle">
+			<label>#TVSeries.Episode.InfoPanelLine2Key</label>
+			<type>label</type>
+			<posX>1585</posX>
+			<posY>596</posY>
+			<width>130</width>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<visible>facadeview.playlist+Control.HasFocus(50)</visible>
+		</control>
+
+		<control Style="DetailText">
+			<label>#TVSeries.Episode.InfoPanelLine2Value</label>
+			<type>label</type>
+			<posX>1730</posX>
+			<posY>596</posY>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<visible>facadeview.playlist+Control.HasFocus(50)</visible>
+		</control>
+
+		<import>common.overlay.xml</import>
+
+	</controls>
+</window>

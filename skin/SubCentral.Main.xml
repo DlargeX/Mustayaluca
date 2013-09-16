@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<controls>
+		<!-- 
+		This skin file is meant for all controls that should be visible for the user
+		when in the main view of the plugin. All controls should be tagged at a minimum
+		with "<visible>Control.IsVisible(101)</visible>". 
+		-->
+
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#SkinTranslation.Translations.menu.subtitles.Label</label>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<visible>Control.IsVisible(101)+!player.hasmedia</visible>
+		</control>
+
+		<control Style="BigTitle">
+			<type>fadelabel</type>
+			<description>title label</description>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#SkinTranslation.Translations.media.playing.Label: #Play.Current.Title</label>
+			<visible>Control.IsVisible(101)+player.hasmedia</visible>
+		</control>
+
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+			<visible>Control.IsVisible(101)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailTextDroid">
+			<type>textbox</type>
+			<id>912</id>
+			<posX>430</posX>
+			<posY>247</posY>
+			<width>1400</width>
+			<height>660</height>
+			<label>#SubCentral.About</label>
+			<!--<textcolor>90ffffff</textcolor>-->
+			<onup>202</onup>
+			<ondown>202</ondown>
+			<onleft>202</onleft>
+			<onright>202</onright>
+			<spinWidth>40</spinWidth>
+			<spinHeight>40</spinHeight>
+			<spinPosX>900</spinPosX>
+			<spinPosY>863</spinPosY>
+			<spinAlign>left</spinAlign>
+			<spinCanFocus>yes</spinCanFocus>
+			<font>font15</font>
+			<visible>Control.IsVisible(101)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>Dummy Button</description>
+			<type>button</type>
+			<id>500</id>
+			<label>-</label>
+			<onup>500</onup>
+			<ondown>500</ondown>
+			<onleft>202</onleft>
+			<onright>50</onright>
+			<textureFocus>-</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<visible allowhiddenfocus="true">Control.IsVisible(101)</visible>
+		</control>
+
+	</controls>
+</window>

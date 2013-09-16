@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<window>	
+	<controls>
+		<!-- Media logos [Details View] -->
+		<control>
+			<description>Video Codec</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>50</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Video\#MovingPictures.LocalMedia.videocodec.png</texture>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+		</control>
+
+		<control>
+			<description>Video Resolution</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>150</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Aspect\#MovingPictures.LocalMedia.videoresolution.png</texture>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+		</control>
+
+		<control>
+			<description>Video Aspect Ratio</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>250</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Aspect\#MovingPictures.LocalMedia.videoaspectratio.png</texture>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+		</control>
+
+		<control>
+			<description>Audio Codec</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>350</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Audio\#MovingPictures.LocalMedia.audiocodec.png</texture>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+		</control>
+
+		<control>
+			<description>Audio Channels</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>450</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Audio\#MovingPictures.LocalMedia.audiochannels.png</texture>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+		</control>
+
+		<control>
+			<description>Subtitles</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>550</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Subtitles\#MovingPictures.LocalMedia.Subtitles.png</texture>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+		</control>
+
+		<!-- Media logos [List View] -->
+		<control>
+			<description>Video Codec</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>50</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Video\#MovingPictures.LocalMedia.videocodec.png</texture>
+			<visible>control.isvisible(50)+facadeview.list</visible>
+		</control>
+
+		<control>
+			<description>Video Resolution</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>150</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Aspect\#MovingPictures.LocalMedia.videoresolution.png</texture>
+			<visible>control.isvisible(50)+facadeview.list</visible>
+		</control>
+
+		<control>
+			<description>Video Aspect Ratio</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>250</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Aspect\#MovingPictures.LocalMedia.videoaspectratio.png</texture>
+			<visible>control.isvisible(50)+facadeview.list</visible>
+		</control>
+
+		<control>
+			<description>Audio Codec</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>350</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Audio\#MovingPictures.LocalMedia.audiocodec.png</texture>
+			<visible>control.isvisible(50)+facadeview.list</visible>
+		</control>
+
+		<control>
+			<description>Audio Channels</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>450</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Audio\#MovingPictures.LocalMedia.audiochannels.png</texture>
+			<visible>control.isvisible(50)+facadeview.list</visible>
+		</control>
+
+		<control>
+			<description>Subtitles</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>550</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Subtitles\#MovingPictures.LocalMedia.Subtitles.png</texture>
+			<visible>control.isvisible(50)+facadeview.list</visible>
+		</control>
+
+	</controls>
+</window>

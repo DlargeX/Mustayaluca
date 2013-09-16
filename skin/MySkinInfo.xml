@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<id>1196208</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>  
+	<define>#defaultcontrol:2</define>  
+	<define>#plugin1:Fanart Handler</define>
+	<define>#plugin2:Global Search</define>
+	<define>#plugin3:InfoService</define>
+	<define>#plugin4:Moving Pictures</define>
+	<define>#plugin5:MP-TVSeries</define>
+	<define>#plugin6:Web Browser</define>
+	<define>#plugin7:Music Videos</define>
+	<define>#plugin8:My Lyrics</define>
+	<define>#plugin9:Online Videos</define>
+	<define>#plugin10:RadioTime</define>
+	<define>#plugin11:Rockstar</define>
+	<define>#plugin12:ShowTimes</define>
+	<define>#plugin13:Skin Translations</define>
+	<define>#plugin14:SubCentral</define>
+	<define>#plugin15:YouTube.fm</define>
+	<controls>    
+
+		<import>common.settings.xml</import>
+
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#Mustayaluca.SkinInfoText</label>
+			<visible>!player.hasmedia</visible>
+		</control>  
+
+		<control>
+			<description>button group</description>
+			<type>group</type>
+			<posX>0</posX>
+			<posY>230</posY>
+			<layout>StackLayout(0, Vertical, true)</layout>
+			<control>
+				<type>button</type>
+				<description>Back</description>
+				<id>2</id>
+				<action>10</action>
+				<label>712</label>
+			</control>
+		</control>
+
+		<!-- Header -->    
+		<control Style="DetailTitle">
+			<description>auth txt</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>440</posX>
+			<posY>249</posY>
+			<label>Author:</label>
+		</control>
+		<control Style="DetailText">
+			<description>auth value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>570</posX>
+			<posY>249</posY>
+			<label>Mustayaluca Team; dlarge500</label>
+		</control> 
+		<control Style="DetailTitle">
+			<description>vers txt</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>440</posX>
+			<posY>318</posY>
+			<label>Version:</label>
+		</control>
+		<control Style="DetailText">
+			<description>vers value</description>
+			<type>label</type>
+			<id>3</id>
+			<posX>575</posX>
+			<posY>318</posY>
+			<label>0.1.0.87</label>
+		</control> 
+		<control Style="DetailTitle">
+			<description>Resolution text</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>440</posX>
+			<posY>387</posY>
+			<width>500</width>
+			<label>Design Resolution:</label>
+		</control>
+		<control Style="DetailText">
+			<description>Resolution value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>720</posX>
+			<posY>387</posY>
+			<label>[16:9]  (1920x1080)</label>
+		</control>
+		<control Style="DetailTitle">
+			<description>Actual Resolution text</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1080</posX>
+			<posY>387</posY>
+			<width>500</width>
+			<label>Physical Resolution:</label>
+		</control>
+		<control Style="DetailText">
+			<description>Resolution value</description>
+			<type>label</type>
+			<id>4</id>
+			<posX>1400</posX>
+			<posY>387</posY>
+			<label>[16:9]  (1280x720)</label>
+		</control>    
+		<!-- Skin Description -->
+		<control Style="DetailTitle">
+			<description>desc txt</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>440</posX>
+			<posY>456</posY>
+			<label>Description:</label>
+		</control>
+		<control Style="DetailTextDroid">
+			<description>Skin Description</description>
+			<type>textbox</type>
+			<id>0</id>
+			<posX>635</posX>
+			<posY>450</posY>
+			<width>1250</width>
+			<height>235</height>
+			<label>"...inspiration  comes from various sources as you can see. Some parts are more or less rip off's from other skins like the home screen which originates from djh's AEON over at XBMC. Other inspirations come from crj's work over at Meedios and some inspiration has been taken from joostzilla and his Maya skin. So basically Mustayaluca is a blend from varios sources combined with my own ideas." - a quote from macradi (Mustayaluca's original creator.)</label>
+			<lineSpacing>0.9</lineSpacing>
+		</control>
+
+		<!-- Supported Plugins -->
+		<control Style="DetailTitle">
+			<description>plug txt</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>440</posX>
+			<posY>665</posY>
+			<label>Supported Plugins:</label>
+			<width>510</width>
+		</control>  
+		<control Style="DetailTextLight">
+			<description>auth value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>730</posX>
+			<posY>665</posY>
+			<width>1000</width>
+			<label>All the standard MediaPortal Plugins are supported plus...</label>
+		</control> 
+
+		<!-- The Plugins are.... -->
+		<control>
+			<description>plug value line 1</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>440</posX>
+			<posY>734</posY>
+			<label>#plugin1</label>
+		</control>
+		<control>
+			<description>plug value line 1</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>690</posX>
+			<posY>734</posY>
+			<label>#plugin2</label>
+		</control>
+		<control>
+			<description>plug value line 1</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>940</posX>
+			<posY>734</posY>
+			<label>#plugin3</label>
+		</control>
+		<control>
+			<description>plug value line 1</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1290</posX>
+			<posY>734</posY>
+			<label>#plugin4</label>
+		</control>
+		<control>
+			<description>plug value line 1</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1540</posX>
+			<posY>734</posY>
+			<label>#plugin5</label>
+		</control>
+
+		<control>
+			<description>plug value line 2</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>440</posX>
+			<posY>803</posY>
+			<label>#plugin6</label>
+		</control>
+		<control>
+			<description>plug value line 2</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>690</posX>
+			<posY>803</posY>
+			<label>#plugin7</label>
+		</control>
+		<control>
+			<description>plug value line 2</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>940</posX>
+			<posY>803</posY>
+			<label>#plugin8</label>
+		</control>
+		<control>
+			<description>plug value line 2</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1290</posX>
+			<posY>803</posY>
+			<label>#plugin9</label>
+		</control>
+		<control>
+			<description>plug value line 2</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1540</posX>
+			<posY>803</posY>
+			<label>#plugin10</label>
+		</control>
+
+		<control>
+			<description>plug value line 3</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>440</posX>
+			<posY>872</posY>
+			<label>#plugin11</label>
+		</control>
+		<control>
+			<description>plug value line 3</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>690</posX>
+			<posY>872</posY>
+			<label>#plugin12</label>
+		</control>
+		<control>
+			<description>plug value line 3</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>940</posX>
+			<posY>872</posY>
+			<label>#plugin13</label>
+		</control>
+		<control>
+			<description>plug value line 3</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1290</posX>
+			<posY>872</posY>
+			<label>#plugin14</label>
+		</control>
+		<control>
+			<description>plug value line 3</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1540</posX>
+			<posY>872</posY>
+			<label>#plugin15</label>
+		</control>
+
+		<!-- History Link -->
+		<control>
+			<description>hist txt</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>250</posX>
+			<posY>590</posY>
+			<label>History:</label>
+			<textcolor>ffa9d0f7</textcolor>
+			<align>right</align>
+			<visible>no</visible>
+		</control>
+		<control>
+			<description>desc value line 1</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>260</posX>
+			<posY>590</posY>
+			<label>*** Add a link here ***</label>
+			<visible>no</visible>
+		</control>
+
+		<import>common.overlay.home.xml</import>
+
+	</controls>
+</window>
+<!--Checksum:1ffc656d68615b27b641dbc0e866d14c-->

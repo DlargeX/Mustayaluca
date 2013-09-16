@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Music Search translation file -->
+<!-- Dutch (NL)-->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<strings>
+  <!-- A -->
+  
+  <!-- B -->
+  
+  <!-- C -->
+  <string Field="ClearPlaylist">Afspeellijst leegmaken?</string>
+  <string Field="CaseSensitive">Hoofdletter gevoelig</string>
+  
+  <!-- D -->
+ 
+  <!-- E -->
+ 
+  <!-- F -->
+  <string Field="FileNotFound">Bestand niet gevonden!</string>
+  
+  <!-- G -->
+ 
+  <!-- H -->
+  
+  <!-- I -->
+  
+  <!-- K -->
+  
+  <!-- J -->
+  
+  <!-- L -->
+  
+  <!-- M -->
+  <string Field="MusicSearch">Muziek zoeken</string>
+  
+  <!-- N -->
+  <string Field="NoSearchResultsFound">Geen zoekresultaten gevonden! Probeer de zoekopdracht te verfijnen.</string>
+  
+  <!-- O -->
+  
+  <!-- P -->
+  <string Field="PleaseWait">Even geduld aub...</string>
+  <string Field="PluginDescription">Vindt alles wat met muziek te maken heeft in de MP Database</string>
+  
+  <!-- R -->
+  
+  <!-- S -->
+  <string Field="SearchFailed">Zoekopdracht mislukt!</string>
+  <string Field="SelectSearchFields">Selecteer zoekvelden</string>
+  <string Field="SearchPhrase">Zoekwoorden</string>
+  <string Field="SearchHistory">Zoekgeschiedenis</string>
+  <string Field="SearchFields">Zoekvelden</string>
+  <string Field="SearchType">Zoektype</string>
+  <string Field="SearchMusic">Muziek zoeken</string>
+  <string Field="SearchTypeEquals">Gelijk aan</string>
+  <string Field="SearchTypeStarts">Begint met</string>
+  <string Field="SearchTypeContains">Bevat</string>
+  <string Field="SearchTypeEnds">Eindigt met</string>
+  
+  <!-- T -->
+  
+  <!-- U -->
+  
+  <!-- V -->
+  
+  <!-- W -->
+  
+  <!-- Y -->  
+  
+</strings>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<controls>
+	
+		<control>
+			<type>actiongroup</type>
+			<description>action menu</description>
+			<defaultcontrol>3</defaultcontrol>
+			<onexit>50</onexit>
+			<buttonX>0</buttonX>
+			<buttonY>0</buttonY>
+			<buttonwidth>106</buttonwidth>
+			<buttonheight>720</buttonheight>		  
+			<width>568</width>
+			<height>900</height>
+			<dimColor>00ffffff</dimColor>
+			
+			<control>
+				<type>image</type>
+				<posX>0</posX>
+				<posY>0</posY>
+				<width>400</width>
+				<height>998</height>
+				<texture>hidden_menu_short_background.png</texture>
+				<colorDiffuse>fffffffff</colorDiffuse>
+				<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>
+			
+			<control>
+				<type>image</type>
+				<id>1</id>
+				<posX>272</posX>
+				<posY>60</posY>
+				<width>128</width>
+				<height>128</height>		  
+				<texture>logo_movies.png</texture>
+				<visible>!Control.HasFocus(50)+Control.IsVisible(50)</visible>		  
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>		 
+			
+			<control>
+				<type>label</type>
+				<id>0</id>
+				<posX>370</posX>
+				<posY>178</posY>
+				<width>300</width>
+				<font>font3</font>
+				<label>#SkinTranslation.Translations.media.movies.Label</label>
+				<align>right</align>
+				<visible>!Control.HasFocus(50)+Control.IsVisible(50)</visible>		  
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>	
+			
+			<control>
+				<description>group element</description>
+				<type>group</type>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+				<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+				<control>
+					<description>button group</description>
+					<type>group</type>
+					<posX>0</posX>
+					<posY>230</posY>
+					<layout>StackLayout(0, Vertical, true)</layout>
+					<visible>!Control.HasFocus(50)</visible>
+					<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+					<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+					
+					<control>
+						<description>Change View</description>
+						<type>button</type>
+						<id>3</id>
+						<label>#MovingPictures.Translation.ChangeView.Label</label>
+						<onright>50</onright>
+						<onup>2</onup>
+						<ondown>14</ondown>
+					</control>
+
+					<control>
+						<description>Sort By</description>
+						<type>button</type>
+						<id>14</id>
+						<label>#MovingPictures.Translation.SortBy.Label: #MovingPictures.Sort.Field</label>					
+						<onright>50</onright>
+						<onup>3</onup>
+						<ondown>4</ondown>
+					</control>
+					
+					<control>
+						<description>Filter By</description>
+						<type>button</type>
+						<id>4</id>
+						<label>#MovingPictures.Translation.FilterBy.Label ...</label>
+						<onright>50</onright>
+						<onup>3</onup>
+						<ondown>19</ondown>
+					</control>		
+
+					<control>
+						<description>Search</description>
+						<type>button</type>
+						<id>19</id>
+						<label>#MovingPictures.Translation.Search.Label ...</label>
+						<onright>50</onright>
+						<onup>4</onup>
+						<ondown>66608</ondown>
+					</control>
+				
+					<control>
+						<description>Importer</description>
+						<type>button</type>
+						<id>66608</id>
+						<label>#MovingPictures.Translation.Importer.Label ...</label>
+						<hyperlink>96743</hyperlink>
+						<onright>50</onright>
+						<onup>19</onup>
+						<ondown>15</ondown>
+					</control>
+				
+					<control>
+						<description>Parental Controls</description>
+						<type>button</type>
+						<id>15</id>
+						<label>#MovingPictures.Translation.ToggleParentalLock.Label</label>
+						<onright>50</onright>
+						<ondown>66609</ondown>
+						<onup>66608</onup>
+						<ondown>66609</ondown>
+						<scrollStartDelaySec>1</scrollStartDelaySec>
+						<scrollWrapString> | </scrollWrapString>
+					</control>
+
+ 					<control>
+						<description>Video Settings</description>
+						<type>button</type>
+						<id>66609</id>
+						<label>6022</label>
+						<hyperlink>703</hyperlink>
+						<onright>50</onright>
+						<onup>15</onup>
+						<ondown>66610</ondown>
+					</control>
+			
+					<control>
+						<description>Trailer (Online Videos)</description>
+						<type>button</type>
+						<id>66610</id>
+						<onup>66609</onup>
+						<ondown>66611</ondown>
+						<onright>50</onright>
+						<hyperlink>4755</hyperlink>
+						<hyperlinkParameter>site:IMDb Movie Trailers|search:#(iif(neq(#MovingPictures.SelectedMovie.imdb_id,''),#MovingPictures.SelectedMovie.imdb_id,#MovingPictures.SelectedMovie.title))|return:Locked</hyperlinkParameter>
+						<label>#SkinTranslation.Translations.menu.trailer.Label</label>
+						<visible>plugin.isenabled(OnlineVideos)+string.equals(#selectedindex)+facadeview.list</visible>
+					</control>
+				
+					<control>
+						<description>SubCentral</description>
+						<type>button</type>
+						<id>66611</id>
+						<label>287</label>
+						<hyperlink>84623</hyperlink>
+						<onup>66610</onup>
+						<ondown>66612</ondown>
+						<onright>50</onright>
+						<visible>plugin.isenabled(SubCentral)</visible>
+					</control>
+				
+					<control>
+						<description>Trakt</description>
+						<type>button</type>
+						<id>66612</id>
+						<label>Trakt</label>
+						<hyperlink>87258</hyperlink>
+						<onup>66611</onup>
+						<ondown>66613</ondown>
+						<onright>50</onright>
+						<visible>plugin.isenabled(Trakt)</visible>
+					</control>
+				
+					<control>
+						<description>IMDb+</description>
+						<type>button</type>
+						<id>66613</id>
+						<label>IMDb+</label>
+						<hyperlink>31415</hyperlink>
+						<onup>66612</onup>
+						<ondown>3</ondown>
+						<onright>50</onright>
+						<visible>plugin.isenabled(IMDbPlus)</visible>
+					</control>
+				</control>
+				
+				<control>
+					<id>0</id>
+					<label>#MovingPictures.Translation.SortDirection.Label</label>
+					<type>image</type>
+					<width>40</width>
+					<height>40</height>
+					<posX>15</posX>
+					<posY>453</posY>
+					<texture>movingpictures_Sort#MovingPictures.Sort.Direction.png</texture>
+					<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+					<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+					<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+				</control>
+				
+			</control>
+		</control>
+
+	</controls>
+</window>

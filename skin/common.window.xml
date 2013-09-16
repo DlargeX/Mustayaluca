@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<controls>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background.png</texture>
+			<visible>![facadeview.filmstrip|facadeview.coverflow]</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay - Wide List View</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_music_list.png</texture>
+			<visible>facadeview.list|facadeview.album|facadeview.playlist</visible>
+		</control>
+		<!--
+		<control>
+			<description>Backdrop Overlay - Poster List View</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_poster_list.png</texture>
+			<visible>facadeview.list</visible>
+		</control>
+		-->
+		<control>
+			<description>Backdrop Overlay - Thumbs View</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_thumbs.png</texture>
+			<visible>[facadeview.smallicons|facadeview.largeicons]</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay - Filmstrip</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_filmstrip.png</texture>
+			<visible>facadeview.filmstrip</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay - Filmstrip/Coverflow</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background_top.png</texture>
+			<visible>facadeview.filmstrip|facadeview.coverflow</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay - Coverflow</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_coverflow.png</texture>
+			<visible>facadeview.coverflow</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay Bar</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>998</posY>
+			<width>1920</width>
+			<height>82</height>
+			<texture>overlay_bar_bottom.png</texture>
+			<visible>!facadeview.coverflow</visible>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#header.label</label>
+			<visible>control.HasFocus(50)+!player.hasmedia+[string.equals(#selecteditem,..)|string.equals(#selecteditem,)]</visible>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Selected Item</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#selecteditem</label>
+			<visible>control.HasFocus(50)+!player.hasmedia+![string.equals(#selecteditem,..)|string.equals(#selecteditem,)]</visible>
+		</control>
+
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+			<visible>control.hasfocus(50)</visible>
+		</control>
+
+		<control Style="DetailText">
+			<description>Number of Files Label</description>
+			<type>label</type>
+			<label>#(iif(and(neq(L(102012), #currentmodule), neq(L(102002), #currentmodule), neq(L(100100), #currentmodule), neq(L(100101), #currentmodule), neq(L(102015), #currentmodule), neq(L(101002), #currentmodule)), #itemcount, ' ')) #(iif(and(neq(L(102012), #currentmodule), neq(L(102002), #currentmodule), neq(L(100100), #currentmodule), neq(L(100101), #currentmodule), neq(L(102015), #currentmodule), neq(L(101002), #currentmodule)), #currentmodule, ' '))</label>
+			<posX>1850</posX>
+			<posY>1030</posY>
+			<width>425</width>
+			<align>right</align>
+			<visible>string.equals(#itemcount)+!string.equals(#itemcount,0)+!string.equals(#itemcount,1)</visible>
+		</control>
+		<!--
+		<control Style="DetailText">
+			<description>Number of Files Label</description>
+			<type>label</type>
+			<label>#itemcount #itemtype</label>
+			<posX>1850</posX>
+			<posY>1030</posY>
+			<width>425</width>
+			<align>right</align>
+			<visible>!string.equals(#itemtype,items)</visible>
+		</control>
+-->
+		<control Style="BigTitle">
+			<description>Selected Index Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1850</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<align>right</align>
+			<label>#selectedindex/#itemcount</label>
+			<visible>string.equals(#selectedindex)+string.equals(#itemcount)+!string.equals(#itemcount,1)+!player.hasmedia</visible>
+		</control>
+
+	</controls>
+</window>

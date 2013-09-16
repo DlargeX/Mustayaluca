@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>3231</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+
+		<control>
+			<description>Default Background</description>
+			<type>image</type>
+			<id>1</id>
+			<texture>backgrounds\weatherbg\default.jpg</texture>
+			<width>1920</width>
+			<height>1080</height>
+		</control>
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>1</id>
+			<texture>Animations/LinkedWeather//#WorldWeather.TodayIconNumber.jpg</texture>
+			<width>1920</width>
+			<height>1080</height>
+		</control>
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background.png</texture>
+		</control>
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_menu_bbcweather5day.png</texture>
+		</control>
+		<control>
+			<description>Backdrop Overlay Bar</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>998</posY>
+			<width>1920</width>
+			<height>82</height>
+			<texture>overlay_bar_bottom.png</texture>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>8</label>
+			<visible>!player.hasmedia</visible>
+		</control>
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+		</control>
+		<control Style="BigTitle">
+			<description>location label</description>
+			<type>label</type>
+			<id>4</id>
+			<posX>1850</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<align>right</align>
+			<label>Temp</label>
+			<visible>!player.hasmedia</visible>
+		</control>
+
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+			<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>0</posX>
+				<posY>230</posY>
+				<layout>StackLayout(0, Vertical, true)</layout>
+				<control>
+					<description>Switch To Next Day</description>
+					<type>button</type>
+					<id>2</id>
+					<label>3014</label>
+					<onup>17</onup>
+				</control>
+				<control>
+					<description>Switch To Previous Day</description>
+					<type>button</type>
+					<id>3</id>
+					<label>3014</label>
+				</control>
+			</control>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Night static label</description>
+			<type>label</type>
+			<id>17</id>
+			<posX>440</posX>
+			<posY>249</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailText">
+			<description>Night Type of weather label</description>
+			<type>label</type>
+			<id>18</id>
+			<posX>440</posX>
+			<posY>318</posY>
+			<label>Temp</label>
+		</control>
+		<control>
+			<description>Night current weather icon</description>
+			<type>image</type>
+			<id>16</id>
+			<posX>700</posX>
+			<posY>239</posY>
+			<width>128</width>
+			<height>128</height>
+			<texture>-</texture>
+		</control> 
+		<control Style="DetailTitle">
+			<description>Night Current Temp static label</description>
+			<type>label</type>
+			<id>10</id>
+			<posX>900</posX>
+			<posY>249</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailText">
+			<description>Night Current Temp label</description>
+			<type>label</type>
+			<id>11</id>
+			<posX>1120</posX>
+			<posY>249</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailTitle">
+			<description>Night Current Wind static label</description>
+			<type>label</type>
+			<id>12</id>
+			<posX>900</posX>
+			<posY>318</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailText">
+			<description>Night Current Wind label</description>
+			<type>label</type>
+			<id>13</id>
+			<posX>1120</posX>
+			<posY>318</posY>
+			<label>Temp</label>
+		</control>    
+		<control Style="DetailTitle">
+			<description>Night Current Preciptation static label</description>
+			<type>label</type>
+			<id>14</id>
+			<posX>1430</posX>
+			<posY>249</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailText">
+			<description>Night Current Preciptation label</description>
+			<type>label</type>
+			<id>15</id>
+			<posX>1670</posX>
+			<posY>249</posY>
+			<label>Temp</label>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>AM static label</description>
+			<type>label</type>
+			<id>27</id>
+			<posX>440</posX>
+			<posY>387</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailText">
+			<description>AM Type of weather label</description>
+			<type>label</type>
+			<id>28</id>
+			<posX>440</posX>
+			<posY>456</posY>
+			<label>Temp</label>
+		</control>
+		<control>
+			<description>AM current weather icon</description>
+			<type>image</type>
+			<id>26</id>
+			<posX>700</posX>
+			<posY>377</posY>
+			<width>128</width>
+			<height>128</height>
+			<texture>-</texture>
+		</control>
+		<control Style="DetailTitle">
+			<description>AM Current Temp static label</description>
+			<type>label</type>
+			<id>20</id>
+			<posX>900</posX>
+			<posY>387</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailText">
+			<description>AM Current Temp label</description>
+			<type>label</type>
+			<id>21</id>
+			<posX>1120</posX>
+			<posY>387</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailTitle">
+			<description>AM Current Wind static label</description>
+			<type>label</type>
+			<id>22</id>
+			<posX>900</posX>
+			<posY>456</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailText">
+			<description>AM Current Wind label</description>
+			<type>label</type>
+			<id>23</id>
+			<posX>1120</posX>
+			<posY>456</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailTitle">
+			<description>AM Current Preciptation static label</description>
+			<type>label</type>
+			<id>24</id>
+			<posX>1430</posX>
+			<posY>387</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailText">
+			<description>AM Current Preciptation label</description>
+			<type>label</type>
+			<id>25</id>
+			<posX>1670</posX>
+			<posY>387</posY>
+			<label>Temp</label>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>PM static label</description>
+			<type>label</type>
+			<id>37</id>
+			<posX>440</posX>
+			<posY>525</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailText">
+			<description>PM Type of weather label</description>
+			<type>label</type>
+			<id>38</id>
+			<posX>440</posX>
+			<posY>594</posY>
+			<label>Temp</label>
+		</control>
+		<control>
+			<description>PM current weather icon</description>
+			<type>image</type>
+			<id>36</id>
+			<posX>700</posX>
+			<posY>515</posY>
+			<width>128</width>
+			<height>128</height>
+			<texture>-</texture>
+		</control>
+		<control Style="DetailTitle">
+			<description>PM Current Temp static label</description>
+			<type>label</type>
+			<id>30</id>
+			<posX>900</posX>
+			<posY>525</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailText">
+			<description>PM Current Temp label</description>
+			<type>label</type>
+			<id>31</id>
+			<posX>1120</posX>
+			<posY>525</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailTitle">
+			<description>PM Current Wind static label</description>
+			<type>label</type>
+			<id>32</id>
+			<posX>900</posX>
+			<posY>594</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailText">
+			<description>PM Current Wind label</description>
+			<type>label</type>
+			<id>33</id>
+			<posX>1120</posX>
+			<posY>594</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailTitle">
+			<description>PM Current Preciptation static label</description>
+			<type>label</type>
+			<id>34</id>
+			<posX>1430</posX>
+			<posY>525</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailText">
+			<description>PM Current Preciptation label</description>
+			<type>label</type>
+			<id>35</id>
+			<posX>1670</posX>
+			<posY>525</posY>
+			<label>Temp</label>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Evening static label</description>
+			<type>label</type>
+			<id>47</id>
+			<posX>440</posX>
+			<posY>663</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailText">
+			<description>Evening Type of weather label</description>
+			<type>label</type>
+			<id>48</id>
+			<posX>440</posX>
+			<posY>732</posY>
+			<label>Temp</label>
+		</control>
+		<control>
+			<description>Evening current weather icon</description>
+			<type>image</type>
+			<id>46</id>
+			<posX>700</posX>
+			<posY>653</posY>
+			<width>128</width>
+			<height>128</height>
+			<texture>-</texture>
+		</control>
+		<control Style="DetailTitle">
+			<description>Evening Current Temp static label</description>
+			<type>label</type>
+			<id>40</id>
+			<posX>900</posX>
+			<posY>663</posY>
+			<label>Temp</label>
+			<font>font2</font>
+			<textcolor>White</textcolor>
+		</control>
+		<control Style="DetailText">
+			<description>Evening Current Temp label</description>
+			<type>label</type>
+			<id>41</id>
+			<posX>1120</posX>
+			<posY>663</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailTitle">
+			<description>Evening Current Wind static label</description>
+			<type>label</type>
+			<id>42</id>
+			<posX>900</posX>
+			<posY>732</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailText">
+			<description>Evening Current Wind label</description>
+			<type>label</type>
+			<id>43</id>
+			<posX>1120</posX>
+			<posY>732</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailTitle">
+			<description>Evening Current Preciptation static label</description>
+			<type>label</type>
+			<id>44</id>
+			<posX>1430</posX>
+			<posY>663</posY>
+			<label>Temp</label>
+		</control>
+		<control Style="DetailText">
+			<description>Evening Current Preciptation label</description>
+			<type>label</type>
+			<id>45</id>
+			<posX>1670</posX>
+			<posY>663</posY>
+			<label>Temp</label>
+		</control>
+
+		<import>common.overlay.home.xml</import>
+
+	</controls>
+</window>

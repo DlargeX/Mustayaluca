@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>2901</id>
+	<defaultcontrol>213</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+
+		<control>
+			<description>background top</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>244</posX>
+			<posY>725</posY>
+			<height>350</height>
+			<width>1450</width>
+			<texture>osd_bg_description.png</texture>
+		</control>
+
+		<control>
+			<description>Series thumb</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>286</posX>
+			<posY>770</posY>
+			<height>169</height>
+			<width>116</width>
+			<texture>#TVSeries.SeriesPoster</texture>
+			<keepaspectratio>yes</keepaspectratio>
+			<centered>yes</centered>
+			<zoom>no</zoom>
+			<valign>top</valign>
+			<visible>!string.equals(#TVSeries.Episode.SeriesName,)</visible>
+			<colordiffuse>ccffffff</colordiffuse>
+		</control>
+
+		<control>
+			<description>Movie thumb</description>
+			<type>image</type>
+			<id>102</id>
+			<posX>286</posX>
+			<posY>770</posY>
+			<height>169</height>
+			<width>116</width>
+			<texture>#Play.Current.Thumb</texture>
+			<keepaspectratio>yes</keepaspectratio>
+			<centered>yes</centered>
+			<zoom>no</zoom>
+			<valign>top</valign>
+			<colordiffuse>ccffffff</colordiffuse>
+		</control>
+
+		<control Style="SmallTitle">
+			<description>Movie Name</description>
+			<id>36</id>
+			<type>fadelabel</type>
+			<posX>420</posX>
+			<posY>763</posY>
+			<width>1230</width>
+			<label>#Play.Current.Title</label>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Year Info</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>420</posX>
+			<posY>808</posY>
+			<label>#Play.Current.Genre</label>
+			<textcolor>ff9c9d9d</textcolor>
+			<width>1180</width>
+			<font>font13</font>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Year Info</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>420</posX>
+			<posY>808</posY>
+			<label>#mvCentral.ArtistTags</label>
+			<textcolor>ff9c9d9d</textcolor>
+			<width>1180</width>
+			<font>font13</font>
+			<visible>#mvCentral.isPlaying+!string.equals(#mvCentral.ArtistTags)</visible>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Time</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1645</posX>
+			<posY>808</posY>
+			<label>#date / #time</label>
+			<textcolor>ff9c9d9d</textcolor>
+			<width>300</width>
+			<font>font13</font>
+			<align>right</align>
+		</control>
+
+		<control Style="DetailTextDroid">
+			<description>Plot</description>
+			<type>textboxscrollup</type>
+			<id>1</id>
+			<posX>420</posX>
+			<posY>840</posY>
+			<width>1230</width>
+			<height>120</height>
+			<align>left</align>
+			<lineSpacing>0.9</lineSpacing>
+			<label>#Play.Current.Plot</label>
+			<seperator>--------------------------------------------------------------------------------------------------------------------------------------------------------------</seperator>
+			<scrollStartDelaySec>10</scrollStartDelaySec>
+			<visible>![control.isvisible(302)|control.isvisible(305)|control.isvisible(304)]</visible>
+		</control>
+
+		<control>
+			<description>Progress Bar</description>
+			<type>progress</type>
+			<id>105</id>
+			<posX>269</posX>
+			<posY>1030</posY>
+			<width>1400</width>
+			<offset>0</offset>
+			<height>20</height>
+			<innerheight>20</innerheight>
+			<lefttexture>osd_progress_left_blue.png</lefttexture>
+			<midtexture>osd_progress_mid_blue.png</midtexture>
+			<righttexture>osd_progress_right_blue.png</righttexture>
+			<label>#percentage</label>
+		</control>
+
+		<control>
+			<description>dummy</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>269</posX>
+			<posY>1030</posY>
+			<width>20</width>
+			<height>20</height>
+			<texture>osd_progress_left_blue.png</texture>
+			<visible>control.isvisible(101)</visible>
+		</control>
+
+		<control>
+			<description>dummy</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1652</posX>
+			<posY>1030</posY>
+			<width>20</width>
+			<height>20</height>
+			<texture>osd_progress_right_orange.png</texture>
+			<visible>control.isvisible(101)+string.equals(#TV.Record.percent3,100)</visible>
+		</control>
+
+		<control Style="DetailText">
+			<description>Remaining time</description>
+			<type>label</type>
+			<id>102</id>
+			<posX>1387</posX>
+			<posY>997</posY>
+			<label>#currentremaining</label>
+			<align>center</align>
+			<shadowAngle>0</shadowAngle>
+			<shadowDistance>0</shadowDistance>
+			<shadowColor>00000000</shadowColor>
+		</control>
+
+		<control Style="DetailText">
+			<description>Start Time Info</description>
+			<type>label</type>
+			<id>101</id>
+			<posX>100</posX>
+			<posY>997</posY>
+			<label>#currentplaytime</label>
+			<align>center</align>
+			<shadowAngle>0</shadowAngle>
+			<shadowDistance>0</shadowDistance>
+			<shadowColor>00000000</shadowColor>
+		</control>
+
+		<control>
+			<description>Aspect Ratio</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>800</posX>
+			<posY>970</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>logos\aspect\#Play.Current.VideoResolution.png</texture>
+			<keepaspectratio>yes</keepaspectratio>
+			<colordiffuse>ff808080</colordiffuse>
+		</control>
+
+		<control>
+			<description>Video codec</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>900</posX>
+			<posY>970</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>logos\video\#Play.Current.VideoCodec.Texture.png</texture>
+			<keepaspectratio>yes</keepaspectratio>
+			<colordiffuse>ff808080</colordiffuse>
+		</control>
+
+		<control>
+			<description>Audio codec</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1000</posX>
+			<posY>970</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>logos\audio\#Play.Current.AudioCodec.Texture.png</texture>
+			<keepaspectratio>yes</keepaspectratio>
+			<colordiffuse>ff808080</colordiffuse>
+		</control>
+
+		<control>
+			<description>Audio Channels</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1100</posX>
+			<posY>970</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>logos\audio\#Play.Current.AudioChannels.png</texture>
+			<keepaspectratio>yes</keepaspectratio>
+			<colordiffuse>ff808080</colordiffuse>
+		</control>
+
+		<control>
+			<description>Subtitles</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1180</posX>
+			<posY>970</posY>
+			<width>100</width>
+			<height>50</height>
+			<visible>string.equals(#Play.Current.HasSubtitles, True)</visible>
+			<texture>logos\subtitles\subtitles.png</texture>
+			<keepaspectratio>yes</keepaspectratio>
+			<colordiffuse>ff808080</colordiffuse>
+		</control>
+
+		<control>
+			<description>Subtitles</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1180</posX>
+			<posY>970</posY>
+			<width>100</width>
+			<height>50</height>
+			<visible>string.equals(#Play.Current.HasSubtitles, False)</visible>
+			<texture>logos\subtitles\nosubtitles.png</texture>
+			<keepaspectratio>yes</keepaspectratio>
+			<colordiffuse>ff808080</colordiffuse>
+		</control>
+
+		<import>common.osd.buttons.xml</import>
+
+	</controls>
+</window>

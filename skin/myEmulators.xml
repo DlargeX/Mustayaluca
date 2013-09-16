@@ -1,0 +1,632 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>2497</id> 
+	<defaultcontrol>50</defaultcontrol> 
+	<allowoverlay>no</allowoverlay>
+	<controls>
+
+		<import>myEmulators.dummy.xml</import>
+
+		<!--:::::::::::::::::::::::::: FANART AND BACKGROUNDS :::::::::::::::::::::::::::-->
+		<control>
+			<description>Default Background</description>
+			<type>image</type>
+			<id>0</id>
+			<texture>backgrounds\games\default.jpg</texture>
+			<width>1920</width>
+			<height>1080</height>
+		</control>
+		<control>
+			<description>FanArt Background</description>
+			<type>image</type>
+			<id>21</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1920</width>
+			<height>1080</height>
+			<animation effect="fade" start="0" end="100" time="3000">WindowOpen</animation>
+			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="200" delay="200">Hidden</animation>
+			<visible>control.isvisible(1232)</visible>
+		</control>
+		<control>
+			<description>FanArt Background</description>
+			<type>image</type>
+			<id>22</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1920</width>
+			<height>1080</height>
+			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="200" delay="200">Hidden</animation>
+			<visible>control.isvisible(1232)</visible>
+		</control>
+
+		<!--:::::::::::::::::::::::::: IMPORT COMMON WINDOW :::::::::::::::::::::::::::-->
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background.png</texture>
+			<visible>![facadeview.filmstrip|facadeview.coverflow]</visible>
+		</control>
+		<control>
+			<description>Backdrop Overlay - Wide List View</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_poster_list.png</texture>
+			<visible>facadeview.list|facadeview.album|facadeview.playlist</visible>
+		</control>
+		<control>
+			<description>Backdrop Overlay - Thumbs View</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_thumbs.png</texture>
+			<visible>[facadeview.smallicons|facadeview.largeicons]</visible>
+		</control>
+		<control>
+			<description>Backdrop Overlay - Filmstrip</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_filmstrip.png</texture>
+			<visible>facadeview.filmstrip</visible>
+		</control>
+		<control>
+			<description>Backdrop Overlay - Filmstrip/Coverflow</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background_top.png</texture>
+			<visible>facadeview.filmstrip|facadeview.coverflow</visible>
+		</control>
+		<control>
+			<description>Backdrop Overlay - Coverflow</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_coverflow.png</texture>
+			<visible>facadeview.coverflow</visible>
+		</control>
+		<control>
+			<description>Backdrop Overlay Bar</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>998</posY>
+			<width>1920</width>
+			<height>82</height>
+			<texture>overlay_bar_bottom.png</texture>
+			<visible>!facadeview.coverflow</visible>
+		</control>
+		<control Style="BigTitle">
+			<description>Selected Item</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#selecteditem</label>
+			<visible>!player.hasmedia+[control.HasFocus(50)|Control.HasFocus(99901)|Control.HasFocus(99902)]</visible>
+		</control>
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+			<visible>!player.hasmedia+[control.HasFocus(50)|Control.HasFocus(99901)|Control.HasFocus(99902)]</visible>
+		</control>
+
+		<!--:::::::::::::::::::::::::: HIDDEN MENU :::::::::::::::::::::::::::-->
+		<control>
+			<type>actiongroup</type>
+			<description>action menu</description>
+			<defaultcontrol>10</defaultcontrol>
+			<onexit>50</onexit>
+			<buttonX>0</buttonX>
+			<buttonY>0</buttonY>
+			<buttonwidth>106</buttonwidth>
+			<buttonheight>720</buttonheight>
+			<width>568</width>
+			<height>900</height>
+			<dimColor>00ffffff</dimColor>
+			<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+			<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			<control>
+				<type>image</type>
+				<posX>0</posX>
+				<posY>0</posY>
+				<width>400</width>
+				<height>998</height>
+				<texture>hidden_menu_short_background.png</texture>
+				<colorDiffuse>fffffffff</colorDiffuse>
+				<visible>!Control.HasFocus(50)+![Control.HasFocus(99901)|Control.HasFocus(99902)]</visible>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>
+			<control>
+				<type>image</type>
+				<id>1</id>
+				<posX>262</posX>
+				<posY>60</posY>
+				<width>128</width>
+				<height>128</height>
+				<texture>logo_apps.png</texture>
+				<visible>!Control.HasFocus(50)+![Control.HasFocus(99901)|Control.HasFocus(99902)]</visible>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>
+			<control>
+				<type>label</type>
+				<id>0</id>
+				<posX>370</posX>
+				<posY>178</posY>
+				<width>350</width>
+				<font>font3</font>
+				<label>#plugin_title</label>
+				<align>right</align>
+				<visible>!Control.HasFocus(50)+![Control.HasFocus(99901)|Control.HasFocus(99902)]</visible>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>
+			<control>
+				<description>group element</description>
+				<type>group</type>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+				<visible>!Control.HasFocus(50)+![Control.HasFocus(99901)|Control.HasFocus(99902)]</visible>
+				<control>
+					<description>button group</description>
+					<type>group</type>
+					<posX>0</posX>
+					<posY>230</posY>
+					<layout>StackLayout(0, Vertical, true)</layout>
+					<visible>!Control.HasFocus(50)+![Control.HasFocus(99901)|Control.HasFocus(99902)]</visible>
+					<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+					<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+					<control>
+						<description>View-As button</description>
+						<type>button</type>
+						<id>10</id>
+						<label></label>
+						<onright>50</onright>
+						<onup>17</onup>
+					</control>
+					<control>
+						<description>Most played button</description>
+						<type>button</type>
+						<id>11</id>
+						<label></label>
+						<onright>50</onright>
+						<onup>10</onup>
+					</control>
+					<control>
+						<description>Recently played button</description>
+						<type>button</type>
+						<id>12</id>
+						<label></label>
+						<onright>50</onright>
+						<onup>11</onup>
+					</control>
+					<control>
+						<description>Top graded button</description>
+						<type>button</type>
+						<id>13</id>
+						<label></label>
+						<onright>50</onright>
+						<onup>12</onup>
+					</control>
+					<control>
+						<description>More views button</description>
+						<type>button</type>
+						<id>14</id>
+						<label></label>
+						<onright>50</onright>
+						<onup>13</onup>
+						<ondown>10</ondown>
+					</control>        
+				</control>
+			</control> 
+		</control>  		
+
+		<!--:::::::::::::::::::::::::: LISTVIEW :::::::::::::::::::::::::::-->
+		<control>
+			<description>Default Cover Art</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>55</posX>
+			<posY>195</posY>
+			<width>555</width>
+			<height>790</height>
+			<texture>poster_thumb_background_reflect.png</texture>
+			<visible>facadeview.list+Control.HasFocus(50)+control.isvisible(1233)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		<control>
+			<description>Cover Art</description>
+			<type>image</type>
+			<id>34</id>
+			<posX>100</posX>
+			<posY>240</posY>
+			<width>464</width>
+			<height>670</height>
+			<texture>#coverpath</texture>
+			<visible>facadeview.list+Control.HasFocus(50)+control.isvisible(1233)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		<control>
+			<description>Default Cover Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>55</posX>
+			<posY>195</posY>
+			<width>555</width>
+			<height>790</height>
+			<texture>poster_thumb_background_overlay_reflect.png</texture>
+			<visible>facadeview.list+Control.HasFocus(50)+control.isvisible(1233)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		<control Style="DetailTitle">
+			<description>Makers Label</description>
+			<type>label</type>
+			<label>Company</label>
+			<posX>1315</posX>
+			<posY>250</posY>
+			<visible>facadeview.list+control.isvisible(1233)</visible>
+		</control>
+		<control Style="DetailText">
+			<type>label</type>
+			<description>Makers name</description>
+			<id>37</id>
+			<posX>1470</posX>
+			<posY>250</posY>
+			<width>425</width>
+			<label>#game_company</label>
+			<visible>facadeview.list+control.isvisible(1233)</visible>
+		</control>
+		<control Style="DetailTitle">
+			<description>Genre Label</description>
+			<type>label</type>
+			<id>39</id>
+			<posX>1315</posX>
+			<posY>316</posY>
+			<label>#(string.rtrim(L(174),':'))</label>
+			<visible>facadeview.list+control.isvisible(1233)</visible>
+		</control>
+		<control Style="DetailText">
+			<description>Genre value</description>
+			<type>label</type>
+			<id>40</id>
+			<posX>1425</posX>
+			<posY>316</posY>
+			<width>470</width>
+			<label>#game_genre</label>
+			<visible>facadeview.list+control.isvisible(1233)</visible>
+		</control>
+		<control Style="DetailTitle">
+			<description>Year Label</description>
+			<type>label</type>
+			<label>#SkinTranslation.Translations.media.released.Label</label>
+			<posX>1315</posX>
+			<posY>390</posY>
+			<visible>facadeview.list+control.isvisible(1233)</visible>
+		</control>
+		<control Style="DetailText">
+			<description>Year Value</description>
+			<type>label</type>
+			<id>36</id>
+			<posX>1470</posX>
+			<posY>390</posY>
+			<width>4100</width>
+			<label>#game_yearmade</label>
+			<visible>facadeview.list+control.isvisible(1233)</visible>
+		</control>
+		<control Style="DetailTitle">
+			<description>Grade Label</description>
+			<type>label</type>
+			<id>41</id>
+			<posX>1315</posX>
+			<posY>458</posY>
+			<label>#(string.rtrim(L(173),':'))</label>
+			<visible>facadeview.list+control.isvisible(1233)</visible>
+		</control>
+		<control>
+			<type>imagelist</type>
+			<id>71</id>
+			<posX>1430</posX>
+			<posY>452</posY>      
+			<width>220</width>
+			<height>44</height>	
+			<textureWidth>44</textureWidth>
+			<textureHeight>44</textureHeight>
+			<subitems>
+				<subitem>greystar.png</subitem>
+				<subitem>stargood.png</subitem>
+			</subitems>
+			<orientation>horizontal</orientation>
+			<percentage>#game_grade</percentage>
+			<imagesToDraw>5</imagesToDraw>
+			<align>left</align>
+			<visible>facadeview.list+control.isvisible(1233)</visible>
+		</control>
+		<control Style="BigTitleColour">
+			<description>RatingValue</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1670</posX>
+			<posY>442</posY>
+			<width>200</width>
+			<textcolor>ff9c9d9d</textcolor>
+			<label>(#game_grade/10)</label>
+			<visible>facadeview.list+control.isvisible(1233)</visible>
+		</control>
+		<control Style="DetailTitle">
+			<description>Grade Label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1315</posX>
+			<posY>528</posY>
+			<label>Game Images</label>
+			<visible>facadeview.list+control.isvisible(1233)</visible>
+		</control>
+		<control Style="DetailText">
+			<description>Grade Label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1570</posX>
+			<posY>528</posY>
+			<label>Back          In Game</label>
+			<visible>facadeview.list+control.isvisible(1233)</visible>
+		</control>
+		<control Style="DetailTitle">
+			<description>Summary</description>
+			<type>label</type>
+			<label>#SkinTranslation.Translations.summary.Label</label>
+			<posX>1315</posX>
+			<posY>596</posY>
+			<width>570</width>
+			<visible>facadeview.list+control.isvisible(1233)</visible>
+		</control>
+		<control Style="DetailTextDroid">
+			<type>textboxscrollup</type>
+			<description>Game description</description>
+			<id>38</id>
+			<posX>1315</posX>
+			<posY>662</posY>
+			<width>570</width>
+			<height>235</height>
+			<seperator>-----------------------------------------------------------------------------------</seperator>
+			<scrollStartDelaySec>10</scrollStartDelaySec>
+			<label>#game_description</label>
+			<visible>facadeview.list+control.isvisible(1233)</visible>
+		</control>
+
+		<!--:::::::::::::::::::::::::: LISTVIEW GAME IMAGES :::::::::::::::::::::::::::-->
+		<control>
+			<description>Dummy button</description>
+			<type>button</type>
+			<id>99901</id>
+			<label>Back Cover</label>
+			<posX>1510</posX>
+			<posY>517</posY>
+			<width>50</width>
+			<height>50</height>
+			<textureFocus>forward_enabled.png</textureFocus>
+			<textureNoFocus>forward_disabled.png</textureNoFocus>
+			<onleft>50</onleft>
+			<onright>99902</onright>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<visible>facadeview.list+control.isvisible(1233)</visible>
+		</control>
+		<control>
+			<description>Dummy button</description>
+			<type>button</type>
+			<id>99902</id>
+			<label>Screenshots</label>
+			<posX>1660</posX>
+			<posY>517</posY>
+			<width>50</width>
+			<height>50</height>
+			<textureFocus>forward_enabled.png</textureFocus>
+			<textureNoFocus>forward_disabled.png</textureNoFocus>
+			<onleft>99901</onleft>
+			<onright>50</onright>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<visible>facadeview.list+control.isvisible(1233)</visible>
+		</control>
+		<control>
+			<description>Default Cover Art</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>55</posX>
+			<posY>195</posY>
+			<width>555</width>
+			<height>790</height>
+			<texture>poster_thumb_background_reflect.png</texture>
+			<visible>facadeview.list+control.isvisible(1233)+[Control.HasFocus(99901)|Control.HasFocus(99902)]</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		<control>
+			<description>Cover Art</description>
+			<type>image</type>
+			<id>31</id>
+			<posX>100</posX>
+			<posY>240</posY>
+			<width>464</width>
+			<height>670</height>
+			<texture>#backcoverpath</texture>
+			<visible>facadeview.list+control.isvisible(1233)+Control.HasFocus(99901)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		<control>
+			<id>30</id>
+			<description>ingame screenshot</description>
+			<type>image</type>
+			<posX>100</posX>
+			<posY>240</posY>
+			<width>464</width>
+			<height>335</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<align>center</align>
+			<zoom>yes</zoom>
+			<texture>#ingamescreenpath</texture>
+			<visible>facadeview.list+control.isvisible(1233)+Control.HasFocus(99902)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		<control>
+			<id>32</id>
+			<description>title screenshot</description>
+			<type>image</type>
+			<posX>100</posX>
+			<posY>575</posY>
+			<width>464</width>
+			<height>335</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<align>center</align>
+			<zoom>yes</zoom>
+			<texture>#titlescreenpath</texture>
+			<visible>facadeview.list+control.isvisible(1233)+Control.HasFocus(99902)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		<control>
+			<description>Default Cover Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>55</posX>
+			<posY>195</posY>
+			<width>555</width>
+			<height>790</height>
+			<texture>poster_thumb_background_overlay_reflect.png</texture>
+			<visible>facadeview.list+control.isvisible(1233)+[Control.HasFocus(99901)|Control.HasFocus(99902)]</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<!--:::::::::::::::::::::::::: OTHER LAYOUTS :::::::::::::::::::::::::::-->
+		<control Style="DetailText">
+			<description>Rating Label</description>
+			<type>label</type>
+			<label>173</label>
+			<posX>70</posX>
+			<posY>1030</posY>
+			<width>800</width>
+			<align>left</align>
+			<visible>!facadeview.list</visible>
+		</control>
+		<control>
+			<description>Rating Stars</description>
+			<type>imagelist</type>
+			<posX>170</posX>
+			<posY>1030</posY>      
+			<width>160</width>
+			<height>32</height>		  
+			<textureWidth>32</textureWidth>
+			<textureHeight>32</textureHeight>
+			<subitems>
+				<subitem>greystar.png</subitem>
+				<subitem>stargood.png</subitem>
+			</subitems>
+			<orientation>horizontal</orientation>
+			<percentage>#game_grade</percentage>
+			<imagesToDraw>5</imagesToDraw>
+			<align>left</align>
+			<visible>!facadeview.list</visible>
+		</control>
+		<control Style="DetailText">
+			<description>Movie Details Label</description>
+			<type>label</type>
+			<label>(#game_grade/10) | #game_company | #game_yearmade | #game_genre</label>
+			<posX>335</posX>
+			<posY>1030</posY>
+			<width>1100</width>
+			<align>left</align>
+			<visible>!facadeview.list</visible>
+		</control>
+
+		<!--:::::::::::::::::::::::::: STARS / GRADE :::::::::::::::::::::::::::-->
+		<control>
+			<type>imagelist</type>
+			<id>70</id>
+			<posX>550</posX>
+			<posY>640</posY>
+			<width>210</width>
+			<height>20</height>
+			<textureWidth>15</textureWidth>
+			<textureHeight>15</textureHeight>
+			<subitems>
+				<subitem>greystar.png</subitem>
+				<subitem>stargood.png</subitem>
+			</subitems>
+			<orientation>horizontal</orientation>
+			<percentage>#game_grade</percentage>
+			<imagesToDraw>11</imagesToDraw>
+			<align>left</align>
+			<visible>facadeview.coverflow</visible>
+		</control>
+
+
+		<import>myEmulators.facade.xml</import>
+
+		<control>
+			<description>Backdrop Overlay - Coverflow</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_coverflow_top.png</texture>
+			<visible>facadeview.coverflow</visible>
+		</control>
+
+		<!-- IMPORT PROCESS ANIMATION -->
+		<control>
+			<description>Import Animation</description>
+			<type>animation</type>
+			<id>80</id>
+			<posX>912</posX>
+			<posY>492</posY>
+			<width>96</width>
+			<height>96</height>
+			<textures>common.waiting.1.png;common.waiting.2.png;common.waiting.3.png;common.waiting.4.png;common.waiting.5.png;common.waiting.6.png;common.waiting.7.png;common.waiting.8.png</textures>
+			<Duration>0:0:01.5</Duration>
+			<keepaspectratio>yes</keepaspectratio>
+			<visible>no</visible>
+		</control>
+
+		<import>common.overlay.xml</import>
+
+	</controls>
+</window>

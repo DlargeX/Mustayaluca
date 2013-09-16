@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>87269</id>
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#Fanart.1:#Trakt.WatchListEpisodes.Fanart.1</define>
+	<define>#Fanart.2:#Trakt.WatchListEpisodes.Fanart.2</define>
+	<controls>    
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>1</id>
+			<texture>#selectedthumb</texture>
+			<width>1920</width>
+			<height>1080</height>
+			<animation effect="fade" start="0" end="100" time="3000">WindowOpen</animation>
+			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="200" delay="200">Hidden</animation>
+		</control>
+		<control>
+			<description>Default Background</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>backgrounds\tvshows\default.jpg</texture>
+			<visible>string.equals(#selectedthumb,)</visible>
+			<animation effect="fade" start="0" end="100" time="3000">WindowOpen</animation>
+			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="200" delay="200">Hidden</animation>
+		</control>
+		<import>Trakt.Common.Fanart.xml</import>
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background.png</texture>
+		</control>
+		<control>
+			<description>Backdrop Overlay - List View</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_episode_fulllist.png</texture>
+		</control>
+		<control>
+			<description>Backdrop Overlay Bar</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>998</posY>
+			<width>1920</width>
+			<height>82</height>
+			<texture>overlay_bar_bottom.png</texture>
+			<visible>!facadeview.coverflow</visible>
+		</control>
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1300</width>
+			<label>#Trakt.Translation.WatchListEpisodes.Label</label>
+			<visible>facadeview.list+control.HasFocus(50)+!player.hasmedia</visible>
+		</control>
+		<control Style="BigTitle">
+			<description>Selected Item</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1300</width>
+			<label>#selecteditem</label>
+			<visible>!facadeview.list+control.HasFocus(50)+!player.hasmedia+string.equals(#selecteditem)</visible>
+		</control>
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+			<visible>Control.HasFocus(50)</visible>
+		</control>
+		<control Style="BigTitle">
+			<type>label</type>
+			<id>0</id>
+			<posX>1850</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<align>right</align>
+			<label>#selectedindex/#itemcount</label>
+			<visible>!player.hasmedia+string.equals(#selectedindex)</visible>
+		</control>
+		<!-- Facade Item Counts -->
+		<control Style="DetailText">
+			<description>Item Count Label</description>
+			<type>label</type>
+			<label>#itemcount #Trakt.Translation.Episodes.Label</label>
+			<posX>1850</posX>
+			<posY>1030</posY>
+			<width>800</width>
+			<align>right</align>
+			<visible>Control.HasFocus(50)+!string.equals(#itemcount,)</visible>
+		</control>
+		<control>
+			<description>listscroller bg</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>507</posY>
+			<width>70</width>
+			<height>67</height>
+			<texture>listscroller_bg.png</texture>
+			<colordiffuse>40ffffff</colordiffuse>
+			<visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+			<animation effect="slide" start="-70,0" end="0,0" tween="quadratic" easing="in" time="250">Visible</animation>
+			<animation effect="slide" start="0,0" end="-70,0" tween="quadratic" easing="in" time="250">Hidden</animation>
+		</control>
+		<control>
+			<type>label</type>
+			<id>1</id>
+			<posX>-3</posX>
+			<posY>510</posY>
+			<width>69</width>
+			<height>69</height>
+			<font>font7</font>
+			<textcolor>ffffffff</textcolor>
+			<label>#selecteditem.scrolllabel</label>
+			<visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+			<align>center</align>
+			<valign>middle</valign>
+			<animation effect="slide" start="-70,0" end="0,0" tween="quadratic" easing="in" time="250">Visible</animation>
+			<animation effect="slide" start="0,0" end="-70,0" tween="quadratic" easing="in" time="250">Hidden</animation>
+		</control>
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<animation effect="slide" time="150" start="1200,0">WindowOpen</animation>
+			<animation effect="slide" time="250" end="1200,0">WindowClose</animation>
+			<control>
+				<type>facadeview</type>
+				<id>50</id>
+				<animation effect="fade" time="250" delay="0">WindowClose</animation>
+				<control>
+					<description>listcontrol</description>
+					<type>listcontrol</type>
+					<id>50</id>
+					<onleft>2</onleft>
+					<onright>2</onright>
+					<textcolor3>ffa9d0f7</textcolor3>
+					<textXOff3>22</textXOff3>
+					<posX>72</posX>
+					<posY>231</posY>
+					<height>730</height>
+					<textureFocus>list_wide_focus.png</textureFocus>
+					<width>1008</width>
+					<IconXOff>2000</IconXOff>
+					<spinPosX>2000</spinPosX>
+					<spinCanFocus>no</spinCanFocus>
+					<animation effect="slide" start="0" end="335" tween="back" ease="easeout" time="300" reversible="false">unfocus</animation>
+					<animation effect="slide" start="335" end="0" tween="back" ease="easeout" time="300" reversible="false">focus</animation>
+				</control>
+				<control>
+					<visible>control.isvisible(50)</visible>
+					<description>Filmstrip</description>
+					<type>filmstrip</type>
+					<id>50</id>
+					<onup>2</onup>
+					<posX>70</posX>
+					<posY>745</posY>
+					<width>1850</width>
+					<textXOff>0</textXOff>
+					<textYOff>1500</textYOff>
+					<scrollOffset>3</scrollOffset>
+					<spinPosX>2100</spinPosX>
+					<spinCanFocus>no</spinCanFocus>
+					<itemWidth>365</itemWidth>
+					<itemHeight>180</itemHeight>
+					<textureWidth>320</textureWidth>
+					<textureHeight>180</textureHeight>
+					<thumbWidth>320</thumbWidth>
+					<thumbHeight>180</thumbHeight>
+					<thumbPosX>0</thumbPosX>
+					<thumbPosY>0</thumbPosY>
+					<thumbZoom>yes</thumbZoom>
+					<font>font2</font>
+					<InfoImage/>
+					<imageFolder>-</imageFolder>
+					<imageFolderFocus>-</imageFolderFocus>
+					<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="pic_thumb_frame_mask.png"/>
+					<InfoImage flipY="true" diffuse="Thumb_Mask.png" mask="pic_thumb_frame_mask.png"/>
+					<unfocusedAlpha>255</unfocusedAlpha>
+					<frame>fanart_thumb_frame_focus.png</frame>
+					<frameFocus>fanart_thumb_frame_focus.png</frameFocus>
+					<showFrame>yes</showFrame>
+					<showFolder>yes</showFolder>
+					<showBackGround>no</showBackGround>
+					<showInfoImage>no</showInfoImage>
+					<scrollbarbg>scroll_bar_background.png</scrollbarbg>
+					<scrollbarLeft>scrollbar_bar_nib_left_hor.png</scrollbarLeft>
+					<scrollbarRight>scrollbar_bar_nib_right_hor.png</scrollbarRight>
+					<scrollbarwidth>1</scrollbarwidth>
+					<scrollbarYOff>416</scrollbarYOff>
+					<keepaspectratio>yes</keepaspectratio>
+					<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,860" time="200">focus</thumbAnimation>
+					<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,860" time="100">unfocus</thumbAnimation>				
+					<animation effect="slide" start="0" end="370"  tween="back" ease="easeout" time="300" reversible="false">unfocus</animation>
+					<animation effect="slide" start="370" end="0"  tween="back" ease="easeout" time="300" reversible="false">focus</animation>
+				</control>
+				<control>
+					<description>Thumbnail Panel</description>
+					<type>thumbnailpanel</type>
+					<id>50</id>
+					<dimColor>90ffffff</dimColor>
+					<onleft>2</onleft>
+					<onright>50</onright>				
+					<textureUp>-</textureUp>
+					<textureDown>-</textureDown>
+					<posX>70</posX>
+					<posY>200</posY>
+					<width>1850</width>
+					<height>800</height>
+					<scrollOffset>0</scrollOffset>
+					<itemWidth>225</itemWidth>
+					<itemHeight>126</itemHeight>
+					<textureWidth>210</textureWidth>
+					<textureHeight>120</textureHeight>
+					<thumbWidth>210</thumbWidth>
+					<thumbHeight>120</thumbHeight>
+					<thumbPosX>0</thumbPosX>
+					<thumbPosY>0</thumbPosY>
+					<itemWidthBig>365</itemWidthBig>
+					<itemHeightBig>190</itemHeightBig>
+					<textureWidthBig>320</textureWidthBig>
+					<textureHeightBig>180</textureHeightBig>
+					<thumbWidthBig>320</thumbWidthBig>
+					<thumbHeightBig>180</thumbHeightBig>
+					<thumbPosXBig>0</thumbPosXBig>
+					<thumbPosYBig>0</thumbPosYBig>
+					<zoomXPixels>68</zoomXPixels>
+					<zoomYPixels>48</zoomYPixels>
+					<hideUnfocusTexture>yes</hideUnfocusTexture>
+					<renderFocusText>no</renderFocusText>
+					<renderUnfocusText>no</renderUnfocusText>
+					<showFrame>true</showFrame>
+					<thumbZoom>yes</thumbZoom>
+					<enableFocusZoom>no</enableFocusZoom>
+					<keepaspectratio>no</keepaspectratio>
+					<textureMask>fanart_thumb_frame_mask.png</textureMask>
+					<unfocusedAlpha>255</unfocusedAlpha>
+					<frameNoFocus>fanart_thumb_frame_focus.png</frameNoFocus>
+					<frameFocus>fanart_thumb_frame_focus.png</frameFocus>
+					<imageFolder>-</imageFolder>
+					<imageFolderFocus>-</imageFolderFocus>
+					<dimColor>ffffffff</dimColor>
+					<spinPosX>2500</spinPosX>
+					<spinCanFocus>no</spinCanFocus>
+					<keepaspectratio>yes</keepaspectratio>
+					<animation effect="slide" start="0" end="370"  tween="back" ease="easeout" time="300" reversible="false">unfocus</animation>
+					<animation effect="slide" start="370" end="0"  tween="back" ease="easeout" time="300" reversible="false">focus</animation>	
+				</control>
+			</control>   
+		</control>		
+
+		<!-- Hidden Menu -->
+		<control>
+			<type>actiongroup</type>
+			<description>action menu</description>
+			<defaultcontrol>2</defaultcontrol>
+			<onexit>50</onexit>
+			<buttonX>0</buttonX>
+			<buttonY>0</buttonY>
+			<buttonwidth>106</buttonwidth>
+			<buttonheight>720</buttonheight>		  
+			<width>568</width>
+			<height>900</height>
+			<dimColor>00ffffff</dimColor>
+			<control>
+				<type>image</type>
+				<posX>0</posX>
+				<posY>0</posY>
+				<width>400</width>
+				<height>998</height>
+				<texture>hidden_menu_short_background.png</texture>
+				<colorDiffuse>fffffffff</colorDiffuse>
+				<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>
+			<control>
+				<type>image</type>
+				<id>1</id>
+				<posX>272</posX>
+				<posY>60</posY>
+				<width>128</width>
+				<height>128</height>		  
+				<texture>logo_tvshows.png</texture>
+				<visible>!Control.HasFocus(50)+Control.IsVisible(50)</visible>		  
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>		 
+			<control>
+				<type>label</type>
+				<id>0</id>
+				<posX>370</posX>
+				<posY>178</posY>
+				<width>300</width>
+				<font>font3</font>
+				<label>#Trakt.Translation.WatchListEpisodes.Label</label>
+				<align>right</align>
+				<visible>!Control.HasFocus(50)+Control.IsVisible(50)</visible>		  
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>			
+			<control>
+				<description>group element</description>
+				<type>group</type>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+				<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+				<control>
+					<description>button group</description>
+					<type>group</type>
+					<posX>0</posX>
+					<posY>230</posY>
+					<layout>StackLayout(0, Vertical, true)</layout>
+					<visible>!Control.HasFocus(50)</visible>
+					<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+					<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+					<control>
+						<description>Change Layout</description>
+						<type>button</type>
+						<id>2</id>
+						<label>-</label>
+						<onup>21</onup>
+						<!-- Top Bar -->
+						<onright>50</onright>
+					</control>
+					<control>
+						<description>MovingPictures</description>
+						<id>66610</id>
+						<type>button</type>
+						<label>Moving Pictures</label>
+						<hyperlink>96742</hyperlink>
+						<onright>50</onright>
+					</control>
+					<control>
+						<description>My Videos</description>
+						<type>button</type>
+						<id>66611</id>
+						<label>100006</label>
+						<onright>50</onright>
+						<hyperlink>6</hyperlink>
+						<ondown>66612</ondown>
+					</control>
+					<control>
+						<description>MP-TVSeries</description>
+						<type>button</type>
+						<id>66612</id>
+						<label>MP-TVSeries</label>
+						<hyperlink>9811</hyperlink>
+						<ondown>2</ondown>
+						<onright>50</onright>
+					</control>				
+				</control>
+			</control>
+		</control>
+
+		<!-- Episode List Layout -->
+		<control>
+			<description>Episode Thumb Backround</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1315</posX>
+			<posY>234</posY>            
+			<width>550</width>
+			<height>368</height>
+			<texture>episode_thumb_background_reflect.png</texture>
+			<visible>Control.HasFocus(50)+!string.equals(#selectedthumb,)+facadeview.list</visible>
+		</control>	
+		<control>
+			<description>Big Episode Thumb</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>1345</posX>
+			<posY>264</posY>            
+			<width>490</width>
+			<height>277</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<zoom>yes</zoom>        
+			<texture>#selectedthumb</texture>
+			<visible>Control.HasFocus(50)+facadeview.list</visible>
+		</control>
+		<control>
+			<description>Episode Thumb Backround</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1315</posX>
+			<posY>234</posY>            
+			<width>550</width>
+			<height>368</height>
+			<texture>episode_thumb_background_overlay_reflect.png</texture>
+			<visible>Control.HasFocus(50)+!string.equals(#selectedthumb,)+facadeview.list</visible>
+		</control>
+		<control Style="DetailTitle">
+			<label>#Trakt.Translation.Season.Label #Trakt.Episode.Season</label>
+			<type>label</type>
+			<posX>1315</posX>
+			<posY>596</posY>
+			<width>150</width>
+			<visible>Control.HasFocus(50)+!String.Equals(#Trakt.Episode.Season,)+facadeview.list</visible>
+		</control>
+		<control Style="DetailText">
+			<label>#Trakt.Episode.Title</label>
+			<type>fadelabel</type>
+			<posX>1465</posX>
+			<posY>596</posY>
+			<width>445</width>
+			<visible>Control.HasFocus(50)+facadeview.list</visible>
+		</control>
+		<control Style="DetailTextDroid">
+			<description>Episode Plot</description>
+			<type>textboxscrollup</type>
+			<id>631</id>
+			<posX>1315</posX>
+			<posY>662</posY>
+			<width>570</width>
+			<height>235</height>
+			<seperator>-----------------------------------------------------------------------------------</seperator>
+			<label>#Trakt.Episode.Overview</label>
+			<scrollStartDelaySec>10</scrollStartDelaySec>
+			<visible>Control.HasFocus(50)+facadeview.list</visible>
+		</control>
+		<control Style="DetailText">
+			<description>Info Label</description>
+			<type>label</type>
+			<label>#Trakt.Show.Network | #Trakt.Show.AirDay | #Trakt.Show.AirTime | #Trakt.Show.Certification</label>
+			<posX>70</posX>
+			<posY>1030</posY>
+			<width>1000</width>
+			<align>left</align>
+			<visible>!String.Equals(#Trakt.Show.Network,)</visible>
+		</control>
+		<import>common.overlay.xml</import>
+	</controls>
+</window>

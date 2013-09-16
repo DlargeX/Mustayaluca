@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<controls>
+
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#SkinTranslation.Translations.media.playing.Label: #Youtube.fm.NowPlaying.Video.Title</label>
+			<visible>player.hasmedia+[Control.HasFocus(50)|Control.HasFocus(166)|Control.HasFocus(99910)|Control.HasFocus(99911)|Control.HasFocus(99912)|Control.HasFocus(99913)]</visible>
+		</control>
+
+		<control Style="BigTitle">
+			<description>play time label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1765</posX>
+			<posY>45</posY>
+			<width>400</width>
+			<align>right</align>
+			<label>#currentplaytime/#duration</label>
+			<visible>player.hasmedia</visible>
+		</control>
+
+		<control>
+			<description>play logo</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1775</posX>
+			<posY>42</posY>
+			<width>80</width>
+			<height>80</height>
+			<texture>np_play.png</texture>
+			<visible>player.hasmedia+player.playing+!player.recording</visible>
+		</control>
+
+		<control>
+			<description>pause logo</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1775</posX>
+			<posY>42</posY>
+			<width>80</width>
+			<height>80</height>
+			<texture>np_pause.png</texture>
+			<visible>player.hasmedia+player.paused+!player.recording</visible>
+		</control>
+
+		<control Style="Time">
+			<type>fadelabel</type>
+			<description>artist label</description>
+			<id>0</id>
+			<posX>1765</posX>
+			<posY>120</posY>
+			<label>#Youtube.fm.NowPlaying.Artist.Name</label>
+			<align>right</align>
+			<width>800</width>
+			<visible>player.hasmedia</visible>
+		</control>
+
+		<control>
+			<description>pause logo</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1775</posX>
+			<posY>1038</posY>
+			<width>80</width>
+			<height>80</height>
+			<texture>np_downloading.png</texture>
+			<visible>string.equals(#Youtube.fm.IsDownloading, true)</visible>
+		</control>
+
+		<control Style="DetailText">
+			<description>Downloading Video Title/Progress</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>1765</posX>
+			<posY>1030</posY>
+			<width>800</width>
+			<label>#Youtube.fm.Download.Item (#Youtube.fm.Download.Progress%)</label>	  
+			<visible>string.equals(#Youtube.fm.IsDownloading, true )</visible>
+		</control>
+
+	</controls>
+</window>

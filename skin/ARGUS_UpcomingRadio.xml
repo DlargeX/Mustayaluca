@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>49847</id>
+  <defaultcontrol>10</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:646</define>
+  <controls>
+  
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>0</id>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>backgrounds\music\plugins.jpg</texture>
+    </control>
+	
+    <import>common.window.recordings.list.xml</import>
+	
+    <!-- ************** HIDDEN MENU *****************  -->
+	
+		<control>
+			<type>actiongroup</type>
+			<description>action menu</description>
+			<defaultcontrol>2</defaultcontrol>
+			<onexit>50</onexit>
+			<buttonX>0</buttonX>
+			<buttonY>0</buttonY>
+			<buttonwidth>106</buttonwidth>
+			<buttonheight>720</buttonheight>		  
+			<width>568</width>
+			<height>900</height>
+			<dimColor>00ffffff</dimColor>
+			<control>
+				<type>image</type>
+				<posX>0</posX>
+				<posY>0</posY>
+				<width>400</width>
+				<height>998</height>
+				<texture>hidden_menu_short_background.png</texture>
+				<colorDiffuse>fffffffff</colorDiffuse>
+				<visible>!Control.HasFocus(10)+control.isvisible(10)</visible>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>
+			<control>
+				<type>image</type>
+				<posX>272</posX>
+				<posY>60</posY>
+				<width>128</width>
+				<height>128</height>		  
+				<texture>logo_radio.png</texture>
+				<visible>!Control.HasFocus(10)+Control.IsVisible(10)</visible>		  
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>		 
+			<control>
+				<type>label</type>
+				<posX>370</posX>
+				<posY>178</posY>
+				<width>300</width>
+				<font>font3</font>
+				<label>652</label>
+				<align>right</align>
+				<visible>!Control.HasFocus(10)+Control.IsVisible(10)</visible>		  
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>			
+			<control>
+				<description>group element</description>
+				<type>group</type>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+				<visible>!Control.HasFocus(10)+control.isvisible(10)</visible>
+				<control>
+					<description>button group</description>
+					<type>group</type>
+					<posX>0</posX>
+					<posY>230</posY>
+					<layout>StackLayout(0, Vertical, true)</layout>
+					<visible>!Control.HasFocus(10)</visible>
+					<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+					<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+		  
+		<control>
+			<description>Programm Type Button</description>
+			<type>button</type>
+			<id>2</id>
+			<label>Type:</label>
+			<onright>10</onright>
+			<onleft>10</onleft>
+			<onup>11</onup>
+			<ondown>12</ondown>
+		</control>
+    
+		<control>
+			<type>checkbutton</type>
+			<description>group by schedule</description>
+			<id>12</id>
+			<onleft>10</onleft>
+			<onright>10</onright>
+			<onup>2</onup>
+			<ondown>9</ondown>
+			<label>group by schedule</label>
+		</control>
+
+		<control>
+			<type>sortbutton</type>
+			<id>9</id>
+			<onleft>10</onleft>
+			<onright>10</onright>
+			<onup>12</onup>
+			<ondown>11</ondown>
+			<label>620</label>
+		</control>
+
+		<control>
+			<type>button</type>
+			<description>new</description>
+			<id>11</id>
+			<onleft>10</onleft>
+			<onright>10</onright>
+			<onup>9</onup>
+			<ondown>2</ondown>
+			<label>617</label>
+		</control>
+			</control>
+		</control>
+	</control>	
+	
+		<control>
+			<description>upcoming episodes listcontrol</description>
+			<type>listcontrol</type>
+			<id>10</id>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<posX>72</posX>
+			<posY>231</posY>       
+			<height>730</height>
+			<textureFocus>list_wider_focus.png</textureFocus>
+			<width>1222</width>			
+			<IconXOff>2000</IconXOff>  
+			<spinPosX>2000</spinPosX>
+			<spinCanFocus>no</spinCanFocus>
+			<textXOff>-20</textXOff>
+			<textYOff>18</textYOff>
+			<textXOff2>1100</textXOff2>
+			<textYOff2>18</textYOff2>
+			<textXOff3>700</textXOff3>
+			<textYOff3>20</textYOff3>
+			<PinIconXOff>1130</PinIconXOff>
+			<PinIconYOff>17</PinIconYOff>
+			<PinIconWidth>120</PinIconWidth>
+			<PinIconHeight>34</PinIconHeight>
+			<animation effect="slide" start="0" end="335"  tween="back" ease="easeout" time="300" reversible="false">unfocus</animation>
+			<animation effect="slide" start="335" end="0"  tween="back" ease="easeout" time="300" reversible="false">focus</animation>
+		</control>
+	
+		<control>
+			<type>image</type>
+			<posX>1310</posX>
+			<posY>255</posY>
+			<width>90</width>
+			<height>90</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<centered>yes</centered>
+			<zoom>no</zoom>
+			<texture>#selectedthumb</texture>
+			<visible>Control.HasFocus(10)</visible>			  
+		</control>
+
+		<control Style="Time">
+			<description>Current program Title</description>
+			<type>label</type>
+			<id>13</id>
+			<posX>-2000</posX>
+			<posY>253</posY>
+			<label>#Radio.Upcoming.Title</label>
+			<visible>Control.HasFocus(10)</visible>					
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>
+		</control>
+	
+		<control Style="Time">
+			<description>Current channel</description>
+			<type>label</type>
+			<id>16</id>
+			<posX>-2000</posX>
+			<posY>253</posY>
+			<label>#Radio.Upcoming.Channel</label>
+			<visible>Control.HasFocus(10)</visible>			  
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>
+		</control>
+	
+		<control Style="Time">
+			<description>Current program genre</description>
+			<type>label</type>
+			<id>17</id>
+			<posX>1420</posX>
+			<posY>320</posY>
+			<width>490</width>
+			<label>#Radio.Upcoming.Genre</label>
+			<visible>Control.HasFocus(10)</visible>			  
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+	
+		<control Style="Time">
+			<description>Current program time</description>
+			<id>14</id>
+			<type>label</type>
+			<posX>1420</posX>
+			<posY>285</posY>
+			<width>490</width>
+			<label>#Radio.Upcoming.Time</label>
+			<visible>Control.HasFocus(10)</visible>			  
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+	
+		<control Style="DetailTextDroid">
+			<description>Description1</description>
+			<type>textboxscrollup</type>
+			<id>15</id>
+			<posX>1310</posX>
+			<posY>385</posY>
+			<width>600</width>
+			<height>445</height>
+			<seperator>-----------------------------------------------------------------------------------</seperator>
+			<label>#Radio.Upcoming.Description</label>
+			<scrollStartDelaySec>10</scrollStartDelaySec>
+			<visible>Control.HasFocus(10)</visible>			  
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+	
+    <import>common.overlay.xml</import>
+	
+  </controls>
+</window>

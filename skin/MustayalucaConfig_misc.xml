@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<id>1196203</id>
+	<defaultcontrol>9</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#defaultcontrol:9</define>
+	<controls>
+
+		<import>common.settings.xml</import>
+
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#Mustayaluca.SkinSettings - Misc</label>
+			<visible>!player.hasmedia</visible>
+		</control>
+
+		<control>
+			<description>button group</description>
+			<type>group</type>
+			<posX>0</posX>
+			<posY>230</posY>
+			<layout>StackLayout(0, Vertical, true)</layout>
+			<control>
+				<type>button</type>
+				<description>Back</description>
+				<id>100</id>
+				<action>10</action>
+				<label>712</label>
+			</control>
+		</control>
+
+		<control>
+			<type>group</type>
+			<description>group element</description>
+			<posX>400</posX>
+			<posY>230</posY>
+			<layout>StackLayout(0, Vertical, true)</layout>
+			<!--<control Style="SettingsToggleWide">
+				<description>Enable/Disable Hidden Menu Image</description>
+				<type>checkbutton</type>
+				<id>2</id>
+				<onleft>100</onleft>
+				<onup>17</onup>
+				<ondown>3</ondown>
+			</control>
+			<control Style="SettingsToggleWide">
+				<description>Enable/Disable Rounded Poster Images</description>
+				<type>checkbutton</type>
+				<id>3</id>
+				<onleft>100</onleft>
+				<onup>2</onup>
+				<ondown>4</ondown>
+			</control>
+			<control Style="SettingsToggleWide">
+				<description>Enable/Disable Watched/Unwatched Icons in Artwork</description>
+				<type>checkbutton</type>
+				<id>4</id>
+				<onleft>100</onleft>
+				<onup>3</onup>
+				<ondown>5</ondown>
+			</control>
+			<control Style="SettingsToggleWide">
+				<description>Enable 123 Play behaviour for Recently Added on BasicHome screen</description>
+				<type>checkbutton</type>
+				<id>5</id>
+				<onleft>100</onleft>
+				<onup>4</onup>
+				<ondown>6</ondown>
+			</control>
+			<control Style="SettingsToggleWide">
+				<description>Fitler Watched Episodes in Recently Added</description>
+				<type>checkbutton</type>
+				<id>6</id>
+				<onleft>100</onleft>
+				<onup>5</onup>
+				<ondown>7</ondown>
+			</control>
+			<control Style="SettingsToggleWide">
+				<description>Use Large Fonts</description>
+				<type>checkbutton</type>
+				<id>7</id>
+				<onleft>100</onleft>
+				<onup>6</onup>
+				<ondown>8</ondown>
+			</control>
+			<control Style="SettingsButtonWide">
+				<description>Transparency/Opacity Settings</description>
+				<type>button</type>
+				<id>8</id>
+				<onleft>100</onleft>
+				<onup>7</onup>
+				<ondown>9</ondown>
+			</control>-->
+			<control Style="SettingsButtonWide">
+				<description>List Colors</description>
+				<type>button</type>
+				<id>9</id>
+				<onleft>100</onleft>
+				<onup>8</onup>
+				<ondown>2</ondown>
+			</control>
+		</control>
+		
+		<import>common.overlay.home.xml</import>
+		
+	</controls>
+</window>

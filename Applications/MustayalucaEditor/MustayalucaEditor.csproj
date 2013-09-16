@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB503792-BF10-4A59-AEF8-F753CC4F44E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MustayalucaEditor</RootNamespace>
+    <AssemblyName>MustayalucaEditor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Resources\Configuration_32512.ico</ApplicationIcon>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <StartupObject>
+    </StartupObject>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Utils">
+      <HintPath>..\Externals\Common.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Core, Version=1.1.0.16045, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Externals\Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Databases">
+      <HintPath>..\Externals\Databases.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Externals\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MediaPortal.Support, Version=1.1.0.16039, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Externals\MediaPortal.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="MP-TVSeries">
+      <HintPath>..\Externals\MP-TVSeries.dll</HintPath>
+    </Reference>
+    <Reference Include="OnlineVideos">
+      <HintPath>..\Externals\OnlineVideos.dll</HintPath>
+    </Reference>
+    <Reference Include="SMPCheckSum, Version=1.5.0.2569, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PluginDependencies\SMPCheckSum.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Data.DataSetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.XML.dll</HintPath>
+    </Reference>
+    <Reference Include="Utils, Version=2.2.7.16040, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Externals\Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowPlugins">
+      <HintPath>..\Externals\WindowPlugins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Custom Controls\ColorSlider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\ColorSlider.designer.cs">
+      <DependentUpon>ColorSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="getButtonTexture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="getButtonTexture.Designer.cs">
+      <DependentUpon>getButtonTexture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="imagehandling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadMenuSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicHomeWriter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="functions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectHardDrives.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectHardDrives.Designer.cs">
+      <DependentUpon>SelectHardDrives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="showButtonTheme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showButtonTheme.Designer.cs">
+      <DependentUpon>showButtonTheme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MustayalucaEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MustayalucaEditor.Designer.cs">
+      <DependentUpon>MustayalucaEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Custom Controls\ColorSlider.resx">
+      <DependentUpon>ColorSlider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="getButtonTexture.resx">
+      <DependentUpon>getButtonTexture.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectHardDrives.resx">
+      <DependentUpon>SelectHardDrives.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showButtonTheme.resx">
+      <DependentUpon>showButtonTheme.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MustayalucaEditor.resx">
+      <DependentUpon>MustayalucaEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="webaccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="rtfFiles\style4.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SubItemPropertiesDialog.resx">
+      <DependentUpon>SubItemPropertiesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mostRecentDisplaySelection.resx">
+      <DependentUpon>mostRecentDisplaySelection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mrMovPicsSummaryOptions.resx">
+      <DependentUpon>mrMovPicsSummaryOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mrTVSeriesFormatOptions.resx">
+      <DependentUpon>mrTVSeriesFormatOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubMenuDesigner.resx">
+      <DependentUpon>SubMenuDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xmlFiles\AeonBasicHomeDefault.xml" />
+    <EmbeddedResource Include="xmlFiles\HBasicHomeSkeleton.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xmlFiles\QuickSelectList.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xmlFiles\VBasicHomeSkeleton.xml" />
+    <Content Include="Resources\colorDialog.png" />
+    <Content Include="Resources\Configuration_32512.ico" />
+    <Content Include="Resources\down.png" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Resources\menuStyle31.jpg" />
+    <None Include="Resources\menuStyle41.jpg" />
+    <None Include="Resources\menuStyle1.jpg" />
+    <None Include="Resources\menuStyle2.jpg" />
+    <EmbeddedResource Include="rtfFiles\style1.rtf" />
+    <None Include="Resources\style6.png" />
+    <None Include="Resources\style7.png" />
+    <None Include="Resources\style8.png" />
+    <None Include="Resources\style5.png" />
+    <None Include="Properties\VersionInfo.cs.tmpl" />
+    <Compile Include="BHHorizontalWriter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BHSubMenuWriterH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="isMostRecentOverlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubItemPropertiesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubItemPropertiesDialog.Designer.cs">
+      <DependentUpon>SubItemPropertiesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mostRecentDisplaySelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mostRecentDisplaySelection.Designer.cs">
+      <DependentUpon>mostRecentDisplaySelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mrMovPicsSummaryOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mrMovPicsSummaryOptions.Designer.cs">
+      <DependentUpon>mrMovPicsSummaryOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mrTVSeriesFormatOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mrTVSeriesFormatOptions.Designer.cs">
+      <DependentUpon>mrTVSeriesFormatOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\VersionInfo.cs" />
+    <Compile Include="SkinInfo.cs" />
+    <Compile Include="SkinOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spashscreenSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubMenuDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubMenuDesigner.Designer.cs">
+      <DependentUpon>SubMenuDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WriteOverlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="rtfFiles\introduction.rtf" />
+    <EmbeddedResource Include="rtfFiles\style3.rtf" />
+    <EmbeddedResource Include="rtfFiles\style2.rtf" />
+    <EmbeddedResource Include="Resources\SMPEditor.png" />
+    <EmbeddedResource Include="Resources\SMPEditorDisabled.png" />
+    <None Include="Resources\menuStyleGraphical.jpg" />
+    <None Include="Resources\slider.png" />
+    <EmbeddedResource Include="previews\movingpictures_fanart.jpg" />
+    <EmbeddedResource Include="previews\movingpictures_plot.jpg" />
+    <EmbeddedResource Include="previews\music_style1.jpg" />
+    <EmbeddedResource Include="previews\music_style2.jpg" />
+    <EmbeddedResource Include="previews\tvseries_fanart.jpg" />
+    <EmbeddedResource Include="previews\tvseries_plot.jpg" />
+    <Content Include="Resources\up.png" />
+    <EmbeddedResource Include="xmlFiles\defaultusermenuprofile.xml" />
+    <EmbeddedResource Include="xmlFiles\usermenuprofile.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>subwcrev "$(SolutionDir)..\." "$(ProjectDir)Properties\VersionInfo.cs.tmpl" "$(ProjectDir)Properties\VersionInfo.cs"</PreBuildEvent>
+  </PropertyGroup>
+</Project>

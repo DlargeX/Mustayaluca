@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Music Search translation file -->
+<!-- English (US) -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<strings>
+  <!-- A -->
+  
+  <!-- B -->
+  
+  <!-- C -->
+  <string Field="ClearPlaylist">Clear playlist?</string>
+  <string Field="CaseSensitive">Case Sensitive</string>
+  
+  <!-- D -->
+ 
+  <!-- E -->
+ 
+  <!-- F -->
+  <string Field="FileNotFound">File not found!</string>
+  
+  <!-- G -->
+ 
+  <!-- H -->
+  
+  <!-- I -->
+  
+  <!-- K -->
+  
+  <!-- J -->
+  
+  <!-- L -->
+  
+  <!-- M -->
+  <string Field="MusicSearch">Music Search</string>
+  
+  <!-- N -->
+  <string Field="NoSearchResultsFound">No search results were found! Try refining your search.</string>
+  
+  <!-- O -->
+  
+  <!-- P -->
+  <string Field="PleaseWait">Please wait...</string>
+  <string Field="PluginDescription">Find everything music related in your MP Database</string>
+  
+  <!-- R -->
+  
+  <!-- S -->
+  <string Field="SearchFailed">Search failed!</string>
+  <string Field="SelectSearchFields">Select search fields</string>
+  <string Field="SearchPhrase">Search Phrase</string>
+  <string Field="SearchHistory">Search History</string>
+  <string Field="SearchFields">Search Fields</string>
+  <string Field="SearchType">Search Type</string>
+  <string Field="SearchMusic">Search Music</string>
+  <string Field="SearchTypeEquals">Equals</string>
+  <string Field="SearchTypeStarts">Starts With</string>
+  <string Field="SearchTypeContains">Contains</string>
+  <string Field="SearchTypeEnds">Ends With</string>
+  
+  <!-- T -->
+  
+  <!-- U -->
+  
+  <!-- V -->
+  
+  <!-- W -->
+  
+  <!-- Y -->  
+  
+</strings>

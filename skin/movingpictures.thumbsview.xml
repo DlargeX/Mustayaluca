@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This file should contain the list view
+-->
+<window>
+	<controls>
+
+		<control Style="BigTitle">
+			<description>Movie Title</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#MovingPictures.SelectedMovie.title</label>
+			<visible>[facadeview.smallicons|facadeview.largeicons]+control.isvisible(50)+Control.HasFocus(50)+!player.hasmedia</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Selected Movie Index</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1850</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<align>right</align>
+			<label>#MovingPictures.SelectedIndex/#MovingPictures.general.filteredmoviecount</label>
+			<visible>[facadeview.smallicons|facadeview.largeicons]+control.isvisible(50)+!player.hasmedia</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<!-- <control Style="DetailText">
+			<description>Movie Count</description>
+			<type>label</type>
+			<label>#SkinTranslation.Translations.movie.filter.Label: #MovingPictures.SelectedNode.FileFriendlyName</label>
+			<posX>1850</posX>
+			<posY>1030</posY>
+			<width>800</width>
+			<align>right</align>
+			<visible>[facadeview.smallicons|facadeview.largeicons]+control.isvisible(50)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control> -->
+
+		<control Style="DetailText">
+			<description>IMDB Label</description>
+			<type>label</type>
+			<label>IMDB:</label>
+			<posX>70</posX>
+			<posY>1030</posY>
+			<width>800</width>
+			<align>left</align>
+			<visible>[facadeview.smallicons|facadeview.largeicons]+control.isvisible(50)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control>
+			<description>IMDB Stars</description>
+			<type>image</type>
+			<posX>150</posX>
+			<posY>1030</posY>      
+			<width>151</width>
+			<height>32</height>		  
+			<align>left</align>
+			<texture>logos/rating/#MovingPictures.SelectedMovie.score.invariant.png</texture>
+			<visible>[facadeview.smallicons|facadeview.largeicons]+control.isvisible(50)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control Style="DetailText">
+			<description>Movie Details Label</description>
+			<type>label</type>
+			<label>| #MovingPictures.SelectedMovie.runtime.localized.long | #MovingPictures.SelectedMovie.year | #MovingPictures.SelectedMovie.genres</label>
+			<posX>315</posX>
+			<posY>1030</posY>
+			<width>1100</width>
+			<align>left</align>
+			<visible>[facadeview.smallicons|facadeview.largeicons]+control.isvisible(50)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+	</controls>
+</window>

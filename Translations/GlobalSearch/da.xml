@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Music Search translation file -->
+<!-- Danish (DA) -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<strings>
+  <!-- A -->
+  
+  <!-- B -->
+  
+  <!-- C -->
+  <string Field="ClearPlaylist">Tøm playliste?</string>
+  <string Field="CaseSensitive">Case Sensitive</string>
+  
+  <!-- D -->
+ 
+  <!-- E -->
+ 
+  <!-- F -->
+  <string Field="FileNotFound">Filen blev ikke fundet!</string>
+  
+  <!-- G -->
+ 
+  <!-- H -->
+  
+  <!-- I -->
+  
+  <!-- K -->
+  
+  <!-- J -->
+  
+  <!-- L -->
+  
+  <!-- M -->
+  <string Field="MusicSearch">Musiksøgning</string>
+  
+  <!-- N -->
+  <string Field="NoSearchResultsFound">Ingen søgeresultater blev fundet! Prøv at søge på noget tilsvarende.</string>
+  
+  <!-- O -->
+  
+  <!-- P -->
+  <string Field="PleaseWait">Vent venligst...</string>
+  <string Field="PluginDescription">Finder alt musikrelateret i MP databasen</string>
+  
+  <!-- R -->
+  
+  <!-- S -->
+  <string Field="SearchFailed">Søgning mislykkedes!</string>
+  <string Field="SelectSearchFields">Vælg søgefelter</string>
+  <string Field="SearchPhrase">Søgeord</string>
+  <string Field="SearchHistory">Historik</string>
+  <string Field="SearchFields">Søgefelter</string>
+  <string Field="SearchType">Søgetype</string>
+  <string Field="SearchMusic">Søg musik</string>
+  <string Field="SearchTypeEquals">Lig</string>
+  <string Field="SearchTypeStarts">Starter med</string>
+  <string Field="SearchTypeContains">Indeholder</string>
+  <string Field="SearchTypeEnds">Slutter på</string>
+  
+  <!-- T -->
+  
+  <!-- U -->
+  
+  <!-- V -->
+  
+  <!-- W -->
+  
+  <!-- Y -->  
+  
+</strings>

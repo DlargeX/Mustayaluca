@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>9814</id>
+	<defaultcontrol>10</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+		<import>common.dialog.xml</import>
+
+		<!-- Star Controls -->
+		<control>
+			<description>1 Star</description>
+			<type>checkbutton</type>
+			<id>100</id>
+			<posX>640</posX>
+			<posY>545</posY>
+			<width>32</width>
+			<height>32</height>
+			<onup>101</onup>
+			<textureFocus>star.png</textureFocus>
+			<textureNoFocus>star.png</textureNoFocus>
+			<AltTextureFocus>greystar.png</AltTextureFocus>
+			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+		</control>
+
+		<control>
+			<description>2 Star</description>
+			<type>checkbutton</type>
+			<id>101</id>
+			<posX>680</posX>
+			<posY>545</posY>
+			<width>32</width>
+			<height>32</height>
+			<onup>102</onup>
+			<textureFocus>star.png</textureFocus>
+			<textureNoFocus>star.png</textureNoFocus>
+			<AltTextureFocus>greystar.png</AltTextureFocus>
+			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+		</control>
+
+		<control>
+			<description>3 Star</description>
+			<type>checkbutton</type>
+			<id>102</id>
+			<posX>720</posX>
+			<posY>545</posY>
+			<width>32</width>
+			<height>32</height>
+			<onup>103</onup>
+			<textureFocus>star.png</textureFocus>
+			<textureNoFocus>star.png</textureNoFocus>
+			<AltTextureFocus>greystar.png</AltTextureFocus>
+			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+		</control>
+
+		<control>
+			<description>4 Star</description>
+			<type>checkbutton</type>
+			<id>103</id>
+			<posX>760</posX>
+			<posY>545</posY>
+			<width>32</width>
+			<height>32</height>
+			<onup>104</onup>
+			<textureFocus>star.png</textureFocus>
+			<textureNoFocus>star.png</textureNoFocus>
+			<AltTextureFocus>greystar.png</AltTextureFocus>
+			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+		</control>
+
+		<control>
+			<description>5 Star</description>
+			<type>checkbutton</type>
+			<id>104</id>
+			<posX>800</posX>
+			<posY>545</posY>
+			<width>32</width>
+			<height>32</height>
+			<onup>105</onup>
+			<textureFocus>star.png</textureFocus>
+			<textureNoFocus>star.png</textureNoFocus>
+			<AltTextureFocus>greystar.png</AltTextureFocus>
+			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+		</control>
+
+		<control>
+			<description>6 Star</description>
+			<type>checkbutton</type>
+			<id>105</id>
+			<posX>840</posX>
+			<posY>545</posY>
+			<width>32</width>
+			<height>32</height>
+			<onup>106</onup>
+			<textureFocus>star.png</textureFocus>
+			<textureNoFocus>star.png</textureNoFocus>
+			<AltTextureFocus>greystar.png</AltTextureFocus>
+			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+		</control>
+
+		<control>
+			<description>7 Star</description>
+			<type>checkbutton</type>
+			<id>106</id>
+			<posX>880</posX>
+			<posY>545</posY>
+			<width>32</width>
+			<height>32</height>
+			<onup>107</onup>
+			<textureFocus>star.png</textureFocus>
+			<textureNoFocus>star.png</textureNoFocus>
+			<AltTextureFocus>greystar.png</AltTextureFocus>
+			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+		</control>
+
+		<control>
+			<description>8 Star</description>
+			<type>checkbutton</type>
+			<id>107</id>
+			<posX>920</posX>
+			<posY>545</posY>
+			<width>32</width>
+			<height>32</height>
+			<onup>108</onup>
+			<textureFocus>star.png</textureFocus>
+			<textureNoFocus>star.png</textureNoFocus>
+			<AltTextureFocus>greystar.png</AltTextureFocus>
+			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+		</control>
+
+		<control>
+			<description>9 Star</description>
+			<type>checkbutton</type>
+			<id>108</id>
+			<posX>960</posX>
+			<posY>545</posY>
+			<width>32</width>
+			<height>32</height>
+			<onup>109</onup>
+			<textureFocus>star.png</textureFocus>
+			<textureNoFocus>star.png</textureNoFocus>
+			<AltTextureFocus>greystar.png</AltTextureFocus>
+			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+		</control>
+
+		<control>
+			<description>10 Star</description>
+			<type>checkbutton</type>
+			<id>109</id>
+			<posX>1000</posX>
+			<posY>545</posY>
+			<width>32</width>
+			<height>32</height>
+			<textureFocus>star.png</textureFocus>
+			<textureNoFocus>star.png</textureNoFocus>
+			<AltTextureFocus>greystar.png</AltTextureFocus>
+			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+		</control>
+
+		<control Style="DetailTextLight">
+			<description>Selected Rating</description>
+			<type>label</type>
+			<id>7</id>
+			<posX>640</posX>
+			<posY>585</posY>
+			<width>630</width>	
+		</control>
+
+	</controls>
+</window>

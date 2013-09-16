@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>87264</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:#Trakt.Translation.Trending.Label</define>
+	<define>#defaultcontrol:2</define>
+	<define>#defaultcontrol.onright:9994</define>
+	<controls>
+		<import>Trakt.Common.xml</import>
+		<control>
+			<type>button</type>
+			<description>Trending Movies</description>
+			<id>2</id>
+			<label>#Trakt.Translation.TrendingMovies.Label</label>
+			<hyperlink>87266</hyperlink>
+			<onup>17</onup>
+			<onright>#defaultcontrol.onright</onright>
+			<posX>402</posX>
+			<posY>231</posY>
+			<width>664</width>
+			<textalign>left</textalign>
+			<textureFocus>list_narrow_focus.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<height>67</height>
+		</control>
+		<control>
+			<description>Trending Shows</description>
+			<type>button</type>
+			<id>3</id>
+			<label>#Trakt.Translation.TrendingShows.Label</label>
+			<hyperlink>87265</hyperlink>
+			<onright>#defaultcontrol.onright</onright>
+			<posX>402</posX>
+			<posY>300</posY>
+			<width>664</width>
+			<textalign>left</textalign>
+			<textureFocus>list_narrow_focus.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<height>67</height>
+		</control>
+		<import>common.overlay.home.xml</import>
+	</controls>
+</window>

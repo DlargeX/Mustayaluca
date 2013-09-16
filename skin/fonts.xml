@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<fonts>
+	<!-- This file contains all the fonts used by the skin. Each font can be configured seperately and uses the
+       following format format:
+	<font>
+		<name>name of font used in the skin .xml files</name>
+		<filename>name of the font</filename>
+		<height>height of the font</height>
+		<bold>[yes|no]</bold>
+		<italic>[yes|no]</italic>
+		<start>start character (numeric) default : 0</start>
+		<end>end character (numeric) default : 255</end>
+	</font>
+  !-->
+	<font>
+		<name>font1</name>
+		<filename>ScoutCond Bold</filename>
+		<height>30</height>
+	</font>
+	<font>
+		<name>font2</name>
+		<filename>Scout Regular</filename>
+		<height>12</height>
+	</font>
+	<font>
+		<name>font3</name>
+		<filename>KasseUltraFLF</filename>
+		<height>9</height>
+	</font>
+	<font>
+		<name>font4</name>
+		<filename>KasseUltraFLF</filename>
+		<height>8</height>
+	</font>
+	<font>
+		<name>font5</name>
+		<filename>Scout Regular</filename>
+		<height>8</height>
+	</font>
+	<font>
+		<name>font6</name>
+		<filename>ScoutCond Bold</filename>
+		<height>25</height>
+	</font>
+	<font>
+		<name>font7</name>
+		<filename>ScoutCond Bold</filename>
+		<height>20</height>
+	</font>
+	<font>
+		<name>font8</name>
+		<filename>ScoutCond Bold</filename>
+		<height>16</height>
+	</font>
+	<font>
+		<name>font9</name>
+		<filename>ScoutCond Bold</filename>
+		<height>35</height>
+	</font>
+	<font>
+		<name>font10</name>
+		<filename>ScoutCond Bold</filename>
+		<height>60</height>
+	</font>
+	<font>
+		<name>font12</name>
+		<filename>Scout Regular</filename>
+		<height>10</height>
+	</font>
+	<font>
+		<name>font13</name>
+		<filename>Scout Regular</filename>
+		<height>8</height>
+	</font>
+	<font>
+		<name>font14</name>
+		<filename>Droid Sans</filename>
+		<height>12</height>
+	</font>
+	<font>
+		<name>font15</name>
+		<filename>Droid Sans</filename>
+		<height>10</height>
+	</font>
+	<font>
+		<name>font16</name>
+		<filename>Droid Sans</filename>
+		<height>8</height>
+	</font>
+		<font>
+		<name>menufont</name>
+		<filename>Aeon Main</filename>
+		<height>41</height>
+	</font>
+	<font>
+		<name>font17</name>
+		<filename>Scout Regular</filename>
+		<height>9</height>
+	</font>
+</fonts>

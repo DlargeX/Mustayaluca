@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<id>84623</id>
+	<defaultcontrol>500</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+
+	<controls>
+		<!-- 
+		This is the main subcentral skin file and should contain all screen elements that are common
+		to all views in the GUI. Anything that belongs only in a specific view should be placed in the
+		coorespodning subfile.
+		-->
+
+		<!-- Dummy Controls meant for visibility and status purposes. -->
+		<control>
+			<description>Visible when in the main view mode.</description>
+			<type>label</type>
+			<id>101</id>
+			<posX>-50</posX>
+			<posY>-50</posY>
+			<width>0</width>
+		</control>
+		<control>
+			<description>Visible when in the file view mode.</description>
+			<type>label</type>
+			<id>102</id>
+			<posX>-50</posX>
+			<posY>-50</posY>
+			<width>0</width>
+		</control>
+
+		<control>
+			<description>Visible when in the manual search mode.</description>
+			<type>label</type>
+			<id>103</id>
+			<posX>-50</posX>
+			<posY>-50</posY>
+			<width>0</width>
+		</control>
+
+		<control>
+			<description>Backdrop</description>
+			<type>image</type>
+			<id>500</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>#SubCentral.Search.Media.FanArt</texture>
+		</control>
+
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>0</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>backgrounds\pluginsbg\download.jpg</texture>
+			<visible>!Control.HasThumb(500)</visible>	
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background.png</texture>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_menu_full.png</texture>
+			<visible>!Control.IsVisible(103)</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_menu_full.png</texture>
+			<visible>Control.IsVisible(103)</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay Bar</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>998</posY>
+			<width>1920</width>
+			<height>82</height>
+			<texture>overlay_bar_bottom.png</texture>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#SkinTranslation.Translations.menu.subtitles.Label</label>
+			<visible>control.hasfocus(50)+!player.hasmedia</visible>
+		</control>		
+
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+			<visible>control.hasfocus(50)</visible>
+		</control>
+
+		<!-- Imports for various views of the GUI -->
+		<import>SubCentral.Main.xml</import>
+		<import>SubCentral.Search.xml</import>
+		<import>SubCentral.ModifySearch.xml</import>
+		<import>common.overlay.xml</import>
+
+		<control>
+			<type>actiongroup</type>
+			<description>action menu</description>
+			<defaultcontrol>202</defaultcontrol>
+			<onexit>50</onexit>
+			<buttonX>0</buttonX>
+			<buttonY>0</buttonY>
+			<buttonwidth>106</buttonwidth>
+			<buttonheight>720</buttonheight>		  
+			<width>568</width>
+			<height>900</height>
+			<dimColor>00ffffff</dimColor>
+			<control>
+				<type>image</type>
+				<posX>0</posX>
+				<posY>0</posY>
+				<width>400</width>
+				<height>998</height>
+				<texture>hidden_menu_short_background.png</texture>
+				<colorDiffuse>fffffffff</colorDiffuse>
+				<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>
+			<control>
+				<type>image</type>
+				<id>1</id>
+				<posX>272</posX>
+				<posY>60</posY>
+				<width>128</width>
+				<height>128</height>		  
+				<texture>logo_subtitles.png</texture>
+				<visible>!Control.HasFocus(50)+Control.IsVisible(50)</visible>		  
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>		 
+			<control>
+				<type>label</type>
+				<id>0</id>
+				<posX>370</posX>
+				<posY>178</posY>
+				<width>300</width>
+				<font>font3</font>
+				<label>#SkinTranslation.Translations.menu.subtitles.Label</label>
+				<align>right</align>
+				<visible>!Control.HasFocus(50)+Control.IsVisible(50)</visible>		  
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>			
+			<control>
+				<description>group element</description>
+				<type>group</type>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+				<visible>!Control.HasFocus(50)|control.hasfocus(500)</visible>
+				<control>
+					<description>button group</description>
+					<type>group</type>
+					<posX>0</posX>
+					<posY>230</posY>
+					<layout>StackLayout(0, Vertical, true)</layout>
+					<visible>!Control.HasFocus(50)|control.hasfocus(500)</visible>
+					<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+					<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+					<control>
+						<description>Cancel Button</description>
+						<type>button</type>
+						<id>202</id>
+						<label>Cancel</label>
+						<onup>21</onup>
+						<ondown>203</ondown>
+						<onleft>912</onleft>
+						<onright>50</onright>
+					</control>
+					<control>
+						<description>Languages Button</description>
+						<type>button</type>
+						<id>203</id>
+						<label>Languages</label>
+						<onup>202</onup>
+						<ondown>204</ondown>
+						<onleft>912</onleft>
+						<onright>50</onright>
+					</control>
+					<control>
+						<description>Modify Search Button</description>
+						<type>button</type>
+						<id>204</id>
+						<label>Modify search</label>
+						<onup>203</onup>
+						<ondown>206</ondown>
+						<onleft>912</onleft>
+						<onright>50</onright>
+					</control>
+					<control>
+						<description>Delete Subtitles Button</description>
+						<type>button</type>
+						<id>206</id>
+						<label>Delete subtitles</label>
+						<onup>204</onup>
+						<ondown>205</ondown>
+						<onleft>912</onleft>
+						<onright>50</onright>
+					</control>
+					<control>
+						<description>Sort</description>
+						<type>sortbutton</type>
+						<id>205</id>
+						<label>Sort</label>
+						<onup>206</onup>
+						<ondown>202</ondown>
+						<onleft>912</onleft>
+						<onright>50</onright>
+					</control>
+					<control>
+						<description>MPEIUPDATE:f8f30e5e_cc8a_44a0_91a9_1175fe55732f</description>
+						<type>button</type>  
+						<id>98</id>  
+						<label>#MPEI.Translation.Update.Label</label> 
+						<ondown>98</ondown> 
+						<onup>9</onup>
+						<onleft>912</onleft>
+						<onright>50</onright>
+						<hyperlink>801</hyperlink>
+						<hyperlinkParameter>view:updates</hyperlinkParameter>
+						<visible>string.equals(#mpei.f8f30e5e_cc8a_44a0_91a9_1175fe55732f.haveupdate, true)</visible> 
+					</control>
+				</control>
+			</control>
+		</control>
+		<control>  
+			<description>Update Indicator</description>   
+			<type>image</type>   
+			<id>0</id>  
+			<posX>808</posX>  
+			<posY>961</posY> 
+			<width>304</width>   
+			<height>79</height>   
+			<texture>update_available.png</texture>
+			<animation effect="fade" time="1500">windowopen</animation>
+			<animation effect="fade" time="1000">visiblechange</animation>
+			<visible>string.equals(#mpei.f8f30e5e_cc8a_44a0_91a9_1175fe55732f.haveupdate, true)+!control.hasfocus(98)</visible>
+		</control>
+	</controls>
+</window>

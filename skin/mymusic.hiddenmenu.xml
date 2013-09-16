@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<controls>
+
+		<control>
+			<type>actiongroup</type>
+			<description>action menu</description>
+			<defaultcontrol>2</defaultcontrol>
+			<onexit>50</onexit>
+			<buttonX>0</buttonX>
+			<buttonY>0</buttonY>
+			<buttonwidth>106</buttonwidth>
+			<buttonheight>720</buttonheight>		  
+			<width>568</width>
+			<height>900</height>
+			<dimColor>00ffffff</dimColor>
+			<control>
+				<type>image</type>
+				<posX>0</posX>
+				<posY>0</posY>
+				<width>400</width>
+				<height>998</height>
+				<texture>hidden_menu_short_background.png</texture>
+				<colorDiffuse>fffffffff</colorDiffuse>
+				<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>
+			<control>
+				<type>image</type>
+				<posX>272</posX>
+				<posY>60</posY>
+				<width>128</width>
+				<height>128</height>		  
+				<texture>logo_music.png</texture>
+				<visible>!Control.HasFocus(50)+Control.IsVisible(50)</visible>		  
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>		 
+			<control>
+				<type>label</type>
+				<posX>370</posX>
+				<posY>178</posY>
+				<width>350</width>
+				<font>font3</font>
+				<label>#(L(2))/#(L(134))</label>
+				<align>right</align>
+				<visible>!Control.HasFocus(50)+Control.IsVisible(50)</visible>		  
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>			
+			<control>
+				<description>group element</description>
+				<type>group</type>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+				<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+				<control>
+					<description>button group</description>
+					<type>group</type>
+					<posX>0</posX>
+					<posY>230</posY>
+					<layout>StackLayout(0, Vertical, true)</layout>
+					<visible>!Control.HasFocus(50)</visible>
+					<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+					<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+					<control>
+						<description>View-As</description>
+						<type>menubutton</type>
+						<id>2</id>
+						<label></label>	
+						<mode>dialoglist</mode>				
+						<dialogTitle>792</dialogTitle> 					
+						<valueTextInButton>yes</valueTextInButton>
+						<valuePrefixText>95</valuePrefixText>	
+						<onright>50</onright>
+						<onup>17</onup>
+						<ondown>5</ondown>
+					</control>
+					
+					<control>
+						<description>Switch View</description>
+						<type>menubutton</type>
+						<id>5</id>
+						<label></label>
+						<mode>dialoglist</mode>
+						<dialogTitle>499</dialogTitle>
+						<valueTextInButton>yes</valueTextInButton>
+						<valuePrefixText>97</valuePrefixText>	
+						<onright>50</onright>
+						<onup>2</onup>
+						<ondown>3</ondown>
+					</control>
+					
+					<control>
+						<description>Sort</description>
+						<type>sortbutton</type>
+						<id>3</id>
+						<label>103</label>
+						<onright>50</onright>
+						<onup>5</onup>
+						<ondown>12</ondown>
+					</control>
+					
+					<control>
+						<description>Play CD</description>
+						<type>button</type>
+						<id>12</id>
+						<label>890</label>
+						<onright>50</onright>
+						<onup>3</onup>
+						<ondown>11</ondown>
+					</control>
+					
+					<control>
+						<description>Now playing</description>
+						<type>button</type>
+						<id>11</id>
+						<label>4540</label>
+						<hyperlink>510</hyperlink>
+						<onright>50</onright>
+						<onup>12</onup>
+						<ondown>9</ondown>
+					</control>
+					
+					<control>
+						<description>Current Playlist</description>
+						<type>button</type>
+						<id>9</id>
+						<label>4555</label>
+						<action>33</action>
+						<onright>50</onright>
+						<onup>11</onup>
+						<ondown>10</ondown>
+					</control>
+					
+					<control>
+						<description>My Playlists</description>
+						<type>button</type>
+						<id>10</id>
+						<label>983</label>
+						<onright>50</onright>
+						<onup>9</onup>
+						<ondown>105</ondown>
+					</control>
+					
+					<control>
+						<description>Search Button</description>
+						<type>button</type>
+						<id>105</id>
+						<hyperlink>30885</hyperlink>
+						<label>137</label>
+						<onright>50</onright>
+						<onup>10</onup>
+						<ondown>106</ondown>
+						<visible>plugin.isenabled(Search music)</visible>						
+					</control>
+					
+					<control>
+						<description>Lastfmbutton</description>
+						<type>button</type>
+						<id>106</id>
+						<hyperlink>7890</hyperlink>
+						<label>34000</label>
+						<onright>50</onright>
+						<onup>105</onup>
+						<ondown>13</ondown>
+					</control>
+					
+					<control>
+						<description>Lyricsbutton</description>
+						<type>button</type>
+						<id>13</id>
+						<hyperlink>90478</hyperlink>
+						<label>#SkinTranslation.Translations.lyrics.Label</label>
+						<onright>50</onright>
+						<onup>106</onup>
+						<ondown>2</ondown>
+						<visible>plugin.isenabled(My Lyrics)</visible>
+					</control>
+					
+				</control>
+			</control>
+		</control>
+	
+</controls>
+</window>

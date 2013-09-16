@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <controls>
+    <control>
+      <description>GROUP: Recently Added Movies</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <!-- CHANGE the ID value (represented as xxxx) of hasfocus(xxxx) to the value of the ID in basichome you want this to show.If you want it to show on multiple you can chain them like so; control.hasfocus(xxxx) + control.hasfocus(xxxx2) etc. -->
+      <visible>[control.isvisible(1005)]|control.hasfocus(91919991)|control.hasfocus(91919992)|control.hasfocus(91919993)</visible>
+      <animation effect="fade" time="150">WindowOpen</animation>
+      <animation effect="fade" time="150">WindowClose</animation>
+      <control>
+        <description>Recent movies 1 Background</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>672</posX>
+        <posY>420</posY>
+        <width>192</width>
+        <height>290</height>
+        <texture>recently_added_movies.png</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent movies 1 Thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>700</posX>
+        <posY>448</posY>
+        <width>136</width>
+        <height>200</height>
+        <texture>#latestMediaHandler.movingpicture.latest1.thumb</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent movies 1 Overlay</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>672</posX>
+        <posY>420</posY>
+        <width>192</width>
+        <height>290</height>
+        <texture>recently_added_movies_shine.png</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent movies 1 Rating</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>716</posX>
+        <posY>651</posY>
+        <width>104</width>
+        <height>22</height>
+        <texture>logos\rating\#latestMediaHandler.movingpicture.latest1.rating.png</texture>
+        <shouldCache>true</shouldCache>
+        <visible>!control.hasfocus(91919991)</visible>
+        <animation effect="fade" time="150">visiblechange</animation>
+        <animation effect="fade" time="150">WindowClose</animation>
+      </control>
+      <control>
+        <description>Recent movies 1 Info</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>699</posX>
+        <posY>651</posY>
+        <width>140</width>
+        <label>#latestMediaHandler.movingpicture.latest1.year - #latestMediaHandler.movingpicture.latest1.classification#latestMediaHandler.movingpicture.latest1.genre#latestMediaHandler.movingpicture.latest1.runtime</label>
+        <font>font5</font>
+        <textcolor>ffcdcccc</textcolor>
+        <scrollStartDelaySec>2</scrollStartDelaySec>
+        <scrollWrapString> | </scrollWrapString>
+        <visible>control.hasfocus(91919991)</visible>
+        <animation effect="fade" time="150">visiblechange</animation>
+        <animation effect="fade" time="150">WindowClose</animation>
+      </control>
+      <control>
+        <description>Recent movies 1 Button</description>
+        <type>button</type>
+        <id>91919991</id>
+        <posX>700</posX>
+        <posY>480</posY>
+        <width>136</width>
+        <height>136</height>
+        <textureFocus>recently_added_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <onup>160501</onup>
+        <ondown>1905</ondown>
+        <onright>91919992</onright>
+        <onleft>91919993</onleft>
+        <label>-</label>
+      </control>
+      <control>
+        <description>Recent movies 2 Background</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>864</posX>
+        <posY>420</posY>
+        <width>192</width>
+        <height>290</height>
+        <texture>recently_added_movies.png</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent movies 2 Thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>890</posX>
+        <posY>448</posY>
+        <width>136</width>
+        <height>200</height>
+        <texture>#latestMediaHandler.movingpicture.latest2.thumb</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent movies 2 Overlay</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>864</posX>
+        <posY>420</posY>
+        <width>192</width>
+        <height>290</height>
+        <texture>recently_added_movies_shine.png</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent movies 2 Rating</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>908</posX>
+        <posY>651</posY>
+        <width>104</width>
+        <height>22</height>
+        <texture>logos\rating\#latestMediaHandler.movingpicture.latest2.rating.png</texture>
+        <shouldCache>true</shouldCache>
+        <visible>!control.hasfocus(91919992)</visible>
+        <animation effect="fade" time="150">visiblechange</animation>
+        <animation effect="fade" time="150">WindowClose</animation>
+      </control>
+      <control>
+        <description>Recent movies 2 Info</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>891</posX>
+        <posY>651</posY>
+        <width>140</width>
+        <label>#latestMediaHandler.movingpicture.latest2.year - #latestMediaHandler.movingpicture.latest2.classification#latestMediaHandler.movingpicture.latest2.genre#latestMediaHandler.movingpicture.latest2.runtime</label>
+        <font>font5</font>
+        <textcolor>ffcdcccc</textcolor>
+        <scrollStartDelaySec>2</scrollStartDelaySec>
+        <scrollWrapString> | </scrollWrapString>
+        <visible>control.hasfocus(91919992)</visible>
+        <animation effect="fade" time="150">visiblechange</animation>
+        <animation effect="fade" time="150">WindowClose</animation>
+      </control>
+      <control>
+        <description>Recent movies 2 Button</description>
+        <type>button</type>
+        <id>91919992</id>
+        <posX>890</posX>
+        <posY>480</posY>
+        <width>136</width>
+        <height>136</height>
+        <textureFocus>recently_added_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <onup>160501</onup>
+        <ondown>1905</ondown>
+        <onright>91919993</onright>
+        <onleft>91919991</onleft>
+        <label>-</label>
+      </control>
+      <control>
+        <description>Recent movies 3 Background</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1056</posX>
+        <posY>420</posY>
+        <width>192</width>
+        <height>290</height>
+        <texture>recently_added_movies.png</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent movies 3 Thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1082</posX>
+        <posY>448</posY>
+        <width>136</width>
+        <height>200</height>
+        <texture>#latestMediaHandler.movingpicture.latest3.thumb</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent movies 3 Overlay</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1056</posX>
+        <posY>420</posY>
+        <width>192</width>
+        <height>290</height>
+        <texture>recently_added_movies_shine.png</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent movies 3 Rating</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1100</posX>
+        <posY>651</posY>
+        <width>104</width>
+        <height>22</height>
+        <texture>logos\rating\#latestMediaHandler.movingpicture.latest3.rating.png</texture>
+        <shouldCache>true</shouldCache>
+        <visible>!control.hasfocus(91919993)</visible>
+        <animation effect="fade" time="150">visiblechange</animation>
+        <animation effect="fade" time="150">WindowClose</animation>
+      </control>
+      <control>
+        <description>Recent movies 3 Info</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1082</posX>
+        <posY>651</posY>
+        <width>140</width>
+        <label>#latestMediaHandler.movingpicture.latest3.year - #latestMediaHandler.movingpicture.latest3.classification#latestMediaHandler.movingpicture.latest3.genre#latestMediaHandler.movingpicture.latest3.runtime</label>
+        <font>font5</font>
+        <textcolor>ffcdcccc</textcolor>
+        <scrollStartDelaySec>2</scrollStartDelaySec>
+        <scrollWrapString> | </scrollWrapString>
+        <visible>control.hasfocus(91919993)</visible>
+        <animation effect="fade" time="150">visiblechange</animation>
+        <animation effect="fade" time="150">WindowClose</animation>
+      </control>
+      <control>
+        <description>Recent movies 3 Button</description>
+        <type>button</type>
+        <id>91919993</id>
+        <posX>1082</posX>
+        <posY>480</posY>
+        <width>136</width>
+        <height>136</height>
+        <textureFocus>recently_added_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <onup>160501</onup>
+        <ondown>1905</ondown>
+        <onright>91919991</onright>
+        <onleft>91919992</onleft>
+        <label>-</label>
+      </control>
+    </control>
+  </controls>
+</window>
+<!--Checksum:369d878d96e438d7b1ef5e346fddbb8b-->

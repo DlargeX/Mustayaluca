@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Skin translation file -->
+<!-- English -->
+<!-- Last Updated: 8th April 2011 -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<!-- #SkinTranslation.Translations.FIELD.Label -->
+
+<strings>
+	<!-- # -->
+
+	<!-- A -->
+	<string Field="album.info">Album Information</string>
+	<string Field="artist.info">Artist Information</string>
+
+	<!-- B -->
+	<string Field="browse">Browse</string>
+
+	<!-- C -->
+
+	<!-- D -->
+
+	<!-- E -->
+
+	<!-- F -->
+	<string Field="file.details">File Details</string>
+	<string Field="file.name">File Name</string>
+	<string Field="file.size">File Size</string>
+	<string Field="fanart.scraping">Fanart Scraping</string>
+
+	<!-- G -->
+	<string Field="global.search.albuminfo">Music Search</string>
+	<string Field="global.search.Casesensitive">Case Sensitive</string>
+	<string Field="global.search.filename">Filename</string>
+	<string Field="global.search.lastplayed">Last played</string>
+	<string Field="global.search.musicsearch">Music Search</string>
+	<string Field="global.search.playcount">Playcount</string>
+	<string Field="global.search.Searchfields">Search Fields</string>
+	<string Field="global.search.Searchhistory">Search History</string>
+	<string Field="global.search.Searchphrase">Search Phrase</string>
+	<string Field="global.search.Searchtype">Search Type</string>
+	<string Field="global.search.songname">Song Name</string>
+
+	<!-- H -->
+
+	<!-- I -->
+
+	<!-- L -->
+	<string Field="lyrics">Lyrics</string>
+	<string Field="list.empty">Empty</string>
+
+	<!-- M -->
+	<string Field="media.movies">Movies</string>
+	<string Field="media.playing">Playing Now</string>
+	<string Field="media.released">Released</string>
+	<string Field="media.unwatched">Unwatched</string>
+	<string Field="media.watched">Watched</string>
+	<string Field="menu.subtitles">Subtitles</string>
+	<string Field="menu.trailer">Trailer</string>
+	<string Field="movie.filter">Filter</string>
+	<string Field="movie.loading">Loading...</string>
+	<string Field="movie.plot">Movie Plot</string>
+	<string Field="movie.rated">Rated</string>
+	<string Field="movie.title">Title</string>
+	<string Field="music.genre">Genre</string>
+	<string Field="music.notplaying">No Music Playing...</string>
+	<string Field="musicvids.mostplayed.artist">Most Played Artist</string>
+	<string Field="musicvids.mostplayed.video">Most Played Video</string>
+	<string Field="musicvids.random">Play All (Random)</string>
+	<string Field="musicvids.SmartPlaylist">Smart Playlist</string>
+
+	<!-- N -->
+
+	<!-- O -->
+
+	<!-- P -->
+
+	<!-- R -->
+	<string Field="recentlyAdded.Season">Season</string>
+	<string Field="recentlyAdded.Episode">Episode</string>
+	<string Field="recentlyAdded.Albums">Recently Added Albums</string>
+	<string Field="recentlyAdded.Episodes">Recently Added Episodes</string>
+	<string Field="recentlyAdded.Movies">Recently Added Movies</string>
+	<string Field="recentlyAdded.Pics">Recently Added Photos</string>
+	<string Field="recentlyAdded.Recordings">Recently Added Recordings</string>
+	<string Field="recorded.on">Recorded On</string>
+	<string Field="Rockstar.search">Search Music</string>
+	<string Field="Rockstar.default.playlist">Default Playlist</string>
+	<string Field="Rockstar.popular.songs">Popular Songs</string>
+	<string Field="Rockstar.playlists">Playlists</string>
+	<string Field="Rockstar.track">Track</string>
+
+	<!-- S -->
+	<string Field="showtimes.theaters">Theaters</string>
+	<string Field="series.network">Network</string>
+	<string Field="series.description">Series Description</string>
+	<string Field="series.update">Last Updated</string>
+	<string Field="search">Search</string>
+	<string Field="search.history">Search History</string>
+	<string Field="screen.exit">Exit</string>
+	<string Field="similar.videos">Similar Videos</string>
+	<string Field="summary">Summary</string>
+
+	<!-- T -->
+	<string Field="time.minutes">Mins.</string>
+	<string Field="tv">Television</string>
+
+	<!-- U -->
+
+	<!-- V -->
+	<string Field="video.settings">Video Settings</string>
+	<string Field="volume.volume">Volume</string>
+	<string Field="volume.mute">Mute</string>
+
+	<!-- W -->
+
+	<!-- Y -->
+
+</strings>

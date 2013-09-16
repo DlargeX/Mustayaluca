@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <id>49848</id>
+  <defaultcontrol>10</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:646</define>
+  <define>#currentmodule:TV/UPCOMING</define>
+  <define>#useRandomTVSeriesFanart:No</define>
+  <controls>
+  
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>backgrounds\tvshows\default.jpg</texture>
+      <width>1920</width>
+      <height>1080</height>
+    </control>
+	
+    <import>common.window.recordings.list.xml</import>
+	
+	
+    <control>
+      <type>actiongroup</type>
+      <description>action menu</description>
+      <buttonX>1231</buttonX>
+      <buttonY>55</buttonY>
+      <buttonwidth>49</buttonwidth>
+      <buttonheight>153</buttonheight>
+      <description>action menu</description>
+      <onexit>10</onexit>
+      <dimColor>00ffffff</dimColor>
+      <control>
+        <description>group element</description>
+        <type>group</type>
+        <animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+        <animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+        <control>
+          <description>button group</description>
+          <type>group</type>
+          <posX>0</posX>
+          <posY>230</posY>
+          <layout>StackLayout(0, Vertical, true)</layout>
+          <animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+          <animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+          <control>
+            <type>button</type>
+            <description>Program type button</description>
+            <id>2</id>
+            <onleft>10</onleft>
+            <onright>10</onright>
+            <ondown>3</ondown>
+            <onup>17</onup>
+          </control>
+
+			<control>
+				<description>TVguide button</description>
+				<type>button</type>
+				<id>3</id>
+				<label>600</label>					
+				<hyperlink>600</hyperlink>
+				<onright>10</onright>
+				<onleft>10</onleft>
+				<onup>2</onup>
+				<ondown>2</ondown>
+			</control>
+			
+        </control>
+      </control>
+    </control>
+	
+    <control>
+      <description>upcoming episodes listcontrol</description>
+      <type>listcontrol</type>
+      <id>10</id>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <onup>2</onup>
+      <ondown>2</ondown>
+      <posX>402</posX>
+      <width>870</width>
+      <height>730</height>
+      <IconXOff>2000</IconXOff>
+      <spinPosX>2000</spinPosX>
+      <spinCanFocus>no</spinCanFocus>
+      <PinIconXOff>715</PinIconXOff>
+      <PinIconYOff>17</PinIconYOff>
+      <PinIconWidth>120</PinIconWidth>
+      <PinIconHeight>34</PinIconHeight>
+      <textXOff2>745</textXOff2>
+      <animation effect="fade" time="150">WindowOpen</animation>
+      <animation effect="fade" time="150">WindowClose</animation>
+    </control>
+	
+    <control>
+      <type>image</type>
+      <posX>1310</posX>
+      <posY>255</posY>
+      <width>90</width>
+      <height>90</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <zoom>no</zoom>
+      <texture>#selectedthumb</texture>
+    </control>
+	
+    <control Style="Time">
+      <description>Current program genre</description>
+      <type>label</type>
+      <id>17</id>
+      <posX>1420</posX>
+      <posY>320</posY>
+      <width>490</width>
+      <label>#TV.Upcoming.Genre</label>
+      <animation effect="fade" time="150">WindowOpen</animation>
+      <animation effect="fade" time="150">WindowClose</animation>
+    </control>
+	
+    <control Style="Time">
+      <description>Current program time</description>
+      <id>14</id>
+      <type>label</type>
+      <posX>1420</posX>
+      <posY>285</posY>
+      <width>490</width>
+      <label>#TV.Upcoming.Time</label>
+      <animation effect="fade" time="150">WindowOpen</animation>
+      <animation effect="fade" time="150">WindowClose</animation>
+    </control>
+	
+    <control Style="DetailTextDroid">
+      <description>Description1</description>
+      <type>textboxscrollup</type>
+      <id>15</id>
+      <posX>1310</posX>
+      <posY>385</posY>
+      <width>600</width>
+      <height>445</height>
+      <seperator>-----------------------------------------------------------------------------------</seperator>
+      <label>#TV.Upcoming.Description</label>
+      <scrollStartDelaySec>10</scrollStartDelaySec>
+      <animation effect="fade" time="150">WindowOpen</animation>
+      <animation effect="fade" time="150">WindowClose</animation>
+    </control>
+	
+    <import>common.overlay.xml</import>
+	
+  </controls>
+</window>

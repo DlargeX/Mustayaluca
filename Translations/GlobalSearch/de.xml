@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Music Search translation file -->
+<!-- English (US) -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<strings>
+  <!-- A -->
+  
+  <!-- B -->
+  
+  <!-- C -->
+  <string Field="ClearPlaylist">Wiedergabeliste löschen?</string>
+  <string Field="CaseSensitive">Groß/Kleinschreibung</string>
+  
+  <!-- D -->
+ 
+  <!-- E -->
+ 
+  <!-- F -->
+  <string Field="FileNotFound">Datei nicht gefunden!</string>
+  
+  <!-- G -->
+ 
+  <!-- H -->
+  
+  <!-- I -->
+  
+  <!-- K -->
+  
+  <!-- J -->
+  
+  <!-- L -->
+  
+  <!-- M -->
+  <string Field="MusicSearch">Suche Musik</string>
+  
+  <!-- N -->
+  <string Field="NoSearchResultsFound">Die Suche war erfolglos. Bitte verfeinern Sie Ihre Suchkriterien.</string>
+  
+  <!-- O -->
+  
+  <!-- P -->
+  <string Field="PleaseWait">Bitte warten...</string>
+  <string Field="PluginDescription">Suche alle Musikdaten aus Ihrer MP-Datenbank</string>
+  
+  <!-- R -->
+  
+  <!-- S -->
+  <string Field="SearchFailed">Suche erfolglos!</string>
+  <string Field="SelectSearchFields">Felder wählen</string>
+  <string Field="SearchPhrase">Suchbegriff</string>
+  <string Field="SearchHistory">Suchverlauf</string>
+  <string Field="SearchFields">Suche: Felder</string>
+  <string Field="SearchType">Suche: Typ</string>
+  <string Field="SearchMusic">Musik suchen</string>
+  <string Field="SearchTypeEquals">Gleich</string>
+  <string Field="SearchTypeStarts">Beginnt mit</string>
+  <string Field="SearchTypeContains">Enthält</string>
+  <string Field="SearchTypeEnds">Endet mit</string>
+  
+  <!-- T -->
+  
+  <!-- U -->
+  
+  <!-- V -->
+  
+  <!-- W -->
+  
+  <!-- Y -->  
+  
+</strings>

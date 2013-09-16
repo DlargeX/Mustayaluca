@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>508</id>
+	<defaultcontrol>20</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#useSelectedFanart:Yes</define>
+	<controls>
+
+		<control>
+			<description>Default Background</description>
+			<type>image</type>
+			<id>1</id>
+			<texture>backgrounds\music\default.jpg</texture>
+			<width>1920</width>
+			<height>1080</height>
+		</control>
+
+		<import>common.music.fanart.xml</import>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background.png</texture>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_menu_widelist.png</texture>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>4514</label>
+			<visible>!player.hasmedia</visible>
+		</control>
+
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+		</control>
+
+		<control Style="Time">
+			<type>label</type>
+			<description>No matches label</description>
+			<id>15</id>
+			<posX>70</posX>
+			<posY>160</posY>
+			<label>4516</label>
+			<visible>false</visible>
+		</control>
+
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+			<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>0</posX>
+				<posY>230</posY>
+				<layout>StackLayout(0, Vertical, true)</layout>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+				<control>
+					<type>button</type>
+					<description>Skip button</description>
+					<id>20</id>
+					<onleft>20</onleft>
+					<onright>25</onright>
+					<onup>20</onup>
+					<ondown>21</ondown>
+					<label>4520</label>
+				</control>
+				<control>
+					<type>button</type>
+					<description>Cancel button</description>
+					<id>21</id>
+					<onleft>21</onleft>
+					<onright>25</onright>
+					<onup>20</onup>
+					<ondown>21</ondown>
+					<label>222</label>
+				</control>
+			</control>
+		</control>
+
+		<control Style="DetailTitle">
+			<type>label</type>
+			<description>Album Cover Art Label</description>
+			<id>11</id>
+			<posX>1430</posX>
+			<posY>249</posY>
+			<width>620</width>
+			<label>4519</label>
+		</control>
+
+		<control>
+			<type>image</type>
+			<description>Album Art Overlay</description>
+			<id>1</id>
+			<posX>1346</posX>
+			<posY>317</posY>
+			<width>450</width>
+			<height>480</height>
+			<texture>music_thumb_background_reflect.png</texture>
+		</control>
+
+		<control>
+			<type>image</type>
+			<description>Album Art image</description>
+			<id>10</id>
+			<posX>1391</posX>
+			<posY>362</posY>
+			<width>360</width>
+			<height>360</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<centered>yes</centered>
+			<texture>-</texture>
+			<zoom>yes</zoom>
+		</control>
+
+		<control>
+			<type>image</type>
+			<id>1</id>
+			<posX>1346</posX>
+			<posY>317</posY>
+			<width>450</width>
+			<height>480</height>
+			<texture>music_thumb_background_reflect_overlay.png</texture>
+		</control>
+
+		<control Style="DetailText">
+			<type>fadelabel</type>
+			<description>Artist value</description>
+			<id>12</id>
+			<posX>1390</posX>
+			<posY>805</posY>
+			<width>500</width>
+			<label>-</label>
+		</control>
+
+		<control Style="DetailText">
+			<type>fadelabel</type>
+			<description>Album value</description>
+			<id>13</id>
+			<posX>1390</posX>
+			<posY>872</posY>
+			<width>500</width>
+			<label>-</label>
+		</control>
+
+		<control>
+			<type>listcontrol</type>
+			<subtype>album</subtype>
+			<description>album view listcontrol</description>
+			<id>25</id>
+			<onleft>20</onleft>
+			<onright>25</onright>
+			<onup>25</onup>
+			<ondown>25</ondown>
+			<posX>402</posX>
+			<posY>231</posY>
+			<textureFocus>list_wider_focus.png</textureFocus>
+			<width>842</width>
+			<textXOff>10</textXOff>
+			<itemWidth>47</itemWidth>
+			<itemHeight>47</itemHeight>
+			<IconXOff>10</IconXOff>
+			<IconYOff>10</IconYOff>
+			<spinPosX>2000</spinPosX>
+			<spinCanFocus>no</spinCanFocus>
+		</control>
+
+		<control>
+			<type>label</type>
+			<description>Release year value</description>
+			<id>14</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<label>-</label>
+			<visible>no</visible>
+		</control>
+
+		<control>
+			<type>image</type>
+			<description>Amazon Logo image</description>
+			<id>30</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>10</width>
+			<height>10</height>
+			<texture>-</texture>
+			<visible>no</visible>
+		</control>
+
+		<import>common.overlay.home.xml</import>
+
+	</controls>
+</window>
