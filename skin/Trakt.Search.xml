@@ -134,6 +134,7 @@
         <type>button</type>
         <id>2</id>
         <label>#Trakt.Translation.Search.Label...</label>
+				<textalign>right</textalign>					
         <onleft>2</onleft>
         <onup>7</onup>
         <ondown>3</ondown>
@@ -145,6 +146,7 @@
         <type>checkbutton</type>
         <id>3</id>
         <label>#Trakt.Translation.Movies.Label</label>
+				<textalign>right</textalign>					
         <onleft>3</onleft>
         <onup>2</onup>
         <ondown>4</ondown>
@@ -156,6 +158,7 @@
         <type>checkbutton</type>
         <id>4</id>
         <label>#Trakt.Translation.TVShows.Label</label>
+				<textalign>right</textalign>					
         <onleft>4</onleft>
         <onup>3</onup>
         <ondown>5</ondown>
@@ -167,6 +170,7 @@
         <type>checkbutton</type>
         <id>5</id>
         <label>#Trakt.Translation.Episodes.Label</label>
+				<textalign>right</textalign>					
         <onleft>5</onleft>
         <onup>4</onup>
         <ondown>6</ondown>
@@ -178,6 +182,7 @@
         <type>checkbutton</type>
         <id>6</id>
         <label>#Trakt.Translation.People.Label</label>
+				<textalign>right</textalign>					
         <onleft>6</onleft>
         <onup>5</onup>
         <ondown>7</ondown>
@@ -189,6 +194,7 @@
         <type>checkbutton</type>
         <id>7</id>
         <label>#Trakt.Translation.Users.Label</label>
+				<textalign>right</textalign>				
         <onleft>7</onleft>
         <onup>6</onup>
         <ondown>2</ondown>

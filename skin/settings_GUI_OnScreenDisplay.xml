@@ -6,9 +6,10 @@
 	<define>#header.label:897</define>
   <rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
-	<import>common.time.settings.xml</import>
-	<import>settings.menu.xml</import>
-  <import>common.settings.xml</import>
+	
+		<import>common.settings.xml</import>
+		<import>settings.menu.xml</import>	
+		<import>common.overlay.home.xml</import>
 	
 	<control>
 		<type>label</type>
@@ -17,11 +18,11 @@
 		<posY>225</posY>
 		<width>500</width>
 		<label>#(L(101021))/#(L(300121))</label>
-		<textcolor>00b7ff</textcolor>
 		<font>TitanLight20</font>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
 	</control>
+	
     <control>
       <description>Display timeout Section label</description>
       <type>label</type>
@@ -34,6 +35,7 @@
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control Style="SettingsButtonMedium">
       <description>DisplayTimeout button</description>
       <type>button</type>
@@ -46,6 +48,7 @@
    		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>DisplayTimeout value label</description>
       <type>label</type>
@@ -56,6 +59,7 @@
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <!--Zap-->
     <control>
       <description>Zap Section label</description>
@@ -69,6 +73,7 @@
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control Style="SettingsButtonMedium">
       <description>Zap delay button</description>
       <type>button</type>
@@ -80,6 +85,7 @@
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Zap Delay value</description>
       <type>label</type>
@@ -90,6 +96,7 @@
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control Style="SettingsButtonMedium">
       <description>ZapTimeout button</description>
       <type>button</type>
@@ -102,6 +109,7 @@
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>ZapTimeout value label</description>
       <type>label</type>
@@ -112,5 +120,6 @@
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
   </controls>
 </window>

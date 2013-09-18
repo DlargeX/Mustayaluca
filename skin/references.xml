@@ -126,23 +126,66 @@
     <textcolor>ffffa075</textcolor>
     <align>center</align>
   </style>
-	
-<!--   <style Name="SettingsToggleWide">
-    <width>840</width>
-    <textalign>left</textalign>
-    <textXOff>60</textXOff>
-    <textureFocus>togglebutton-on-focus-wide.png</textureFocus>
-    <textureNoFocus>togglebutton-on-nofocus-wide.png</textureNoFocus>
-    <AltTextureFocus>togglebutton-off-focus-wide.png</AltTextureFocus>
-    <AltTextureNoFocus>togglebutton-off-nofocus-wide.png</AltTextureNoFocus>
-  </style> -->
+
 	
   <style Name="SettingsButtonWide">
     <width>840</width>
-    <textalign>left</textalign>
+    <textalign>right</textalign>
     <textXOff>60</textXOff>
     <textureFocus>list_wide_focus.png</textureFocus>
   </style>
+
+  <style Name="SettingsButton">
+    <width>385</width>
+    <textXOff>30</textXOff>
+    <textureFocus>list_narrow_focus.png</textureFocus>
+  </style>
+	
+  <style Name="SettingsButtonSmall">
+    <width>239</width>
+    <textalign>right</textalign>
+    <textXOff>60</textXOff>
+    <textureFocus>list_narrow_focus.png</textureFocus>
+  </style>
+	
+  <style Name="SettingsButtonMedium">
+    <width>552</width>
+    <textalign>right</textalign>
+    <textXOff>60</textXOff>
+    <textureFocus>list_narrow_focus.png</textureFocus>
+  </style>
+	
+  <style Name="SettingsButtonLarge">
+    <width>840</width>
+    <textalign>right</textalign>
+    <textXOff>60</textXOff>
+    <textureFocus>list_wide_focus.png</textureFocus>
+  </style>
+	
+  <style Name="SettingsCheckButton">
+    <width>385</width>
+    <textalign>right</textalign>
+    <textXOff>30</textXOff>
+    <textureFocus>list_narrow_focus.png</textureFocus>
+    <markXOff>23</markXOff>
+    <markYOff>10</markYOff>
+  </style>
+	
+  <style Name="SettingsCheckButtonMedium">
+    <width>552</width>
+    <textalign>right</textalign>
+    <textXOff>60</textXOff>
+    <textureFocus>list_narrow_focus.png</textureFocus>
+    <markXOff>23</markXOff>
+    <markYOff>10</markYOff>
+  </style>
+	
+  <style Name="SettingsCheckButtonLarge">
+    <width>1137</width>
+    <textalign>right</textalign>
+    <textXOff>60</textXOff>
+    <textureFocus>list_wide_focus.png</textureFocus>
+  </style>	
 	
   <control>
     <description>default image</description>
@@ -416,6 +459,10 @@
     <itemHeight>32</itemHeight>
     <IconXOff>12</IconXOff>
     <IconYOff>4</IconYOff>
+		<PinIconXOff>940</PinIconXOff>
+		<PinIconYOff>10</PinIconYOff>
+		<PinIconWidth>50</PinIconWidth>
+		<PinIconHeight>50</PinIconHeight>	
     <suffix>|</suffix>
     <folderPrefix />
     <folderSuffix />

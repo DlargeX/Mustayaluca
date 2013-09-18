@@ -6,6 +6,7 @@
 	<define>#Fanart.1:#Trakt.Calendar.Fanart.1</define>
 	<define>#Fanart.2:#Trakt.Calendar.Fanart.2</define>
 	<controls>
+	
 		<control>
 			<description>Default Background</description>
 			<type>image</type>
@@ -16,6 +17,7 @@
 			<height>1080</height>
 			<texture>backgrounds\tvshows\default.jpg</texture>
 		</control>
+		
 		<import>Trakt.Common.Fanart.xml</import>
 		<control>
 			<description>BG</description>
@@ -26,6 +28,7 @@
 			<height>1080</height>
 			<visible>String.Equals(#selecteditem,Next Week)</visible>
 		</control>
+		
 		<control>
 			<description>Backdrop Overlay</description>
 			<type>image</type>
@@ -36,6 +39,7 @@
 			<height>1085</height>
 			<texture>overlay_background.png</texture>
 		</control>
+		
 		<control>
 			<description>Backdrop Overlay - List View</description>
 			<type>image</type>
@@ -46,6 +50,7 @@
 			<height>1085</height>
 			<texture>overlay_episode_fulllist.png</texture>
 		</control>
+		
 		<control>
 			<description>Backdrop Overlay Bar</description>
 			<type>image</type>
@@ -57,6 +62,7 @@
 			<texture>overlay_bar_bottom.png</texture>
 			<visible>!facadeview.coverflow</visible>
 		</control>
+		
 		<control Style="BigTitle">
 			<description>Page Title</description>
 			<type>label</type>
@@ -67,6 +73,7 @@
 			<label>#Trakt.Translation.Calendar.Label / #(iif(eq(#Trakt.Calendar.Type,'MyShows'),'#Trakt.Translation.CalendarMyShows.Label','#Trakt.Translation.CalendarPremieres.Label'))</label>
 			<visible>Control.HasFocus(50)+!player.hasmedia</visible>
 		</control>
+		
 		<control Style="Time">
 			<description>Date</description>
 			<type>label</type>
@@ -76,6 +83,7 @@
 			<label>#date / #time</label>
 			<visible>Control.HasFocus(50)</visible>
 		</control>
+		
 		<!-- Facade Item Counts -->
 		<control Style="DetailText">
 			<description>Item Count Label</description>
@@ -87,6 +95,7 @@
 			<align>right</align>
 			<visible>Control.HasFocus(50)+!string.equals(#itemcount,)</visible>
 		</control>
+		
 		<control>
 			<description>listscroller bg</description>
 			<type>image</type>
@@ -101,6 +110,7 @@
 			<animation effect="slide" start="-70,0" end="0,0" tween="quadratic" easing="in" time="250">Visible</animation>
 			<animation effect="slide" start="0,0" end="-70,0" tween="quadratic" easing="in" time="250">Hidden</animation>
 		</control>
+		
 		<control>
 			<type>label</type>
 			<id>1</id>
@@ -117,6 +127,7 @@
 			<animation effect="slide" start="-70,0" end="0,0" tween="quadratic" easing="in" time="250">Visible</animation>
 			<animation effect="slide" start="0,0" end="-70,0" tween="quadratic" easing="in" time="250">Hidden</animation>
 		</control>
+		
 		<control>
 			<description>group element</description>
 			<type>group</type>
@@ -146,6 +157,7 @@
 				</control>
 			</control>
 		</control>
+		
 		<!-- Hidden Menu -->
 		<control>
 			<type>actiongroup</type>
@@ -234,6 +246,7 @@
 				</control>
 			</control>
 		</control>
+		
 		<control>
 			<description>Episode Thumb Backround</description>
 			<type>image</type>
@@ -245,6 +258,7 @@
 			<texture>episode_thumb_background_reflect.png</texture>
 			<visible>Control.HasFocus(50)+!string.equals(#selectedthumb,)</visible>
 		</control>	
+		
 		<control>
 			<description>Big Episode Thumb</description>
 			<type>image</type>
@@ -258,6 +272,7 @@
 			<texture>#selectedthumb</texture>
 			<visible>Control.HasFocus(50)</visible>
 		</control>
+		
 		<control>
 			<description>Episode Thumb Backround</description>
 			<type>image</type>
@@ -269,6 +284,7 @@
 			<texture>episode_thumb_background_overlay_reflect.png</texture>
 			<visible>Control.HasFocus(50)+!string.equals(#selectedthumb,)</visible>
 		</control>
+		
 		<control Style="DetailTitle">
 			<label>#Trakt.Translation.Season.Label #Trakt.Episode.Season</label>
 			<type>label</type>
@@ -277,6 +293,7 @@
 			<width>150</width>
 			<visible>Control.HasFocus(50)+!String.Equals(#selecteditem,Next Week)+!String.Equals(#Trakt.Episode.Season,)</visible>
 		</control>
+		
 		<control Style="DetailText">
 			<label>#Trakt.Episode.Title</label>
 			<type>fadelabel</type>
@@ -285,6 +302,7 @@
 			<width>445</width>
 			<visible>Control.HasFocus(50)</visible>
 		</control>
+		
 		<control Style="DetailTextDroid">
 			<description>Episode Plot</description>
 			<type>textboxscrollup</type>
@@ -298,6 +316,7 @@
 			<scrollStartDelaySec>10</scrollStartDelaySec>
 			<visible>Control.HasFocus(50)</visible>
 		</control>
+		
 		<control Style="DetailText">
 			<description>Info Label</description>
 			<type>label</type>
@@ -308,6 +327,8 @@
 			<align>left</align>
 			<visible>!String.Equals(#selecteditem,Next Week)+!String.Equals(#Trakt.Show.Network,)</visible>
 		</control>
+		
 		<import>common.overlay.xml</import>
+		
 	</controls>
 </window>

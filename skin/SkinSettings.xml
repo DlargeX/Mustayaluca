@@ -8,9 +8,6 @@
     <entry name="#skin.tvguide.usecolorsforgenre">True</entry>
     <entry name="#skin.tvguide.useborderhighlight">False</entry>
     <entry name="#skin.tvguide.showgenrekey">True</entry>
-    <entry name="#skin.fanart.basichome">False</entry>
-    <entry name="#skin.no.latestmedia">False</entry>
-    <entry name="#skin.no.category.fanart">False</entry>
   </section>
   <section name="tvguidecolors">
     <entry name="guidecolorchannelbutton">FF122F3F</entry>
@@ -30,6 +27,6 @@
     <entry name="guidecolorgroupbuttonselected">FFFFFFFF</entry>
   </section>
   <section name="stringsettings">
-    <entry name="#skin.tvguide.rows"> 11</entry>
+    <entry name="#skin.tvguide.rows"> 8</entry>
   </section>
 </profile>

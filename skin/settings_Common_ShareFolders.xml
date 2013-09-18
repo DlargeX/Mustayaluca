@@ -6,23 +6,10 @@
 	<define>#header.label:897</define>		
 	<rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
-	<import>common.time.settings.xml</import>
-	<import>settings.menu.xml</import>
-  <import>common.settings.xml</import>
 	
-	<control>
-		<type>label</type>
-		<id>1</id>
-		<posX>685</posX>
-		<posY>225</posY>
-		<width>500</width>
-		<label>#(L(134))</label>
-		<textcolor>00b7ff</textcolor>
-		<font>TitanLight20</font>
-	  <animation effect="fade" time="150">WindowOpen</animation>
-	  <animation effect="fade" time="150">WindowClose</animation>
-	</control>
-  
+		<import>common.settings.xml</import>
+		<import>settings.menu.xml</import>	
+	
   	<control>
   		<description>buttons</description>
   		<type>group</type>
@@ -41,6 +28,7 @@
         <onright>43</onright>
         <onup>6</onup>
       </control>
+			
 	   <control Style="SettingsButtonSmall">
         <description>Remove</description>
         <type>button</type>
@@ -48,6 +36,7 @@
         <label>Remove</label>
         <onright>43</onright>
       </control>
+			
 	   <control Style="SettingsButtonSmall">
         <description>Edit</description>
         <type>button</type>
@@ -55,6 +44,7 @@
         <label>2076</label>
         <onright>43</onright>
       </control>
+			
 	   <control Style="SettingsButtonSmall">
         <description>Default</description>
         <type>button</type>
@@ -66,18 +56,7 @@
     </control>
     
     <!--     SHARE FOLDER  -->
-
-	<control>
-		<type>image</type>
-		<id>0</id>
-		<posX>927</posX>
-		<posY>386</posY>
-		<width>283</width>
-		<height>253</height>
-		<texture>settings_dark_background3.png</texture>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
-	</control>
+	
     <control>
       <description>Options group label</description>
       <type>label</type>
@@ -91,6 +70,7 @@
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Share folders listcontrol</description>
       <type>listcontrol</type>
@@ -122,18 +102,7 @@
     </control>
     
     <!--     SHARE FOLDER PROPERTIES  -->
-
-	<control>
-		<type>image</type>
-		<id>0</id>
-		<posX>1240</posX>
-		<posY>386</posY>
-		<width>555</width>
-		<height>253</height>
-		<texture>settings_dark_background4.png</texture>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
-	</control>
+	
     <control>
       <description>Options group label</description>
       <type>label</type>
@@ -158,6 +127,7 @@
       <layout>StackLayout(35, Vertical, true)</layout>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
+		
       <control>
         <description>Share Name label</description>
         <type>label</type>
@@ -167,6 +137,7 @@
         <font>TitanLight12</font>
         <textcolor>ff00b7ff</textcolor>
       </control>
+			
       <control>
         <description>Share folder label</description>
         <type>fadelabel</type>
@@ -176,6 +147,7 @@
         <font>TitanLight12</font>
         <textcolor>ff00b7ff</textcolor>
       </control>
+			
       <control>
         <description>Default layout label</description>
         <type>label</type>
@@ -185,6 +157,7 @@
         <font>TitanLight12</font>
         <textcolor>ff00b7ff</textcolor>
       </control>
+			
       <control>
         <description>Pincode label</description>
         <type>label</type>
@@ -194,6 +167,7 @@
         <font>TitanLight12</font>
         <textcolor>ff00b7ff</textcolor>
       </control>
+			
 			<control>
         <description>Thumbs</description>
         <type>label</type>
@@ -203,6 +177,7 @@
         <font>TitanLight12</font>
         <textcolor>ff00b7ff</textcolor>
       </control>
+			
 			<control>
         <description>Each folder is movie</description>
         <type>label</type>
@@ -213,6 +188,7 @@
         <textcolor>ff00b7ff</textcolor>
       </control>
     </control>
+		
     <!-- Values-->
     <control>
       <description>Folder Properties values</description>
@@ -223,6 +199,7 @@
       <layout>StackLayout(35, Vertical, true)</layout>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
+		
       <control>
         <description>Share Name label</description>
         <type>label</type>
@@ -232,6 +209,7 @@
         <font>TitanLight12</font>
         <textcolor>ff00b7ff</textcolor>
       </control>
+			
       <control>
         <description>Share folder label</description>
         <type>fadelabel</type>
@@ -241,6 +219,7 @@
         <font>TitanLight12</font>
         <textcolor>ff00b7ff</textcolor>
       </control>
+			
       <control>
         <description>Default layout label</description>
         <type>label</type>
@@ -250,6 +229,7 @@
         <font>TitanLight12</font>
         <textcolor>ff00b7ff</textcolor>
       </control>
+			
       <control>
         <description>Pincode label</description>
         <type>label</type>
@@ -259,6 +239,7 @@
         <font>TitanLight12</font>
         <textcolor>ff00b7ff</textcolor>
       </control>
+			
 			<control>
         <description>Thumbs</description>
         <type>label</type>
@@ -268,6 +249,7 @@
         <font>TitanLight12</font>
         <textcolor>ff00b7ff</textcolor>
       </control>
+			
 			<control>
         <description>Movie folder</description>
         <type>label</type>
@@ -278,6 +260,7 @@
         <textcolor>ff00b7ff</textcolor>
       </control>
     </control>
+		
     <!--     FOLDER OPTIONS  -->
 
     <control>
@@ -311,6 +294,7 @@
       <label>300076</label>
       <onup>6</onup>
     </control>
+		
     <control Style="SettingsCheckButtonLarge">
       <description>Add  optical drives On/Off</description>
       <type>checkbutton</type>
@@ -318,6 +302,7 @@
       <onup>40</onup>
       <label>300077</label>
     </control>
+		
     <control Style="SettingsCheckButtonLarge">
       <description>Auto switch removables On/Off</description>
       <type>checkbutton</type>
@@ -327,5 +312,6 @@
       <ondown>40</ondown>
     </control>
   </control>
+	
   </controls>
 </window>
