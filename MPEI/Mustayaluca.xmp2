@@ -1287,111 +1287,6 @@
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\mustayaluca\SettingsGUI.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{6cd6df7c-d2ab-4b43-9517-f75e15573a12}-SettingsGUI.xml</ZipFileName>
-              <DestinationFilename>%Skin%\mustayaluca\SettingsGUI.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\mustayaluca\SettingsMyMusic.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{d4590b15-344c-4648-9cc1-ee801d7450b1}-SettingsMyMusic.xml</ZipFileName>
-              <DestinationFilename>%Skin%\mustayaluca\SettingsMyMusic.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\mustayaluca\SettingsOSD.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{8234cf69-12c3-4334-9324-52c19c4b1640}-SettingsOSD.xml</ZipFileName>
-              <DestinationFilename>%Skin%\mustayaluca\SettingsOSD.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\mustayaluca\settingsScreen.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{ba38bb4a-41f6-4fc2-b6a2-7d0cd0d52841}-settingsScreen.xml</ZipFileName>
-              <DestinationFilename>%Skin%\mustayaluca\settingsScreen.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\mustayaluca\settingsScreenCalibration.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{4bb0a826-9c4c-42a9-89ab-2d540b6afb33}-settingsScreenCalibration.xml</ZipFileName>
-              <DestinationFilename>%Skin%\mustayaluca\settingsScreenCalibration.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\mustayaluca\settingsSkipSteps.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{b45df90f-5c60-4570-b4ab-b62f124e0a40}-settingsSkipSteps.xml</ZipFileName>
-              <DestinationFilename>%Skin%\mustayaluca\settingsSkipSteps.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\mustayaluca\SettingsSlideShow.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{983f774e-2832-4c62-a0c7-fe86f402ce5e}-SettingsSlideShow.xml</ZipFileName>
-              <DestinationFilename>%Skin%\mustayaluca\SettingsSlideShow.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\mustayaluca\settingsUICalibration.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{cc6dff6f-3f5d-4901-876c-83907c35f6ce}-settingsUICalibration.xml</ZipFileName>
-              <DestinationFilename>%Skin%\mustayaluca\settingsUICalibration.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\mustayaluca\settings_Display_BackLight.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{4ae0fbec-73e1-4286-b970-a6d661062e59}-settings_Display_BackLight.xml</ZipFileName>
-              <DestinationFilename>%Skin%\mustayaluca\settings_Display_BackLight.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\mustayaluca\settings_Display_DisplayControl.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{cc6e2e36-477a-406c-bf57-c1d109a20913}-settings_Display_DisplayControl.xml</ZipFileName>
-              <DestinationFilename>%Skin%\mustayaluca\settings_Display_DisplayControl.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\mustayaluca\settings_Display_DisplayOptions.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{c62fd104-db25-4ca6-a9e8-3f3a5a17676d}-settings_Display_DisplayOptions.xml</ZipFileName>
-              <DestinationFilename>%Skin%\mustayaluca\settings_Display_DisplayOptions.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\mustayaluca\settings_Display_Equalizer.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{c82b556f-6435-4382-a16f-5b7b4f0cae40}-settings_Display_Equalizer.xml</ZipFileName>
-              <DestinationFilename>%Skin%\mustayaluca\settings_Display_Equalizer.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\mustayaluca\settings_Display_Keypad.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{f77b35ec-d1ec-4f3b-8149-b28b7ef09d22}-settings_Display_Keypad.xml</ZipFileName>
-              <DestinationFilename>%Skin%\mustayaluca\settings_Display_Keypad.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\mustayaluca\settings_Display_Main.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{5266d48b-6f48-4458-9ae8-8f7d810f7ce6}-settings_Display_Main.xml</ZipFileName>
-              <DestinationFilename>%Skin%\mustayaluca\settings_Display_Main.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\mustayaluca\settings_Display_Remote.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{b6309de0-c552-48e9-8aec-575acf6d41fe}-settings_Display_Remote.xml</ZipFileName>
-              <DestinationFilename>%Skin%\mustayaluca\settings_Display_Remote.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
               <LocalFileName>..\mustayaluca\settings_dvd.xml</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{77a1fbaa-461f-4106-aad2-8ce578282382}-settings_dvd.xml</ZipFileName>
               <DestinationFilename>%Skin%\mustayaluca\settings_dvd.xml</DestinationFilename>
@@ -1409,13 +1304,6 @@
               <LocalFileName>..\mustayaluca\settings_movies.xml</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{38b63fda-813c-4aac-b08a-ffbe3b5bb488}-settings_movies.xml</ZipFileName>
               <DestinationFilename>%Skin%\mustayaluca\settings_movies.xml</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\mustayaluca\settings_recording.xml</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{a4923bf5-830c-468c-afa7-2d5f64e42729}-settings_recording.xml</ZipFileName>
-              <DestinationFilename>%Skin%\mustayaluca\settings_recording.xml</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
@@ -14794,6 +14682,34 @@
               <ZipFileName>Installer{CopyFile}\{07708a4f-926c-4bd8-a5ea-e99cc39ec2a4}-traktWatchedIcon.png</ZipFileName>
               <DestinationFilename>%Skin%\mustayaluca\Media\traktWatchedIcon.png</DestinationFilename>
             </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\mustayaluca\settings.menu.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{7fcd8cce-12e5-499d-b32f-f813b8bfe2ad}-settings.menu.xml</ZipFileName>
+              <DestinationFilename>%Skin%\mustayaluca\settings.menu.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\mustayaluca\settings_MyPictures_SlideShow.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{87b781f7-ff2b-42dc-8b9c-0a71a74a714a}-settings_MyPictures_SlideShow.xml</ZipFileName>
+              <DestinationFilename>%Skin%\mustayaluca\settings_MyPictures_SlideShow.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\mustayaluca\Trakt.Common.Facade.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{f97d0de1-7677-439d-a539-f64f1997eb0e}-Trakt.Common.Facade.xml</ZipFileName>
+              <DestinationFilename>%Skin%\mustayaluca\Trakt.Common.Facade.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\mustayaluca\Media\hbar1white.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{effda6b0-dbe8-44e9-9be9-71b54d7e2f77}-hbar1white.png</ZipFileName>
+              <DestinationFilename>%Skin%\mustayaluca\Media\hbar1white.png</DestinationFilename>
+            </FileItem>
           </Items>
         </Files>
       </GroupItem>
@@ -15006,15 +14922,6 @@
           </Items>
         </Files>
       </GroupItem>
-      <GroupItem Name="Trakt">
-        <ParentGroup />
-        <DisplayName>Trakt</DisplayName>
-        <DefaulChecked>true</DefaulChecked>
-        <Description>Trakt.tv actively keeps a record of what TV shows and movies you are watching. Based on your favorites, your friends, and the community, trakt recommends other TV shows and movies.</Description>
-        <Files>
-          <Items />
-        </Files>
-      </GroupItem>
       <GroupItem Name="SubCentral">
         <ParentGroup />
         <DisplayName>SubCentral</DisplayName>
@@ -15105,7 +15012,7 @@ Click Next to continue or Cancel to exit Setup.</Value>
               <Description />
             </SectionParam>
             <SectionParam Name="Header image">
-              <Value />
+              <Value>Images\icon.png</Value>
               <ValueType>File</ValueType>
               <Description>Image in upper right part</Description>
             </SectionParam>
@@ -15147,19 +15054,18 @@ Click Next to continue or Cancel to exit Setup.</Value>
           <Items />
         </Actions>
         <IncludedGroups>
-          <string>Extensions</string>
           <string>FanartHandler</string>
-          <string>GlobalSearch</string>
-          <string>InfoService</string>
           <string>LatestMediaHandler</string>
-          <string>MovingPictures</string>
-          <string>Trakt</string>
           <string>TVSeries</string>
+          <string>MovingPictures</string>
+          <string>InfoService</string>
+          <string>Extensions</string>
           <string>MusicInfoHandler</string>
+          <string>GlobalSearch</string>
           <string>MyLyrics</string>
+          <string>WebBrowser</string>
           <string>OnlineVideos</string>
           <string>SubCentral</string>
-          <string>WebBrowser</string>
           <string>WorldWeather</string>
         </IncludedGroups>
         <PanelName>Tree View Selector</PanelName>
@@ -15187,7 +15093,7 @@ Click Next to continue or Cancel to exit Setup.</Value>
         </Params>
         <Actions>
           <Items>
-            <ActionItem Name="InstallFiles" ActionType="InstallFiles" ConditionGroup="">
+            <ActionItem Name="InstallFiles" ActionType="InstallFiles" ConditionGroup="Default">
               <Params>
                 <Items />
               </Params>
@@ -15260,6 +15166,16 @@ public class Script
                     <Value>YES</Value>
                     <ValueType>Bool</ValueType>
                     <Description>Silent install, No wizard screen will be displayed </Description>
+                  </SectionParam>
+                  <SectionParam Name="Extension Id">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Global Id of the extension package - it will be downloaded when no file is set.</Description>
+                  </SectionParam>
+                  <SectionParam Name="Extension Version">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Minimum Version of the extension package - older versions will be updated (only used when downloading via Id).</Description>
                   </SectionParam>
                 </Items>
               </Params>
@@ -15401,23 +15317,6 @@ public class Script
               </Params>
               <ExecuteLocation>AfterPanelShow</ExecuteLocation>
             </ActionItem>
-            <ActionItem Name="Extension Installer" ActionType="Extension Installer" ConditionGroup="Trakt">
-              <Params>
-                <Items>
-                  <SectionParam Name="Extension package">
-                    <Value>..\External Installers\TraktPlugin.mpe1</Value>
-                    <ValueType>File</ValueType>
-                    <Description>Location of the extension package</Description>
-                  </SectionParam>
-                  <SectionParam Name="Silent Install">
-                    <Value>YES</Value>
-                    <ValueType>Bool</ValueType>
-                    <Description>Silent install, No wizard screen will be displayed </Description>
-                  </SectionParam>
-                </Items>
-              </Params>
-              <ExecuteLocation>AfterPanelShow</ExecuteLocation>
-            </ActionItem>
             <ActionItem Name="Extension Installer" ActionType="Extension Installer" ConditionGroup="SubCentral">
               <Params>
                 <Items>
@@ -15449,12 +15348,6 @@ public class Script
                     <Description>Silent install, No wizard screen will be displayed </Description>
                   </SectionParam>
                 </Items>
-              </Params>
-              <ExecuteLocation>AfterPanelShow</ExecuteLocation>
-            </ActionItem>
-            <ActionItem Name="ClearSkinCache" ActionType="ClearSkinCache" ConditionGroup="Default">
-              <Params>
-                <Items />
               </Params>
               <ExecuteLocation>AfterPanelShow</ExecuteLocation>
             </ActionItem>
@@ -15609,7 +15502,14 @@ public class Script
           </Items>
         </Params>
         <Actions>
-          <Items />
+          <Items>
+            <ActionItem Name="ClearSkinCache" ActionType="ClearSkinCache" ConditionGroup="">
+              <Params>
+                <Items />
+              </Params>
+              <ExecuteLocation>AfterPanelShow</ExecuteLocation>
+            </ActionItem>
+          </Items>
         </Actions>
         <IncludedGroups />
         <PanelName>Setup Complete</PanelName>
@@ -15643,13 +15543,13 @@ public class Script
         <Id />
         <MinVersion>
           <Major>1</Major>
-          <Minor>3</Minor>
+          <Minor>4</Minor>
           <Build>0</Build>
           <Revision>0</Revision>
         </MinVersion>
         <MaxVersion>
           <Major>1</Major>
-          <Minor>3</Minor>
+          <Minor>4</Minor>
           <Build>0</Build>
           <Revision>0</Revision>
         </MaxVersion>
@@ -15666,7 +15566,7 @@ public class Script
           <Items>
             <CompatibleVersionItem>
               <MinRequiredVersion>1.1.6.27644</MinRequiredVersion>
-              <DesignedForVersion>1.2.100.0</DesignedForVersion>
+              <DesignedForVersion>1.3.100.0</DesignedForVersion>
             </CompatibleVersionItem>
           </Items>
         </CompatibleVersion>
@@ -15679,12 +15579,25 @@ public class Script
           </Items>
         </SubSystemsUsed>
       </PluginDependencyItem>
+      <PluginDependencyItem AssemblyName="MustayalucaEditor.dll">
+        <CompatibleVersion>
+          <Items>
+            <CompatibleVersionItem>
+              <MinRequiredVersion>1.1.6.27644</MinRequiredVersion>
+              <DesignedForVersion>1.2.200.0</DesignedForVersion>
+            </CompatibleVersionItem>
+          </Items>
+        </CompatibleVersion>
+        <SubSystemsUsed>
+          <Items />
+        </SubSystemsUsed>
+      </PluginDependencyItem>
       <PluginDependencyItem AssemblyName="MustayalucaConfig.dll">
         <CompatibleVersion>
           <Items>
             <CompatibleVersionItem>
-              <MinRequiredVersion>1.1.6.0</MinRequiredVersion>
-              <DesignedForVersion>1.1.7.0</DesignedForVersion>
+              <MinRequiredVersion>1.1.6.27644</MinRequiredVersion>
+              <DesignedForVersion>1.2.200.0</DesignedForVersion>
             </CompatibleVersionItem>
           </Items>
         </CompatibleVersion>
@@ -15710,7 +15623,7 @@ public class Script
     </Items>
   </PluginDependencies>
   <GeneralInfo>
-    <Name>Mustayaluca Mod</Name>
+    <Name>Mustayaluca</Name>
     <Id>aebee181-77c3-4e07-bad8-4b9197314389</Id>
     <Author>Psycho Reptile, Trevor, ltfearme, dlarge500</Author>
     <HomePage>http://code.google.com/p/mustayaluca/</HomePage>
@@ -15718,20 +15631,27 @@ public class Script
     <UpdateUrl>https://mustayaluca.googlecode.com/svn/trunk/MPEI/update.xml</UpdateUrl>
     <Version>
       <Major>0</Major>
-      <Minor>5</Minor>
-      <Build>2</Build>
+      <Minor>6</Minor>
+      <Build>0</Build>
       <Revision>0</Revision>
     </Version>
-    <ExtensionDescription>This is a continuation of the skin Mustayaluca orginally started by macardi and development now taken over by Psycho Reptile, trevor and ltfearme.
+    <ExtensionDescription>This is a continuation of the skin Mustayaluca orginally started by macardi and development now taken over by Psycho Reptile, trevor and ltfearme and dlarge500.
+
+
 
 The best description is a quote from macardi's inital post.
+
+
 
 "...inspiration comes from various sources as you can see. Some parts are more or less rip off's from other skins like the home screen which originates from djh's AEON over at XBMC. Other inspirations come from crj's work over at Meedios and some inspiration has been taken from joostzilla and his Maya skin. So basically Mustayaluca is a blend from varios sources combined with my own ideas."
 
 
+
+
+
 greetz dlarge500</ExtensionDescription>
-    <VersionDescription />
-    <DevelopmentStatus>Stable</DevelopmentStatus>
+    <VersionDescription>- updated Skin to MP 1.4 support</VersionDescription>
+    <DevelopmentStatus>Beta</DevelopmentStatus>
     <OnlineLocation>http://mustayaluca.googlecode.com/files/Mustayaluca-v0.4.0.220.mpe1</OnlineLocation>
     <ReleaseDate>2013-09-15T12:22:22</ReleaseDate>
     <Tags>skin,fullhd</Tags>
@@ -17047,111 +16967,6 @@ greetz dlarge500</ExtensionDescription>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\mustayaluca\SettingsGUI.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{6cd6df7c-d2ab-4b43-9517-f75e15573a12}-SettingsGUI.xml</ZipFileName>
-        <DestinationFilename>%Skin%\mustayaluca\SettingsGUI.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\mustayaluca\SettingsMyMusic.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{d4590b15-344c-4648-9cc1-ee801d7450b1}-SettingsMyMusic.xml</ZipFileName>
-        <DestinationFilename>%Skin%\mustayaluca\SettingsMyMusic.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\mustayaluca\SettingsOSD.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{8234cf69-12c3-4334-9324-52c19c4b1640}-SettingsOSD.xml</ZipFileName>
-        <DestinationFilename>%Skin%\mustayaluca\SettingsOSD.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\mustayaluca\settingsScreen.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{ba38bb4a-41f6-4fc2-b6a2-7d0cd0d52841}-settingsScreen.xml</ZipFileName>
-        <DestinationFilename>%Skin%\mustayaluca\settingsScreen.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\mustayaluca\settingsScreenCalibration.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{4bb0a826-9c4c-42a9-89ab-2d540b6afb33}-settingsScreenCalibration.xml</ZipFileName>
-        <DestinationFilename>%Skin%\mustayaluca\settingsScreenCalibration.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\mustayaluca\settingsSkipSteps.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{b45df90f-5c60-4570-b4ab-b62f124e0a40}-settingsSkipSteps.xml</ZipFileName>
-        <DestinationFilename>%Skin%\mustayaluca\settingsSkipSteps.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\mustayaluca\SettingsSlideShow.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{983f774e-2832-4c62-a0c7-fe86f402ce5e}-SettingsSlideShow.xml</ZipFileName>
-        <DestinationFilename>%Skin%\mustayaluca\SettingsSlideShow.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\mustayaluca\settingsUICalibration.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{cc6dff6f-3f5d-4901-876c-83907c35f6ce}-settingsUICalibration.xml</ZipFileName>
-        <DestinationFilename>%Skin%\mustayaluca\settingsUICalibration.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\mustayaluca\settings_Display_BackLight.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{4ae0fbec-73e1-4286-b970-a6d661062e59}-settings_Display_BackLight.xml</ZipFileName>
-        <DestinationFilename>%Skin%\mustayaluca\settings_Display_BackLight.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\mustayaluca\settings_Display_DisplayControl.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{cc6e2e36-477a-406c-bf57-c1d109a20913}-settings_Display_DisplayControl.xml</ZipFileName>
-        <DestinationFilename>%Skin%\mustayaluca\settings_Display_DisplayControl.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\mustayaluca\settings_Display_DisplayOptions.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{c62fd104-db25-4ca6-a9e8-3f3a5a17676d}-settings_Display_DisplayOptions.xml</ZipFileName>
-        <DestinationFilename>%Skin%\mustayaluca\settings_Display_DisplayOptions.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\mustayaluca\settings_Display_Equalizer.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{c82b556f-6435-4382-a16f-5b7b4f0cae40}-settings_Display_Equalizer.xml</ZipFileName>
-        <DestinationFilename>%Skin%\mustayaluca\settings_Display_Equalizer.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\mustayaluca\settings_Display_Keypad.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{f77b35ec-d1ec-4f3b-8149-b28b7ef09d22}-settings_Display_Keypad.xml</ZipFileName>
-        <DestinationFilename>%Skin%\mustayaluca\settings_Display_Keypad.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\mustayaluca\settings_Display_Main.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{5266d48b-6f48-4458-9ae8-8f7d810f7ce6}-settings_Display_Main.xml</ZipFileName>
-        <DestinationFilename>%Skin%\mustayaluca\settings_Display_Main.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\mustayaluca\settings_Display_Remote.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{b6309de0-c552-48e9-8aec-575acf6d41fe}-settings_Display_Remote.xml</ZipFileName>
-        <DestinationFilename>%Skin%\mustayaluca\settings_Display_Remote.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\mustayaluca\settings_dvd.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{77a1fbaa-461f-4106-aad2-8ce578282382}-settings_dvd.xml</ZipFileName>
         <DestinationFilename>%Skin%\mustayaluca\settings_dvd.xml</DestinationFilename>
@@ -17169,13 +16984,6 @@ greetz dlarge500</ExtensionDescription>
         <LocalFileName>..\mustayaluca\settings_movies.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{38b63fda-813c-4aac-b08a-ffbe3b5bb488}-settings_movies.xml</ZipFileName>
         <DestinationFilename>%Skin%\mustayaluca\settings_movies.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\mustayaluca\settings_recording.xml</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{a4923bf5-830c-468c-afa7-2d5f64e42729}-settings_recording.xml</ZipFileName>
-        <DestinationFilename>%Skin%\mustayaluca\settings_recording.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
@@ -30554,6 +30362,34 @@ greetz dlarge500</ExtensionDescription>
         <ZipFileName>Installer{CopyFile}\{07708a4f-926c-4bd8-a5ea-e99cc39ec2a4}-traktWatchedIcon.png</ZipFileName>
         <DestinationFilename>%Skin%\mustayaluca\Media\traktWatchedIcon.png</DestinationFilename>
       </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\mustayaluca\settings.menu.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{7fcd8cce-12e5-499d-b32f-f813b8bfe2ad}-settings.menu.xml</ZipFileName>
+        <DestinationFilename>%Skin%\mustayaluca\settings.menu.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\mustayaluca\settings_MyPictures_SlideShow.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{87b781f7-ff2b-42dc-8b9c-0a71a74a714a}-settings_MyPictures_SlideShow.xml</ZipFileName>
+        <DestinationFilename>%Skin%\mustayaluca\settings_MyPictures_SlideShow.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\mustayaluca\Trakt.Common.Facade.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{f97d0de1-7677-439d-a539-f64f1997eb0e}-Trakt.Common.Facade.xml</ZipFileName>
+        <DestinationFilename>%Skin%\mustayaluca\Trakt.Common.Facade.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\mustayaluca\Media\hbar1white.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{effda6b0-dbe8-44e9-9be9-71b54d7e2f77}-hbar1white.png</ZipFileName>
+        <DestinationFilename>%Skin%\mustayaluca\Media\hbar1white.png</DestinationFilename>
+      </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
         <Param1 />
         <UpdateOption>AlwaysOverwrite</UpdateOption>
@@ -30670,98 +30506,91 @@ greetz dlarge500</ExtensionDescription>
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>Images\LeftSideImage.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{64e01558-0553-4ace-b4b6-c2fbf10f6755}-LeftSideImage.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{9c1295f5-78cb-468e-a8d4-afcc7ae1b1f8}-LeftSideImage.png</ZipFileName>
         <DestinationFilename />
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="true" Modified="true">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>Images\icon.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{7215f362-4b55-4261-b629-4667f43d85e4}-icon.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{8219ea12-4287-4dd8-9607-96191ad41d55}-icon.png</ZipFileName>
         <DestinationFilename />
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="true" Modified="true">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\External Installers\Extensions.mpe1</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{6eab0fed-5865-4d0a-b9ad-d8c96a2b158e}-Extensions.mpe1</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{67c7c19b-e3ef-4cdc-a7bc-83d83d35b73f}-Extensions.mpe1</ZipFileName>
         <DestinationFilename />
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="true" Modified="true">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\External Installers\FanartHandler.mpe1</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{a0ec43a7-840f-4400-aca2-33c02dfa8f64}-FanartHandler.mpe1</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{c12b6f1e-2c99-4ccb-8a6e-ed72a61b4def}-FanartHandler.mpe1</ZipFileName>
         <DestinationFilename />
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="true" Modified="true">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\External Installers\GlobalSearch.mpe1</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{d1c3a8e5-a0eb-4abd-bce2-9582594f52ac}-GlobalSearch.mpe1</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{77ac1b73-935e-4f91-8bf7-d7e11ef61257}-GlobalSearch.mpe1</ZipFileName>
         <DestinationFilename />
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="true" Modified="true">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\External Installers\InfoService.mpe1</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{e78971e8-58ae-401d-8c1f-08dbdbeb4eba}-InfoService.mpe1</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{a7bf1361-aa18-4bcf-ac03-6c521e0b3a35}-InfoService.mpe1</ZipFileName>
         <DestinationFilename />
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="true" Modified="true">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\External Installers\LatestMediaHandler.mpe1</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{5bc76c53-6164-4c32-84c6-a8d61aca0f9e}-LatestMediaHandler.mpe1</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{8284963e-189e-4963-a2d8-504b251f4c66}-LatestMediaHandler.mpe1</ZipFileName>
         <DestinationFilename />
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="true" Modified="true">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\External Installers\MP-TVSeries.mpe1</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{7f37b6b8-f71b-437f-a157-aacde3434e52}-MP-TVSeries.mpe1</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{d0c84ae2-0eb0-4caf-bfe6-6d1340b935ed}-MP-TVSeries.mpe1</ZipFileName>
         <DestinationFilename />
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="true" Modified="true">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\External Installers\MusicInfoHandler.mpe1</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{765efe99-21e8-4832-a92a-ba360a7607ec}-MusicInfoHandler.mpe1</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{76757a6d-7a20-4107-93f0-9c1468cb71de}-MusicInfoHandler.mpe1</ZipFileName>
         <DestinationFilename />
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="true" Modified="true">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\External Installers\MyLyrics.mpe1</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{6314f0c1-f8c5-41b6-90fb-8688c82c6db8}-MyLyrics.mpe1</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{ac4186b6-89d9-4e2f-a889-bcbbf27898fb}-MyLyrics.mpe1</ZipFileName>
         <DestinationFilename />
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="true" Modified="true">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\External Installers\OnlineVideos.mpe1</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{634a0846-56f8-436d-841d-14c5d5f27455}-OnlineVideos.mpe1</ZipFileName>
-        <DestinationFilename />
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="true" Modified="true">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\External Installers\TraktPlugin.mpe1</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{2ff41665-0692-4a7e-accd-f12a470d4253}-TraktPlugin.mpe1</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{5420a64c-96b2-4878-9004-2313ce2fa95b}-OnlineVideos.mpe1</ZipFileName>
         <DestinationFilename />
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="true" Modified="true">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\External Installers\SubCentral.mpe1</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{5e1d16af-b074-4c5b-a0ae-e02d6a85b894}-SubCentral.mpe1</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{30ff0a24-c88c-4e49-8d4f-f25c2ba790f5}-SubCentral.mpe1</ZipFileName>
         <DestinationFilename />
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="true" Modified="true">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\External Installers\WorldWeather.mpe1</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{ed19cc2c-5a71-45f4-a9d3-d5fd79219a04}-WorldWeather.mpe1</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{752187a8-7c11-497e-8e6f-595be071191c}-WorldWeather.mpe1</ZipFileName>
         <DestinationFilename />
       </FileItem>
     </Items>
@@ -30779,7 +30608,7 @@ greetz dlarge500</ExtensionDescription>
         <Recursive>true</Recursive>
       </FolderGroup>
     </FolderGroups>
-    <ProjectFilename>Mustayaluca.xmp2</ProjectFilename>
+    <ProjectFilename>mustayaluca.xmp2</ProjectFilename>
     <UpdatePath1>D:\Development\mustayaluca\MPEI\update.xml</UpdatePath1>
     <UpdatePath2 />
     <UpdatePath3 />
