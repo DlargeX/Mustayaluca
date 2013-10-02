@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>25653</id>
+	<defaultcontrol>101</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+
+		<control>
+			<description>Default Background</description>
+			<type>image</type>
+			<id>1</id>
+			<texture>backgrounds\music\default.jpg</texture>
+			<width>1920</width>
+			<height>1080</height>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background.png</texture>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_menu_full.png</texture>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>RadioTime: #RadioTime.Translation.FastPresets.Label</label>
+			<visible>!player.hasmedia</visible>
+		</control>
+
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+		</control>
+
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+			<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>0</posX>
+				<posY>230</posY>
+				<layout>StackLayout(0, Vertical, true)</layout>
+				<control>
+					<id>2</id>
+					<type>button</type>
+					<onup>17</onup>
+					<ondown>3</ondown>
+					<posX>1005</posX>
+					<posY>589</posY>
+					<label>#RadioTime.Translation.Home.Label</label>
+				</control>
+				<control>
+					<id>3</id>
+					<type>button</type>
+					<onup>2</onup>
+					<ondown>3</ondown>
+					<posX>1005</posX>
+					<posY>652</posY>
+					<label>#RadioTime.Translation.Folders.Label</label>
+				</control>
+			</control>
+		</control>
+
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+			<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>402</posX>
+				<posY>230</posY>
+				<layout>StackLayout(0, Vertical, true)</layout>
+				<control>
+					<id>101</id>
+					<type>button</type>
+					<onright>101</onright>
+					<ondown>102</ondown>
+					<onup>110</onup>
+					<textureFocus>list_wide_focus.png</textureFocus>
+					<width>1008</width>
+					<textalign>left</textalign>
+					<label>#RadioTime.Presets.1.Name</label>
+				</control>
+				<control>
+					<id>102</id>
+					<type>button</type>
+					<onright>102</onright>
+					<onup>101</onup>
+					<ondown>103</ondown>
+					<textureFocus>list_wide_focus.png</textureFocus>
+					<width>1008</width>
+					<textalign>left</textalign>
+					<label>#RadioTime.Presets.2.Name</label>
+				</control>
+				<control>
+					<id>103</id>
+					<type>button</type>
+					<onright>103</onright>
+					<onup>102</onup>
+					<ondown>104</ondown>
+					<textureFocus>list_wide_focus.png</textureFocus>
+					<width>1008</width>
+					<textalign>left</textalign>
+					<label>#RadioTime.Presets.3.Name</label>
+				</control>
+				<control>
+					<id>104</id>
+					<type>button</type>
+					<onright>104</onright>
+					<onup>103</onup>
+					<ondown>105</ondown>
+					<textureFocus>list_wide_focus.png</textureFocus>
+					<width>1008</width>
+					<textalign>left</textalign>
+					<label>#RadioTime.Presets.4.Name</label>
+				</control>
+				<control>
+					<id>105</id>
+					<type>button</type>
+					<onright>105</onright>
+					<onup>104</onup>
+					<ondown>106</ondown>
+					<textureFocus>list_wide_focus.png</textureFocus>
+					<width>1008</width>
+					<textalign>left</textalign>
+					<label>#RadioTime.Presets.5.Name</label>
+				</control>
+				<control>
+					<id>106</id>
+					<type>button</type>
+					<onleft>2</onleft>
+					<onup>105</onup>
+					<ondown>107</ondown>
+					<textureFocus>list_wide_focus.png</textureFocus>
+					<width>1008</width>
+					<textalign>left</textalign>
+					<label>#RadioTime.Presets.6.Name</label>
+				</control>
+				<control>
+					<id>107</id>
+					<type>button</type>
+					<onleft>2</onleft>
+					<onup>106</onup>
+					<ondown>108</ondown>
+					<textureFocus>list_wide_focus.png</textureFocus>
+					<width>1008</width>
+					<textalign>left</textalign>
+					<label>#RadioTime.Presets.7.Name</label>
+				</control>
+				<control>
+					<id>108</id>
+					<type>button</type>
+					<onleft>2</onleft>
+					<onup>107</onup>
+					<ondown>109</ondown>
+					<textureFocus>list_wide_focus.png</textureFocus>
+					<width>1008</width>
+					<textalign>left</textalign>
+					<label>#RadioTime.Presets.8.Name</label>
+				</control>
+				<control>
+					<id>109</id>
+					<type>button</type>
+					<onleft>2</onleft>
+					<onup>108</onup>
+					<ondown>110</ondown>
+					<textureFocus>list_wide_focus.png</textureFocus>
+					<width>1008</width>
+					<textalign>left</textalign>
+					<label>#RadioTime.Presets.9.Name</label>
+				</control>
+				<control>
+					<id>110</id>
+					<type>button</type>
+					<onleft>2</onleft>
+					<onup>109</onup>
+					<ondown>101</ondown>
+					<textureFocus>list_wide_focus.png</textureFocus>
+					<width>1008</width>
+					<textalign>left</textalign>
+					<label>#RadioTime.Presets.10.Name</label>
+				</control>
+			</control>
+		</control>
+		
+		<import>common.overlay.xml</import>
+		
+	</controls>
+</window>

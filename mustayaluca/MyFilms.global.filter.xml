@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<controls>
+
+		<control>
+			<description>Global Filter Icons group</description>
+			<type>group</type>
+			<posX>1700</posX>
+			<posY>935</posY>
+			<layout>StackLayout(5,Horizontal,true)</layout>
+			<dimColor>ffffffff</dimColor>
+			<control>
+				<type>image</type>
+				<description>UnWatched Global Filter Icon</description>
+				<id>0</id>
+				<width>48</width>
+				<keepaspectratio>yes</keepaspectratio>
+				<texture>MyFilms\unwatched.png</texture>
+				<visible>string.contains(#myfilms.globalfilter.unwatched,True)</visible>
+			</control>
+			<control>
+				<type>image</type>
+				<description>Media Available Global Filter Icon</description>
+				<id>0</id>
+				<width>48</width>
+				<keepaspectratio>yes</keepaspectratio>
+				<texture>MyFilms\online.png</texture>
+				<visible>string.contains(#myfilms.globalfilter.isonline,True)</visible>
+			</control>
+			<control>
+				<type>image</type>
+				<description>Trailer Global Filter Icon</description>
+				<id>0</id>
+				<width>48</width>
+				<keepaspectratio>yes</keepaspectratio>
+				<texture>MyFilms\trailer.png</texture>
+				<visible>string.contains(#myfilms.globalfilter.trailersonly,True)</visible>
+			</control>
+			<control>
+				<type>image</type>
+				<description>Rating Global Filter Icon</description>
+				<id>0</id>
+				<width>48</width>
+				<keepaspectratio>yes</keepaspectratio>
+				<texture>MyFilms\rating.png</texture>
+				<visible>string.contains(#myfilms.globalfilter.minrating,True)</visible>
+			</control>
+		</control>
+
+	</controls>
+</window>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <allowoverlay>yes</allowoverlay>
+  <controls>
+ 
+		<control>
+			<description>Thumb Background</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>420</posX>
+			<posY>245</posY>
+			<width>1090</width>
+			<height>653</height>
+			<texture>thumb_16x9_background.png</texture>
+			<visible>string.equals(#WorldWeather.View,Astronomy)</visible> 
+		</control>
+
+		<control>
+			<description>GeoClock Image</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>465</posX>
+			<posY>290</posY>
+			<width>1000</width>
+			<height>563</height>
+			<texture>black.png</texture>
+			<visible>string.equals(#WorldWeather.View,Astronomy)</visible> 
+		</control>
+		
+		<control>
+			<description>GeoClock Image</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>465</posX>
+			<posY>325</posY>
+			<width>500</width>
+			<height>500</height>
+			<texture>http://www.astronomie.de/Images/Himmelaktuell/obssky1.gif</texture>
+			<visible>string.equals(#WorldWeather.View,Astronomy)</visible> 
+		</control>	
+
+		<control>
+			<description>GeoClock Image</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>965</posX>
+			<posY>325</posY>
+			<width>500</width>
+			<height>500</height>
+			<texture>http://www.astronomie.de/Images/Himmelaktuell/obssky1b.gif</texture>
+			<visible>string.equals(#WorldWeather.View,Astronomy)</visible> 
+		</control>	
+
+		<control>
+			<description>Zodiac image BG</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>965</posX>
+			<posY>325</posY>
+			<width>500</width>
+			<height>500</height>
+			<texture>black.png</texture>
+			<visible>string.equals(#WorldWeather.View,Astronomy)+string.equals(#WorldWeather.ImageZodiacEnabled,true)+control.hasfocus(21)</visible>		  
+		</control>
+	
+		<control>
+			<description>Zodiac image</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>965</posX>
+			<posY>325</posY>
+			<width>500</width>
+			<height>500</height>
+			<texture>#WorldWeather.ImageZodiac</texture>
+			<colordiffuse>90ffffff</colordiffuse>
+			<visible>string.equals(#WorldWeather.View,Astronomy)+string.equals(#WorldWeather.ImageZodiacEnabled,true)+control.hasfocus(21)</visible>		  
+		</control>	
+
+		<control>
+			<description>Zodiac Today sky image</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>890</posX>
+			<posY>700</posY>
+			<width>120</width>
+			<height>120</height>
+			<texture>#WorldWeather.TodayZodiacImage</texture>
+			<visible>string.equals(#WorldWeather.View,Astronomy)+string.equals(#WorldWeather.ImageZodiacEnabled,true)+control.hasfocus(21)</visible>	  
+		</control>
+	
+		<control>
+			<description>Zodiac Today label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>800</posX>
+			<posY>835</posY>
+			<width>300</width>
+			<align>center</align>
+			<label>#WorldWeather.TodayZodiac</label>
+			<font>font12</font>
+			<visible>string.equals(#WorldWeather.View,Astronomy)+string.equals(#WorldWeather.ImageZodiacEnabled,true)+control.hasfocus(21)</visible>  
+		</control>		
+
+		<control>
+			<description>Thumb Background Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>420</posX>
+			<posY>245</posY>
+			<width>1090</width>
+			<height>653</height>
+			<texture>thumb_16x9_background_overlay.png</texture>
+			<visible>string.equals(#WorldWeather.View,Astronomy)</visible> 
+		</control>
+		
+ 
+  </controls>
+</window>

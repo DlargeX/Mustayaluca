@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>0</id>
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<disabletopbar>yes</disabletopbar>
+	<define>#selecteditem:</define>
+	<define>#selectedindex:</define>
+	<define>#indexcount:</define>
+	<controls>
+
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>1</id>
+			<texture>backgrounds\pluginsbg\home.jpg</texture>
+			<width>1920</width>
+			<height>1080</height>
+      <shouldCache>true</shouldCache>			
+			<animation effect="fade" time="150">visible</animation>
+			<animation effect="fade" time="150" delay="300">hidden</animation>
+		</control>
+
+		<control>
+			<description>Menu</description>
+			<type>menu</type>
+			<id>50</id>
+			<posX>72</posX>
+			<posY>229</posY>
+			<width>1290</width>
+			<textcolor>ffffffff</textcolor>
+			<textColorNoFocus>ff9c9d9d</textColorNoFocus>
+			<dimColor>80ffffff</dimColor>
+			<buttonTextXOff>30</buttonTextXOff>
+			<buttonTextYOff>20</buttonTextYOff>
+			<buttonOffset>0</buttonOffset>
+			<buttonFont>font3</buttonFont>
+			<buttonHeight>67</buttonHeight>
+			<spaceBetweenButtons>2</spaceBetweenButtons>
+			<numberOfButtons>10</numberOfButtons>
+			<textureButtonFocus>list_wider_focus.png</textureButtonFocus>
+			<textureButtonNoFocus>-</textureButtonNoFocus>
+			<hoverX>0</hoverX>
+			<hoverY>0</hoverY>
+			<hoverWidth>1920</hoverWidth>
+			<hoverHeight>1080</hoverHeight>
+			<hoverKeepAspectratio>no</hoverKeepAspectratio>
+			<scrollTime>120</scrollTime>
+			<scrollTimeMin>50</scrollTimeMin>
+			<textureBackground>emtpy.png</textureBackground>
+			<onright>21</onright>
+			<onleft>13</onleft>
+			<dimColor>ff000000</dimColor>
+			<shadowAngle>45</shadowAngle>
+			<shadowDistance>2</shadowDistance>
+			<shadowColor>ff000000</shadowColor>
+		</control>
+		
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>1</id>
+			<texture>overlay_background.png</texture>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+		</control>
+
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>1</id>
+			<texture>overlay_full_list.png</texture>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+		</control>
+
+		<control>
+			<description>Clock</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>70</posY>
+			<width>70</width>
+			<height>70</height>
+			<texture>clockFace.png</texture>
+			<visible>!videoplayer.usingoverlays+!player.hasmedia</visible>
+		</control>
+
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posX>69</posX>
+			<posY>69</posY>
+			<width>70</width>
+			<height>70</height>
+			<texture>clockHandMinute.png</texture>
+			<animation effect="rotate" clockhandle="minute" time="150" condition="true" loop="true" >Conditional</animation>
+			<visible>!videoplayer.usingoverlays+!player.hasmedia</visible>
+		</control>
+
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posX>69</posX>
+			<posY>69</posY>
+			<width>70</width>
+			<height>70</height>
+			<texture>clockHandHour.png</texture>
+			<animation effect="rotate" clockhandle="hour" time="150" condition="true" loop="true" >Conditional</animation>
+			<visible>!videoplayer.usingoverlays+!player.hasmedia</visible>
+		</control>
+
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posX>69</posX>
+			<posY>69</posY>
+			<width>70</width>
+			<height>70</height>
+			<texture>clockHandSecond.png</texture>
+			<animation effect="rotate" clockhandle="second" time="150" condition="true" loop="true" >Conditional</animation>
+			<visible>!videoplayer.usingoverlays+!player.hasmedia</visible>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Date</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>160</posX>
+			<posY>78</posY>
+			<label>#time</label>
+			<visible>!videoplayer.usingoverlays+!player.hasmedia</visible>
+		</control>
+
+		<control Style="Time">
+			<description>Time</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>160</posX>
+			<posY>108</posY>
+			<label>#date</label>
+			<visible>!videoplayer.usingoverlays+!player.hasmedia</visible>
+		</control>
+
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+			<visible>videoplayer.usingoverlays+player.hasmedia</visible>
+		</control>
+
+<!-- ***INFOSERVICE INFOS***	 -->
+		
+<!-- 		<control>
+			<type>image</type>
+			<id>112</id>
+			<posX>1780</posX>
+			<posY>70</posY>
+			<width>70</width>
+			<height>70</height>
+			<texture>#infoservice.weather.today.img.small.fullpath</texture>
+			<visible>plugin.isenabled(InfoService)+!videoplayer.usingoverlays+!player.hasmedia</visible>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Temp</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1760</posX>
+			<posY>78</posY>
+			<align>right</align>
+			<label>#infoservice.weather.today.temp</label>
+			<visible>plugin.isenabled(InfoService)+!videoplayer.usingoverlays+!player.hasmedia+!string.contains(#infoservice.weather.today.temp,n/a)</visible>
+		</control> 
+		
+		<control Style="Time">
+			<description>Location</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1760</posX>
+			<posY>108</posY>
+			<align>right</align>
+			<label>#infoservice.weather.location</label>
+			<visible>plugin.isenabled(InfoService)+!videoplayer.usingoverlays+!player.hasmedia+!string.contains(#infoservice.weather.today.temp,n/a)</visible>
+		</control> -->		
+
+<!-- ***WORLDWEATHER INFOS***	 -->
+	
+		<control>
+			<type>image</type>
+			<id>112</id>
+			<posX>1780</posX>
+			<posY>70</posY>
+			<width>70</width>
+			<height>70</height>
+			<texture>#WorldWeather.TodayIconImage</texture>
+			<visible>plugin.isenabled(World Weather)+!videoplayer.usingoverlays+!player.hasmedia</visible>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Temp</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1760</posX>
+			<posY>78</posY>
+			<align>right</align>
+			<width>300</width>				
+			<label>#WorldWeather.TodayTemperature / #WorldWeather.TodayCondition</label>
+			<visible>plugin.isenabled(World Weather)+!videoplayer.usingoverlays+!player.hasmedia+!string.contains(#WorldWeather.TodayCondition,n/a)</visible>
+		</control>
+		
+		<control Style="Time">
+			<description>Location</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1760</posX>
+			<posY>108</posY>
+			<align>right</align>
+			<width>300</width>				
+			<label>#WorldWeather.Location</label>
+			<visible>plugin.isenabled(InfoService)+!videoplayer.usingoverlays+!player.hasmedia+!string.contains(#WorldWeather.TodayCondition,n/a)</visible>
+		</control>	
+
+		<control>
+			<description>RSS Bar</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>1039</posY>
+			<width>1920</width>
+			<height>87</height>
+			<texture>rss_bar.png</texture>
+			<visible>plugin.isenabled(InfoService)+string.equals(#infoservice.feed.enabled, true)+control.hasthumb(112)</visible>
+		</control>
+
+		<control>
+			<description>RSS Button Highlight</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>-125</posX>
+			<posY>1039</posY>
+			<width>250</width>
+			<height>87</height>
+			<texture>submenu_bar_focus_alt.png</texture>
+			<visible>plugin.isenabled(InfoService)+string.equals(#infoservice.feed.enabled, true)+control.hasfocus(13)</visible>
+		</control>
+
+		<control>
+			<description>RSS Button</description>
+			<type>button</type>
+			<id>13</id>
+			<posX>5</posX>
+			<posY>1044</posY>
+			<width>31</width>
+			<height>31</height>
+			<label>-</label>
+			<onleft>21</onleft>
+			<onright>21</onright>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<hyperlink>16001</hyperlink>
+			<textureFocus>#infoservice.feed.img</textureFocus>
+			<textureNoFocus>#infoservice.feed.img</textureNoFocus>
+			<visible>plugin.isenabled(InfoService)+string.equals(#infoservice.feed.enabled, true)+control.hasthumb(112)</visible>
+		</control>
+
+		<control Style="NoShadow">
+			<description>RSS Items</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>50</posX>
+			<posY>1042</posY>
+			<width>1900</width>
+			<textcolor>ff6d6d6d</textcolor>
+			<font>font2</font>
+			<label>#infoservice.feed.titles</label>
+			<wrapString> :: </wrapString>
+			<visible>plugin.isenabled(InfoService)+string.equals(#infoservice.feed.enabled, true)+control.hasthumb(112)</visible>
+		</control>
+
+		<!-- /Start Topbar buttons -->
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<animation effect="slide" time="500" start="0,-80" reversible="false">visible</animation>
+			<animation effect="slide" time="500" end="0,-80" reversible="false">hidden</animation>
+			<control>
+				<id>1000</id>
+				<type>image</type>
+				<posX>743</posX>
+				<posY>0</posY>
+				<width>435</width>
+				<height>80</height>
+				<texture>background_bar.png</texture>
+				<visible>!Control.HasFocus(50)+!Control.HasFocus(13)+Control.HasFocus(21)|Control.HasFocus(27)|Control.HasFocus(24)|Control.HasFocus(25)|Control.HasFocus(26)|Control.HasFocus(31)|Control.HasFocus(22)|Control.HasFocus(23)</visible>
+			</control>
+			<control>
+				<id>21</id>
+				<description>Back button</description>
+				<type>button</type>
+				<onleft>23</onleft>
+				<onright>27</onright>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<posX>757</posX>
+				<posY>15</posY>
+				<width>50</width>
+				<height>50</height>
+				<action>10</action>
+				<textureFocus>back_enabled.png</textureFocus>
+				<textureNoFocus>back_disabled.png</textureNoFocus>
+				<label>-</label>
+				<visible allowhiddenfocus="true">control.isvisible(1000)</visible>
+			</control>
+			<control>
+				<id>27</id>
+				<description>Stop button</description>
+				<type>button</type>
+				<onleft>21</onleft>
+				<onright>24</onright>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<posX>808</posX>
+				<posY>15</posY>
+				<width>50</width>
+				<height>50</height>
+				<action>13</action>
+				<textureFocus>stop_enabled.png</textureFocus>
+				<textureNoFocus>stop_disabled.png</textureNoFocus>			
+				<label>-</label>
+				<visible allowhiddenfocus="true">control.isvisible(1000)</visible>
+			</control>
+			<control>
+				<id>24</id>
+				<description>Play button</description>
+				<type>button</type>
+				<onleft>27</onleft>
+				<onright>25</onright>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<posX>859</posX>
+				<posY>15</posY>
+				<width>50</width>
+				<height>50</height>
+				<action>79</action>
+				<textureFocus>play_enabled.png</textureFocus>
+				<textureNoFocus>play_disabled.png</textureNoFocus>			
+				<label>-</label>
+				<visible allowhiddenfocus="true">control.isvisible(1000)</visible>
+			</control>
+			<control>
+				<id>25</id>
+				<description>Pause button</description>
+				<type>button</type>
+				<onleft>24</onleft>
+				<onright>26</onright>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<posX>910</posX>
+				<posY>15</posY>
+				<width>50</width>
+				<height>50</height>
+				<action>12</action>
+				<textureFocus>pause_enabled.png</textureFocus>
+				<textureNoFocus>pause_disabled.png</textureNoFocus>			
+				<label>-</label>
+				<visible allowhiddenfocus="true">control.isvisible(1000)</visible>
+			</control>
+			<control>
+				<id>26</id>
+				<description>Basichome button</description>
+				<type>button</type>
+				<onleft>25</onleft>
+				<onright>31</onright>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<posX>961</posX>
+				<posY>15</posY>
+				<width>50</width>
+				<height>50</height>
+				<action>115</action>
+				<textureFocus>nav_refresh_focus.png</textureFocus>
+				<textureNoFocus>nav_refresh_nofocus.png</textureNoFocus>
+				<label>-</label>
+				<visible allowhiddenfocus="true">control.isvisible(1000)</visible>
+			</control>
+			<control>
+				<id>31</id>
+				<description>Exit button</description>
+				<type>button</type>
+				<onleft>26</onleft>
+				<onright>22</onright>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<posX>1012</posX>
+				<posY>15</posY>
+				<width>50</width>
+				<height>50</height>
+				<action>97</action>
+				<textureFocus>exit_enabled.png</textureFocus>
+				<textureNoFocus>exit_disabled.png</textureNoFocus>
+				<label>-</label>
+				<visible allowhiddenfocus="true">control.isvisible(1000)</visible>
+			</control>
+			<control>
+				<id>22</id>
+				<description>Settings button</description>
+				<type>button</type>
+				<onleft>31</onleft>
+				<onright>23</onright>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<posX>1063</posX>
+				<posY>15</posY>
+				<width>50</width>
+				<height>50</height>
+				<hyperlink>4</hyperlink>
+				<textureFocus>nav_settings_focus.png</textureFocus>
+				<textureNoFocus>nav_settings_nofocus.png</textureNoFocus>
+				<label>-</label>
+				<visible allowhiddenfocus="true">control.isvisible(1000)</visible>
+			</control>
+			<control>
+				<id>23</id>
+				<description>Shutdown button</description>
+				<type>button</type>
+				<onleft>22</onleft>
+				<onright>21</onright>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<posX>1114</posX>
+				<posY>15</posY>
+				<width>50</width>
+				<height>50</height>
+				<action>99</action>
+				<textureFocus>nav_shutdown_focus.png</textureFocus>
+				<textureNoFocus>nav_shutdown_nofocus.png</textureNoFocus>
+				<label>-</label>
+				<visible allowhiddenfocus="true">control.isvisible(1000)</visible>
+			</control>
+		</control>
+		<!-- /End Topbar buttons -->
+
+		<import>common.overlay.home.xml</import>
+
+	</controls>
+</window>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<id>10234</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<disabletopbar>yes</disabletopbar>
+	<controls>
+		<control>
+			<type>image</type>
+			<id>25</id>
+			<posX>0</posX>
+			<posY>998</posY>
+			<width>1920</width>
+			<height>82</height>
+			<texture>calibration_bar.png</texture>
+		</control>
+		<control>
+			<description>Longitude</description>
+			<type>label</type>
+			<id>3</id>
+			<posX>70</posX>
+			<posY>1012</posY>
+			<width>1330</width>
+			<align>left</align>
+			<label>Longitude</label>
+		</control>
+		<control>
+			<description>Latitude</description>
+			<type>label</type>
+			<id>4</id>
+			<posX>70</posX>
+			<posY>1042</posY>
+			<width>1330</width>
+			<align>left</align>
+			<label>Latitude</label>
+		</control>
+		<control>
+			<description>MapType</description>
+			<type>label</type>
+			<id>2</id>
+			<posX>1870</posX>
+			<posY>1012</posY>
+			<label>Map type</label>
+			<align>right</align>
+		</control>
+		<control>
+			<description>Zoom Mode</description>
+			<type>label</type>
+			<id>5</id>
+			<posX>1870</posX>
+			<posY>1042</posY>
+			<label>Zoom Mode</label>
+			<align>right</align>
+		</control>
+		<control>
+			<description>Progressbar Placeholder (gives skinners the chance to define the position of the progressbar)</description>
+			<type>image</type>
+			<id>99</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>10</width>
+			<height>10</height>
+			<texture>-</texture>
+		</control>
+	</controls>
+</window>

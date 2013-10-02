@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>2004</id>
+	<defaultcontrol>2</defaultcontrol>
+	<controls>
+
+		<control>
+			<description>Track Title</description>
+			<type>fadelabel</type>
+			<id>5</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<label>-</label>
+		</control>
+
+		<control>
+			<description>Play Time Label</description>
+			<type>label</type>
+			<id>2</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<label>-</label>
+		</control>
+
+		<control>
+			<description>play logo</description>
+			<type>image</type>
+			<id>3</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>10</width>
+			<height>10</height>
+			<texture>-</texture>
+		</control>
+
+		<control>
+			<description>Pause logo</description>
+			<type>image</type>
+			<id>4</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>10</width>
+			<height>10</height>
+			<texture>-</texture>
+		</control>
+
+		<control>
+			<description>Artist Label</description>
+			<type>fadelabel</type>
+			<id>5</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<label>-</label>
+		</control>
+		
+		<!--UNUSED-->
+		<control>
+			<description>music rectangle</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>10</width>
+			<height>10</height>
+			<texture>-</texture>
+		</control>
+		<control>
+			<description>music logo</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>10</width>
+			<height>10</height>
+			<texture>-</texture>
+		</control>
+		<control>
+			<description>music rectangle</description>
+			<type>image</type>
+			<id>6</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>10</width>
+			<height>10</height>
+			<texture>-</texture>
+		</control>
+		<control>
+			<description>FF logo</description>
+			<type>image</type>
+			<id>7</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>10</width>
+			<height>10</height>
+			<texture>-</texture>
+		</control>
+		<control>
+			<description>RW logo</description>
+			<type>image</type>
+			<id>8</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>10</width>
+			<height>10</height>
+			<texture>-</texture>
+		</control>
+		<control>
+			<description>music logo</description>
+			<type>videowindow</type>
+			<id>9</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>10</width>
+			<height>10</height>
+			<texture>-</texture>
+		</control>
+		<control>
+			<description>Gap / Normal Icon</description>
+			<type>image</type>
+			<id>10</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>10</width>
+			<height>10</height>
+			<texture>-</texture>
+		</control>
+		<control>
+			<description>Gapless Icon</description>
+			<type>image</type>
+			<id>11</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>10</width>
+			<height>10</height>
+			<texture>-</texture>
+		</control>
+		<control>
+			<description>Crossfade Icon</description>
+			<type>image</type>
+			<id>12</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>10</width>
+			<height>10</height>
+			<texture>-</texture>
+		</control>
+
+	</controls>
+</window>

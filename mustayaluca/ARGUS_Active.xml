@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>49849</id>
+  <defaultcontrol>10</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.image:4tr_television_logo.png</define>
+  <define>#header.label:Active Recordings</define>
+  <controls>
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>backgrounds\tv\default.jpg</texture>
+      <width>1920</width>
+      <height>1080</height>
+    </control>
+	
+    <import>common.window.recordings.list.xml</import>
+	
+    <control>
+      <type>group</type>
+      <description>group element</description>
+      <id>0</id>
+      <posX>455</posX>
+      <posY>116</posY>
+      <width>778</width>
+      <height>583</height>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <mpe>
+        <layout>Grid</layout>
+        <spring>no</spring>
+        <spacing>0</spacing>
+        <padding>
+          <top>0</top>
+          <right>0</right>
+          <bottom>0</bottom>
+          <left>0</left>
+        </padding>
+      </mpe>
+      <control>
+        <description>active recordings listcontrol</description>
+        <type>listcontrol</type>
+        <id>10</id>
+        <posX>402</posX>
+        <width>870</width>
+        <height>730</height>
+        <onleft>2</onleft>
+        <onright>2</onright>
+        <onup>2</onup>
+        <ondown>2</ondown>
+        <IconXOff>2000</IconXOff>
+        <PinIconXOff>715</PinIconXOff>
+        <PinIconYOff>17</PinIconYOff>
+        <PinIconWidth>120</PinIconWidth>
+        <PinIconHeight>34</PinIconHeight>
+        <textXOff2>840</textXOff2>
+        <animation effect="fade" time="150">WindowOpen</animation>
+        <animation effect="fade" time="150">WindowClose</animation>
+      </control>
+      <control Style="DetailTitle">
+        <description>Current program title</description>
+        <type>fadelabel</type>
+        <id>13</id>
+        <posX>1420</posX>
+        <posY>250</posY>
+        <width>490</width>
+        <label>#TV.Active.Title</label>
+        <animation effect="fade" time="150">WindowOpen</animation>
+        <animation effect="fade" time="150">WindowClose</animation>
+      </control>
+      <control Style="Time">
+        <description>Current program time</description>
+        <id>14</id>
+        <type>label</type>
+        <posX>1420</posX>
+        <posY>285</posY>
+        <width>490</width>
+        <label>#TV.Active.Time</label>
+        <animation effect="fade" time="150">WindowOpen</animation>
+        <animation effect="fade" time="150">WindowClose</animation>
+      </control>
+      <control Style="DetailTextDroid">
+        <description>Description1</description>
+        <type>textboxscrollup</type>
+        <id>15</id>
+        <posX>1310</posX>
+        <posY>385</posY>
+        <width>600</width>
+        <height>445</height>
+        <seperator>-----------------------------------------------------------------------------------</seperator>
+        <label>#TV.Active.Description</label>
+        <scrollStartDelaySec>10</scrollStartDelaySec>
+        <animation effect="fade" time="150">WindowOpen</animation>
+        <animation effect="fade" time="150">WindowClose</animation>
+      </control>
+    </control>
+	
+    <control>
+      <type>image</type>
+      <posX>1310</posX>
+      <posY>255</posY>
+      <width>90</width>
+      <height>90</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <zoom>no</zoom>
+      <texture>#selectedthumb</texture>
+    </control>
+    <import>common.overlays.xml</import>
+  </controls>
+</window>

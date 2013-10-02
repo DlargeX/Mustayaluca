@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>3007</id>
+	<defaultcontrol>213</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+		<control>
+			<description>background botton</description>
+			<id>1</id>
+			<type>image</type>
+			<posX>10</posX>
+			<posY>720</posY>
+			<height>350</height>
+			<width>950</width>
+			<texture>zaposd_back.png</texture>
+		</control>
+
+		<control Style="DetailText">
+			<description>Time Info</description>
+			<type>label</type>
+			<id>110</id>
+			<posX>60</posX>
+			<posY>977</posY>
+			<label>#time</label>
+			<shadowAngle>0</shadowAngle>
+			<shadowDistance>0</shadowDistance>
+			<shadowColor>00000000</shadowColor>
+		</control>
+
+		<control>
+			<type>image</type>
+			<id>10</id>
+			<posX>60</posX>
+			<posY>810</posY>
+			<height>100</height>
+			<width>100</width>
+			<texture>#TV.View.thumb</texture>
+			<keepaspectratio>yes</keepaspectratio>
+			<centered>yes</centered>
+			<colordiffuse>ccffffff</colordiffuse>
+		</control>
+
+		<control Style="DetailText">
+			<description>Channel</description>
+			<type>label</type>
+			<id>35</id>
+			<posX>920</posX>
+			<posY>977</posY>
+			<width>800</width>
+			<align>right</align>
+			<label>-</label>
+			<shadowAngle>0</shadowAngle>
+			<shadowDistance>0</shadowDistance>
+			<shadowColor>00000000</shadowColor>
+		</control>
+
+		<control>
+			<description>progress bar</description>
+			<type>progress</type>
+			<id>20</id>
+			<posX>35</posX>
+			<posY>1025</posY>
+			<width>900</width>
+			<offset>0</offset>
+			<height>20</height>
+			<innerheight>20</innerheight>
+			<lefttexture>osd_progress_left_blue.png</lefttexture>
+			<midtexture>osd_progress_mid_blue.png</midtexture>
+			<righttexture>osd_progress_right_blue.png</righttexture>
+			<label>#TV.View.Percentage</label>
+			<visible>yes</visible>
+		</control>
+
+		<control Style="Time">
+			<description>On Now Label</description>
+			<id>1</id>
+			<type>label</type>
+			<posX>70</posX>
+			<posY>756</posY>
+			<width>150</width>
+			<label>10105</label>
+			<shadowAngle>0</shadowAngle>
+			<shadowDistance>0</shadowDistance>
+			<shadowColor>00000000</shadowColor>
+		</control>
+
+		<control Style="SmallTitle">
+			<description>On TV Now</description>
+			<id>36</id>
+			<type>textbox</type>
+			<posX>175</posX>
+			<posY>805</posY>
+			<width>735</width>
+			<height>50</height>
+		</control>
+
+		<control Style="DetailText">
+			<description>End Time Info</description>
+			<type>textbox</type>
+			<posX>175</posX>
+			<posY>860</posY>
+			<label>Next:</label>
+		</control>
+
+		<control Style="DetailText">
+			<description>On TV Next</description>
+			<type>textbox</type>
+			<id>37</id>
+			<posX>260</posX>
+			<posY>860</posY>
+			<width>735</width>
+		</control>
+
+		<control>
+			<description>rec logo</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>161</posX>
+			<posY>972</posY>
+			<width>40</width>
+			<height>40</height>
+			<texture>tv_is_unavailable.png</texture>
+			<visible>!player.recording</visible>
+			<colordiffuse>b0ffffff</colordiffuse>
+		</control>
+
+		<control>
+			<description>rec logo</description>
+			<type>image</type>
+			<id>39</id>
+			<posX>161</posX>
+			<posY>972</posY>
+			<width>40</width>
+			<height>40</height>
+			<texture>tv_is_recording.png</texture>
+			<visible>player.recording</visible>
+		</control>
+
+		<control Style="DetailText">
+			<description>Zap to channel no</description>
+			<type>label</type>
+			<id>38</id>
+			<posX>920</posX>
+			<posY>756</posY>
+			<label>-</label>
+			<align>right</align>
+		</control>
+
+	</controls>
+</window>

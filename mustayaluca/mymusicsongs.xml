@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>501</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:2</define>
+	<define>#useSelectedFanart:Yes</define>
+	<controls>
+
+		<control>
+			<description>Default Background</description>
+			<type>image</type>
+			<id>1</id>
+			<texture>backgrounds\music\default.jpg</texture>
+			<width>1920</width>
+			<height>1080</height>
+			<shouldCache>true</shouldCache>
+		</control>
+
+		<import>common.music.fanart.xml</import>
+		<import>common.window.xml</import>
+		<import>common.facade.music.xml</import>
+
+		<control>
+			<description>Backdrop Overlay - Coverflow</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_coverflow_top.png</texture>
+			<visible>facadeview.coverflow</visible>
+			<shouldCache>true</shouldCache>
+		</control>
+
+		<control>
+			<type>image</type>
+			<id>1</id>
+			<posX>1236</posX>
+			<posY>310</posY>
+			<width>530</width>
+			<height>555</height>
+			<texture>music_thumb_big_background_reflect.png</texture>
+			<visible>[facadeview.list|facadeview.album]+!string.equals(#selecteditem2)+Control.HasThumb(500)</visible>
+			<animation effect="fade" time="150" reversible="false">visible</animation>
+		</control>
+
+		<control>
+			<id>500</id>
+			<type>image</type>
+			<posX>1281</posX>
+			<posY>355</posY>
+			<width>440</width>
+			<height>440</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<centered>yes</centered>
+			<texture>#selectedthumb</texture>
+			<zoom>yes</zoom>
+			<visible>[facadeview.list|facadeview.album]+!string.equals(#selecteditem2)</visible>
+			<animation effect="fade" time="150" reversible="false">visible</animation>
+		</control>
+
+		<control>
+			<type>image</type>
+			<id>1</id>
+			<posX>1236</posX>
+			<posY>310</posY>
+			<width>530</width>
+			<height>555</height>
+			<texture>music_thumb_big_overlay_reflect.png</texture>
+			<visible>[facadeview.list|facadeview.album]+!string.equals(#selecteditem2)+Control.HasThumb(500)</visible>
+			<animation effect="fade" time="150" reversible="false">visible</animation>
+		</control>
+
+		<control>
+			<type>image</type>
+			<id>1</id>
+			<posX>1276</posX>
+			<posY>247</posY>
+			<width>450</width>
+			<height>480</height>
+			<texture>music_thumb_background_reflect.png</texture>
+			<visible>[facadeview.list|facadeview.album]+!string.equals(#selecteditem,..)+string.equals(#selecteditem2)</visible>
+			<animation effect="fade" time="150" reversible="false">visible</animation>
+		</control>
+
+		<control>
+			<id>500</id>
+			<type>image</type>
+			<posX>1321</posX>
+			<posY>292</posY>
+			<width>360</width>
+			<height>360</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<centered>yes</centered>
+			<texture>default_audio.png</texture>
+			<zoom>yes</zoom>
+			<visible>[facadeview.list|facadeview.album]+!string.equals(#selecteditem,..)+string.equals(#selecteditem2)</visible>
+			<animation effect="fade" time="150" reversible="false">visible</animation>
+		</control>
+
+		<control>
+			<id>500</id>
+			<type>image</type>
+			<posX>1321</posX>
+			<posY>292</posY>
+			<width>360</width>
+			<height>360</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<centered>yes</centered>
+			<texture>#selectedthumb</texture>
+			<zoom>yes</zoom>
+			<visible>[facadeview.list|facadeview.album]+!string.equals(#selecteditem,..)+string.equals(#selecteditem2)</visible>
+			<animation effect="fade" time="150" reversible="false">visible</animation>
+		</control>
+
+		<control>
+			<type>image</type>
+			<id>1</id>
+			<posX>1276</posX>
+			<posY>247</posY>
+			<width>450</width>
+			<height>480</height>
+			<texture>music_thumb_background_reflect_overlay.png</texture>
+			<visible>[facadeview.list|facadeview.album]+!string.equals(#selecteditem,..)+string.equals(#selecteditem2)</visible>
+			<animation effect="fade" time="150" reversible="false">visible</animation>
+		</control>
+
+		<control Style="DetailText">
+			<description>Selected item Label</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>1290</posX>
+			<posY>733</posY>
+			<width>630</width>
+			<label>#music.album</label>
+			<visible>[facadeview.list|facadeview.album]+!string.equals(#selecteditem,..)+string.equals(#selecteditem2)</visible>
+			<animation effect="fade" time="150" reversible="false">visible</animation>
+		</control>
+
+		<control Style="DetailText">
+			<description>Selected item Label</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>1290</posX>
+			<posY>803</posY>
+			<width>630</width>
+			<label>#music.year | #music.genre</label>
+			<visible>[facadeview.list|facadeview.album]+!string.equals(#selecteditem,..)+string.equals(#selecteditem2)</visible>
+			<animation effect="fade" time="150" reversible="false">visible</animation>
+		</control>
+
+		<import>mymusic.hiddenmenu.xml</import>			
+		<import>common.overlay.xml</import>
+
+	</controls>
+</window>

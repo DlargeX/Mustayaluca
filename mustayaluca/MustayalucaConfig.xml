@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<id>1196200</id>
+	<defaultcontrol>41</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#defaultcontrol:41</define>
+	<define>#defaultcontrol.onright:9999</define>
+	<controls>
+
+		<import>common.settings.xml</import>
+
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#Mustayaluca.SkinSettings</label>
+			<visible>!player.hasmedia</visible>
+		</control>    
+
+		<control>
+			<type>group</type>
+			<description>group element</description>
+			<posX>0</posX>
+			<posY>230</posY>
+			<layout>StackLayout(0, Vertical, true)</layout>
+
+			<control>
+				<description>Video Settings</description>
+				<type>button</type>
+				<id>41</id>
+				<label>-</label>
+			</control>
+			
+			<control>
+				<description>Misc Screen Settings</description>
+				<type>button</type>
+				<id>42</id>
+				<label>-</label>
+			</control>
+			
+			<control>
+				<description>TV Settings</description>
+				<type>button</type>
+				<id>46</id>
+				<label>-</label>
+			</control>
+
+			<control>
+				<description>Skin Info</description>
+				<type>button</type>
+				<id>47</id>
+				<label>-</label>
+			</control>
+		</control>
+
+		<import>common.overlay.home.xml</import>
+
+	</controls>
+</window>

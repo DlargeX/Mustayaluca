@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<controls>
+
+		<!-- Additional Display for Info Movie available -->
+		<control Style="DetailText">
+			<description>Movie available Info Label</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>260</posX>
+			<posY>949</posY>
+			<width>100</width>
+			<label>Film:</label>
+			<align>right</align>
+			<visible>!control.isvisible(34)+facadeview.list+Control.HasFocus(50)</visible>
+		</control>
+		<control>
+			<description>Movie unavailable Icon</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>280</posX>
+			<posY>953</posY>
+			<width>26</width>
+			<height>26</height>
+			<texture>MyFilms\led_red.png</texture>
+			<visible>!control.isvisible(34)+facadeview.list+Control.HasFocus(50)+string.equals(#myfilms.user.source.isonline,unavailable)</visible>
+		</control>
+		<control>
+			<description>Movie available Icon</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>280</posX>
+			<posY>953</posY>
+			<width>26</width>
+			<height>26</height>
+			<texture>MyFilms\led_green.png</texture>
+			<visible>!control.isvisible(34)+facadeview.list+Control.HasFocus(50)+string.equals(#myfilms.user.source.isonline,available)</visible>
+		</control>
+		<control>
+			<description>Movie offline Icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>280</posX>
+			<posY>953</posY>
+			<width>26</width>
+			<height>26</height>
+			<texture>MyFilms\led_yellow.png</texture>
+			<visible>!control.isvisible(34)+facadeview.list+Control.HasFocus(50)+string.equals(#myfilms.user.source.isonline,offline)</visible>
+		</control>
+		<control>
+			<description>Movie unknown Icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>280</posX>
+			<posY>953</posY>
+			<width>26</width>
+			<height>26</height>
+			<texture>MyFilms\led_grey.png</texture>
+			<visible>!control.isvisible(34)+facadeview.list+Control.HasFocus(50)+string.equals(#myfilms.user.source.isonline,unknown)</visible>
+		</control>
+
+		<!-- Trailer Available Info -->
+		<control Style="DetailText">
+			<description>Trailer available Info Label</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>430</posX>
+			<posY>949</posY>
+			<width>150</width>
+			<align>right</align>
+			<label>Trailer:</label>
+			<visible>!control.isvisible(34)+facadeview.list+Control.HasFocus(50)</visible>
+		</control>
+		<control>
+			<description>Trailer unavailable Icon</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>450</posX>
+			<posY>953</posY>
+			<width>26</width>
+			<height>26</height>
+			<texture>MyFilms\led_red.png</texture>
+			<visible>!control.isvisible(34)+facadeview.list+Control.HasFocus(50)+string.equals(#myfilms.user.sourcetrailer.isonline,unavailable)</visible>
+		</control>
+		<control>
+			<description>Trailer available Icon</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>450</posX>
+			<posY>953</posY>
+			<width>26</width>
+			<height>26</height>
+			<texture>MyFilms\led_green.png</texture>
+			<visible>!control.isvisible(34)+facadeview.list+Control.HasFocus(50)+string.equals(#myfilms.user.sourcetrailer.isonline,available)</visible>
+		</control>
+		<control>
+			<description>Trailer offline Icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>450</posX>
+			<posY>953</posY>
+			<width>26</width>
+			<height>26</height>
+			<texture>MyFilms\led_yellow.png</texture>
+			<visible>!control.isvisible(34)+facadeview.list+Control.HasFocus(50)+string.equals(#myfilms.user.sourcetrailer.isonline,offline)</visible>
+		</control>
+		<control>
+			<description>Trailer unknown Icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>450</posX>
+			<posY>953</posY>
+			<width>26</width>
+			<height>26</height>
+			<texture>MyFilms\led_unknown.png</texture>
+			<visible>!control.isvisible(34)+facadeview.list+Control.HasFocus(50)+string.equals(#myfilms.user.sourcetrailer.isonline,unknown)</visible>
+		</control>
+
+	</controls>
+</window>

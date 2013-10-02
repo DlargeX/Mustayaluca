@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<controls>
+
+		<!-- Dummy controls to indicate MPEI updates available for installed plugins -->
+		<control>
+			<description>Visibile when BBC Weather plugin update available.</description>
+			<type>label</type>
+			<id>92809101</id>
+			<posX>-50</posX>
+			<posY>-50</posY>
+			<width>0</width>
+			<visible>string.equals(#mpei.7d91aa07_388c_427f_86dc_7d89eb5b5cad.haveupdate, true)</visible>
+		</control>
+
+		<control>
+			<description>Visibile when Extensions plugin update available.</description>
+			<type>label</type>
+			<id>92809102</id>
+			<posX>-50</posX>
+			<posY>-50</posY>
+			<width>0</width>
+			<visible>string.equals(#mpei.a6afa4d6_4fd8_4607_8878_5911db044fd7.haveupdate, true)</visible>
+		</control>
+
+		<control>  
+			<description>Update Indicator</description>   
+			<type>image</type>   
+			<id>0</id>  
+			<posX>808</posX>  
+			<posY>961</posY> 
+			<width>304</width>   
+			<height>79</height>   
+			<texture>update_available.png</texture>
+			<animation effect="fade" time="1500">windowopen</animation>
+			<animation effect="fade" time="1000">visiblechange</animation>
+			<visible>Control.IsVisible(92809101)|Control.IsVisible(92809102)</visible>
+		</control>
+
+	</controls>
+</window>

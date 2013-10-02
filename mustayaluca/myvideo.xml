@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>6</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#useSelectedFanart:Yes</define>
+	<controls>
+
+		<control>
+			<description>Default Background</description>
+			<type>image</type>
+			<id>1</id>
+			<texture>backgrounds\videos\default.jpg</texture>
+			<width>1920</width>
+			<height>1080</height>
+		</control>
+
+		<import>common.video.fanart.xml</import>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background.png</texture>
+			<visible>![facadeview.filmstrip|facadeview.coverflow]</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay - Filmstrip</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_filmstrip.png</texture>
+			<visible>facadeview.filmstrip</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay - List View</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_poster_list_noinfo.png</texture>
+			<visible>facadeview.list+string.equals(#year,1900)</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay - List View</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_poster_list.png</texture>
+			<visible>facadeview.list+!string.equals(#year,1900)</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay - Thumbs View</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_thumbs.png</texture>
+			<visible>[facadeview.smallicons|facadeview.largeicons]</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay - Filmstrip</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_filmstrip.png</texture>
+			<visible>facadeview.filmstrip</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay - Filmstrip/Coverflow</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background_top.png</texture>
+			<visible>facadeview.filmstrip|facadeview.coverflow</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay - Coverflow</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_coverflow.png</texture>
+			<visible>facadeview.coverflow</visible>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay Bar</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>998</posY>
+			<width>1920</width>
+			<height>82</height>
+			<texture>overlay_bar_bottom.png</texture>
+			<visible>!facadeview.coverflow</visible>
+		</control>
+
+		<control>
+			<type>actiongroup</type>
+			<description>action menu</description>
+			<defaultcontrol>2</defaultcontrol>
+			<onexit>50</onexit>
+			<buttonX>0</buttonX>
+			<buttonY>0</buttonY>
+			<buttonwidth>106</buttonwidth>
+			<buttonheight>720</buttonheight>
+			<width>568</width>
+			<height>900</height>
+			<dimColor>00ffffff</dimColor>
+			<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+			<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			<control>
+				<type>image</type>
+				<posX>0</posX>
+				<posY>0</posY>
+				<width>400</width>
+				<height>998</height>
+				<texture>hidden_menu_short_background.png</texture>
+				<colorDiffuse>fffffffff</colorDiffuse>
+				<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>
+			
+			<control>
+				<type>image</type>
+				<id>1</id>
+				<posX>262</posX>
+				<posY>60</posY>
+				<width>128</width>
+				<height>128</height>
+				<texture>logo_videos.png</texture>
+				<visible>!Control.HasFocus(50)+Control.IsVisible(50)</visible>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>
+			
+			<control>
+				<type>label</type>
+				<id>0</id>
+				<posX>370</posX>
+				<posY>178</posY>
+				<width>350</width>
+				<font>font3</font>
+				<label>#(L(3))/#(L(134))</label>
+				<align>right</align>
+				<visible>!Control.HasFocus(50)+Control.IsVisible(50)</visible>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>
+			
+			<control>
+				<description>group element</description>
+				<type>group</type>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+				<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+				<control>
+					<description>button group</description>
+					<type>group</type>
+					<posX>0</posX>
+					<posY>230</posY>
+					<layout>StackLayout(0, Vertical, true)</layout>
+					<visible>!Control.HasFocus(50)</visible>
+					
+					<control>
+						<description>View-As</description>
+						<type>menubutton</type>
+						<id>2</id>
+						<label></label>	
+						<mode>dialoglist</mode>				
+						<dialogTitle>792</dialogTitle> 					
+						<valueTextInButton>yes</valueTextInButton>
+						<valuePrefixText>95</valuePrefixText>	
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<onup>17</onup>
+						<ondown>3</ondown>
+					</control>
+					
+					<control>
+						<description>Sort</description>
+						<type>sortbutton</type>
+						<id>3</id>
+						<label>103</label>
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<onup>2</onup>
+						<ondown>5</ondown>
+					</control>
+					
+					<control>
+						<description>Switch View</description>
+						<type>menubutton</type>
+						<id>5</id>
+						<label></label>
+						<mode>dialoglist</mode>
+						<dialogTitle>499</dialogTitle>
+						<valueTextInButton>yes</valueTextInButton>
+						<valuePrefixText>97</valuePrefixText>	
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<onup>3</onup>
+						<ondown>7</ondown>
+					</control>
+					
+					<control>
+						<description>Scan new videos</description>
+						<type>button</type>
+						<id>7</id>
+						<label>Scan new Videos</label>
+						<onright>50</onright>
+						<onleft>50</onleft>
+						<onup>5</onup>
+						<ondown>6</ondown>
+					</control>					
+					
+					<control>
+						<description>Play DVD</description>
+						<type>button</type>
+						<id>6</id>
+						<label>341</label>
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<onup>7</onup>
+						<ondown>20</ondown>
+					</control>
+					
+					<control>
+						<description>Current Playlist</description>
+						<type>button</type>
+						<id>20</id>
+						<label>4555</label>
+						<action>33</action>
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<onup>6</onup>
+						<ondown>9</ondown>
+					</control>
+					
+					<control>
+						<description>My Playlists</description>
+						<type>button</type>
+						<id>9</id>
+						<label>983</label>
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<onup>20</onup>
+						<ondown>66613</ondown>
+					</control>
+					
+					<control>
+						<description>Trailers</description>
+						<id>66613</id>
+						<type>button</type>
+						<label>#(L(5900))</label>
+						<hyperlink>4755</hyperlink>
+						<hyperlinkParameter>site:IMDb Movie Trailers|search:#(iif(neq(#imdbnumber,''),#imdbnumber,#title))|return:Locked</hyperlinkParameter>
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<onup>9</onup>
+						<ondown>66611</ondown>    
+					</control>	
+
+					<control>
+						<description>SubCentral</description>
+						<id>66611</id>
+						<type>button</type>
+						<label>287</label>
+						<hyperlink>84623</hyperlink>
+						<visible>plugin.isenabled(SubCentral)</visible>
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<onup>66613</onup>
+						<ondown>66614</ondown>    
+					</control>
+            
+					<control>
+						<description>Trakt</description>
+						<type>button</type>
+						<id>66614</id>
+						<label>Trakt</label>
+						<hyperlink>87258</hyperlink>
+						<onup>66611</onup>
+						<ondown>2</ondown>
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<visible>plugin.isenabled(Trakt)</visible>
+					</control>		
+					
+				</control>
+			</control>
+		</control>
+
+		<import>common.facade.video.title.xml</import>
+
+		<control>
+			<description>Backdrop Overlay - Coverflow</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_coverflow_top.png</texture>
+			<visible>facadeview.coverflow</visible>
+		</control>
+
+		<!-- info visible when in list view for titles -->
+		<control Style="BigTitle">
+			<description>Movie Title</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>3</label>
+			<visible>Control.HasFocus(50)+!string.equals(#selectedindex)+!player.hasmedia</visible>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Movie Title</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#selecteditem</label>
+			<visible>Control.HasFocus(50)+string.equals(#selectedindex)+!player.hasmedia</visible>
+		</control>
+
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+			<visible>Control.HasFocus(50)</visible>
+		</control>
+
+		<control>
+			<type>imagelist</type>
+			<id>101</id>
+			<posX>1600</posX>
+			<posY>382</posY>      
+			<width>204</width>
+			<height>44</height>		  
+			<align>left</align>
+			<textureWidth>44</textureWidth>
+			<textureHeight>44</textureHeight>
+			<subitems>
+				<subitem>greystar.png</subitem>
+				<subitem>star.png</subitem>
+			</subitems>
+			<orientation>horizontal</orientation>
+			<align>left</align>
+			<imagesToDraw>5</imagesToDraw>
+			<percentage>#rating</percentage>
+			<visible>facadeview.list+!string.equals(#year,1900)+Control.HasThumb(500)</visible>
+		</control>
+
+		<control>
+			<id>1</id>
+			<type>image</type>
+			<posX>55</posX>
+			<posY>195</posY>
+			<width>555</width>
+			<height>760</height>
+			<texture>poster_thumb_background.png</texture>
+			<visible>facadeview.list+Control.HasFocus(50)</visible>
+		</control>
+
+		<control>
+			<id>1</id>
+			<type>image</type>
+			<posX>100</posX>
+			<posY>240</posY>
+			<width>464</width>
+			<height>670</height>
+			<texture>default_video.png</texture>
+			<visible>facadeview.list+!Control.HasThumb(500)+Control.HasFocus(50)</visible>
+		</control>
+
+		<control>
+			<id>500</id>
+			<type>image</type>
+			<posX>100</posX>
+			<posY>240</posY>
+			<width>464</width>
+			<height>670</height>
+			<texture>#selectedthumb</texture>
+			<visible>facadeview.list+Control.HasFocus(50)</visible>
+		</control>
+
+		<control>
+			<type>image</type>
+			<id>1</id>
+			<posX>55</posX>
+			<posY>195</posY>
+			<width>555</width>
+			<height>760</height>
+			<texture>poster_thumb_background_overlay.png</texture>
+			<visible>facadeview.list+Control.HasFocus(50)</visible>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Genre Label</description>
+			<type>label</type>
+			<label>174</label>
+			<posX>1315</posX>
+			<posY>318</posY>
+			<visible>facadeview.list+!string.equals(#year,1900)+Control.HasThumb(500)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>	
+
+		<control Style="DetailText">
+			<description>Genres</description>
+			<type>fadelabel</type>
+			<label>#genre</label>
+			<id>0</id>
+			<posX>1425</posX>
+			<posY>318</posY>
+			<width>470</width>
+			<visible>facadeview.list+!string.equals(#year,1900)+Control.HasThumb(500)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Directors Label</description>
+			<type>label</type>
+			<label>#(L(199))</label>
+			<posX>1315</posX>
+			<posY>249</posY>
+			<visible>facadeview.list+!string.equals(#year,1900)+Control.HasThumb(500)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailText">
+			<description>Directors Shadow</description>
+			<type>label</type>
+			<label>#director</label>
+			<posX>1470</posX>
+			<posY>249</posY>
+			<width>425</width>
+			<visible>facadeview.list+!string.equals(#year,1900)+Control.HasThumb(500)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Year Label</description>
+			<type>label</type>
+			<label>201</label>
+			<posX>1315</posX>
+			<posY>387</posY>
+			<visible>facadeview.list+!string.equals(#year,1900)+Control.HasThumb(500)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailText">
+			<description>Year Label</description>
+			<type>label</type>
+			<label>#year</label>
+			<posX>1420</posX>
+			<posY>387</posY>
+			<visible>facadeview.list+!string.equals(#year,1900)+Control.HasThumb(500)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Runtime</description>
+			<type>label</type>
+			<label>299</label>
+			<posX>1315</posX>
+			<posY>456</posY>
+			<visible>facadeview.list+!string.equals(#year,1900)+Control.HasThumb(500)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailText">
+			<description>Writers</description>
+			<type>label</type>
+			<label>#runtime #SkinTranslation.Translations.time.minutes.Label</label>
+			<posX>1455</posX>
+			<posY>456</posY>
+			<visible>facadeview.list+!string.equals(#year,1900)+Control.HasThumb(500)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Cast</description>
+			<type>label</type>
+			<label>173</label>
+			<posX>1315</posX>
+			<posY>525</posY>
+			<visible>facadeview.list+!string.equals(#year,1900)+Control.HasThumb(500)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailText">
+			<description>Rating</description>
+			<type>fadelabel</type>
+			<label>#mpaarating</label>
+			<posX>1445</posX>
+			<posY>525</posY>
+			<visible>facadeview.list+!string.equals(#year,1900)+Control.HasThumb(500)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Cast</description>
+			<type>label</type>
+			<label>#SkinTranslation.Translations.movie.plot.Label</label>
+			<posX>1315</posX>
+			<posY>596</posY>
+			<width>570</width>
+			<visible>facadeview.list+!string.equals(#year,1900)+Control.HasThumb(500)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailTextDroid">
+			<description>Summary</description>
+			<type>textboxscrollup</type>
+			<id>0</id>
+			<posX>1315</posX>
+			<posY>662</posY>
+			<width>570</width>
+			<height>240</height>
+			<seperator>-----------------------------------------------------------------------------------</seperator>
+			<scrollStartDelaySec>5</scrollStartDelaySec>
+			<label>#plot</label>
+			<visible>facadeview.list+!string.equals(#year,1900)+Control.HasThumb(500)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailText">
+			<description>Number of Files Label</description>
+			<type>label</type>
+			<label>#(iif(and(neq(L(102012), #currentmodule), neq(L(102002), #currentmodule), neq(L(100100), #currentmodule), neq(L(100101), #currentmodule), neq(L(102015), #currentmodule), neq(L(101002), #currentmodule)), #itemcount, ' ')) #(iif(and(neq(L(102012), #currentmodule), neq(L(102002), #currentmodule), neq(L(100100), #currentmodule), neq(L(100101), #currentmodule), neq(L(102015), #currentmodule), neq(L(101002), #currentmodule)), #currentmodule, ' '))</label>
+			<posX>1850</posX>
+			<posY>1030</posY>
+			<width>425</width>
+			<align>right</align>
+			<visible>string.equals(#itemcount)</visible>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Selected Index Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1850</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<align>right</align>
+			<label>#selectedindex/#itemcount</label>
+			<visible>string.equals(#selectedindex)+string.equals(#itemcount)+!player.hasmedia</visible>
+		</control>
+
+		<control Style="DetailText">
+			<description>IMDB Label</description>
+			<type>label</type>
+			<label>IMDB:</label>
+			<posX>70</posX>
+			<posY>1030</posY>
+			<width>800</width>
+			<align>left</align>
+			<visible>!facadeview.list+!string.equals(#year,1900)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<type>imagelist</type>
+			<id>101</id>
+			<posX>150</posX>
+			<posY>1030</posY>      
+			<width>160</width>
+			<height>32</height>		  
+			<align>left</align>
+			<textureWidth>32</textureWidth>
+			<textureHeight>32</textureHeight>
+			<subitems>
+				<subitem>greystar.png</subitem>
+				<subitem>star.png</subitem>
+			</subitems>
+			<orientation>horizontal</orientation>
+			<align>left</align>
+			<imagesToDraw>5</imagesToDraw>
+			<percentage>#rating</percentage>
+			<visible>!facadeview.list+!string.equals(#year,1900)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+
+		</control>
+
+		<control Style="DetailText">
+			<description>Movie Details Label</description>
+			<type>label</type>
+			<label>| #runtime #SkinTranslation.Translations.time.minutes.Label | #year | #genre</label>
+			<posX>315</posX>
+			<posY>1030</posY>
+			<width>1100</width>
+			<align>left</align>
+			<visible>!facadeview.list+!string.equals(#year,1900)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+
+		<!-- Media logos [List View] -->
+		<control>
+			<description>Video Codec</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>50</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Video\#VideoCodec.png</texture>
+			<visible>!control.isvisible(24)</visible>
+		</control>
+
+		<control>
+			<description>Video Resolution</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>150</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Aspect\#VideoResolution.png</texture>
+			<visible>!control.isvisible(24)</visible>
+		</control>
+
+		<control>
+			<description>Video Aspect Ratio</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>250</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Aspect\#AspectRatio.png</texture>
+			<visible>!control.isvisible(24)</visible>
+		</control>
+
+		<control>
+			<description>Audio Codec</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>350</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Audio\#AudioCodec.png</texture>
+			<visible>!control.isvisible(24)</visible>
+		</control>
+
+		<control>
+			<description>Audio Channels</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>450</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Audio\#AudioChannels.png</texture>
+			<visible>!control.isvisible(24)</visible>
+		</control>
+
+		<control>
+			<description>Subtitles</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>550</posX>
+			<posY>1015</posY>
+			<width>100</width>
+			<height>50</height>
+			<texture>Logos\Subtitles\Subtitles.png</texture>
+			<visible>!control.isvisible(24)+string.equals(#HasSubtitles, True)</visible>
+		</control>
+		
+		<import>common.overlay.xml</import>
+
+	</controls>
+</window>

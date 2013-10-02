@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <controls>
+    <control>
+      <description>GROUP: Recently Added Recordings (Plot)</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <!-- CHANGE the ID value (represented as xxxx) of hasfocus(xxxx) to the value of the ID in basichome you want this to show.If you want it to show on multiple you can chain them like so; control.hasfocus(xxxx) + control.hasfocus(xxxx2) etc. -->
+      <visible>[[control.isvisible(1003)]]+![string.starts(#latestMediaHandler.tvrecordings.latest1.title,#)|string.equals(#latestMediaHandler.tvrecordings.latest1.title,)]|control.hasfocus(91919984)|control.hasfocus(91919985)|control.hasfocus(91919986)</visible>
+      <animation effect="fade" time="150">WindowOpen</animation>
+      <animation effect="fade" time="150">WindowClose</animation>
+      <!-- Background -->
+      <control>
+        <description>Recent Recordings BG</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>620</posX>
+        <posY>510</posY>
+        <width>680</width>
+        <height>298</height>
+        <texture>recently_added_episode_background.png</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent Recordings Seperator</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>650</posX>
+        <posY>709</posY>
+        <width>620</width>
+        <height>2</height>
+        <texture>recent_added_seperator.png</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <!-- Dummy Images -->
+      <control>
+        <description>Image</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>650</posX>
+        <posY>540</posY>
+        <width>200</width>
+        <height>113</height>
+        <texture>default_recordings.png</texture>
+        <shouldCache>true</shouldCache>
+        <keepaspectratio>yes</keepaspectratio>
+        <zoom>yes</zoom>
+      </control>
+      <control>
+        <description>Image</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>860</posX>
+        <posY>540</posY>
+        <width>200</width>
+        <height>113</height>
+        <texture>default_recordings.png</texture>
+        <shouldCache>true</shouldCache>
+        <keepaspectratio>yes</keepaspectratio>
+        <zoom>yes</zoom>
+      </control>
+      <control>
+        <description>Image</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1070</posX>
+        <posY>540</posY>
+        <width>200</width>
+        <height>113</height>
+        <texture>default_recordings.png</texture>
+        <shouldCache>true</shouldCache>
+        <keepaspectratio>yes</keepaspectratio>
+        <zoom>yes</zoom>
+      </control>
+      <!-- Info when no episode thumb button has focus -->
+      <control Style="NoShadow">
+        <description>Recently Added Recordings Label</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>650</posX>
+        <posY>682</posY>
+        <width>620</width>
+        <font>font17</font>
+        <textcolor>ff474747</textcolor>
+        <label>#SkinTranslation.Translations.recentlyAdded.Recordings.Label</label>
+        <visible>!control.hasfocus(91919984)+!control.hasfocus(91919985)+!control.hasfocus(91919986)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Recordings 1 Name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>650</posX>
+        <posY>715</posY>
+        <font>font5</font>
+        <width>620</width>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>#latestMediaHandler.tvrecordings.latest1.title</label>
+        <visible>!control.hasfocus(91919984)+!control.hasfocus(91919985)+!control.hasfocus(91919986)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Recordings 2 Name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>650</posX>
+        <posY>737</posY>
+        <font>font5</font>
+        <width>620</width>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>#latestMediaHandler.tvrecordings.latest2.title</label>
+        <visible>!control.hasfocus(91919984)+!control.hasfocus(91919985)+!control.hasfocus(91919986)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Recordings 3 Name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>650</posX>
+        <posY>759</posY>
+        <font>font5</font>
+        <width>620</width>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>#latestMediaHandler.tvrecordings.latest3.title</label>
+        <visible>!control.hasfocus(91919984)+!control.hasfocus(91919985)+!control.hasfocus(91919986)</visible>
+      </control>
+      <!-- Info when recent recording 1 button has focus -->
+      <control>
+        <description>Recent Recordings 1 Thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>650</posX>
+        <posY>540</posY>
+        <width>200</width>
+        <height>113</height>
+        <texture>#latestMediaHandler.tvrecordings.latest1.thumb</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Recordings 1 Title</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>650</posX>
+        <posY>682</posY>
+        <width>620</width>
+        <font>font17</font>
+        <textcolor>ff474747</textcolor>
+        <label>#latestMediaHandler.tvrecordings.latest1.title</label>
+        <visible>control.hasfocus(91919984)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Recordings 1 Date</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>650</posX>
+        <posY>715</posY>
+        <width>620</width>
+        <font>font5</font>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>#SkinTranslation.Translations.recorded.on.Label: #latestMediaHandler.tvrecordings.latest1.dateAdded</label>
+        <visible>control.hasfocus(91919984)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Recordings 1 Genre</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>650</posX>
+        <posY>737</posY>
+        <width>620</width>
+        <font>font5</font>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>#(L(174)) #latestMediaHandler.tvrecordings.latest1.genre</label>
+        <visible>control.hasfocus(91919984)</visible>
+      </control>
+      <control>
+        <description>Recent Recordings 1 Button</description>
+        <type>button</type>
+        <id>91919984</id>
+        <posX>694</posX>
+        <posY>540</posY>
+        <width>112</width>
+        <height>112</height>
+        <textureFocus>recently_added_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <onup>160301</onup>
+        <ondown>1903</ondown>
+        <onright>91919985</onright>
+        <onleft>91919986</onleft>
+        <label>-</label>
+      </control>
+      <!-- Info when recent recording 2 button has focus -->
+      <control>
+        <description>Recent Recordings 2 Thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>860</posX>
+        <posY>540</posY>
+        <width>200</width>
+        <height>113</height>
+        <texture>#latestMediaHandler.tvrecordings.latest2.thumb</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Recordings 2 Title</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>650</posX>
+        <posY>682</posY>
+        <width>620</width>
+        <font>font17</font>
+        <textcolor>ff474747</textcolor>
+        <label>#latestMediaHandler.tvrecordings.latest2.title</label>
+        <visible>control.hasfocus(91919985)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Recordings 2 Date</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>650</posX>
+        <posY>715</posY>
+        <width>620</width>
+        <font>font5</font>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>#SkinTranslation.Translations.recorded.on.Label: #latestMediaHandler.tvrecordings.latest2.dateAdded</label>
+        <visible>control.hasfocus(91919985)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Recordings 2 Genre</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>650</posX>
+        <posY>737</posY>
+        <width>620</width>
+        <font>font5</font>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>#(L(174)) #latestMediaHandler.tvrecordings.latest2.genre</label>
+        <visible>control.hasfocus(91919985)</visible>
+      </control>
+      <control>
+        <description>Recent Recordings 2 Button</description>
+        <type>button</type>
+        <id>91919985</id>
+        <posX>904</posX>
+        <posY>540</posY>
+        <width>112</width>
+        <height>112</height>
+        <textureFocus>recently_added_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <onup>160301</onup>
+        <ondown>1903</ondown>
+        <onright>91919986</onright>
+        <onleft>91919984</onleft>
+        <label>-</label>
+      </control>
+      <!-- Info when recent recording 3 button has focus -->
+      <control>
+        <description>Recent Recordings 3 Thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1070</posX>
+        <posY>540</posY>
+        <width>200</width>
+        <height>113</height>
+        <texture>#latestMediaHandler.tvrecordings.latest3.thumb</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Recordings 3 Title</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>650</posX>
+        <posY>682</posY>
+        <width>620</width>
+        <font>font17</font>
+        <textcolor>ff474747</textcolor>
+        <label>#latestMediaHandler.tvrecordings.latest3.title</label>
+        <visible>control.hasfocus(91919986)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Recordings 3 Date</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>650</posX>
+        <posY>715</posY>
+        <width>620</width>
+        <font>font5</font>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>#SkinTranslation.Translations.recorded.on.Label: #latestMediaHandler.tvrecordings.latest3.dateAdded</label>
+        <visible>control.hasfocus(91919986)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Recordings 3 Genre</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>650</posX>
+        <posY>737</posY>
+        <width>620</width>
+        <font>font5</font>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>#(L(174)) #latestMediaHandler.tvrecordings.latest3.genre</label>
+        <visible>control.hasfocus(91919986)</visible>
+      </control>
+      <control>
+        <description>Recent Recordings 3 Button</description>
+        <type>button</type>
+        <id>91919986</id>
+        <posX>1104</posX>
+        <posY>540</posY>
+        <width>112</width>
+        <height>112</height>
+        <textureFocus>recently_added_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <onup>160301</onup>
+        <ondown>1903</ondown>
+        <onright>91919984</onright>
+        <onleft>91919985</onleft>
+        <label>-</label>
+      </control>
+    </control>
+  </controls>
+</window>
+<!--Checksum:f5d77313cc7bab0777a4aff2967b0dfe-->

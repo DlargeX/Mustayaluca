@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Skin translation file -->
+<!-- Czech -->
+<!-- Last Updated: 5.5.2011 -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<!-- #SkinTranslation.Translations.FIELD.Label -->
+<strings>
+  <!-- # -->
+  <!-- A -->
+  <string Field="album.info">Informace o albu</string>
+  <string Field="artist.info">Informace o interpretovi</string>
+  <!-- B -->
+  <string Field="browse">Procházet</string>
+  <!-- C -->
+  <!-- D -->
+  <!-- E -->
+  <!-- F -->
+  <string Field="file.details">Podrobnosti o souboru</string>
+  <string Field="file.name">Název souboru</string>
+  <string Field="file.size">Velikost souboru</string>
+  <string Field="fanart.scraping">Načítání pozadí</string>
+  <!-- G -->
+  <string Field="global.search.albuminfo">Hledání hudby</string>
+  <string Field="global.search.Casesensitive">Rozlišovat velikost písmen</string>
+  <string Field="global.search.filename">Název souboru</string>
+  <string Field="global.search.lastplayed">Naposledy hrané</string>
+  <string Field="global.search.musicsearch">Hledání hudby</string>
+  <string Field="global.search.playcount">Počet přehrání</string>
+  <string Field="global.search.Searchfields">Pole hledání</string>
+  <string Field="global.search.Searchhistory">Historie hledání</string>
+  <string Field="global.search.Searchphrase">Hledaný výraz</string>
+  <string Field="global.search.Searchtype">Typ hledání</string>
+  <string Field="global.search.songname">Název skladby</string>
+  <!-- H -->
+  <!-- I -->
+  <!-- L -->
+  <string Field="lyrics">Text</string>
+  <string Field="list.empty">Prázdný</string>
+  <!-- M -->
+  <string Field="media.movies">Filmy</string>
+  <string Field="media.playing">Přehrávání</string>
+  <string Field="media.released">Premiéra</string>
+  <string Field="media.unwatched">Nezhlédnuto</string>
+  <string Field="media.watched">Zhlédnuto</string>
+  <string Field="menu.subtitles">Titulky</string>
+  <string Field="menu.trailer">Upoutávka</string>
+  <string Field="movie.filter">Filtr</string>
+  <string Field="movie.loading">Načítání...</string>
+  <string Field="movie.plot">Obsah filmu</string>
+  <string Field="movie.rated">Hodnoceno</string>
+  <string Field="movie.title">Název</string>
+  <string Field="music.genre">Žánr</string>
+  <string Field="music.notplaying">Není přehrávána žádná hudba...</string>
+  <string Field="musicvids.mostplayed.artist">Nejpřehrávanější interpret</string>
+  <string Field="musicvids.mostplayed.video">Nejpřehrávanější video</string>
+  <string Field="musicvids.random">Přehrát vše (Náhodně)</string>
+  <string Field="musicvids.SmartPlaylist">Chytrý seznam stop</string>
+  <!-- N -->
+  <!-- O -->
+  <!-- P -->
+  <!-- R -->
+  <string Field="recentlyAdded.Season">Sezóna</string>
+  <string Field="recentlyAdded.Episode">Epizoda</string>
+  <string Field="recentlyAdded.Albums">Nedávno přidaná alba</string>
+  <string Field="recentlyAdded.Episodes">Nedávno přidané epizody</string>
+  <string Field="recentlyAdded.Movies">Nedávno přidané filmy</string>
+  <string Field="recentlyAdded.Pics">Nedávno přidané obrzky</string>
+  <string Field="recentlyAdded.Recordings">Nedávno přidané nahrávky</string>
+  <string Field="recorded.on">Nahráno</string>
+  <string Field="Rockstar.search">Hledat hudbu</string>
+  <string Field="Rockstar.default.playlist">Výchozí seznam stop</string>
+  <string Field="Rockstar.popular.songs">Oblíbené skladby</string>
+  <string Field="Rockstar.playlists">Seznamy stop</string>
+  <string Field="Rockstar.track">Stopa</string>
+  <!-- S -->
+  <string Field="showtimes.theaters">Kina</string>
+  <string Field="series.network">Kanál</string>
+  <string Field="series.description">Popis seriálu</string>
+  <string Field="series.update">Naposledy aktualizováno</string>
+  <string Field="search">Hledat</string>
+  <string Field="search.history">Historie hledání</string>
+  <string Field="screen.exit">Konec</string>
+  <string Field="similar.videos">Podobná videa</string>
+  <string Field="summary">Obsah</string>
+  <!-- T -->
+  <string Field="time.minutes">min</string>
+  <string Field="tv">Televize</string>
+  <!-- U -->
+  <!-- V -->
+  <string Field="video.settings">Nastavení videa</string>
+  <string Field="volume.volume">Hlasitost</string>
+  <string Field="volume.mute">Ztlumit</string>
+  <!-- W -->
+  <!-- Y -->
+</strings>
+<!--Checksum:656d13208190c2152ef482cdda472fbb-->

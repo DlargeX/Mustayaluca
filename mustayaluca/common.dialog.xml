@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<controls>
+
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posX>600</posX>
+			<posY>365</posY>
+			<width>720</width>
+			<height>351</height>
+			<texture>dialog_background.png</texture>
+		</control>
+		
+		<control Style="Time">
+			<description>dialog Heading</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>640</posX>
+			<posY>405</posY>
+			<width>630</width>
+			<label>0</label>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+		
+		<control Style="DetailTextLight">
+			<description>dialog line 1</description>
+			<type>fadelabel</type>
+			<id>2</id>
+			<posX>640</posX>
+			<posY>465</posY>
+			<width>630</width>
+			<label>-</label>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+		
+		<control Style="DetailTextLight">
+			<description>dialog line 2</description>
+			<type>label</type>
+			<id>3</id>
+			<posX>640</posX>
+			<posY>505</posY>
+			<width>630</width>
+			<label>-</label>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+		
+		<control Style="DetailTextLight">
+			<description>dialog line 3</description>
+			<type>label</type>
+			<id>4</id>
+			<posX>640</posX>
+			<posY>545</posY>
+			<width>630</width>
+			<label>-</label>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+		
+		<control Style="DetailTextLight">
+			<description>dialog line 4</description>
+			<type>label</type>
+			<id>5</id>
+			<posX>640</posX>
+			<posY>585</posY>
+			<width>630</width>
+			<label>-</label>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+		
+	</controls>
+</window>

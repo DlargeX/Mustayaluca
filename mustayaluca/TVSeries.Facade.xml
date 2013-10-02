@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<controls>
+	
+		<control>
+			<description>listscroller bg</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>507</posY>
+			<width>70</width>
+			<height>67</height>
+			<texture>listscroller_bg.png</texture>
+			<colordiffuse>40ffffff</colordiffuse>
+			<visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+			<animation effect="slide" start="-70,0" end="0,0" tween="quadratic" easing="in" time="250">Visible</animation>
+			<animation effect="slide" start="0,0" end="-70,0" tween="quadratic" easing="in" time="250">Hidden</animation>
+		</control>
+		
+		<control>
+			<type>label</type>
+			<id>1</id>
+			<posX>-3</posX>
+			<posY>510</posY>
+			<width>69</width>
+			<height>69</height>
+			<font>font7</font>
+			<textcolor>ffffffff</textcolor>
+			<label>#selecteditem.scrolllabel</label>
+			<visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+			<align>center</align>
+			<valign>middle</valign>
+			<animation effect="slide" start="-70,0" end="0,0" tween="quadratic" easing="in" time="250">Visible</animation>
+			<animation effect="slide" start="0,0" end="-70,0" tween="quadratic" easing="in" time="250">Hidden</animation>
+		</control>
+		
+		<control>
+			<type>group</type>
+			<id>28</id>
+			<control>
+				<type>facadeview</type>
+				<id>50</id>
+				<control>
+					<type>listcontrol</type>
+					<subtype>album</subtype>
+					<id>50</id>
+				</control>
+				
+				<control>
+					<description>Graphical Series Wide Banners (5x3) View</description>
+					<type>thumbnailpanel</type>
+					<id>50</id>
+					<onleft>2</onleft>
+					<onright>50</onright>
+					<textureUp>-</textureUp>
+					<textureDown>-</textureDown>
+					<posX>70</posX>
+					<posY>210</posY>
+					<width>1920</width>
+					<height>650</height>
+					<scrollOffset>2</scrollOffset>
+					<itemWidth>180</itemWidth>
+					<itemHeight>245</itemHeight>
+					<textureWidth>160</textureWidth>
+					<textureHeight>235</textureHeight>
+					<thumbWidth>160</thumbWidth>
+					<thumbHeight>235</thumbHeight>
+					<thumbPosX>0</thumbPosX>
+					<thumbPosY>0</thumbPosY>
+					<itemWidthBig>600</itemWidthBig>
+					<itemHeightBig>122</itemHeightBig>
+					<textureWidthBig>580</textureWidthBig>
+					<textureHeightBig>107</textureHeightBig>
+					<thumbWidthBig>580</thumbWidthBig>
+					<thumbHeightBig>107</thumbHeightBig>
+					<thumbPosXBig>0</thumbPosXBig>
+					<thumbPosYBig>0</thumbPosYBig>
+					<zoomXPixels>0</zoomXPixels>
+					<zoomYPixels>0</zoomYPixels>
+					<hideUnfocusTexture>no</hideUnfocusTexture>
+					<renderFocusText>no</renderFocusText>
+					<renderUnfocusText>no</renderUnfocusText>
+					<showFrame>true</showFrame>
+					<thumbZoom>no</thumbZoom>
+					<enableFocusZoom>no</enableFocusZoom>
+					<keepaspectratio>no</keepaspectratio>
+					<textureMask>widebanner_thumb_frame_mask.png</textureMask>
+					<unfocusedAlpha>120</unfocusedAlpha>
+					<frameFocus>widebanner_thumb_frame_focus.png</frameFocus>
+					<frameNoFocus>widebanner_thumb_frame_focus.png</frameNoFocus>
+					<imageFolder>-</imageFolder>
+					<imageFolderFocus>-</imageFolderFocus>
+					<dimColor>ffffffff</dimColor>
+					<spinPosX>2500</spinPosX>
+					<spinCanFocus>no</spinCanFocus>
+					<animation effect="slide" start="0" end="370" tween="back" ease="easeout" time="300" reversible="false">unfocus</animation>
+					<animation effect="slide" start="370" end="0" tween="back" ease="easeout" time="300" reversible="false">focus</animation>
+				</control>
+				
+				<control>
+					<description>Filmstrip view (Series/Season Views)</description>
+					<type>filmstrip</type>
+					<id>50</id>
+					<onup>2</onup>
+					<posX>70</posX>
+					<posY>575</posY>
+					<width>1920</width>
+					<textXOff>0</textXOff>
+					<textYOff>1500</textYOff>
+					<scrollOffset>3</scrollOffset>
+					<spinPosX>2100</spinPosX>
+					<spinCanFocus>no</spinCanFocus>
+					<itemWidth>255</itemWidth>
+					<itemHeight>370</itemHeight>
+					<textureWidth>245</textureWidth>
+					<textureHeight>360</textureHeight>
+					<thumbWidth>245</thumbWidth>
+					<thumbHeight>360</thumbHeight>
+					<thumbPosX>0</thumbPosX>
+					<thumbPosY>0</thumbPosY>
+					<font>font2</font>
+					<InfoImage>
+					</InfoImage>
+					<imageFolder>-</imageFolder>
+					<imageFolderFocus>-</imageFolderFocus>
+					<thumbs mask="video_thumb_frame_mask.png">
+					</thumbs>
+					<InfoImage mask="video_thumb_frame_mask.png">
+					</InfoImage>
+					<unfocusedAlpha>255</unfocusedAlpha>
+					<frame>video_thumb_frame_nofocus.png</frame>
+					<frameFocus>video_thumb_frame_filmstrip_focus.png</frameFocus>
+					<showFrame>yes</showFrame>
+					<showFolder>yes</showFolder>
+					<showBackGround>no</showBackGround>
+					<showInfoImage>no</showInfoImage>
+					<scrollbarbg>scroll_bar_background.png</scrollbarbg>
+					<scrollbarLeft>scrollbar_bar_nib_left_hor.png</scrollbarLeft>
+					<scrollbarRight>scrollbar_bar_nib_right_hor.png</scrollbarRight>
+					<scrollbarwidth>1</scrollbarwidth>
+					<scrollbarYOff>416</scrollbarYOff>
+					<keepaspectratio>no</keepaspectratio>
+					<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,860" time="200">focus</thumbAnimation>
+					<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,860" time="100">unfocus</thumbAnimation>
+					<animation effect="slide" start="0" end="370" tween="back" ease="easeout" time="300" reversible="false">unfocus</animation>
+					<animation effect="slide" start="370" end="0" tween="back" ease="easeout" time="300" reversible="false">focus</animation>
+				</control>
+				
+				<control>
+					<description>Text List (Groups/Series/Season/Episode Views)</description>
+					<type>listcontrol</type>
+					<id>50</id>
+					<onleft>2</onleft>
+					<onright>2</onright>
+					<height>730</height>
+					<!-- Spin Controls -->
+					<spinPosX>2000</spinPosX>
+					<spinCanFocus>no</spinCanFocus>
+					<textXOff2>650</textXOff2>
+					<textXOff>-120</textXOff>
+					<IconYOff>16</IconYOff>
+					<IconXOff>520</IconXOff>
+					<itemWidth>132</itemWidth>
+					<itemHeight>36</itemHeight>
+				</control>
+				
+				<control>
+					<description>default cover flow</description>
+					<id>50</id>
+					<type>coverflow</type>
+					<colordiffuse>90ffffff</colordiffuse>
+					<dimColor>90ffffff</dimColor>
+					<posX>0</posX>
+					<posY>300</posY>
+					<width>1920</width>
+					<height>720</height>
+					<onup>2</onup>
+					<onleft>2</onleft>
+					<selectedCard>0</selectedCard>
+					<cardWidth>340</cardWidth>
+					<cardHeight>500</cardHeight>
+					<angle>30</angle>
+					<sideShift>100</sideShift>
+					<sideGap>150</sideGap>
+					<sideDepth>150</sideDepth>
+					<offsetY>0</offsetY>
+					<selectedOffsetY>0</selectedOffsetY>
+					<speed>4</speed>
+					<backgroundColor>000000FF</backgroundColor>
+					<backgroundHeight>1080</backgroundHeight>
+					<backgroundWidth>1920</backgroundWidth>
+					<backgroundX>0</backgroundX>
+					<backgroundY>0</backgroundY>
+					<backgroundDiffuse>FF000000</backgroundDiffuse>
+					<background>-</background>
+					<showForeground>yes</showForeground>
+					<foregroundHeight>1080</foregroundHeight>
+					<foregroundWidth>1920</foregroundWidth>
+					<foregroundX>0</foregroundX>
+					<foregroundY>0</foregroundY>
+					<foreground>-</foreground>
+					<showBackground>no</showBackground>
+					<frame>video_thumb_frame_nofocus.png</frame>
+					<frameFocus>video_thumb_frame_filmstrip_focus.png</frameFocus>
+					<showFrame>yes</showFrame>
+					<frameWidth>340</frameWidth>
+					<frameHeight>500</frameHeight>
+					<spinSpeed>8</spinSpeed>
+					<unfocusedAlpha>FF</unfocusedAlpha>
+					<folderPrefix />
+					<folderSuffix />
+					<font1>font2</font1>
+					<font2>font2</font2>
+					<label1>#title</label1>
+					<label2>#genre</label2>
+					<textColor>FFFFFFFF</textColor>
+					<remoteColor>FFFF0000</remoteColor>
+					<playedColor>FFA0D0FF</playedColor>
+					<downloadColor>FF00FF00</downloadColor>
+					<selectedColor>FFFFFFFF</selectedColor>
+					<shadowAngle>45</shadowAngle>
+					<shadowDistance>2</shadowDistance>
+					<shadowColor>ff000000</shadowColor>
+					<label1YOff>2000</label1YOff>
+					<label2YOff>2000</label2YOff>
+					<pageSize>8</pageSize>
+					<scrollbarBackground>-</scrollbarBackground>
+					<scrollbarLeft>scrollbar_bar_nib_left.png</scrollbarLeft>
+					<scrollbarRight>scrollbar_bar_nib_right.png</scrollbarRight>
+					<scrollbarYOff>692</scrollbarYOff>
+					<showScrollbar>yes</showScrollbar>
+					<keepaspectratio>no</keepaspectratio>
+					<cards diffuse="Thumb_Mask.png" mask="video_thumb_frame_mask.png">
+					</cards>
+					<subitems>
+						<subitem><![CDATA[
+                <controls>
+                  <control>
+                    <description>background</description>
+                    <type>image</type>
+                    <posX>0</posX>
+                    <posY>0</posY>
+                    <width>340</width>
+                    <height>500</height>
+                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="video_thumb_frame_mask.png">video_thumb_frame_mask.png</texture>
+                  </control>
+                  <control>
+                    <description>Series Details</description>
+                    <type>label</type>
+                    <posX>20</posX>
+                    <posY>10</posY>
+                    <width>320</width>
+                    <label>#TVSeries.Translation.SeriesDetails.Label</label>
+                    <font>font13</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>Genre</description>
+                    <type>fadelabel</type>
+                    <posX>20</posX>
+                    <posY>40</posY>
+                    <width>320</width>
+                    <label>#TVSeries.Series.Genre</label>
+                    <font>font13</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>First Aired</description>
+                    <type>label</type>
+                    <posX>20</posX>
+                    <posY>60</posY>
+                    <width>320</width>
+                    <label>#TVSeries.Series.FirstAired</label>
+                    <font>font13</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>Runtime</description>
+                    <type>label</type>
+                    <posX>20</posX>
+                    <posY>80</posY>
+                    <width>320</width>
+                    <label>#TVSeries.Series.Runtime #TVSeries.Translation.Runtime.Label</label>
+                    <font>font13</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>Rating</description>
+                    <type>label</type>
+                    <posX>20</posX>
+                    <posY>100</posY>
+                    <width>320</width>
+                    <label>#TVSeries.Series.Rating (#TVSeries.Series.RatingCount #TVSeries.Translation.Votes.Label)</label>
+                    <font>font13</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>                  
+                  <control>
+                    <description>Network</description>
+                    <type>label</type>
+                    <posX>20</posX>
+                    <posY>120</posY>
+                    <width>320</width>
+                    <label>#TVSeries.Series.Network</label>
+                    <font>font13</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>Summary</description>
+                    <type>textboxscrollup</type>
+					<posX>20</posX>
+					<posY>150</posY>
+					<width>320</width>
+					<height>260</height>
+                    <label>#TVSeries.Series.Summary</label>
+					<font>font13</font>
+					<lineSpacing>2</lineSpacing>
+					<textcolor>gainsboro</textcolor>
+					<shadowAngle>0</shadowAngle>
+					<shadowDistance>0</shadowDistance>
+                  </control>
+                </controls>
+              ]]></subitem>
+					</subitems>
+				</control>
+				
+				<control>
+					<description>playlist listcontrol</description>
+					<type>playlistcontrol</type>
+					<id>50</id>
+					<onleft>2</onleft>
+					<onright>2</onright>
+				</control>
+			</control>
+		</control>
+		
+	</controls>
+</window>

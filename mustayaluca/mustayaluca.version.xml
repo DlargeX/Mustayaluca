@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+      <type>label</type>
+      <posX>505</posX>
+      <width>305</width>
+      <align>left</align>
+      <label>Mustayaluca v0.6.0.0</label>
+      <textcolor>ffffffff</textcolor>
+      <colordiffuse>40ffffff</colordiffuse>
+      <font>font2</font>
+      <visible>Control.HasFocus(7888)|Control.HasFocus(7999)|Control.HasFocus(7777)</visible>
+    </control>
+  </controls>
+</window>

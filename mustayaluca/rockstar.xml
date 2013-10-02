@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>47286</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#usePlayFanart:Yes</define>
+	<define>#useSelectedFanart:Yes</define>
+	<controls>
+
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>0</id>
+			<texture>backgrounds\music\plugins.jpg</texture>
+			<width>1920</width>
+			<height>1080</height>
+			<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="200" delay="200">Hidden</animation>
+		</control>
+
+		<import>rockstar.autofanart.xml</import>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background.png</texture>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay - Wide List View</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_menu_widelist.png</texture>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay Bar</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>998</posY>
+			<width>1920</width>
+			<height>82</height>
+			<texture>overlay_bar_bottom.png</texture>
+			<visible>!facadeview.coverflow</visible>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#Rockstar.PluginName</label>
+			<visible>!string.equals(#Rockstar.IsPlaying,true)</visible>
+		</control>
+
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+		</control>
+
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+			<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>0</posX>
+				<posY>230</posY>
+				<layout>StackLayout(0, Vertical, true)</layout>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+				
+				<control>
+					<id>2</id>
+					<description>Search Music</description>
+					<type>button</type>
+					<onright>200</onright>
+					<ondown>3</ondown>
+					<onup>17</onup>
+					<label>#SkinTranslation.Translations.Rockstar.search.Label</label>
+					<textalign>right</textalign>						
+				</control>
+				
+				<control>
+					<id>3</id>
+					<description>Default Playlist</description>
+					<type>button</type>
+					<onright>200</onright>
+					<onup>2</onup>
+					<ondown>4</ondown>
+					<label>#SkinTranslation.Translations.Rockstar.default.playlist.Label</label>
+					<textalign>right</textalign>						
+				</control>
+				
+				<control>
+					<id>4</id>
+					<description>Playlists</description>
+					<type>button</type>
+					<onright>200</onright>
+					<onup>3</onup>
+					<ondown>20</ondown>
+					<label>#SkinTranslation.Translations.Rockstar.playlists.Label</label>
+					<textalign>right</textalign>						
+				</control>
+				
+				<control>
+					<id>20</id>
+					<description>Popular Songs</description>
+					<type>button</type>
+					<onright>200</onright>
+					<onup>4</onup>
+					<ondown>1234</ondown>
+					<label>#SkinTranslation.Translations.Rockstar.popular.songs.Label</label>
+					<textalign>right</textalign>					
+				</control>
+				
+				<control>
+					<id>1234</id>
+					<description>Now Playing</description>
+					<type>button</type>
+					<hyperlink>510</hyperlink>
+					<onright>200</onright>
+					<onup>20</onup>
+					<ondown>32</ondown>
+					<label>4540</label>
+					<textalign>right</textalign>						
+				</control>
+				
+				<control>
+					<id>32</id>
+					<description>Shuffle on/off button</description>
+					<type>checkbutton</type>
+					<onright>200</onright>
+					<onup>1234</onup>
+					<ondown>30</ondown>
+					<label>191</label>
+					<textalign>right</textalign>						
+				</control>
+				
+				<control>
+					<id>30</id>
+					<description>Repeat on/off button</description>
+					<type>checkbutton</type>
+					<onright>200</onright>
+					<onup>32</onup>
+					<label>486</label>
+					<textalign>right</textalign>					
+				</control>
+			</control>
+		</control>
+
+		<control>
+			<id>300</id>
+			<type>playlistcontrol</type>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<posX>402</posX>
+			<width>842</width>
+			<IconXOff>2000</IconXOff>  
+			<spinPosX>2000</spinPosX>
+			<spinCanFocus>no</spinCanFocus>
+			<upBtnXOffset>725</upBtnXOffset>
+			<downBtnXOffset>765</downBtnXOffset>
+			<deleteBtnXOffset>801</deleteBtnXOffset>
+		</control>
+
+		<control>
+			<id>200</id>
+			<description>Track listing</description>
+			<type>listcontrol</type>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<posX>402</posX>
+			<width>842</width>
+			<textureFocus>list_narrow_focus.png</textureFocus>
+			<IconXOff>2000</IconXOff>  
+			<spinPosX>2000</spinPosX>
+			<spinCanFocus>no</spinCanFocus>
+		</control>
+
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posX>1276</posX>
+			<posY>247</posY>
+			<width>450</width>
+			<height>480</height>
+			<texture>music_thumb_background_reflect.png</texture>
+			<visible>Control.HasThumb(10)</visible>
+		</control>
+
+		<control>
+			<id>10</id>
+			<type>image</type>
+			<posX>1321</posX>
+			<posY>292</posY>
+			<width>360</width>
+			<height>360</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<centered>yes</centered>
+			<texture>-</texture>
+			<zoom>yes</zoom>
+		</control>
+
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posX>1276</posX>
+			<posY>247</posY>
+			<width>450</width>
+			<height>480</height>
+			<texture>music_thumb_background_reflect_overlay.png</texture>
+			<visible>Control.HasThumb(10)</visible>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Selected item Label</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>1290</posX>
+			<posY>733</posY>
+			<width>200</width>
+			<label>484</label>
+			<visible>Control.HasThumb(10)</visible>
+			<animation effect="fade" time="150" reversible="false">visible</animation>
+		</control>
+
+		<control Style="DetailText">
+			<id>0</id>
+			<description>Artist Name</description>
+			<type>fadelabel</type>
+			<posX>1405</posX>
+			<posY>733</posY>
+			<width>500</width>
+			<label>#Rockstar.SelectedTrack.ArtistName</label>
+			<visible>Control.HasThumb(10)</visible>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Selected item Label</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>1290</posX>
+			<posY>803</posY>
+			<width>200</width>
+			<label>483</label>
+			<visible>Control.HasThumb(10)+!string.equals(#currentmodule,Artists)</visible>
+			<animation effect="fade" time="150" reversible="false">visible</animation>
+		</control>
+
+		<control Style="DetailText">
+			<description>Selected item Label</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>1405</posX>
+			<posY>803</posY>
+			<width>500</width>
+			<label>#Rockstar.SelectedTrack.AlbumName (#Rockstar.SelectedTrack.AlbumYear)</label>
+			<visible>Control.HasThumb(10)+!string.equals(#Rockstar.SelectedTrack.AlbumYear,unknown)+!string.equals(#currentmodule,Artists)</visible>
+			<animation effect="fade" time="150" reversible="false">visible</animation>
+		</control>
+
+		<control Style="DetailText">
+			<description>Selected item Label</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>1405</posX>
+			<posY>803</posY>
+			<width>500</width>
+			<label>#year</label>
+			<label>#Rockstar.SelectedTrack.AlbumName</label>
+			<visible>Control.HasThumb(10)+string.equals(#Rockstar.SelectedTrack.AlbumYear,unknown)+!string.equals(#currentmodule,Artists)</visible>
+			<animation effect="fade" time="150" reversible="false">visible</animation>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Selected item Label</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>1290</posX>
+			<posY>870</posY>
+			<width>200</width>
+			<label>#SkinTranslation.Translations.Rockstar.track.Label</label>
+			<visible>Control.HasThumb(10)+!string.equals(#currentmodule,Artists)+!string.equals(#currentmodule,Albums)</visible>
+			<animation effect="fade" time="150" reversible="false">visible</animation>
+		</control>
+
+		<control Style="DetailText">
+			<description>Selected item Label</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>1405</posX>
+			<posY>870</posY>
+			<width>500</width>
+			<label>#Rockstar.SelectedTrack.TrackName</label>
+			<visible>Control.HasThumb(10)+!string.equals(#Rockstar.SelectedTrack.TrackName,)+!string.equals(#currentmodule,Artists)+!string.equals(#currentmodule,Albums)</visible>
+			<animation effect="fade" time="150" reversible="false">visible</animation>
+		</control>
+
+		<import>common.overlay.home.xml</import>
+
+	</controls>
+</window>

@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file should contain the details view
+-->
+<window>
+	<defaultcontrol>6</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+
+		<control Style="BigTitle">
+			<type>fadelabel</type>
+			<description>nowplaying label</description>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#SkinTranslation.Translations.media.playing.Label: #Play.Current.Title</label>
+			<visible>!control.isvisible(50)+!control.isvisible(51)+player.hasmedia</visible>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Movie Title</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#MovingPictures.SelectedMovie.title</label>
+			<visible>!control.isvisible(50)+!control.isvisible(51)+!player.hasmedia</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>Default Cover Art</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>55</posX>
+			<posY>195</posY>
+			<width>555</width>
+			<height>790</height>
+			<texture>poster_thumb_background_reflect.png</texture>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>Cover Art</description>
+			<type>image</type>
+			<id>60</id>
+			<posX>100</posX>
+			<posY>240</posY>
+			<width>464</width>
+			<height>670</height>
+			<texture>#MovingPictures.Coverart</texture>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>Default Cover Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>231</posX>
+			<posY>474</posY>
+			<width>202</width>
+			<height>202</height>
+			<texture>movpics_play.png</texture>
+			<visible>!control.isvisible(50)+!control.isvisible(51)+control.hasfocus(6)</visible>
+			<animation effect="fade" time="100">visiblechange</animation>
+		</control>
+
+		<control>
+			<description>Default Cover Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>55</posX>
+			<posY>195</posY>
+			<width>555</width>
+			<height>790</height>
+			<texture>poster_thumb_background_overlay_reflect.png</texture>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>Watched Icon Background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>197</posX>
+			<posY>878</posY>
+			<width>270</width>
+			<height>64</height>
+			<texture>overlay_new.png</texture>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailWatched">
+			<description>Watched Icon</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>210</posX>
+			<posY>909</posY>
+			<width>230</width>
+			<label>#SkinTranslation.Translations.media.watched.Label</label>
+			<visible>!control.isvisible(50)+!control.isvisible(51)+control.isvisible(9)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailWatched">
+			<description>Un-Watched Icon</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>210</posX>
+			<posY>909</posY>
+			<width>230</width>
+			<label>#SkinTranslation.Translations.media.unwatched.Label</label>
+			<visible>!control.isvisible(50)+!control.isvisible(51)+!control.isvisible(9)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="BigTitleColour">
+			<description>year</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>660</posX>
+			<posY>235</posY>
+			<width>840</width>
+			<label>#MovingPictures.SelectedMovie.year</label>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="BigTitleColour">
+			<description>certification</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>815</posX>
+			<posY>235</posY>
+			<width>840</width>
+			<label>#SkinTranslation.Translations.movie.rated.Label #MovingPictures.SelectedMovie.certification</label>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>	
+
+		<control>
+			<description>runtime</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>1085</posX>
+			<posY>235</posY>
+			<width>465</width>
+			<font>font6</font>
+			<textcolor>ffa9d0f7</textcolor>
+			<label>#MovingPictures.SelectedMovie.runtime.localized.long</label>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>Star Rating Image</description>
+			<type>image</type>
+			<posX>1590</posX>
+			<posY>245</posY>      
+			<width>204</width>
+			<height>44</height>		  
+			<align>left</align>
+			<texture>logos/rating/#MovingPictures.SelectedMovie.score.invariant.png</texture>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="BigTitleColour">
+			<description>Numeric Rating</description>
+			<id>0</id>
+			<type>label</type>
+			<label>#MovingPictures.SelectedMovie.score.invariant</label>
+			<posX>1810</posX>
+			<posY>235</posY>
+			<width>100</width>
+			<textcolor>ff9c9d9d</textcolor>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailText">
+			<description>Popularity (No. of Votes)</description>
+			<id>0</id>
+			<type>label</type>
+			<label>(#MovingPictures.SelectedMovie.popularity.localized #MovingPictures.Translation.Votes.Label)</label>
+			<posX>1595</posX>
+			<posY>318</posY>
+			<width>300</width>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="ListTitle">
+			<description>Directors Label</description>
+			<type>label</type>
+			<label>#MovingPictures.Translation.Directors.Label</label>
+			<id>0</id>
+			<posX>875</posX>
+			<posY>303</posY>
+			<width>150</width>
+			<align>right</align>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailText">
+			<description>Directors</description>
+			<type>label</type>
+			<label>#MovingPictures.SelectedMovie.directors</label>
+			<id>0</id>
+			<posX>925</posX>
+			<posY>303</posY>
+			<width>630</width>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="ListTitle">
+			<description>Writers</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>875</posX>
+			<posY>333</posY>
+			<width>150</width>
+			<align>right</align>
+			<label>#MovingPictures.Translation.Writers.Label</label>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+		</control>
+
+		<control Style="DetailText">
+			<description>Writer</description>
+			<type>label</type>
+			<label>#MovingPictures.SelectedMovie.writers</label>
+			<id>0</id>
+			<posX>925</posX>
+			<posY>333</posY>
+			<width>630</width>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="ListTitle">
+			<description>actors</description>
+			<type>label</type>
+			<label>#MovingPictures.Translation.Actors.Label</label>
+			<id>0</id>
+			<posX>875</posX>
+			<posY>372</posY>
+			<width>150</width>
+			<align>right</align>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailTextDroid">
+			<description>actors</description>
+			<id>0</id>
+			<label>#MovingPictures.SelectedMovie.actors</label>
+			<type>textboxscrollup</type>
+			<posX>925</posX>
+			<posY>372</posY>
+			<width>800</width>
+			<height>240</height>
+			<seperator>-----------------------------------------------------------------------------------</seperator>
+			<lineSpacing>0.95</lineSpacing>
+			<scrollStartDelaySec>#textboxscrolldelay.details</scrollStartDelaySec>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="BigTitleColourSmall">
+			<description>Genres</description>
+			<type>label</type>
+			<label>#MovingPictures.SelectedMovie.genres</label>
+			<id>0</id>
+			<posX>660</posX>
+			<posY>518</posY>
+			<width>840</width>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>630</posX>
+				<posY>575</posY>
+				<layout>StackLayout(2, Horizontal, true)</layout>
+				
+				<control>
+					<description>PLAY Button</description>
+					<type>button</type>
+					<id>6</id>
+					<width>312</width>
+					<onleft>97259</onleft>
+					<textureFocus>menu_list_focus_small.png</textureFocus>
+					<label>208</label>
+					<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+					<animation effect="fade" time="250">visiblechange</animation>
+					<animation effect="fade" time="250">WindowClose</animation>
+				</control>
+				
+				<control>
+					<description>SubCentral</description>
+					<id>998</id>
+					<type>button</type>
+					<width>312</width>
+					<onleft>6</onleft>
+					<onright>999</onright>					
+					<textureFocus>menu_list_focus_small.png</textureFocus>
+					<hyperlink>84623</hyperlink>
+					<visible>plugin.isenabled(SubCentral)+!control.isvisible(50)+!control.isvisible(51)</visible>
+					<label>#SkinTranslation.Translations.menu.subtitles.Label</label>
+					<animation effect="fade" time="250">visiblechange</animation>
+					<animation effect="fade" time="250">WindowClose</animation>
+				</control>
+				
+				<control>
+					<description>Trailer (Online Videos)</description>
+					<type>button</type>
+					<id>999</id>
+					<width>312</width>
+					<onleft>998</onleft>
+					<onright>97259</onright>							
+					<textureFocus>menu_list_focus_small.png</textureFocus>
+					<hyperlink>4755</hyperlink>
+					<hyperlinkParameter>site:IMDb Movie Trailers|search:#(iif(neq(#MovingPictures.SelectedMovie.imdb_id,''),#MovingPictures.SelectedMovie.imdb_id,#MovingPictures.SelectedMovie.title))|return:Locked</hyperlinkParameter>
+					<label>IMDB #SkinTranslation.Translations.menu.trailer.Label</label>
+					<visible>plugin.isenabled(OnlineVideos)+string.equals(#MovingPictures.SelectedMovie.title)+!control.isvisible(50)+!control.isvisible(51)</visible>
+					<animation effect="fade" time="250">visiblechange</animation>
+					<animation effect="fade" time="250">WindowClose</animation>
+				</control>
+				
+				<control>
+					<description>Trakt Rate</description>
+					<type>button</type>
+					<id>97259</id>
+					<label>#Trakt.Translation.Rate.Label on Trakt</label>
+					<width>312</width>
+					<onleft>999</onleft>
+					<onright>6</onright>		
+					<textureFocus>menu_list_focus_small.png</textureFocus>
+					<visible>plugin.isenabled(Trakt)+!control.isvisible(50)+!control.isvisible(51)</visible>
+					<animation effect="fade" time="250">visiblechange</animation>
+					<animation effect="fade" time="250">WindowClose</animation>
+				</control>
+				
+			</control>
+		</control>
+
+		<control Style="DetailTextDroid">
+			<description>Summary</description>
+			<type>textboxscrollup</type>
+			<id>0</id>
+			<posX>650</posX>
+			<posY>662</posY>
+			<width>1200</width>
+			<height>240</height>
+			<seperator>-----------------------------------------------------------------------------------</seperator>
+			<scrollStartDelaySec>#textboxscrolldelay.details</scrollStartDelaySec>
+			<label>#MovingPictures.SelectedMovie.summary</label>
+			<visible>!control.isvisible(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+	</controls>
+</window>

@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>748</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:1037</define>
+  <controls>
+  
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>backgrounds\tv\default.jpg</texture>
+      <width>1920</width>
+      <height>1080</height>
+    </control>
+	
+    <import>common.window.recordings.list.xml</import>
+	
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <control>
+        <description>button group</description>
+        <type>group</type>
+        <posX>0</posX>
+        <posY>230</posY>
+        <layout>StackLayout(0, Vertical, true)</layout>
+        <animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+        <animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+        <control>
+          <description>Record</description>
+          <id>2</id>
+          <type>button</type>
+          <label>264</label>
+          <onleft>10</onleft>
+          <onright>10</onright>
+          <onup>17</onup>
+          <ondown>3</ondown>
+        </control>
+        <control>
+          <description>Priority</description>
+          <id>3</id>
+          <type>button</type>
+          <label>991</label>
+          <onleft>10</onleft>
+          <onright>10</onright>
+          <ondown>4</ondown>
+        </control>
+        <control>
+          <description>Keep</description>
+          <id>4</id>
+          <type>button</type>
+          <label>1042</label>
+          <onleft>10</onleft>
+          <onright>10</onright>
+          <ondown>5</ondown>
+        </control>
+        <control>
+          <description>Only new episodes</description>
+          <id>5</id>
+          <type>checkbutton</type>
+          <label>49224</label>
+          <onleft>10</onleft>
+          <onright>10</onright>
+          <ondown>8</ondown>
+        </control>
+        <control>
+          <description>PreRecord</description>
+          <type>button</type>
+          <id>8</id>
+          <label>1444</label>
+          <onleft>10</onleft>
+          <onright>10</onright>
+          <ondown>9</ondown>
+        </control>
+        <control>
+          <description>PostRecord</description>
+          <type>button</type>
+          <id>9</id>
+          <label>1445</label>
+          <onleft>10</onleft>
+          <onright>10</onright>
+          <ondown>2</ondown>
+        </control>
+      </control>
+    </control>
+	
+    <control>
+      <description>upcoming episodes listcontrol</description>
+      <type>listcontrol</type>
+      <id>10</id>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <onup>2</onup>
+      <ondown>2</ondown>
+      <posX>402</posX>
+      <width>870</width>
+      <height>730</height>
+      <IconXOff>2000</IconXOff>
+      <spinPosX>2000</spinPosX>
+      <spinCanFocus>no</spinCanFocus>
+      <PinIconXOff>715</PinIconXOff>
+      <PinIconYOff>17</PinIconYOff>
+      <PinIconWidth>120</PinIconWidth>
+      <PinIconHeight>34</PinIconHeight>
+      <textXOff2>745</textXOff2>
+      <animation effect="fade" time="150">WindowOpen</animation>
+      <animation effect="fade" time="150">WindowClose</animation>
+    </control>
+	
+    <control Style="DetailTitle">
+      <description>Current program title</description>
+      <type>fadelabel</type>
+      <id>13</id>
+      <posX>1420</posX>
+      <posY>250</posY>
+      <width>490</width>
+      <animation effect="fade" time="150">WindowOpen</animation>
+      <animation effect="fade" time="150">WindowClose</animation>
+    </control>
+	
+    <control Style="Time">
+      <description>Current program time</description>
+      <id>14</id>
+      <type>label</type>
+      <posX>1420</posX>
+      <posY>285</posY>
+      <width>490</width>
+      <label>#TV.RecordedTV.Time</label>
+      <animation effect="fade" time="150">WindowOpen</animation>
+      <animation effect="fade" time="150">WindowClose</animation>
+    </control>
+	
+    <control Style="DetailTextDroid">
+      <description>Description1</description>
+      <type>textboxscrollup</type>
+      <id>15</id>
+      <posX>1310</posX>
+      <posY>385</posY>
+      <width>600</width>
+      <height>445</height>
+      <seperator>-----------------------------------------------------------------------------------</seperator>
+      <label>#TV.RecordedTV.Description</label>
+      <scrollStartDelaySec>10</scrollStartDelaySec>
+      <animation effect="fade" time="150">WindowOpen</animation>
+      <animation effect="fade" time="150">WindowClose</animation>
+    </control>
+	
+    <control Style="DetailTitle">
+      <description>channel</description>
+      <id>16</id>
+      <type>fadelabel</type>
+      <posX>2000</posX>
+      <posY>10</posY>
+      <width>100</width>
+      <label>-</label>
+    </control>
+	
+    <control Style="Time">
+      <description>Current program genre</description>
+      <type>label</type>
+      <id>17</id>
+      <posX>1420</posX>
+      <posY>320</posY>
+      <width>490</width>
+      <label>#TV.RecordedTV.Genre</label>
+      <animation effect="fade" time="150">WindowOpen</animation>
+      <animation effect="fade" time="150">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>upcoming episodes label</description>
+      <type>label</type>
+      <id>11</id>
+      <posX>2000</posX>
+      <posY>10</posY>
+      <width>100</width>
+      <label>-</label>
+    </control>
+	
+    <control>
+      <id>500</id>
+      <type>image</type>
+      <posX>1345</posX>
+      <posY>264</posY>
+      <width>490</width>
+      <height>277</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>yes</zoom>
+      <texture>#selectedthumb</texture>
+      <animation effect="fade" time="150">WindowOpen</animation>
+      <animation effect="fade" time="150">WindowClose</animation>
+    </control>
+	
+  </controls>
+</window>

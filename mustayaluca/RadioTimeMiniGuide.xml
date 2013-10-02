@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>25651</id>
+	<defaultcontrol>35</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+
+		<control>
+			<description>background image</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>600</posX>
+			<posY>244</posY>
+			<width>720</width>
+			<height>592</height>
+			<texture>context_background.png</texture>
+		</control>
+
+		<control>
+			<description>exit button</description>
+			<type>button</type>
+			<id>34</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>10</width>
+			<height>10</height>
+			<textureFocus>-</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<onleft>36</onleft>
+			<onright>34</onright>
+			<ondown>35</ondown>
+			<onup>34</onup>
+		</control>
+
+		<control>
+			<description>list to show channels without channel state logos</description>
+			<type>listcontrol</type>
+			<id>35</id>
+			<posX>620</posX>
+			<posY>402</posY>
+			<width>680</width>
+			<height>400</height>
+			<onleft>35</onleft>
+			<onright>35</onright>
+			<textureFocus>list_context_focus.png</textureFocus>
+			<textureNoFocus>list_context_nofocus.png</textureNoFocus>
+			<spaceBetweenItems>0</spaceBetweenItems>
+			<spinPosX>2000</spinPosX>
+			<spinPosY>767</spinPosY>
+			<font>font2</font>
+			<textXOff>20</textXOff>
+			<PinIconXOff>60</PinIconXOff>
+			<PinIconYOff>10</PinIconYOff>
+			<PinIconWidth>40</PinIconWidth>
+			<PinIconHeight>25</PinIconHeight>
+			<IconXOff>2000</IconXOff>
+			<textureUp>-</textureUp>
+			<textureDown>-</textureDown>
+			<textureUpFocus>-</textureUpFocus>
+			<textureDownFocus>-</textureDownFocus>
+			<spinCanFocus>no</spinCanFocus>
+			<font>font5</font>
+			<font2>font5</font2>
+			<font3>font2</font3>
+			<textXOff>10</textXOff>
+			<textYOff>40</textYOff>
+			<textXOff2>660</textXOff2>
+			<textYOff2>40</textYOff2>
+			<textXOff3>50</textXOff3>
+			<textYOff3>3</textYOff3>
+		</control>
+
+		<control>
+			<description>list to show channels with channel state logos</description>
+			<type>listcontrol</type>
+			<id>37</id>
+			<posX>620</posX>
+			<posY>402</posY>
+			<width>680</width>
+			<height>400</height>
+			<onleft>37</onleft>
+			<onright>37</onright>
+			<textureFocus>list_context_focus.png</textureFocus>
+			<textureNoFocus>list_context_nofocus.png</textureNoFocus>
+			<spaceBetweenItems>0</spaceBetweenItems>
+			<spinPosX>2000</spinPosX>
+			<spinPosY>767</spinPosY>
+			<font>font2</font>
+			<textXOff>20</textXOff>
+			<PinIconXOff>60</PinIconXOff>
+			<PinIconYOff>10</PinIconYOff>
+			<PinIconWidth>40</PinIconWidth>
+			<PinIconHeight>25</PinIconHeight>
+			<IconXOff>2000</IconXOff>
+			<textureUp>-</textureUp>
+			<textureDown>-</textureDown>
+			<textureUpFocus>-</textureUpFocus>
+			<textureDownFocus>-</textureDownFocus>
+			<spinCanFocus>no</spinCanFocus>
+			<font>font5</font>
+			<font2>font5</font2>
+			<font3>font2</font3>
+			<textXOff>10</textXOff>
+			<textYOff>40</textYOff>
+			<textXOff2>660</textXOff2>
+			<textYOff2>40</textYOff2>
+			<textXOff3>50</textXOff3>
+			<textYOff3>3</textYOff3>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Heading text label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>677</posX>
+			<posY>300</posY>
+			<width>570</width>
+			<label>924</label>
+		</control>
+
+		<control Style="Time">
+			<description>Heading text label</description>
+			<type>label</type>
+			<id>4</id>
+			<posX>677</posX>
+			<posY>340</posY>
+			<width>570</width>
+			<label>10105</label>
+		</control>
+
+		<control>
+			<description>groups spin control</description>
+			<type>spincontrol</type>
+			<id>36</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<showrange>no</showrange>
+			<orientation>horizontal</orientation>
+			<font>font2</font>
+			<textureUp>arrow_round_right_nofocus.png</textureUp>
+			<textureDown>arrow_round_left_nofocus.png</textureDown>
+			<textureUpFocus>arrow_round_right_focus.png</textureUpFocus>
+			<textureDownFocus>arrow_round_left_focus.png</textureDownFocus>
+			<ondown>35</ondown>
+			<onup>36</onup>
+			<onright>34</onright>
+			<onleft>36</onleft>
+		</control>
+
+	</controls>
+</window>

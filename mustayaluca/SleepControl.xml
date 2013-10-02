@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>7969</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <controls>
+
+		<control>
+			<description>Default Background</description>
+			<type>image</type>
+			<id>1</id>
+			<texture>backgrounds\pluginsbg\default.jpg</texture>
+			<width>1920</width>
+			<height>1080</height>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background.png</texture>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_menu_full.png</texture>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>Sleepcontrol</label>
+			<visible>!player.hasmedia</visible>
+		</control>
+
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+		</control>
+		
+    <control>
+      <type>group</type>
+      <layout>StackLayout</layout>
+      <description>group element</description>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <posX>0</posX>
+      <posY>230</posY>
+      <width>394</width>
+			
+      <control>
+        <id>2</id>
+        <description>Sleep Mode</description>
+        <type>button</type>
+        <onup>10</onup>
+        <ondown>3</ondown>
+        <label>Sleep Mode</label>
+      </control>
+	  
+      <control>
+        <id>3</id>
+        <description>Set Timer</description>
+        <type>button</type>
+        <onup>2</onup>
+        <ondown>4</ondown>
+        <label>Set Timer</label>
+      </control>
+	  
+      <control>
+        <id>4</id>
+        <description>Set Timer by Recording Selection</description>
+        <type>button</type>
+        <onup>3</onup>
+        <ondown>5</ondown>
+        <label>Set Timer by Recording Selection</label>
+      </control>	
+	  
+      <control>
+        <id>5</id>
+        <description>Start Timer</description>
+        <type>button</type>
+        <onup>4</onup>
+        <ondown>6</ondown>
+        <label>Start Timer</label>
+      </control>
+	  
+      <control>
+        <id>6</id>
+        <description>Pause timer</description>
+        <type>button</type>
+        <onup>5</onup>
+        <ondown>7</ondown>
+        <label>Pause timer</label>
+      </control>
+	  
+      <control>
+        <id>7</id>
+        <description>Increment Timer</description>
+        <type>button</type>
+        <onup>6</onup>
+        <ondown>8</ondown>
+        <label>Increment Timer</label>
+      </control>
+	  
+      <control>
+        <id>8</id>
+        <description>Decrement Timer</description>
+        <type>button</type>
+        <onup>7</onup>
+        <ondown>9</ondown>
+        <label>Decrement Timer</label>
+      </control>
+	  
+      <control>
+        <id>9</id>
+        <description>Wait until TV Recording finished</description>
+        <type>checkbutton</type>
+        <onup>8</onup>
+        <ondown>10</ondown>
+        <label>Wait until tasks finished</label>
+				<textalign>right</textalign>					
+      </control>
+	  
+      <control>
+        <id>10</id>
+        <description>Volume Reduction</description>
+        <type>checkbutton</type>
+        <onup>9</onup>
+        <ondown>2</ondown>
+        <label>Volume Reduction</label>
+				<textalign>right</textalign>					
+      </control>
+	</control>
+
+
+	<control Style="DetailText">
+      <id>0</id>
+      <description>Sleep Activity</description>
+      <type>label</type>
+      <posX>744</posX>
+      <posY>476</posY>
+      <width>878</width>
+      <align>CENTER</align>
+      <label>#SleepControl.Activity</label>
+      <animation effect="Fade" time="500">WindowOpen</animation>
+      <animation effect="Fade" time="500">WindowClose</animation>
+      <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+    </control>
+	
+	<control Style="DetailText">
+      <id>0</id>
+      <description>Sleep Method</description>
+      <type>label</type>
+      <posX>744</posX>
+      <posY>748</posY>
+      <width>878</width>
+      <align>CENTER</align>
+      <label>#SleepControl.Method</label>
+      <animation effect="Fade" time="500">WindowOpen</animation>
+      <animation effect="Fade" time="500">WindowClose</animation>
+    </control>
+	
+	<control>
+      <id>0</id>
+      <description>Sleep Counter</description>
+      <type>label</type>
+      <posX>744</posX>
+      <posY>586</posY>
+      <width>878</width>
+      <align>CENTER</align>
+	  <font>font10</font>	  
+      <label>#SleepControl.Counter</label>
+      <animation effect="Fade" time="500">WindowOpen</animation>
+      <animation effect="Fade" time="500">WindowClose</animation>
+    </control>
+	
+	<control Style="DetailText">
+      <id>0</id>
+      <description>Sleep Status</description>
+      <type>label</type>
+      <posX>744</posX>
+      <posY>682</posY>
+      <width>878</width>
+      <align>CENTER</align>
+      <label>#SleepControl.Start #SleepControl.End</label>
+    </control>
+	
+	<control Style="DetailText">
+      <id>0</id>
+      <description>Sleep Status</description>
+      <type>label</type>
+      <posX>744</posX>
+      <posY>442</posY>
+      <width>878</width>
+      <align>CENTER</align>
+      <label>#SleepControl.Status</label>
+    </control>
+	
+    <control>
+      <id>50</id>
+      <description>Dummy Button</description>
+      <type>button</type>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <onup>2</onup>
+      <ondown>2</ondown>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <label>-</label>
+    </control>
+	
+  </controls>
+</window>

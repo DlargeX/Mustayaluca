@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>748</id>
+	<defaultcontrol>10</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>1</id>
+			<texture>backgrounds\tv\default.jpg</texture>
+			<width>1920</width>
+			<height>1080</height>
+		</control>
+
+		<import>common.window.recordings.list.xml</import>
+
+		<control>
+			<type>actiongroup</type>
+			<description>action menu</description>
+			<defaultcontrol>2</defaultcontrol>
+			<onexit>50</onexit>
+			<buttonX>0</buttonX>
+			<buttonY>0</buttonY>
+			<buttonwidth>106</buttonwidth>
+			<buttonheight>720</buttonheight>		  
+			<width>568</width>
+			<height>900</height>
+			<dimColor>00ffffff</dimColor>
+			<control>
+				<type>image</type>
+				<posX>0</posX>
+				<posY>0</posY>
+				<width>400</width>
+				<height>998</height>
+				<texture>hidden_menu_short_background.png</texture>
+				<colorDiffuse>fffffffff</colorDiffuse>
+				<visible>!Control.HasFocus(10)+control.isvisible(10)</visible>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>
+			
+			<control>
+				<type>image</type>
+				<posX>272</posX>
+				<posY>60</posY>
+				<width>128</width>
+				<height>128</height>		  
+				<texture>logo_tv.png</texture>
+				<visible>!Control.HasFocus(10)+Control.IsVisible(10)</visible>		  
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>		 
+			
+			<control>
+				<type>label</type>
+				<posX>370</posX>
+				<posY>178</posY>
+				<width>300</width>
+				<font>font3</font>
+				<label>652</label>
+				<align>right</align>
+				<visible>!Control.HasFocus(10)+Control.IsVisible(10)</visible>		  
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			</control>		
+			
+			<control>
+				<description>group element</description>
+				<type>group</type>
+				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+				<visible>!Control.HasFocus(10)+control.isvisible(10)</visible>
+				
+				<control>
+					<description>button group</description>
+					<type>group</type>
+					<posX>0</posX>
+					<posY>230</posY>
+					<layout>StackLayout(0, Vertical, true)</layout>
+					<visible>!Control.HasFocus(10)</visible>
+					<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+					<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+					
+				<control>				
+					<description>Record</description>
+					<type>button</type>
+					<id>2</id>
+					<onup>17</onup>
+					<ondown>3</ondown>
+					<onright>10</onright>
+				</control>
+				
+				<control>
+					<description>Advanced Record</description>
+					<type>button</type>
+					<id>3</id>
+					<label>1038</label>
+					<onup>2</onup>
+					<ondown>4</ondown>
+					<onright>10</onright>
+				</control>
+				
+				<control>
+					<description>Keep</description>
+					<type>button</type>
+					<id>4</id>
+					<label>1042</label>
+					<onup>2</onup>
+					<ondown>6</ondown>
+					<onright>10</onright>
+				</control>
+				
+				<control>
+					<description>Quality</description>
+					<type>button</type>
+					<id>6</id>
+					<label>882</label>
+					<onup>4</onup>
+					<ondown>7</ondown>
+					<onright>10</onright>
+				</control>
+				
+				<control>
+					<description>Episodes</description>
+					<type>button</type>
+					<id>7</id>
+					<label>888</label>
+					<onup>6</onup>
+					<ondown>8</ondown>
+					<onright>10</onright>
+				</control>
+				
+				<control>
+					<description>PreRecord</description>
+					<type>button</type>
+					<id>8</id>
+					<label>1444</label>
+					<onup>7</onup>
+					<ondown>9</ondown>
+					<onright>10</onright>
+				</control>
+				
+				<control>
+					<description>PostRecord</description>
+					<type>button</type>
+					<id>9</id>
+					<label>1445</label>
+					<onup>8</onup>
+					<ondown>99</ondown>
+					<onright>10</onright>
+				</control>
+				
+				</control>
+			</control>
+		</control>
+
+		<control>
+			<description>upcoming episodes listcontrol</description>
+			<type>listcontrol</type>
+			<id>10</id>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<posX>72</posX>
+			<posY>231</posY>       
+			<height>730</height>
+			<textureFocus>list_wider_focus.png</textureFocus>
+			<width>1222</width>			
+			<IconXOff>2000</IconXOff>  
+			<spinPosX>2000</spinPosX>
+			<spinCanFocus>no</spinCanFocus>
+			<textXOff>-20</textXOff>
+			<textYOff>18</textYOff>
+			<textXOff2>1060</textXOff2>
+			<textYOff2>18</textYOff2>
+			<textXOff3>700</textXOff3>
+			<textYOff3>20</textYOff3>
+			<PinIconXOff>1080</PinIconXOff>
+			<PinIconYOff>17</PinIconYOff>
+			<PinIconWidth>120</PinIconWidth>
+			<PinIconHeight>34</PinIconHeight>
+			<animation effect="zoom" time="250" end="65" center="0,0">unfocus</animation>
+			<animation effect="slide" time="250" end="260,0">unfocus</animation>
+			<animation effect="zoom" time="250" start="65" center="0,0">focus</animation>
+			<animation effect="slide" time="250" start="260,0">focus</animation>
+		</control>
+
+		<control>
+			<type>image</type>
+			<posX>1310</posX>
+			<posY>255</posY>
+			<width>90</width>
+			<height>90</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<centered>yes</centered>
+			<zoom>no</zoom>
+			<texture>#selectedthumb</texture>		
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Current program title</description>
+			<type>fadelabel</type>
+			<id>13</id>
+			<posX>1420</posX>
+			<posY>250</posY>
+			<width>490</width>	
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>		
+
+		<control Style="Time">
+			<description>Current program time</description>
+			<id>14</id>
+			<type>label</type>
+			<posX>1420</posX>
+			<posY>285</posY>
+			<width>490</width>
+			<label>#TV.RecordedTV.Time</label>	
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+
+		<control Style="Time">
+			<description>Current program genre</description>
+			<type>label</type>
+			<id>17</id>
+			<posX>1420</posX>
+			<posY>320</posY>
+			<width>490</width>
+			<label>#TV.RecordedTV.Genre</label>	
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>		
+
+		<control Style="DetailTextDroid">
+			<description>Description1</description>
+			<type>textboxscrollup</type>
+			<id>15</id>
+			<posX>1310</posX>
+			<posY>385</posY>
+			<width>600</width>
+			<height>445</height>
+			<seperator>-----------------------------------------------------------------------------------</seperator>
+			<label>#TV.RecordedTV.Description</label>
+			<scrollStartDelaySec>10</scrollStartDelaySec>			
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>channel</description>
+			<id>16</id>
+			<type>fadelabel</type>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>100</width>
+			<label>-</label>		
+		</control>
+
+		<control>
+			<description>upcoming episodes label</description>
+			<type>label</type>
+			<id>11</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>100</width>
+			<label>-</label>		
+		</control>
+
+		<import>common.overlay.xml</import>
+
+	</controls>
+</window>

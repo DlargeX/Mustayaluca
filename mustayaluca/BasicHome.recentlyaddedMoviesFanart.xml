@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<controls>
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>0</id>
+			<texture>#latestMediaHandler.movingpicture.latest1.fanart</texture>
+      <shouldCache>true</shouldCache>
+			<width>1920</width>
+			<height>1080</height>
+			<visible>control.hasfocus(91919991)</visible>
+			<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="200" delay="200">Hidden</animation>
+		</control>
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>0</id>
+			<texture>#latestMediaHandler.movingpicture.latest2.fanart</texture>
+      <shouldCache>true</shouldCache>
+			<width>1920</width>
+			<height>1080</height>
+			<visible>control.hasfocus(91919992)</visible>
+			<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="200" delay="200">Hidden</animation>
+		</control>
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>0</id>
+			<texture>#latestMediaHandler.movingpicture.latest3.fanart</texture>
+      <shouldCache>true</shouldCache>
+			<width>1920</width>
+			<height>1080</height>
+			<visible>control.hasfocus(91919993)</visible>
+			<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="200" delay="200">Hidden</animation>
+		</control>
+	</controls>
+</window>

@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <controls>
+    <control>
+      <description>GROUP: Recently Added Music</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <!-- CHANGE the ID value (represented as xxxx) of hasfocus(xxxx) to the value of the ID in basichome you want this to show.If you want it to show on multiple you can chain them like so; control.hasfocus(xxxx) + control.hasfocus(xxxx2) etc. -->
+      <visible>[[control.isvisible(1003)]]|control.hasfocus(91919997)|control.hasfocus(91919998)|control.hasfocus(91919999)</visible>
+      <animation effect="fade" time="150">WindowOpen</animation>
+      <animation effect="fade" time="150">WindowClose</animation>
+      <control>
+        <description>Recent Music 1 Background</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>672</posX>
+        <posY>580</posY>
+        <width>192</width>
+        <height>230</height>
+        <texture>recently_added_music.png</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent Music 1 Thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>698</posX>
+        <posY>607</posY>
+        <width>140</width>
+        <height>140</height>
+        <texture>#latestMediaHandler.music.latest1.thumb</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent Music 1 Overlay</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>672</posX>
+        <posY>580</posY>
+        <width>192</width>
+        <height>230</height>
+        <texture>recently_added_music_shine.png</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent Music 1 Name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>699</posX>
+        <posY>751</posY>
+        <width>140</width>
+        <label>#latestMediaHandler.music.latest1.artist</label>
+        <font>font5</font>
+        <textcolor>ffcdcccc</textcolor>
+        <scrollStartDelaySec>2</scrollStartDelaySec>
+        <scrollWrapString> | </scrollWrapString>
+        <visible>!control.hasfocus(91919997)</visible>
+        <animation effect="fade" time="150">visiblechange</animation>
+        <animation effect="fade" time="150">WindowClose</animation>
+      </control>
+      <control>
+        <description>Recent Music 1 Info</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>699</posX>
+        <posY>751</posY>
+        <width>140</width>
+        <label>#latestMediaHandler.music.latest1.album</label>
+        <font>font5</font>
+        <textcolor>ffcdcccc</textcolor>
+        <scrollStartDelaySec>2</scrollStartDelaySec>
+        <scrollWrapString> | </scrollWrapString>
+        <visible>control.hasfocus(91919997)</visible>
+        <animation effect="fade" time="150">visiblechange</animation>
+        <animation effect="fade" time="150">WindowClose</animation>
+      </control>
+      <control>
+        <description>Recent Music 1 Button</description>
+        <type>button</type>
+        <id>91919997</id>
+        <posX>698</posX>
+        <posY>607</posY>
+        <width>140</width>
+        <height>140</height>
+        <textureFocus>recently_added_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <onup>160301</onup>
+        <ondown>1903</ondown>
+        <onright>91919998</onright>
+        <onleft>91919999</onleft>
+        <label>-</label>
+      </control>
+      <control>
+        <description>Recent Music 2 Background</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>864</posX>
+        <posY>580</posY>
+        <width>192</width>
+        <height>230</height>
+        <texture>recently_added_music.png</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent Music 2 Thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>890</posX>
+        <posY>607</posY>
+        <width>140</width>
+        <height>140</height>
+        <texture>#latestMediaHandler.music.latest2.thumb</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent Music 2 Overlay</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>864</posX>
+        <posY>580</posY>
+        <width>192</width>
+        <height>230</height>
+        <texture>recently_added_music_shine.png</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent Music 2 Name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>891</posX>
+        <posY>751</posY>
+        <width>140</width>
+        <label>#latestMediaHandler.music.latest2.artist</label>
+        <font>font5</font>
+        <textcolor>ffcdcccc</textcolor>
+        <scrollStartDelaySec>2</scrollStartDelaySec>
+        <scrollWrapString> | </scrollWrapString>
+        <visible>!control.hasfocus(91919998)</visible>
+        <animation effect="fade" time="150">visiblechange</animation>
+        <animation effect="fade" time="150">WindowClose</animation>
+      </control>
+      <control>
+        <description>Recent Music 2 Info</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>891</posX>
+        <posY>751</posY>
+        <width>140</width>
+        <label>#latestMediaHandler.music.latest2.album</label>
+        <font>font5</font>
+        <textcolor>ffcdcccc</textcolor>
+        <scrollStartDelaySec>2</scrollStartDelaySec>
+        <scrollWrapString> | </scrollWrapString>
+        <visible>control.hasfocus(91919998)</visible>
+        <animation effect="fade" time="150">visiblechange</animation>
+        <animation effect="fade" time="150">WindowClose</animation>
+      </control>
+      <control>
+        <description>Recent Music 2 Button</description>
+        <type>button</type>
+        <id>91919998</id>
+        <posX>890</posX>
+        <posY>607</posY>
+        <width>140</width>
+        <height>140</height>
+        <textureFocus>recently_added_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <onup>160301</onup>
+        <ondown>1903</ondown>
+        <onright>91919999</onright>
+        <onleft>91919997</onleft>
+        <label>-</label>
+      </control>
+      <control>
+        <description>Recent Music 3 Background</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1056</posX>
+        <posY>580</posY>
+        <width>192</width>
+        <height>230</height>
+        <texture>recently_added_music.png</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent Music 3 Thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1082</posX>
+        <posY>607</posY>
+        <width>140</width>
+        <height>140</height>
+        <texture>#latestMediaHandler.music.latest3.thumb</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent Music 3 Overlay</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1056</posX>
+        <posY>580</posY>
+        <width>192</width>
+        <height>230</height>
+        <texture>recently_added_music_shine.png</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent Music 3 Name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1083</posX>
+        <posY>751</posY>
+        <width>140</width>
+        <label>#latestMediaHandler.music.latest3.artist</label>
+        <font>font5</font>
+        <textcolor>ffcdcccc</textcolor>
+        <scrollStartDelaySec>2</scrollStartDelaySec>
+        <scrollWrapString> | </scrollWrapString>
+        <visible>!control.hasfocus(91919999)</visible>
+        <animation effect="fade" time="150">visiblechange</animation>
+        <animation effect="fade" time="150">WindowClose</animation>
+      </control>
+      <control>
+        <description>Recent Music 3 Info</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1083</posX>
+        <posY>751</posY>
+        <width>140</width>
+        <label>#latestMediaHandler.music.latest3.album</label>
+        <font>font5</font>
+        <textcolor>ffcdcccc</textcolor>
+        <scrollStartDelaySec>2</scrollStartDelaySec>
+        <scrollWrapString> | </scrollWrapString>
+        <visible>control.hasfocus(91919999)</visible>
+        <animation effect="fade" time="150">visiblechange</animation>
+        <animation effect="fade" time="150">WindowClose</animation>
+      </control>
+      <control>
+        <description>Recent Music 3 Button</description>
+        <type>button</type>
+        <id>91919999</id>
+        <posX>1083</posX>
+        <posY>607</posY>
+        <width>140</width>
+        <height>140</height>
+        <textureFocus>recently_added_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <onup>160301</onup>
+        <ondown>1903</ondown>
+        <onright>91919997</onright>
+        <onleft>91919998</onleft>
+        <label>-</label>
+      </control>
+    </control>
+  </controls>
+</window>
+<!--Checksum:407806c3d7a3c3c61610183d67891af4-->

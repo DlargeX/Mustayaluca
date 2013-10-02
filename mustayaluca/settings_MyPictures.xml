@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>12</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+	<define>#header.label:897</define>
+  <rememberLastFocusedControl>yes</rememberLastFocusedControl>
+  <controls>
+	
+		<import>common.settings.xml</import>	
+		<import>common.overlay.home.xml</import>
+	
+<!--   	<control>
+  		<type>label</type>
+  		<id>1</id>
+  		<posX>152</posX>
+  		<posY>225</posY>
+  		<width>500</width>
+  		<label>1</label>
+  		<textcolor>00b7ff</textcolor>
+  		<font>TitanLight20</font>
+  	</control> -->
+  	
+		<control>
+			<description>button group</description>
+			<type>group</type>
+			<posX>0</posX>
+			<posY>230</posY>
+			<layout>StackLayout(0, Vertical, true)</layout>
+			
+      <control>
+        <description>Slideshow</description>
+        <type>button</type>
+        <id>2</id>
+        <label>129</label>
+        <onup>3</onup>
+      </control>
+			
+			<control>
+        <description>Folders button</description>
+        <type>button</type>
+        <id>4</id>
+        <label>300071</label>
+      </control>
+			
+			<control>
+        <description>Database button</description>
+        <type>button</type>
+        <id>5</id>
+        <label>300161</label>
+      </control>
+			
+			<control>
+        <description>Extensions</description>
+        <type>button</type>
+        <id>3</id>
+        <label>300162</label>
+        <ondown>2</ondown>
+      </control>
+    </control>
+		
+  </controls>
+</window>

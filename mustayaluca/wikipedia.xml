@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>4711</id>
+	<defaultcontrol>10</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+
+		<control>
+			<description>BackGround</description>
+			<type>image</type>
+			<id>1</id>
+			<texture>backgrounds\pluginsbg\default.jpg</texture>
+			<width>1920</width>
+			<height>1080</height>    
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background.png</texture>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_menu_full.png</texture>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay Bar</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>998</posY>
+			<width>1920</width>
+			<height>82</height>
+			<texture>overlay_bar_bottom.png</texture>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>2516</label>
+			<visible>!player.hasmedia</visible>
+		</control>
+
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+		</control>
+
+		<control>
+			<description>button group</description>
+			<type>group</type>
+			<posX>0</posX>
+			<posY>230</posY>
+			<layout>StackLayout(0, Vertical, true)</layout>
+			<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+			<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>			
+				
+				<control>
+					<description>Search Button</description>
+					<type>button</type>
+					<id>10</id>
+					<onup>17</onup>
+					<label>137</label>
+				</control>
+				
+				<control>
+					<description>Select local Wikipedia Button</description>
+					<type>button</type>
+					<id>11</id>
+					<label>200025</label>
+				</control>
+				
+				<control>
+					<description>Back to the text (when viewing an image)</description>
+					<type>button</type>
+					<id>14</id>
+					<label>2514</label>
+					<visible>no</visible>
+				</control>
+				
+				<control>
+					<description>Links Button</description>
+					<type>button</type>
+					<id>12</id>
+					<label>2511</label>
+				</control>
+				
+				<control>
+					<description>Images Button</description>
+					<type>button</type>
+					<id>13</id>
+					<ondown>99</ondown>
+					<label>2515</label>
+				</control>
+			</control>
+
+		<control Style="DetailText">
+			<description>Search Label</description>
+			<id>1</id>
+			<type>label</type>
+			<posX>70</posX>
+			<posY>1030</posY>
+			<width>240</width>
+			<align>left</align>
+			<label>#SkinTranslation.Translations.global.search.Searchphrase.Label:</label>
+			<visible>control.hastext(4)+control.isvisible(4)</visible>
+		</control>
+
+		<control Style="DetailText">
+			<description>Search Label</description>
+			<id>4</id>
+			<type>label</type>
+			<posX>280</posX>
+			<posY>1030</posY>
+			<width>800</width>
+			<align>left</align>
+			<label>-</label>
+		</control>
+
+		<control Style="DetailTextDroid">
+			<description>Here is the article text displayed</description>
+			<type>textbox</type>
+			<id>20</id>
+			<posX>440</posX>
+			<posY>240</posY>
+			<visible>no</visible>
+			<width>1400</width>
+			<height>650</height>
+			<spinPosX>445</spinPosX>
+			<spinPosY>870</spinPosY>
+		</control>
+
+		<control Style="DetailText">
+			<description>Search Label</description>
+			<id>1</id>
+			<type>label</type>
+			<posX>70</posX>
+			<posY>1030</posY>
+			<width>240</width>
+			<align>left</align>
+			<label>#(L(922)):</label>
+			<visible>control.hastext(5)+control.isvisible(5)</visible>
+		</control>
+		
+		<control Style="DetailText">
+			<description>Description Label</description>
+			<id>5</id>
+			<type>label</type>
+			<posX>240</posX>
+			<posY>1030</posY>
+			<width>800</width>
+			<align>left</align>
+		</control>
+		
+		<control>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+			<description>Article Image</description>
+			<type>image</type>
+			<id>25</id>
+			<posX>440</posX>
+			<posY>270</posY>
+			<visible>no</visible>
+			<width>1400</width>
+			<height>620</height>
+			<texture />
+			<colorkey>0</colorkey>
+			<colordiffuse>White</colordiffuse>
+			<align>left</align>
+			<centered>no</centered>
+			<keepaspectratio>yes</keepaspectratio>
+		</control>
+		
+		<import>common.overlay.home.xml</import>
+		
+	</controls>
+</window>

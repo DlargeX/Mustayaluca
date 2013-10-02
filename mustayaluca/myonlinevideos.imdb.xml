@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+
+	<controls>
+
+		<control>
+			<id>0</id>
+			<type>image</type>
+			<posX>1205</posX>
+			<posY>195</posY>
+			<width>555</width>
+			<height>790</height>
+			<texture>poster_thumb_background_reflect.png</texture>
+			<visible>facadeview.list+!string.equals(#OnlineVideos.state,details)+string.equals(#OnlineVideos.selectedSiteUtil,IMDB)+string.equals(#selectedthumb)</visible>
+		</control>
+
+		<control>
+			<id>25</id>
+			<type>image</type>
+			<posX>1250</posX>
+			<posY>240</posY>
+			<width>464</width>
+			<height>670</height>
+			<texture>#selectedthumb</texture>
+			<visible>facadeview.list+!string.equals(#OnlineVideos.state,details)+string.equals(#OnlineVideos.selectedSiteUtil,IMDB)+string.equals(#selectedthumb)</visible>
+		</control>
+
+		<control>
+			<id>0</id>
+			<type>image</type>
+			<posX>1205</posX>
+			<posY>195</posY>
+			<width>555</width>
+			<height>790</height>
+			<texture>poster_thumb_background_overlay_reflect.png</texture>
+			<visible>facadeview.list+!string.equals(#OnlineVideos.state,details)+string.equals(#OnlineVideos.selectedSiteUtil,IMDB)+string.equals(#selectedthumb)</visible>
+		</control>
+		
+	</controls>
+	
+</window>

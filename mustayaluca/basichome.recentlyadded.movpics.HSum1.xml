@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <controls>
+    <control>
+      <description>GROUP: Recently Added Movies</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <!-- CHANGE the ID value (represented as xxxx) of hasfocus(xxxx) to the value of the ID in basichome you want this to show.If you want it to show on multiple you can chain them like so; control.hasfocus(xxxx) + control.hasfocus(xxxx2) etc. -->
+      <visible>[control.isvisible(1004)]|control.hasfocus(91919991)|control.hasfocus(91919992)|control.hasfocus(91919993)</visible>
+      <animation effect="fade" time="150">WindowOpen</animation>
+      <animation effect="fade" time="150">WindowClose</animation>
+      <!-- Background -->
+      <control>
+        <description>Recent Movies BG</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>695</posX>
+        <posY>388</posY>
+        <width>530</width>
+        <height>420</height>
+        <texture>recently_added_poster_background.png</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control>
+        <description>Recent Movies Rating BG</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1123</posX>
+        <posY>638</posY>
+        <width>60</width>
+        <height>22</height>
+        <texture>recent_added_rating.png</texture>
+        <shouldCache>true</shouldCache>
+        <visible>control.hasfocus(91919991)|control.hasfocus(91919992)|control.hasfocus(91919993)</visible>
+      </control>
+      <control>
+        <description>Recent Movies Seperator</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>736</posX>
+        <posY>689</posY>
+        <width>448</width>
+        <height>2</height>
+        <texture>recent_added_seperator.png</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <!-- Info when no movie thumb button has focus -->
+      <control Style="NoShadow">
+        <description>Recently Added Movies Label</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>736</posX>
+        <posY>659</posY>
+        <width>440</width>
+        <font>font17</font>
+        <textcolor>ff474747</textcolor>
+        <label>#SkinTranslation.Translations.recentlyAdded.Movies.Label</label>
+        <visible>!control.hasfocus(91919991)+!control.hasfocus(91919992)+!control.hasfocus(91919993)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Movies 1 Name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>736</posX>
+        <posY>699</posY>
+        <font>font5</font>
+        <width>440</width>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>#latestMediaHandler.movingpicture.latest1.title (#latestMediaHandler.movingpicture.latest1.year)</label>
+        <visible>!control.hasfocus(91919991)+!control.hasfocus(91919992)+!control.hasfocus(91919993)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Movies 2 Name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>736</posX>
+        <posY>724</posY>
+        <font>font5</font>
+        <width>440</width>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>#latestMediaHandler.movingpicture.latest2.title (#latestMediaHandler.movingpicture.latest2.year)</label>
+        <visible>!control.hasfocus(91919991)+!control.hasfocus(91919992)+!control.hasfocus(91919993)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Movies 3 Name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>736</posX>
+        <posY>749</posY>
+        <font>font5</font>
+        <width>440</width>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>#latestMediaHandler.movingpicture.latest3.title (#latestMediaHandler.movingpicture.latest3.year)</label>
+        <visible>!control.hasfocus(91919991)+!control.hasfocus(91919992)+!control.hasfocus(91919993)</visible>
+      </control>
+      <!-- Info when recent movie 1 button has focus -->
+      <control>
+        <description>Recent Movies 1 Thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>736</posX>
+        <posY>429</posY>
+        <width>136</width>
+        <height>200</height>
+        <texture>#latestMediaHandler.movingpicture.latest1.thumb</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Movies 1 Title</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>736</posX>
+        <posY>638</posY>
+        <width>380</width>
+        <font>font17</font>
+        <textcolor>ff474747</textcolor>
+        <label>#latestMediaHandler.movingpicture.latest1.title</label>
+        <visible>control.hasfocus(91919991)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Movies 1 Rating</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1153</posX>
+        <posY>638</posY>
+        <font>font5</font>
+        <textcolor>ff474747</textcolor>
+        <label>#latestMediaHandler.movingpicture.latest1.rating</label>
+        <visible>control.hasfocus(91919991)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Movies 1 Details</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>736</posX>
+        <posY>662</posY>
+        <width>390</width>
+        <font>font5</font>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>(#latestMediaHandler.movingpicture.latest1.classification) - #latestMediaHandler.movingpicture.latest1.runtime - #latestMediaHandler.movingpicture.latest1.genre</label>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <visible>control.hasfocus(91919991)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Movies 1 Plot</description>
+        <type>textboxscrollup</type>
+        <id>0</id>
+        <posX>736</posX>
+        <posY>694</posY>
+        <width>450</width>
+        <height>85</height>
+        <font>font5</font>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>#latestMediaHandler.movingpicture.latest1.plot</label>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <seperator>-----------------------------------------------------------------------------------</seperator>
+        <visible>control.hasfocus(91919991)</visible>
+      </control>
+      <control>
+        <description>Recent movies 1 Button</description>
+        <type>button</type>
+        <id>91919991</id>
+        <posX>736</posX>
+        <posY>461</posY>
+        <width>136</width>
+        <height>136</height>
+        <textureFocus>recently_added_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <onup>160401</onup>
+        <ondown>1904</ondown>
+        <onright>91919992</onright>
+        <onleft>91919993</onleft>
+        <label>-</label>
+      </control>
+      <!-- Info when recent movie 2 button has focus -->
+      <control>
+        <description>Recent movies 2 Thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>892</posX>
+        <posY>429</posY>
+        <width>136</width>
+        <height>200</height>
+        <texture>#latestMediaHandler.movingpicture.latest2.thumb</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Movies 2 Title</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>736</posX>
+        <posY>638</posY>
+        <width>380</width>
+        <font>font17</font>
+        <textcolor>ff474747</textcolor>
+        <label>#latestMediaHandler.movingpicture.latest2.title</label>
+        <visible>control.hasfocus(91919992)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Movies 2 Rating</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1153</posX>
+        <posY>638</posY>
+        <font>font5</font>
+        <textcolor>ff474747</textcolor>
+        <label>#latestMediaHandler.movingpicture.latest2.rating</label>
+        <visible>control.hasfocus(91919992)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Movies 2 Details</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>736</posX>
+        <posY>662</posY>
+        <width>390</width>
+        <font>font5</font>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>(#latestMediaHandler.movingpicture.latest2.classification) - #latestMediaHandler.movingpicture.latest2.runtime - #latestMediaHandler.movingpicture.latest2.genre</label>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <visible>control.hasfocus(91919992)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Movies 2 Plot</description>
+        <type>textboxscrollup</type>
+        <id>0</id>
+        <posX>736</posX>
+        <posY>694</posY>
+        <width>450</width>
+        <height>85</height>
+        <font>font5</font>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>#latestMediaHandler.movingpicture.latest2.plot</label>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <seperator>-----------------------------------------------------------------------------------</seperator>
+        <visible>control.hasfocus(91919992)</visible>
+      </control>
+      <control>
+        <description>Recent movies 2 Button</description>
+        <type>button</type>
+        <id>91919992</id>
+        <posX>892</posX>
+        <posY>461</posY>
+        <width>136</width>
+        <height>136</height>
+        <textureFocus>recently_added_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <onup>160401</onup>
+        <ondown>1904</ondown>
+        <onright>91919993</onright>
+        <onleft>91919991</onleft>
+        <label>-</label>
+      </control>
+      <!-- Info when recent movie 3 button has focus -->
+      <control>
+        <description>Recent movies 3 Thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1048</posX>
+        <posY>429</posY>
+        <width>136</width>
+        <height>200</height>
+        <texture>#latestMediaHandler.movingpicture.latest3.thumb</texture>
+        <shouldCache>true</shouldCache>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Movies 3 Title</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>736</posX>
+        <posY>638</posY>
+        <width>380</width>
+        <font>font17</font>
+        <textcolor>ff474747</textcolor>
+        <label>#latestMediaHandler.movingpicture.latest3.title</label>
+        <visible>control.hasfocus(91919993)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Movies 3 Rating</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1153</posX>
+        <posY>638</posY>
+        <font>font5</font>
+        <textcolor>ff474747</textcolor>
+        <label>#latestMediaHandler.movingpicture.latest3.rating</label>
+        <visible>control.hasfocus(91919993)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Movies 3 Details</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>736</posX>
+        <posY>662</posY>
+        <width>390</width>
+        <font>font5</font>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>(#latestMediaHandler.movingpicture.latest3.classification) - #latestMediaHandler.movingpicture.latest3.runtime - #latestMediaHandler.movingpicture.latest3.genre</label>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <visible>control.hasfocus(91919993)</visible>
+      </control>
+      <control Style="NoShadow">
+        <description>Recent Movies 3 Plot</description>
+        <type>textboxscrollup</type>
+        <id>0</id>
+        <posX>736</posX>
+        <posY>694</posY>
+        <width>450</width>
+        <height>85</height>
+        <font>font5</font>
+        <textcolor>ff7a7a7a</textcolor>
+        <label>#latestMediaHandler.movingpicture.latest3.plot</label>
+        <scrollStartDelaySec>5</scrollStartDelaySec>
+        <seperator>-----------------------------------------------------------------------------------</seperator>
+        <visible>control.hasfocus(91919993)</visible>
+      </control>
+      <control>
+        <description>Recent movies 3 Button</description>
+        <type>button</type>
+        <id>91919993</id>
+        <posX>1048</posX>
+        <posY>461</posY>
+        <width>136</width>
+        <height>136</height>
+        <textureFocus>recently_added_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <onup>160401</onup>
+        <ondown>1904</ondown>
+        <onright>91919991</onright>
+        <onleft>91919992</onleft>
+        <label>-</label>
+      </control>
+    </control>
+  </controls>
+</window>
+<!--Checksum:a0c25f5b2560b1209db84be6a2132aa6-->

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Skin translation file -->
+<!-- Icelandic (IS) -->
+<!-- Last Updated: 9th May 2011 -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<!-- #SkinTranslation.Translations.FIELD.Label -->
+<strings>
+  <!-- # -->
+  <!-- A -->
+  <string Field="album.info">Plötuupplýsingar</string>
+  <string Field="artist.info">Upplýsingar um flytjanda</string>
+  <!-- B -->
+  <string Field="browse">Fletta</string>
+  <!-- C -->
+  <!-- D -->
+  <string Field="details">Upplýsingar</string>
+  <!-- E -->
+  <string Field="screen.exit">Hætta</string>
+  <!-- F -->
+  <string Field="fanart.scraping">Fanart scraping</string>
+  <string Field="file.details">Skráarupplýsingar</string>
+  <string Field="file.name">Skráarnafn</string>
+  <string Field="file.size">Stærð skráar</string>
+  <!-- G -->
+  <string Field="global.search.songname">Nafn lags</string>
+  <string Field="global.search.Casesensitive">Há/lágstafanæmni</string>
+  <string Field="global.search.filename">Skráarnafn</string>
+  <string Field="global.search.lastplayed">Síðast spilað</string>
+  <string Field="global.search.musicsearch">Tónlistarleit</string>
+  <string Field="global.search.playcount">Oft spilað</string>
+  <string Field="global.search.Searchfields">Leitunarsvæði</string>
+  <string Field="global.search.Searchhistory">Leitarferill</string>
+  <string Field="global.search.Searchphrase">Leitarstrengur</string>
+  <string Field="global.search.Searchtype">Leitartegund</string>
+  <string Field="global.search.albuminfo">Plötuupplýsingar</string>
+  <string Field="global.search.songname">Nafn lags</string>
+  <!-- H -->
+  <!-- I -->
+  <!-- L -->
+  <string Field="lyrics">Lagatextar</string>
+  <string Field="list.empty">Tómt</string>
+  <!-- M -->
+  <string Field="media.movies">Kvikmyndir</string>
+  <string Field="media.playing">Í spilun</string>
+  <string Field="movie.released">Útgefið</string>
+  <string Field="media.unwatched">Óséð</string>
+  <string Field="media.watched">Séð</string>
+  <string Field="menu.subtitles">Textar</string>
+  <string Field="menu.trailer">Stiklur</string>
+  <string Field="movie.filter">Síun</string>
+  <string Field="movie.loading">Opna...</string>
+  <string Field="movie.plot">Söguþráður</string>
+  <string Field="movie.rated">Einkunn</string>
+  <string Field="movie.title">Titill</string>
+  <string Field="music.genre">Flokkun</string>
+  <string Field="music.notplaying">Engin tónlist í spilun...</string>
+  <string Field="musicvids.mostplayed.artist">Most Played Artist</string>
+  <string Field="musicvids.mostplayed.video">Most Played Video</string>
+  <string Field="musicvids.random">Play All (Random)</string>
+  <string Field="musicvids.SmartPlaylist">Smart Playlist</string>
+  <!-- N -->
+  <!-- O -->
+  <!-- P -->
+  <!-- R -->
+  <string Field="recentlyAdded.Albums">Nýjustu plöturnar</string>
+  <string Field="recentlyAdded.Episodes">Nýjustu þættirnir</string>
+  <string Field="recentlyAdded.Movies">Nýjustu kvikmyndirnar</string>
+  <string Field="recentlyAdded.Pics">Nýjustu ljósmyndirnar</string>
+  <string Field="recentlyAdded.Recordings">Nýjustu upptökurnar</string>
+  <string Field="recorded.on">Tekið upp á</string>
+  <string Field="recentlyAdded.Season">Þáttaröð</string>
+  <string Field="recentlyAdded.Episode">Þáttur</string>
+  <string Field="Rockstar.search">Tónlistarleit</string>
+  <string Field="Rockstar.default.playlist">Sjálfgefinn spilunarlisti</string>
+  <string Field="Rockstar.popular.songs">Vinsæl lög</string>
+  <string Field="Rockstar.playlists">Spilunarlistar</string>
+  <string Field="Rockstar.track">Lag</string>
+  <!-- S -->
+  <string Field="SleepControl">Svefnrofi</string>
+  <string Field="series.network">Net</string>
+  <string Field="series.description">Upplýsingar um þáttaröð</string>
+  <string Field="series.update">Síðast uppfært</string>
+  <string Field="screen.exit">Hætta</string>
+  <string Field="search">Leita</string>
+  <string Field="showtimes.theaters">Kvikmyndahús</string>
+  <string Field="search.history">Leitarsaga</string>
+  <string Field="similar.videos">Svipuð myndbönd</string>
+  <string Field="summary">Niðurstaða</string>
+  <!-- T -->
+  <string Field="time.minutes">Mín.</string>
+  <string Field="tv">Sjónvarp</string>
+  <!-- U -->
+  <!-- V -->
+  <string Field="video.settings">Myndbandsstillingar</string>
+  <string Field="volume.volume">Hljóðstyrkur</string>
+  <string Field="volume.mute">Hljótt</string>
+  <!-- W -->
+  <!-- Y -->
+</strings>
+<!--Checksum:bf78c2841971a99537b65a8bced2e753-->

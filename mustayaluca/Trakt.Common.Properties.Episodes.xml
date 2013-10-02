@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+		
+		<!-- Episode List Layout -->
+		<control>
+			<description>Episode Thumb Backround</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1315</posX>
+			<posY>234</posY>            
+			<width>550</width>
+			<height>368</height>
+			<texture>episode_thumb_background_reflect.png</texture>
+			<visible>!string.equals(#selectedthumb,)+facadeview.list</visible>
+		</control>	
+		
+		<control>
+			<description>Big Episode Thumb</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>1345</posX>
+			<posY>264</posY>            
+			<width>490</width>
+			<height>277</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<zoom>yes</zoom>        
+			<texture>#selectedthumb</texture>
+			<visible>facadeview.list</visible>
+		</control>
+		
+		<control>
+			<description>Episode Thumb Backround</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1315</posX>
+			<posY>234</posY>            
+			<width>550</width>
+			<height>368</height>
+			<texture>episode_thumb_background_overlay_reflect.png</texture>
+			<visible>!string.equals(#selectedthumb,)+facadeview.list</visible>
+		</control>
+
+		<control Style="DetailTitle">
+			<label>#Trakt.Translation.Season.Label #Trakt.Episode.Season</label>
+			<type>label</type>
+			<posX>1315</posX>
+			<posY>596</posY>
+			<width>150</width>
+			<visible>!String.Equals(#Trakt.Episode.Season,)+facadeview.list</visible>
+		</control>
+		
+		<control Style="DetailText">
+			<label>#Trakt.Episode.Title</label>
+			<type>fadelabel</type>
+			<posX>1465</posX>
+			<posY>596</posY>
+			<width>445</width>
+			<visible>facadeview.list</visible>
+		</control>
+		
+		<control Style="DetailTextDroid">
+			<description>Episode Plot</description>
+			<type>textboxscrollup</type>
+			<id>631</id>
+			<posX>1315</posX>
+			<posY>662</posY>
+			<width>570</width>
+			<height>235</height>
+			<seperator>-----------------------------------------------------------------------------------</seperator>
+			<label>#Trakt.Episode.Overview</label>
+			<scrollStartDelaySec>10</scrollStartDelaySec>
+			<visible>facadeview.list</visible>
+		</control>
+		
+		<control Style="DetailText">
+			<description>Info Label</description>
+			<type>label</type>
+			<label>#Trakt.Show.Network | #Trakt.Show.AirDay | #Trakt.Show.AirTime | #Trakt.Show.Certification</label>
+			<posX>70</posX>
+			<posY>1030</posY>
+			<width>1000</width>
+			<align>left</align>
+			<visible>!String.Equals(#Trakt.Show.Network,)</visible>
+		</control>
+		
+  </controls>
+</window>

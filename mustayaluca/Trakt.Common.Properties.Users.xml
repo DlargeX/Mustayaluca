@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<controls>
+		
+			<control>
+			<description>Avatar BG</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>1126</posX>
+			<posY>247</posY>
+			<width>450</width>
+			<height>480</height>
+			<texture>music_thumb_background_reflect.png</texture>
+			<visible>facadeview.list + !string.equals(#Trakt.View.Level,WatchedHistory)+!string.equals(#selectedthumb,)</visible>
+		</control>	
+		
+		<control>
+			<description>Avatar</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>1171</posX>
+			<posY>292</posY>
+			<width>360</width>
+			<height>360</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<centered>yes</centered>
+			<texture>#selectedthumb</texture>
+			<zoom>yes</zoom>
+			<texture>#Trakt.User.AvatarFileName</texture>
+			<visible>facadeview.list + !string.equals(#Trakt.View.Level,WatchedHistory)</visible>
+		</control>
+		
+		<control>
+			<description>Avatar Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>1126</posX>
+			<posY>247</posY>
+			<width>450</width>
+			<height>480</height>
+			<texture>music_thumb_background_reflect_overlay.png</texture>
+			<visible>facadeview.list + !string.equals(#Trakt.View.Level,WatchedHistory)+!string.equals(#selectedthumb,)</visible>
+		</control>	
+
+		<control Style="DetailTitle">
+			<description>Summary label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1120</posX>
+			<posY>735</posY>
+			<width>300</width>
+      <label>#Trakt.Translation.FullName.Label</label>
+      <visible>!string.equals(#Trakt.User.FullName,)</visible>			
+		</control>		
+		<control Style="DetailText">
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>1450</posX>
+			<posY>735</posY>
+			<width>350</width>
+      <label>#Trakt.User.FullName</label>			
+      <visible>!string.equals(#Trakt.User.FullName,)</visible>			
+		</control>
+
+		<control Style="DetailTitle">
+      <description>Location Date txt</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1120</posX>
+			<posY>803</posY>
+			<width>300</width>
+      <label>#Trakt.Translation.Location.Label</label>
+      <visible>!string.equals(#Trakt.User.Location,)</visible>	
+		</control>		
+		<control Style="DetailText">
+      <description>Location Date value</description>		
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>1450</posX>
+			<posY>803</posY>
+			<width>350</width>
+      <label>#Trakt.User.Location</label>
+      <visible>!string.equals(#Trakt.User.Location,)</visible>	
+		</control>
+
+		<control Style="DetailTitle">
+      <description>Gender txt</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1120</posX>
+			<posY>872</posY>
+			<width>300</width>
+      <label>#Trakt.Translation.Gender.Label</label>
+      <visible>!string.equals(#Trakt.User.Gender,)</visible>
+		</control>		
+		<control Style="DetailText">
+      <description>Gender</description>	
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>1450</posX>
+			<posY>872</posY>
+			<width>350</width>
+      <label>#Trakt.User.Gender</label>
+      <visible>!string.equals(#Trakt.User.Gender,)</visible>	
+		</control>
+		
+	</controls>
+</window>

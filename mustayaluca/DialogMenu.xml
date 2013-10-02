@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>2012</id>
+	<defaultcontrol>3</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posX>600</posX>
+			<posY>244</posY>
+			<width>720</width>
+			<height>592</height>
+			<texture>context_background.png</texture>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Heading text label</description>
+			<type>label</type>
+			<id>5</id>
+			<posX>677</posX>
+			<posY>300</posY>
+			<width>570</width>
+			<label>924</label>
+		</control>
+
+		<control Style="Time">
+			<description>SubHeading text label</description>
+			<type>label</type>
+			<id>4</id>
+			<posX>677</posX>
+			<posY>340</posY>
+			<width>570</width>
+			<label>181</label>
+		</control>
+
+		<control>
+			<description>Exit button</description>
+			<type>button</type>
+			<id>2</id>
+			<posX>2000</posX>
+			<posY>10</posY>
+			<width>10</width>
+			<height>10</height>
+			<textureFocus>-</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+		</control>
+
+		<control>
+			<description>options listcontrol</description>
+			<type>listcontrol</type>
+			<id>3</id>
+			<posX>620</posX>
+			<posY>402</posY>
+			<width>680</width>
+			<height>400</height>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<textureFocus>list_context_focus.png</textureFocus>
+			<textureNoFocus>list_context_nofocus.png</textureNoFocus>
+			<spaceBetweenItems>0</spaceBetweenItems>
+			<spinPosX>687</spinPosX>
+			<spinPosY>767</spinPosY>
+			<font>font2</font>
+			<textXOff>20</textXOff>
+			<PinIconXOff>60</PinIconXOff>
+			<PinIconYOff>10</PinIconYOff>
+			<PinIconWidth>40</PinIconWidth>
+			<PinIconHeight>25</PinIconHeight>
+			<IconXOff>2000</IconXOff>
+			<textureUp>-</textureUp>
+			<textureDown>-</textureDown>
+			<textureUpFocus>-</textureUpFocus>
+			<textureDownFocus>-</textureDownFocus>
+			<spinCanFocus>no</spinCanFocus>
+			<explicitlyEnableScrollLabel>no</explicitlyEnableScrollLabel>
+		</control>
+
+	</controls>
+</window>

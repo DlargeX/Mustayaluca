@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id></id>
+	<controls>
+
+		<!-- Dummy -->
+		<control>
+			<description>dummy (visible when music is playing)</description>
+			<type>label</type>
+			<id>3337</id>
+			<posX>2000</posX>
+			<label>#Play.Current.Artist</label>
+			<visible>Player.HasAudio+control.hastext(3337)</visible>
+		</control>
+
+		<control>
+			<description>dummy (visible when there is a next track)</description>
+			<type>label</type>
+			<id>3338</id>
+			<posX>2000</posX>
+			<label>#Play.Next.Title</label>
+			<visible>Player.HasAudio+control.hastext(3338)</visible>
+		</control>
+
+		<control>
+			<description>dummy (visible when tv is running)</description>
+			<type>label</type>
+			<id>3339</id>
+			<posX>2000</posX>
+			<label>#TV.View.channel</label>
+			<visible>Player.HasVideo+control.hastext(3339)</visible>
+		</control>
+
+		<!--TV / Video-->
+		<control Style="BigTitle">
+			<type>fadelabel</type>
+			<description>channel label</description>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1500</width>
+			<label>#SkinTranslation.Translations.media.playing.Label: #Play.Current.Title</label>
+			<visible>player.hasvideo+!control.hastext(3337)+[Control.HasFocus(10)|Control.HasFocus(11)|Control.HasFocus(50)|Control.HasFocus(51)]</visible>
+		</control>
+
+		<control Style="BigTitle">
+			<description>play time label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1765</posX>
+			<posY>45</posY>
+			<width>400</width>
+			<align>right</align>
+			<label>#currentplaytime</label>
+			<visible>player.hasvideo+!control.hastext(3337)</visible>
+		</control>
+
+		<!--Audio-->
+		<control Style="BigTitle">
+			<type>fadelabel</type>
+			<description>title label</description>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#SkinTranslation.Translations.media.playing.Label: #Play.Current.Title</label>
+			<visible>player.hasaudio+control.hastext(3337)+[Control.HasFocus(10)|Control.HasFocus(11)|Control.HasFocus(50)|Control.HasFocus(51)]</visible>
+		</control>
+
+		<control Style="Time">
+			<type>fadelabel</type>
+			<description>artist label</description>
+			<id>1</id>
+			<posX>1765</posX>
+			<posY>120</posY>
+			<label>#Play.Current.Artist</label>
+			<align>right</align>
+			<width>800</width>
+			<visible>player.hasaudio+control.hastext(3337)</visible>
+		</control>
+		
+		<control Style="BigTitle">
+			<description>play time label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1765</posX>
+			<posY>45</posY>
+			<width>400</width>
+			<align>right</align>
+			<label>#currentplaytime/#duration</label>
+			<visible>player.hasaudio+control.hastext(3337)+[Control.HasFocus(10)|Control.HasFocus(11)|Control.HasFocus(50)|Control.HasFocus(51)]</visible>
+		</control>
+
+
+		<!--Radio-->
+		<control Style="BigTitle">
+			<type>fadelabel</type>
+			<description>title label</description>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#SkinTranslation.Translations.media.playing.Label: #Play.Current.Title</label>
+			<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+[Control.HasFocus(10)|Control.HasFocus(11)|Control.HasFocus(50)|Control.HasFocus(51)]</visible>
+		</control>
+
+		<control Style="BigTitle">
+			<description>play time label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1765</posX>
+			<posY>45</posY>
+			<width>400</width>
+			<align>right</align>
+			<label>#currentplaytime/#Play.Current.Duration</label>
+			<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+		</control>
+
+		<!--Logos-->
+		<control>
+			<description>play logo</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>1775</posX>
+			<posY>42</posY>
+			<width>80</width>
+			<height>80</height>
+			<texture>np_play.png</texture>
+			<visible>player.hasmedia+player.playing+!player.recording</visible>
+		</control>
+
+		<control>
+			<description>pause logo</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>1775</posX>
+			<posY>42</posY>
+			<width>80</width>
+			<height>80</height>
+			<texture>np_pause.png</texture>
+			<visible>player.hasmedia+player.paused+!player.recording</visible>
+		</control>
+
+	</controls>
+</window>

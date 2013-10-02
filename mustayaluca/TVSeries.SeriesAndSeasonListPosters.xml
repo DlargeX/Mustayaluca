@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window> 
+	<controls>
+
+		<control>
+			<description>Default Cover Art</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>55</posX>
+			<posY>195</posY>
+			<width>555</width>
+			<height>790</height>
+			<texture>poster_thumb_background_reflect.png</texture>
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list+Control.HasFocus(50)</visible>
+		</control>
+
+		<control>
+			<description>Series Poster</description>
+			<type>image</type>
+			<id>61</id>
+			<posX>100</posX>
+			<posY>240</posY>
+			<width>464</width>
+			<height>670</height>
+			<texture>#TVSeries.SeriesPoster</texture>
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list+Control.HasFocus(50)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>Season Poster</description>
+			<type>image</type>
+			<id>62</id>
+			<posX>100</posX>
+			<posY>240</posY>
+			<width>464</width>
+			<height>670</height>
+			<texture>#TVSeries.SeasonPoster</texture>
+			<visible>control.isvisible(1238)+facadeview.list+Control.HasFocus(50)</visible>			
+		</control>
+
+		<control>
+			<description>Cover Art Glass Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>55</posX>
+			<posY>195</posY>
+			<width>555</width>
+			<height>760</height>
+			<texture>poster_thumb_background_overlay.png</texture>
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list+[Control.HasThumb(61)|Control.HasThumb(62)]+Control.HasFocus(50)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<!-- Watched Icons for Series Poster View and Season View in List Layout and Wide Banners -->
+		<control>
+			<description>Watched Icon Background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>197</posX>
+			<posY>878</posY>
+			<width>270</width>
+			<height>64</height>
+			<texture>overlay_new.png</texture>
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list+[Control.HasThumb(61)|Control.HasThumb(62)]+Control.HasFocus(50)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailWatched">
+			<description>Watched Icon</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>210</posX>
+			<posY>909</posY>
+			<width>230</width>
+			<label>#SkinTranslation.Translations.media.watched.Label</label>
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list+control.isvisible(1243)+control.isvisible(1244)+[Control.HasThumb(61)|Control.HasThumb(62)]+Control.HasFocus(50)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailWatched">
+			<description>Un-Watched Icon</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>210</posX>
+			<posY>909</posY>
+			<width>230</width>
+			<label>#SkinTranslation.Translations.media.unwatched.Label</label>
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list+!control.isvisible(1243)+control.isvisible(1244)+[Control.HasThumb(61)|Control.HasThumb(62)]+Control.HasFocus(50)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailWatchedMissing">
+			<description>Watched Label Not Available</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>210</posX>
+			<posY>909</posY>
+			<width>230</width>
+			<label>#SkinTranslation.Translations.media.watched.Label</label>
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list+control.isvisible(1243)+!control.isvisible(1244)+[Control.HasThumb(61)|Control.HasThumb(62)]+Control.HasFocus(50)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="DetailWatchedMissing">
+			<description>Un-Watched Label Not Available</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>210</posX>
+			<posY>909</posY>
+			<width>230</width>
+			<label>#SkinTranslation.Translations.media.unwatched.Label</label>
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list+!control.isvisible(1243)+!control.isvisible(1244)+[Control.HasThumb(61)|Control.HasThumb(62)]+Control.HasFocus(50)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Series Title</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#TVSeries.Series.Pretty_Name</label>
+			<visible>[control.isvisible(1237)+control.isvisible(1242)]+facadeview.list+Control.HasFocus(50)+!player.hasmedia</visible>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Season Title</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#TVSeries.Series.Pretty_Name #TVSeries.Season.SeasonLabel</label>
+			<visible>control.isvisible(1238)+facadeview.list+Control.HasFocus(50)+!player.hasmedia</visible>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Network Label</description>
+			<type>label</type>
+			<label>#TVSeries.Series.InfoPanelLine2Key</label>
+			<posX>1315</posX>
+			<posY>250</posY>
+			<width>200</width>			
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list]</visible>
+		</control>
+
+		<control Style="DetailText">
+			<description>Network Value (Certification)</description>
+			<type>label</type>
+			<label>#TVSeries.Series.InfoPanelLine2Value (#TVSeries.Series.InfoPanelLine11Value)</label>
+			<posX>1520</posX>
+			<posY>250</posY>
+			<width>370</width>
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list]+!string.equals(#TVSeries.Series.InfoPanelLine11Value,)</visible>
+		</control>
+
+		<control Style="DetailText">
+			<description>Network Value (No Certification)</description>
+			<type>label</type>
+			<label>#TVSeries.Series.InfoPanelLine2Value</label>
+			<posX>1520</posX>
+			<posY>250</posY>
+			<width>370</width>
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list]+string.equals(#TVSeries.Series.InfoPanelLine11Value,)</visible>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Genre Label</description>
+			<type>label</type>
+			<label>#TVSeries.Series.InfoPanelLine3Key</label>
+			<posX>1315</posX>
+			<posY>318</posY>
+			<width>200</width>		
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list]</visible>
+		</control>		
+
+		<control Style="DetailText">
+			<description>Genre Value</description>
+			<type>fadelabel</type>
+			<label>#TVSeries.Series.InfoPanelLine3Value</label>
+			<id>0</id>
+			<posX>1520</posX>
+			<posY>318</posY>
+			<width>370</width>
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list]</visible>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Rating Label</description>
+			<type>label</type>
+			<label>#TVSeries.Series.InfoPanelLine4Key</label>
+			<posX>1315</posX>
+			<posY>390</posY>
+			<width>200</width>	
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list]</visible>
+		</control>
+
+		<control>
+			<description>TVDB Stars</description>
+			<type>image</type>
+			<posX>1520</posX>
+			<posY>382</posY>
+			<width>204</width>
+			<height>44</height>
+			<align>left</align>
+			<texture>#TVSeries.Series.FiveStarRatingPath</texture>
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list]</visible>
+		</control>
+
+		<control Style="DetailText">
+			<description>Rating Value</description>
+			<type>label</type>
+			<posX>1735</posX>
+			<posY>387</posY>
+			<width>210</width>	
+			<label>(#TVSeries.Series.InfoPanelLine4Value)</label>			
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list]</visible>
+		</control>
+
+		<control Style="DetailTitle">
+			<description>Runtime Label</description>
+			<type>label</type>
+			<label>#TVSeries.Series.InfoPanelLine5Key</label>
+			<posX>1315</posX>
+			<posY>458</posY>
+			<width>200</width>			
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list]</visible>
+		</control>
+
+		<control Style="DetailText">
+			<description>Runtime Value</description>
+			<type>label</type>
+			<label>#TVSeries.Series.InfoPanelLine5Value</label>
+			<posX>1520</posX>
+			<posY>458</posY>
+			<width>370</width>			
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list]</visible>
+		</control>		
+
+		<control Style="DetailTitle">
+			<description>Aired Label</description>
+			<type>label</type>
+			<label>#TVSeries.Series.InfoPanelLine6Key</label>
+			<posX>1315</posX>
+			<posY>526</posY>
+			<width>200</width>	
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list]</visible>
+		</control>
+
+		<control Style="DetailText">
+			<description>Aired Value</description>
+			<type>fadelabel</type>
+			<label>#TVSeries.Series.InfoPanelLine6Value</label>
+			<posX>1530</posX>
+			<posY>526</posY>
+			<width>370</width>			
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list]</visible>
+		</control>		
+
+		<control Style="DetailTitle">
+			<description>Description</description>
+			<type>label</type>
+			<label>#SkinTranslation.Translations.series.description.Label</label>
+			<posX>1315</posX>
+			<posY>596</posY>
+			<width>570</width>
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list]</visible>
+		</control>
+
+		<control Style="DetailTextDroid">
+			<description>Summary</description>
+			<type>textboxscrollup</type>
+			<id>0</id>
+			<posX>1315</posX>
+			<posY>662</posY>
+			<width>570</width>
+			<height>240</height>
+			<seperator>-----------------------------------------------------------------------------------</seperator>
+			<label>#TVSeries.Series.Summary</label>
+			<scrollStartDelaySec>12</scrollStartDelaySec>
+			<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list</visible>
+		</control>
+
+	</controls>
+</window>

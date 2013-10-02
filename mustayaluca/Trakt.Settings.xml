@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>87271</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:#Trakt.Translation.Settings.Label</define>
+	<define>#defaultcontrol:2</define>
+	<define>#defaultcontrol.onright:9996</define>
+	<controls>
+	
+		<import>Trakt.Common.xml</import>
+		
+		<control>
+			<type>button</type>
+			<description>Account Setup</description>
+			<id>2</id>
+			<onup>17</onup>
+			<label>#Trakt.Translation.AccountSetup.Label</label>
+			<hyperlink>87272</hyperlink>
+			<onright>#defaultcontrol.onright</onright>
+			<posX>402</posX>
+			<posY>231</posY>
+			<width>664</width>
+			<textalign>left</textalign>
+			<textureFocus>list_narrow_focus.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<height>67</height>
+		</control>
+		
+		<control>
+			<type>button</type>
+			<description>Plugin Setup</description>
+			<id>3</id>
+			<label>#Trakt.Translation.Plugins.Label</label>
+			<hyperlink>87273</hyperlink>
+			<onright>#defaultcontrol.onright</onright>
+			<posX>402</posX>
+			<posY>300</posY>
+			<width>664</width>
+			<textalign>left</textalign>
+			<textureFocus>list_narrow_focus.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<height>67</height>
+		</control>
+		
+    <control>
+			<type>button</type>
+			<description>Plugin Setup</description>
+			<id>4</id>
+			<label>#Trakt.Translation.General.Label</label>
+			<hyperlink>87274</hyperlink>
+			<onright>#defaultcontrol.onright</onright>
+			<posX>402</posX>
+			<posY>369</posY>
+			<width>664</width>
+			<textalign>left</textalign>
+			<textureFocus>list_narrow_focus.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<height>67</height>
+		</control>
+		
+		<control>
+			<type>button</type>
+			<description>MPEICONFIGURE:a9c3845a_8718_4712_85cc_26f56520bb9a</description>
+			<id>1000</id>
+			<label>#Trakt.Translation.AdvancedSettings.Label</label>
+			<onright>#defaultcontrol.onright</onright>
+            <ondown>2</ondown>	
+			<posX>402</posX>
+			<posY>438</posY>			
+			<width>664</width>
+			<textalign>left</textalign>
+			<textureFocus>list_narrow_focus.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<height>67</height>
+			<visible>string.equals(#mpei.a9c3845a_8718_4712_85cc_26f56520bb9a.isinstalled, true)</visible>			
+		</control>
+		
+		<import>common.overlay.home.xml</import>
+		
+	</controls>
+</window>

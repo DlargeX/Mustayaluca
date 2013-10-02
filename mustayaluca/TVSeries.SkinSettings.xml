@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<!--
+		The purpose of TVSeries.SkinSettings.xml is to allow the skinner to control the presentation of the TVSeries plugin to the user
+		Advanced users may disable this by removing the file or by setting the import attribute  to false in the relevant XML element.
+		
+		The TVSeries plugin reads this file on load and will import settings into its database.
+		IMPORTANT: Ensure that all settings are wrapped in a CDATA type otherwise this docment will not get parsed as proper XML.
+	-->
+	<!-- version may be useful for logging purposes and/or future upgrades -->
+	<version>1.2.0.0</version>
+	<!-- Skin Defines (Reserved for Future use)-->
+	<defines>
+		<property key="blah">false</property>
+	</defines>
+	<!-- 
+		Possible Layout Types supported by the plugin, the defined layout will be what is loaded by default for the corresponding view:
+		
+			Groups:
+				layout="List"
+				layout="SmallIcons"
+			Series:
+				layout="ListPosters"
+				layout="ListBanners"
+				layout="Filmstrip"
+				layout="WideBanners"
+				layout="Coverflow"
+			Season:
+				layout="List"
+				layout="Filmstrip"
+				layout="Coverflow"
+			Episode:
+				layout="List"
+			
+		Notes:
+		item1 = <text3> (left aligned)
+		item3 = <text2> (right aligned, useful for numbers)
+		Y-Offset needs to be the same if you want text to cutoff and avoid overlap of another item
+	-->
+	<layouts>
+		<group List="true" SmallIcons="false" />
+		<series ListPosters="true" Filmstrip="true" WideBanners="true" Coverflow="true" />
+		<season List="true" Filmstrip="true" Coverflow="true" />
+		<episode List="true" />
+	</layouts>
+	<views import="true" AppendlmageToList="false">
+		<group layout="List">
+		</group>
+		<series layout="ListPosters">
+			<item1>SMALLSPACE</item1>
+			<item2><![CDATA[<Series.Pretty_Name>]]></item2>
+			<item3>SeriesWatchedAndUnWatched</item3>
+		</series>
+		<season layout="List">
+			<item1>SMALLSPACE</item1>
+			<item2><![CDATA[Season <Season.SeasonIndex>]]></item2>
+			<item3>SeasonWatchedAndUnWatched</item3>
+		</season>
+		<episode>
+			<item1>SMALLSPACE</item1>
+			<item2><![CDATA[<Episode.EpisodeIndex>. <Episode.LocalEpisodeName>]]></item2>
+			<item3><![CDATA[<Episode.FirstAired>]]></item3>
+		</episode>
+	</views>
+	<!-- Position of 'NEW' stamp in thumb views -->
+	<thumbstamp>
+		<widebanners>
+			<posx>682</posx>
+			<posy>0</posy>
+		</widebanners>
+		<posters>
+			<posx>600</posx>
+			<posy>0</posy>
+		</posters>
+	</thumbstamp>
+	<!-- Define the images loaded in Video OSD -->
+	<!-- Note: You can reorder the items to set priority -->
+	<!-- Values of custom tag is a path to custom image, where you could use:
+					thumbs\ relative path - <![CDATA[thumbs\Media\custom.png]]>,
+					skin\ relative path - <![CDATA[skin\*SKIN NAME*\Media\custom.png]]>,
+					absolute path - <![CDATA[C:\Media\custom.png]]>
+					with any of episode/season/series database fields (<Series.origName> for example)
+	-->
+	<videoosdimages import="true">
+		<!-- <custom use="true"><![CDATA[thumbs\ClearArt\<Series.ID>.png]]></custom> -->
+		<series use="true" />
+		<season use="false" />
+		<episode use="true" />
+	</videoosdimages>
+	<!-- Define the images loaded in properties during play -->
+	<!-- Values are path to custom image, where you could use:
+			thumbs\ relative path - <![CDATA[thumbs\Media\custom.png]]>,
+			skin\ relative path - <![CDATA[skin\*SKIN NAME*\Media\custom.png]]>,
+			absolute path - <![CDATA[C:\Media\custom.png]]>
+			with any of episode/season/series database fields (<Series.origName> for example)
+	-->
+	<videoplayimages import="true">
+		<property>
+			<name>TVSeries.Play.ClearArt</name>
+			<value><![CDATA[thumbs\ClearArt\<Series.ID>.png]]></value>
+		</property>
+		<!-- You can define multiple properties -->
+	</videoplayimages>
+	<formatting import="true"><![CDATA[<Enabled>1<Format><Episode.InfoPanelLine1Key><FormatAs>Trans(Rating)
+<Enabled>1<Format><Episode.InfoPanelLine1Value><FormatAs>Eval(Round(<Episode.Rating>*10)/10)/10
+<Enabled>1<Format><Episode.DataPanelLine30Value><FormatAs>Eval(Round(<Episode.Rating>*10)/10)
+<Enabled>1<Format><Episode.DataPanelLine31Value><FormatAs>Eval(Round(<Episode.Rating>*10)/10)/10
+<Enabled>1<Format><Episode.InfoPanelLine2Key><FormatAs>Trans(Runtime)
+<Enabled>1<Format><Episode.InfoPanelLine2Value><FormatAs><Episode.PrettyLocalPlaytime>
+<Enabled>1<Format><Episode.SeasonLabel><FormatAs>Season <Episode.SeasonIndex>
+<Enabled>1<Format><Episode.SeriesName><FormatAs><Series.Pretty_Name>
+
+<Enabled>1<Format><Season.SeasonLabel><FormatAs>Season <Season.SeasonIndex>
+<Enabled>1<Format><Season.SeasonTitle><FormatAs><Series.Pretty_Name>Season <Season.SeasonIndex>
+
+<Enabled>1<Format><Series.InfoPanelLine11Value><FormatAs><Series.ContentRating>
+<Enabled>1<Format><Series.InfoPanelLine2Key><FormatAs>Trans(Network)
+<Enabled>1<Format><Series.InfoPanelLine2Value><FormatAs><Series.Network>
+<Enabled>1<Format><Series.InfoPanelLine3Key><FormatAs>Trans(Genre)
+<Enabled>1<Format><Series.InfoPanelLine3Value><FormatAs><Series.Genre>
+<Enabled>1<Format><Series.InfoPanelLine4Key><FormatAs>Trans(Rating)
+<Enabled>1<Format><Series.InfoPanelLine4Value><FormatAs>Eval(Round(<Series.Rating>*10)/10)
+<Enabled>1<Format><Series.InfoPanelLine5Key><FormatAs>Trans(Runtime)
+<Enabled>1<Format><Series.InfoPanelLine5Value><FormatAs><Series.Runtime> Trans(Minutes)
+<Enabled>1<Format><Series.InfoPanelLine6Key><FormatAs>Trans(FirstAired)
+<Enabled>1<Format><Series.InfoPanelLine6Value><FormatAs><Series.FirstAired> (Trans(AiredStatus<Series.Status>))
+<Enabled>1<Format><Series.InfoPanelLine7Value><FormatAs>Eval(<Series.EpisodeCount>-<Series.EpisodesUnWatched>) Trans(Watched) Trans(Episodes)
+<Enabled>1<Format><Series.InfoPanelLine8Value><FormatAs><Series.EpisodesUnWatched> Trans(Unwatched) Trans(Episodes)
+<Enabled>1<Format><Series.InfoPanelLine9Value><FormatAs>(<Series.RatingCount> Trans(Votes))
+<Enabled>1<Format><Series.FiveStarRatingPath><FormatAs>starEval(Round(<Series.Rating>)).png
+<Enabled>1<Format>star.png<FormatAs>star0.png
+
+<Enabled>1<Format>SeriesUnWatched<FormatAs><Series.EpisodesUnWatched>
+<Enabled>1<Format>SeasonUnWatched<FormatAs><Season.EpisodesUnWatched>
+
+<Enabled>1<Format>SMALLSPACE<FormatAs> 
+<Enabled>1<Format>SeriesWatchedAndUnWatched<FormatAs>Eval(PrettyNumber100(<Series.EpisodesUnWatched>))     Eval(PrettyNumber100(<Series.EpisodeCount>-<Series.EpisodesUnWatched>))    
+<Enabled>1<Format>SeasonWatchedAndUnWatched<FormatAs>Eval(PrettyNumber100(<Season.EpisodesUnWatched>))     Eval(PrettyNumber100(<Season.EpisodeCount>-<Season.EpisodesUnWatched>))    ]]></formatting>
+	<logos import="true"><![CDATA[skin\Mustayaluca\Media\Logos\Network\<Series.Network>.png;-;;-;=;-;;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Series>
+skin\Mustayaluca\Media\Logos\TV\<Series.ContentRating>.png;-;;-;=;-;;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Series>
+skin\Mustayaluca\Media\Logos\Video\<Episode.VideoCodec>.png;-;;-;=;-;;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Aspect\fullscreen.png;-;<Episode.VideoAspectRatio>;-;<;-;1.7;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;0;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Aspect\widescreen.png;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Aspect\720p.png;-;<Episode.videoHeight>;-;=;-;720;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Aspect\1080p.png;-;<Episode.videoHeight>;-;=;-;1080;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\<Episode.AudioCodec>.png;-;;-;=;-;;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\mono.png;-;<Episode.AudioChannels>;-;=;-;1;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\stereo.png;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\5.1.png;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>]]></logos>
+	<!-- Only used for Thumbnail view creation e.g. Filmstrip and WideBanners. Episode Thumbs are the exception -->
+	<!-- #TVSeries.SeriesBanner and #TVSeries.SeasonBanner properties dont use the values below, the image will be presented as they are but will be using a delay of 250ms to present image -->
+	<!-- the settings below are for optimal performance without too much loss to visual quality -->
+	<graphicsquality import="true">
+		<seriesbanners>60</seriesbanners>
+		<seriesposters>50</seriesposters>
+		<seriescoverflow>40</seriescoverflow>
+		<seasonbanners>75</seasonbanners>
+		<seasoncoverflow>90</seasoncoverflow>
+		<episodethumbs>90</episodethumbs>
+	</graphicsquality>
+</settings>
