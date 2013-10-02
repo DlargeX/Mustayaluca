@@ -1,1 +1,0 @@
-Be sure to copy the libraries from "PluginDependencies" into the mediaportal.exe root directory. These are required for correct operation of plugins

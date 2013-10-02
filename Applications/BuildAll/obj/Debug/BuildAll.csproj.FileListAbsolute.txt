@@ -1,4 +1,0 @@
-\\FILESERVER-PC\ServerFolders\Progs & Tools\Windows\SVN\Mustayaluca\Applications\BuildAll\bin\Debug\BuildAll.dll
-\\FILESERVER-PC\ServerFolders\Progs & Tools\Windows\SVN\Mustayaluca\Applications\BuildAll\bin\Debug\BuildAll.pdb
-\\FILESERVER-PC\ServerFolders\Progs & Tools\Windows\SVN\Mustayaluca\Applications\BuildAll\obj\Debug\BuildAll.dll
-\\FILESERVER-PC\ServerFolders\Progs & Tools\Windows\SVN\Mustayaluca\Applications\BuildAll\obj\Debug\BuildAll.pdb
