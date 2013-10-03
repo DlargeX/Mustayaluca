@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>8465</id>
+    <defaultcontrol>2</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+   <define>#header.label:Steam</define>
+    <controls>
+
+		<control>
+			<description>background image</description>
+			<type>image</type>
+			<id>1</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>hover_steam.jpg</texture>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background.png</texture>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_menu_widelist.png</texture>
+		</control>
+		
+		<control>
+			<description>Backdrop Overlay Bar</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>998</posY>
+			<width>1920</width>
+			<height>82</height>
+			<texture>overlay_bar_bottom.png</texture>
+		</control>
+		
+		
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>MPsteam</label>
+			<visible>!player.hasmedia</visible>
+		</control>
+
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+		</control>
+
+<!-- 		<control Style="BigTitle">
+			<description>Selected Index Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1850</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<align>right</align>
+			<label>#selectedindex/itemcount</label>
+			<visible>!player.hasmedia+!string.equals(#selectedindex,)</visible>
+		</control>
+		
+		<control Style="BigTitle">
+			<description>Selected Index Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1850</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<align>right</align>
+			<label>1/itemcount</label>
+			<visible>!player.hasmedia+string.equals(#selectedindex,)</visible>
+		</control> -->
+		
+<!--         <control>
+            <description>steam-logo</description>
+            <type>image</type>
+            <posX>100</posX>
+            <posY>560</posY>
+            <width>400</width>
+            <height>400</height>
+            <texture>Steam-logo.png</texture>
+        </control> -->
+			
+        <control>
+            <id>2</id>
+            <description>ButtonStartAgain</description>
+            <type>button</type>
+            <onleft>2</onleft>
+            <onright>2</onright>
+            <onup>2</onup>
+            <ondown>3</ondown>
+            <posX>0</posX>
+            <posY>230</posY>
+            <width>400</width>
+            <height>69</height>
+            <label>Start Steam</label>
+						<textXOff>30</textXOff>
+						<textYOff>20</textYOff>
+						<textalign>right</textalign>
+						<textureFocus>menu_list_focus.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>						
+        </control>
+				
+        <control>
+            <id>3</id>
+            <description>ButtonSetFocus</description>
+            <type>button</type>
+            <onleft>2</onleft>
+            <onright>2</onright>
+            <onup>2</onup>
+            <ondown>2</ondown>
+            <posX>0</posX>
+            <posY>299</posY>
+            <width>400</width>
+            <height>69</height>
+            <label>Set Focus to Steam</label>
+						<textXOff>30</textXOff>
+						<textYOff>20</textYOff>
+						<textalign>right</textalign>
+						<textureFocus>menu_list_focus.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>	
+        </control>	
+		
+		<import>common.overlay.home.xml</import>
+
+	</controls>
+</window>
