@@ -136,7 +136,8 @@
         <onup>8</onup>
         <ondown>10</ondown>
         <label>Wait until tasks finished</label>
-				<textalign>right</textalign>					
+				<textalign>right</textalign>	
+				<markalign>left</markalign>					
       </control>
 	  
       <control>
@@ -146,7 +147,8 @@
         <onup>9</onup>
         <ondown>2</ondown>
         <label>Volume Reduction</label>
-				<textalign>right</textalign>					
+				<textalign>right</textalign>	
+				<markalign>left</markalign>				
       </control>
 	</control>
 

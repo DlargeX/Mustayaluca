@@ -102,6 +102,8 @@
 			<onup>2</onup>
 			<ondown>9</ondown>
 			<label>group by schedule</label>
+			<textalign>right</textalign>	
+			<markalign>left</markalign>				
 		</control>
 
 		<control>

@@ -47,7 +47,7 @@
 			<posY>0</posY>
 			<width>1925</width>
 			<height>1085</height>
-			<texture>overlay_menu_full.png</texture>
+			<texture>overlay_menu_widelist.png</texture>
 		</control>
 		
 		<control>

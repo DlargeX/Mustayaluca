@@ -41,6 +41,7 @@
 			<posX>400</posX>
 			<posY>230</posY>
 			<layout>StackLayout(0, Vertical, true)</layout>
+			
 			<control Style="SettingsToggleWide">
 				<description>TVSeries Default/Fanart Style</description>
 				<type>checkbutton</type>
@@ -49,6 +50,7 @@
 				<onup>2</onup>
 				<ondown>3</ondown>
 			</control>
+			
 			<control Style="SettingsButtonWide">
 				<description>TVSeries WideBanner Mod</description>
 				<type>button</type>
@@ -57,6 +59,7 @@
 				<onup>2</onup>
 				<ondown>99</ondown>
 			</control>
+			
 		</control>
 
 		<import>common.overlay.home.xml</import>

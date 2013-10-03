@@ -112,7 +112,7 @@
   <style Name="SettingsButtonWide">
     <width>840</width>
     <textalign>left</textalign>
-    <textXOff>60</textXOff>
+    <textXOff>30</textXOff>
     <textureFocus>list_wide_focus.png</textureFocus>
   </style>
   <style Name="SettingsButton">
@@ -123,25 +123,26 @@
   <style Name="SettingsButtonSmall">
     <width>239</width>
     <textalign>left</textalign>
-    <textXOff>60</textXOff>
+    <textXOff>30</textXOff>
     <textureFocus>list_narrow_focus.png</textureFocus>
   </style>
   <style Name="SettingsButtonMedium">
     <width>552</width>
     <textalign>left</textalign>
-    <textXOff>60</textXOff>
+    <textXOff>30</textXOff>
     <textureFocus>list_narrow_focus.png</textureFocus>
   </style>
   <style Name="SettingsButtonLarge">
     <width>840</width>
     <textalign>left</textalign>
-    <textXOff>60</textXOff>
+    <textXOff>30</textXOff>
     <textureFocus>list_wide_focus.png</textureFocus>
   </style>
   <style Name="SettingsCheckButton">
     <width>385</width>
     <textalign>left</textalign>
     <textXOff>30</textXOff>
+    <scrollStartDelaySec>0</scrollStartDelaySec>
     <textureFocus>list_narrow_focus.png</textureFocus>
     <markXOff>23</markXOff>
     <markYOff>10</markYOff>
@@ -149,16 +150,29 @@
   <style Name="SettingsCheckButtonMedium">
     <width>552</width>
     <textalign>left</textalign>
-    <textXOff>60</textXOff>
+    <textXOff>30</textXOff>
+    <scrollStartDelaySec>0</scrollStartDelaySec>
     <textureFocus>list_narrow_focus.png</textureFocus>
+    <markXOff>23</markXOff>
+    <markYOff>10</markYOff>
+  </style>
+  <style Name="SettingsCheckButtonWide">
+    <width>842</width>
+    <textalign>left</textalign>
+    <textXOff>30</textXOff>
+    <scrollStartDelaySec>0</scrollStartDelaySec>
+    <textureFocus>list_wide_focus.png</textureFocus>
     <markXOff>23</markXOff>
     <markYOff>10</markYOff>
   </style>
   <style Name="SettingsCheckButtonLarge">
     <width>1137</width>
     <textalign>left</textalign>
-    <textXOff>60</textXOff>
+    <textXOff>30</textXOff>
+    <scrollStartDelaySec>0</scrollStartDelaySec>
     <textureFocus>list_wide_focus.png</textureFocus>
+    <markXOff>23</markXOff>
+    <markYOff>10</markYOff>
   </style>
   <control>
     <description>default image</description>
@@ -184,9 +198,6 @@
     <font>font2</font>
     <textcolor>ff9c9d9d</textcolor>
     <disabledcolor>80ffffff</disabledcolor>
-    <shadowAngle>45</shadowAngle>
-    <shadowDistance>2</shadowDistance>
-    <shadowColor>ff000000</shadowColor>
   </control>
   <control>
     <description>default button</description>
@@ -207,9 +218,6 @@
     <disabledcolor>ff808080</disabledcolor>
     <textcolorNoFocus>ff9c9d9d</textcolorNoFocus>
     <dimColor>ff000000</dimColor>
-    <shadowAngle>45</shadowAngle>
-    <shadowDistance>2</shadowDistance>
-    <shadowColor>ff000000</shadowColor>
   </control>
   <control>
     <description>default menubutton</description>
@@ -230,9 +238,6 @@
     <disabledcolor>ff808080</disabledcolor>
     <textcolorNoFocus>ff9c9d9d</textcolorNoFocus>
     <dimColor>ff000000</dimColor>
-    <shadowAngle>45</shadowAngle>
-    <shadowDistance>2</shadowDistance>
-    <shadowColor>ff000000</shadowColor>
   </control>
   <control>
     <description>default updownbutton</description>
@@ -551,7 +556,7 @@
     <id>0</id>
     <posX>72</posX>
     <posY>231</posY>
-    <width>1008</width>
+    <width>1013</width>
     <height>730</height>
     <spinWidth>24</spinWidth>
     <spinHeight>24</spinHeight>
@@ -568,8 +573,8 @@
     <image>emtpy.png</image>
     <spaceBetweenItems>2</spaceBetweenItems>
     <font>font3</font>
-    <font2>font2</font2>
-    <font3>font2</font3>
+    <font2>font12</font2>
+    <font3>font12</font3>
     <shadedColor>20ffffff</shadedColor>
     <selectedColor3>ffa9d0f7</selectedColor3>
     <selectedColor2>ffa9d0f7</selectedColor2>
@@ -596,7 +601,7 @@
     <itemWidth>32</itemWidth>
     <itemHeight>32</itemHeight>
     <IconXOff>2000</IconXOff>
-    <IconYOff>10</IconYOff>
+    <IconYOff>2000</IconYOff>
     <suffix>|</suffix>
     <upBtnWidth>37</upBtnWidth>
     <downBtnWidth>37</downBtnWidth>
@@ -946,16 +951,13 @@
     <height>69</height>
     <textXOff>30</textXOff>
     <textYOff>20</textYOff>
-    <textalign>left</textalign>
-    <font>font2</font>
+    <textpadding>30</textpadding>		
+    <font>font2</font>		
     <textcolor>ffffffff</textcolor>
     <colordiffuse>ffffffff</colordiffuse>
     <disabledcolor>ff808080</disabledcolor>
     <textcolorNoFocus>ff9c9d9d</textcolorNoFocus>
     <dimColor>ff000000</dimColor>
-    <shadowAngle>45</shadowAngle>
-    <shadowDistance>2</shadowDistance>
-    <shadowColor>ff000000</shadowColor>
     <textureFocus>menu_list_focus.png</textureFocus>
     <textureNoFocus>-</textureNoFocus>
     <textureCheckmark>check-box.png</textureCheckmark>
@@ -964,9 +966,9 @@
     <markHeight>36</markHeight>
     <markXOff>16</markXOff>
     <markYOff>16</markYOff>
-    <markalign>left</markalign>
+    <markalign>right</markalign>
     <markvalign>middle</markvalign>
     <label>-</label>
   </control>
 </controls>
-<!--Checksum:fff5b0a9847f185a3e4367658f974df5-->
+<!--Checksum:0afaeffa497e92eb94ffb0fe8c8f1780-->

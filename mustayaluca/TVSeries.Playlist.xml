@@ -99,7 +99,7 @@
 			<texture>episode_thumb_background_reflect.png</texture>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
-			<visible>facadeview.playlist+Control.HasFocus(50)+!string.equals(#TVSeries.Playlist.Count,0)</visible>
+			<visible>facadeview.playlist+!string.equals(#TVSeries.Playlist.Count,0)</visible>
 		</control>		
 
 		<control>
@@ -111,7 +111,7 @@
 			<width>490</width>
 			<height>277</height>
 			<texture>default_pictures.png</texture>
-			<visible>facadeview.playlist+Control.HasFocus(50)+!string.equals(#TVSeries.Playlist.Count,0)</visible>
+			<visible>facadeview.playlist+!string.equals(#TVSeries.Playlist.Count,0)</visible>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
@@ -126,7 +126,7 @@
 			<height>277</height>
 			<keepaspectratio>yes</keepaspectratio>
 			<zoom>yes</zoom>            
-			<visible>facadeview.playlist+Control.HasFocus(50)+!string.equals(#TVSeries.Playlist.Count,0)</visible>
+			<visible>facadeview.playlist+!string.equals(#TVSeries.Playlist.Count,0)</visible>
 			<texture>#TVSeries.EpisodeImage</texture>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -298,7 +298,8 @@
 						<label>486</label>
 						<onleft>50</onleft>
 						<onright>50</onright>
-						<textalign>right</textalign>							
+						<textalign>right</textalign>	
+						<markalign>left</markalign>								
 					</control>
 					
 					<control>
@@ -308,7 +309,8 @@
 						<label>Auto Play</label>
 						<onleft>50</onleft>
 						<onright>50</onright>
-						<textalign>right</textalign>							
+						<textalign>right</textalign>	
+						<markalign>left</markalign>							
 					</control>		
 					
 					<control>

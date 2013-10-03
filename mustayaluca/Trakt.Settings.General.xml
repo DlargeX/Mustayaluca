@@ -14,7 +14,7 @@
 			<type>group</type>
 			<description>group element</description>
 			<posX>402</posX>
-			<posY>231</posY>
+			<posY>230</posY>
 			<layout>StackLayout(0, Vertical, true)</layout>
 			
 			<control Style="SettingsButtonWide">

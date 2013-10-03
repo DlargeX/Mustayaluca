@@ -3,122 +3,108 @@
   <id>7984</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-  <define>#header.label:Update Control</define>
   <define>#header.background:hover_updatecontrol.png</define>
  <controls>
   
-    <import>common.window.background.xml</import>
-    <import>common.time.xml</import>
-	
-    <control>
-      <id>1</id>
-      <type>label</type>
-      <description>Header label</description>
-      <posX>185</posX>
-      <posY>28</posY>
-      <width>500</width>
-      <label>#header.label</label>	  
-      <font>Segoe Light22</font>
-      <textcolor>ff6aa5cb</textcolor>
-      <animation effect="Fade" time="200">WindowOpen</animation>
-      <animation effect="Fade" time="200">WindowClose</animation>
-    </control>
-	
-    <control>
-      <description>Selected item Label</description>
-      <type>fadelabel</type>
-      <id>1</id>
-      <posX>780</posX>
-      <posY>199</posY>
-      <width>931</width>
-      <label>#selecteditem</label>
-      <font>Segoe Light22</font>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <valign>middle</valign>
-    </control>
-	
-    <control>
-      <id>1</id>
-      <description>listcontrol background</description>
-      <type>image</type>
-      <visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
-      <posX>736</posX>
-      <posY>215</posY>
-      <width>1019</width>
-      <height>677</height>
-      <texture>listcontrol_bg.png</texture>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
-    </control>
-	
-    <control>
-      <id>1</id>
-      <description>listcontrol background info</description>
-      <type>image</type>
-      <visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
-      <posX>736</posX>
-      <posY>953</posY>
-      <width>1019</width>
-      <height>71</height>
-      <texture>listcontrol_bg_info.png</texture>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
-    </control>
-
-	
-    <!-- ************** HIDDEN MENU *****************  -->
-	
-	<control>
-		<type>actiongroup</type>
-		<description>action menu</description>
-		<defaultcontrol>2</defaultcontrol>
-		<onexit>50</onexit>
-		<dimColor>00ffffff</dimColor>
-		<buttonX>0</buttonX>
-		<buttonY>0</buttonY>
-		<buttonwidth>521</buttonwidth>
-		<buttonheight>1080</buttonheight>
-		
 		<control>
+			<description>background image</description>
 			<type>image</type>
-			<id>0</id>
+			<id>1</id>
 			<width>1920</width>
 			<height>1080</height>
-			<texture>semi_trans_back_hidden_menu.png</texture>
-			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
-			<animation effect="fade" time="450">visible</animation>
-			<animation effect="fade" time="400">hidden</animation>
+			<texture>hover_updatecontrol.png</texture>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background.png</texture>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_menu_widelist.png</texture>
 		</control>
 		
-	<control>
-		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
-		<animation effect="fade" time="250">visible</animation>
-		<animation effect="fade" time="0">hidden</animation>
 		<control>
+			<description>Backdrop Overlay Bar</description>
 			<type>image</type>
-			<id>0</id>
-			<posY>15</posY>
+			<id>1</id>
 			<posX>0</posX>
-			<width>631</width>
-			<height>1044</height>
-			<texture>menu_bg.png</texture>
-			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+			<posY>998</posY>
+			<width>1920</width>
+			<height>82</height>
+			<texture>overlay_bar_bottom.png</texture>
 		</control>
-	
-		<control>
-			<description>Heading text label</description>
+		
+		
+		<control Style="BigTitle">
+			<description>Page Title</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>136</posX>
-			<posY>128</posY>
-			<label>924</label>
-			<font>Segoe Light22</font>
-			<textcolor>ff6aa5cb</textcolor>
-		</control>	
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>Update Control</label>
+			<visible>!player.hasmedia</visible>
+		</control>
+
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Selected Index Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1850</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<align>right</align>
+			<label>#selectedindex/#UpdateControl.InstalledUpdateCount</label>
+			<visible>!player.hasmedia+control.isvisible(50)+!string.equals(#UpdateControl.InstalledUpdateCount,0)</visible>
+		</control>
+		
+		<control Style="BigTitle">
+			<description>Selected Index Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1850</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<align>right</align>
+			<label>1/#UpdateControl.InstalledUpdateCount</label>
+			<visible>!player.hasmedia+control.isvisible(50)+string.equals(#UpdateControl.InstalledUpdateCount,0)</visible>
+		</control>
+		
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+			<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>0</posX>
+				<posY>230</posY>
+				<layout>StackLayout(0, Vertical, true)</layout>
 
           <control>
             <description>Show Updates</description>
@@ -126,17 +112,8 @@
             <id>2</id>
             <label>Show installed updates</label>
             <onright>50</onright>
-            <onup>7</onup>
+            <onup>17</onup>
             <ondown>3</ondown>
-            <font>font11</font>
-			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>215</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>
           </control>
 		  
           <control>
@@ -147,15 +124,6 @@
             <onright>50</onright>
             <onup>2</onup>
             <ondown>4</ondown>
-            <font>font11</font>
-			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>285</posY>			
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>
           </control>
 		  
           <control>
@@ -166,15 +134,6 @@
             <onright>50</onright>
             <onup>3</onup>
             <ondown>5</ondown>
-            <font>font11</font>
-			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>355</posY>			
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>
           </control>
 		  
           <control>
@@ -184,18 +143,7 @@
             <label>Restore Points</label>
             <onright>50</onright>
             <onup>4</onup>
-            <ondown>6</ondown>
-            <font>font11</font>
-            <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
-            <AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
-            <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
-			<posX>69</posX>
-			<posY>425</posY>			
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>
+            <ondown>6</ondown>							
           </control>
 		  
           <control>
@@ -206,15 +154,6 @@
             <onright>50</onright>
             <onup>5</onup>
             <ondown>7</ondown>
-            <font>font11</font>
-			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>495</posY>			
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>
           </control>
 		  
           <control>
@@ -225,19 +164,10 @@
             <onright>50</onright>
             <onup>6</onup>
             <ondown>2</ondown>
-            <font>font11</font>
-			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>565</posY>			
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>
           </control>
 			
-	</control>
-</control>
+			</control>
+		</control>
 
 	
     <!-- *** Progress *** -->
@@ -269,26 +199,20 @@
 	
 	
     <!-- *** Update list *** -->
+		
     <control>
-      <description>listcontrol</description>
-      <type>listcontrol</type>
-      <id>50</id>
-      <onleft>2</onleft>
-      <scrollOffset>1</scrollOffset>
-      <posX>736</posX>
-      <posY>262</posY>
-      <height>644</height>
-      <spinPosX>787</spinPosX>
-      <spinPosY>967</spinPosY>
-      <spinAlign>left</spinAlign>
-      <textXOff>30</textXOff>
-      <itemWidth>36</itemWidth>
-      <itemHeight>36</itemHeight>
-      <IconXOff>28</IconXOff>
-      <IconYOff>16</IconYOff>
-      <PinIconXOff>6</PinIconXOff>
-      <PinIconYOff>20</PinIconYOff>
-      <dimColor>ffffffff</dimColor>
+			<description>listcontrol</description>
+			<type>listcontrol</type>
+			<id>50</id>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<posX>402</posX>
+			<posY>231</posY>
+			<textureFocus>list_wider_focus.png</textureFocus>
+			<width>842</width>
+			<IconXOff>2000</IconXOff>  
+			<spinPosX>2000</spinPosX>
+			<spinCanFocus>no</spinCanFocus>
     </control>
 	
     <!-- *** Item Selection Image *** -->
@@ -383,7 +307,7 @@
       <description>Plugin logo</description>
       <type>image</type>
       <visible>Control.IsVisible(50)</visible>
-      <posX>78</posX>
+      <posX>2078</posX>
       <posY>158</posY>
       <width>319</width>
       <height>309</height>
@@ -394,19 +318,8 @@
       <keepaspectratio>yes</keepaspectratio>
       <centered>yes</centered>
     </control>
+	
+		<import>common.overlay.home.xml</import>
 
-    <control>
-      <id>1</id>
-      <type>image</type>
-      <visible>Control.HasFocus(50)</visible>
-      <posX>0</posX>
-      <posY>440</posY>
-      <texture>hiddenmenu_tab.png</texture>
-      <animation delay="600" effect="Slide" end="0,0" start="-60,0" time="400" tween="Quadratic">WindowOpen</animation>
-      <animation delay="100" effect="Slide" end="-60,0" start="0,0" time="400" tween="Quadratic">WindowClose</animation>
-    </control>
-	
-    <import>common.overlay.xml</import>
-	
-  </controls>
+	</controls>
 </window>

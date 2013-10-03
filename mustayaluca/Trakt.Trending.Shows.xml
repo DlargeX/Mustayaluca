@@ -374,8 +374,80 @@
 						<id>2</id>
 						<label>-</label>
 						<onup>21</onup>
-						<onright>50</onright>
+						<onleft>50</onleft>
+						<onright>50</onright>		
 					</control>
+
+          <control>
+            <description>Sort</description>
+            <type>sortbutton</type>
+            <id>8</id>
+            <label>-</label>
+            <onup>2</onup>
+						<ondown>9</ondown>
+						<onleft>50</onleft>
+						<onright>50</onright>						
+          </control>
+					
+					<control>
+            <description>Hide Watched</description>
+            <type>checkbutton</type>
+            <id>9</id>
+            <label>#Trakt.Translation.HideWatched.Label</label>
+            <onup>8</onup>
+						<ondown>10</ondown>
+						<onleft>50</onleft>
+						<onright>50</onright>				
+						<textalign>right</textalign>	
+						<markalign>left</markalign>	
+						<textXOff>38</textXOff>		
+						<scrollStartDelaySec>0</scrollStartDelaySec>									
+          </control>
+					
+					<control>
+            <description>Hide Watchlisted</description>
+            <type>checkbutton</type>
+            <id>10</id>
+            <label>#Trakt.Translation.HideWatchlisted.Label</label>
+            <onup>9</onup>
+						<ondown>11</ondown>
+						<onleft>50</onleft>
+						<onright>50</onright>		
+						<textalign>right</textalign>	
+						<markalign>left</markalign>		
+						<textXOff>38</textXOff>		
+						<scrollStartDelaySec>0</scrollStartDelaySec>						
+          </control>
+					
+					<control>
+            <description>Hide Collected</description>
+            <type>checkbutton</type>
+            <id>11</id>
+            <label>#Trakt.Translation.HideCollected.Label</label>
+            <onup>10</onup>
+						<ondown>12</ondown>
+						<onleft>50</onleft>
+						<onright>50</onright>	
+						<textalign>right</textalign>	
+						<markalign>left</markalign>	
+						<textXOff>38</textXOff>		
+						<scrollStartDelaySec>0</scrollStartDelaySec>							
+          </control>
+					
+					<control>
+            <description>Hide Rated</description>
+            <type>checkbutton</type>
+            <id>12</id>
+            <label>#Trakt.Translation.HideRated.Label</label>
+            <onup>11</onup>
+						<ondown>66610</ondown>
+						<onleft>50</onleft>
+						<onright>50</onright>		
+						<textalign>right</textalign>	
+						<markalign>left</markalign>		
+						<textXOff>38</textXOff>		
+						<scrollStartDelaySec>0</scrollStartDelaySec>									
+          </control>
 					
 					<control>
 						<description>MovingPictures</description>

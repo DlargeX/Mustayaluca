@@ -91,6 +91,8 @@
         <onup>9</onup>
         <ondown>2</ondown>
         <onright>99</onright>
+				<textalign>right</textalign>	
+				<markalign>left</markalign>					
       </control>	
 	  
       <control>

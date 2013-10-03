@@ -241,6 +241,8 @@
 						<ondown>40</ondown>
 						<onright>50</onright>
 						<onright>50</onright>
+						<textalign>right</textalign>	
+						<markalign>left</markalign>							
 					</control>
 					
 					<control>
@@ -252,6 +254,8 @@
 						<ondown>9</ondown>
 						<onright>50</onright>
 						<onright>50</onright>
+						<textalign>right</textalign>	
+						<markalign>left</markalign>								
 					</control>
 					
 					<control>

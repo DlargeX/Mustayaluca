@@ -87,7 +87,8 @@
 				<onup>17</onup>
 				<ondown>7</ondown>
 				<onright>99</onright>
-				<textalign>right</textalign>				
+				<textalign>right</textalign>	
+				<markalign>left</markalign>			
 			</control>
 			
 			<control>

@@ -98,7 +98,8 @@
 					<onright>10</onright>
 					<onup>2</onup>
 					<ondown>6</ondown>
-					<textalign>right</textalign>						
+					<textalign>right</textalign>	
+					<markalign>left</markalign>					
 				</control>
 				
 				<control>

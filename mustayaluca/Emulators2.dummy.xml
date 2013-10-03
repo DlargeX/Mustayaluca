@@ -10,6 +10,7 @@
       <width>1</width>
       <height>1</height>
     </control>
+		
     <control>
       <description>FanArt Dummy 2</description>
       <type>image</type>
@@ -19,6 +20,7 @@
       <width>1</width>
       <height>1</height>
     </control>
+		
     <control>
       <type>label</type>
       <description>Dummy Label for Fanart Loading</description>
@@ -34,6 +36,7 @@
       <!-- to make a control visible only when FANART is enabled do this: <visible>control.isvisible(1232)</visible> -->
       <!-- to make a control invisible when FANART is enabled do this: <visible>!control.isvisible(1232)</visible> -->
     </control>
+		
     <control>
       <type>label</type>
       <description>Dummy Label for Gameart Loading</description>
@@ -79,5 +82,6 @@
       </label>
       <visible>false</visible>
     </control>
+		
   </controls>
 </window>

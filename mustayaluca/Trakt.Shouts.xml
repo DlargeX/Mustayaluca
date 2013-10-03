@@ -168,8 +168,9 @@
 						<label>-</label>
 						<onleft>50</onleft>
 						<onright>50</onright>
-						<textalign>right</textalign>	
 						<ondown>2</ondown>
+						<textalign>right</textalign>	
+						<markalign>left</markalign>								
 					</control>
 					
 				</control>

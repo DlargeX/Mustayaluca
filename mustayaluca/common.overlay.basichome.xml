@@ -79,7 +79,7 @@
       <height>810</height>
       <texture>now_playing_vignette.png</texture>
       <shouldCache>true</shouldCache>
-      <visible>player.hasmedia+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
       <!-- Not visible in regular home and my plugins -->
     </control>
     <control>
@@ -92,7 +92,7 @@
       <height>1085</height>
       <texture>overlay_background_top.png</texture>
       <shouldCache>true</shouldCache>
-      <visible>player.hasmedia+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
       <!-- Not visible in regular home and my plugins -->
     </control>
     <control>
@@ -104,7 +104,7 @@
       <width>270</width>
       <height>114</height>
       <texture>#fanarthandler.music.backdrop1.play</texture>
-      <visible>control.isvisible(3339)+Player.HasMedia+control.isvisible(91919295)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>control.isvisible(3339)+Player.HasMedia+control.isvisible(91919295)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
       <animation effect="fade" start="10" end="100" time="1000">Visible</animation>
     </control>
     <control>
@@ -116,7 +116,7 @@
       <width>270</width>
       <height>114</height>
       <texture>#fanarthandler.music.backdrop2.play</texture>
-      <visible>control.isvisible(3339)+Player.HasMedia+control.isvisible(91919296)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>control.isvisible(3339)+Player.HasMedia+control.isvisible(91919296)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
       <animation effect="fade" start="10" end="100" time="1000">Visible</animation>
     </control>
     <!--                                    :: MUSIC OVERLAY IN BASIC HOME ::                                    -->
@@ -130,7 +130,7 @@
       <height>190</height>
       <texture>now_playing_music_background.png</texture>
       <shouldCache>true</shouldCache>
-      <visible>player.hasmedia+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
       <!-- Not visible in regular home and my plugins -->
     </control>
     <control>
@@ -146,7 +146,7 @@
       <zoom>no</zoom>
       <texture>default_audio.png</texture>
       <shouldCache>true</shouldCache>
-      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+string.starts(#Play.Current.thumb,#)+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+string.starts(#Play.Current.thumb,#)+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
     <control>
       <description>music logo</description>
@@ -160,7 +160,7 @@
       <centered>yes</centered>
       <zoom>yes</zoom>
       <texture>#Mustayaluca.ArtistPath\#Play.Current.ArtistL.jpg</texture>
-      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+string.equals(#Play.Current.thumb,)+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+string.equals(#Play.Current.thumb,)+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
     <control>
       <description>music logo</description>
@@ -174,7 +174,7 @@
       <centered>yes</centered>
       <zoom>no</zoom>
       <texture>#Play.Current.Thumb</texture>
-      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!string.equals(#Play.Current.thumb,)+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!string.equals(#Play.Current.thumb,)+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
     <control>
       <description>Music logo Animation</description>
@@ -190,7 +190,7 @@
       <keepaspectratio>no</keepaspectratio>
       <centered>yes</centered>
       <zoom>yes</zoom>
-      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+control.hasthumb(7220)+control.hasthumb(7230)+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+control.hasthumb(7220)+control.hasthumb(7230)+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
     <control>
       <description>Selectable Button</description>
@@ -209,7 +209,7 @@
       <onright>7777</onright>
       <onleft>7777</onleft>
       <colordiffuse>f1ffffff</colordiffuse>
-      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
     <control>
       <description>artist info label</description>
@@ -228,7 +228,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>2</shadowDistance>
       <shadowColor>ff000000</shadowColor>
-      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
     <control>
       <description>title info label</description>
@@ -247,7 +247,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>2</shadowDistance>
       <shadowColor>ff000000</shadowColor>
-      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
     <control>
       <description>album info label</description>
@@ -266,7 +266,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>2</shadowDistance>
       <shadowColor>ff000000</shadowColor>
-      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
     <control>
       <description>play time / duration label</description>
@@ -283,7 +283,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>2</shadowDistance>
       <shadowColor>ff000000</shadowColor>
-      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
     <control>
       <description>next song label</description>
@@ -297,7 +297,7 @@
       <textcolor>ffa9d0f7</textcolor>
       <font>font13</font>
       <align>left</align>
-      <visible>player.hasmedia+control.isvisible(3337)+control.isvisible(3338)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+control.isvisible(3337)+control.isvisible(3338)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
     <control>
       <description>next song info label</description>
@@ -316,7 +316,7 @@
       <shadowDistance>2</shadowDistance>
       <shadowColor>ff000000</shadowColor>
       <wrapString> | </wrapString>
-      <visible>player.hasmedia+control.isvisible(3337)+control.isvisible(3338)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+control.isvisible(3337)+control.isvisible(3338)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
     <control>
       <description>dialog bg</description>
@@ -328,7 +328,7 @@
       <height>190</height>
       <texture>now_playing_music_shine.png</texture>
       <shouldCache>true</shouldCache>
-      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
       <!-- Not visible in regular home and my plugins -->
     </control>
     <!--                                    :: VIDEO OVERLAY IN BASIC HOME ::                                    -->
@@ -342,7 +342,7 @@
       <height>190</height>
       <texture>now_playing_video_background.png</texture>
       <shouldCache>true</shouldCache>
-      <visible>player.hasmedia+!control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+!control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
       <!-- Not visible in regular home and my plugins -->
     </control>
     <control>
@@ -359,7 +359,7 @@
       <ondown>7777</ondown>
       <onright>7777</onright>
       <onleft>7777</onleft>
-      <visible>player.hasmedia+!control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+!control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
     <control>
       <description>video preview window BACKGROUND</description>
@@ -376,7 +376,7 @@
       <ondown>7777</ondown>
       <onright>7777</onright>
       <onleft>7777</onleft>
-      <visible>player.hasmedia+!control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+!control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
     <control>
       <description>artist info label</description>
@@ -395,7 +395,7 @@
       <shadowDistance>2</shadowDistance>
       <shadowColor>ff000000</shadowColor>
       <wrapString> | </wrapString>
-      <visible>player.hasmedia+!control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+!control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
     <control>
       <description>title info label</description>
@@ -415,7 +415,7 @@
       <shadowDistance>2</shadowDistance>
       <shadowColor>ff000000</shadowColor>
       <wrapString> | </wrapString>
-      <visible>player.hasmedia+!control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+!control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
     <control>
       <description>album info label</description>
@@ -435,7 +435,7 @@
       <shadowDistance>2</shadowDistance>
       <shadowColor>ff000000</shadowColor>
       <wrapString> | </wrapString>
-      <visible>player.hasmedia+!control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+!control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
     <control>
       <description>play time / duration label</description>
@@ -452,7 +452,7 @@
       <shadowAngle>45</shadowAngle>
       <shadowDistance>2</shadowDistance>
       <shadowColor>ff000000</shadowColor>
-      <visible>player.hasmedia+!control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+!control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
     <control>
       <description>dialog bg</description>
@@ -464,8 +464,8 @@
       <height>190</height>
       <texture>now_playing_video_shine.png</texture>
       <shouldCache>true</shouldCache>
-      <visible>player.hasmedia+!control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1206) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
+      <visible>player.hasmedia+!control.isvisible(3337)+![window.istopmost(0)|window.istopmost(34)]+!control.isvisible(6767)+!control.isvisible(1209) + string.equals(#Mustayaluca.VideoWallpaper,false)</visible>
     </control>
   </controls>
 </window>
-<!--Checksum:8a0ea9fe2a27f16b30b8c57b1d80bd63-->
+<!--Checksum:6dd1052f635f901e6881d14f2121b917-->

@@ -153,7 +153,8 @@
 					<onup>1234</onup>
 					<ondown>30</ondown>
 					<label>191</label>
-					<textalign>right</textalign>						
+					<textalign>right</textalign>	
+					<markalign>left</markalign>						
 				</control>
 				
 				<control>
@@ -163,8 +164,10 @@
 					<onright>200</onright>
 					<onup>32</onup>
 					<label>486</label>
-					<textalign>right</textalign>					
+					<textalign>right</textalign>	
+					<markalign>left</markalign>				
 				</control>
+				
 			</control>
 		</control>
 

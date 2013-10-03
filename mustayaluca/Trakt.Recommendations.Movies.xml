@@ -385,6 +385,8 @@
 						<onleft>50</onleft>
 						<onleft>50</onleft>
 						<onright>50</onright>
+						<textalign>right</textalign>	
+						<markalign>left</markalign>							
 					</control>
 					
 					<control>
@@ -394,6 +396,8 @@
 						<label>#Trakt.Translation.HideWatchlisted.Label</label>						
 						<onleft>50</onleft>
 						<onright>50</onright>
+						<textalign>right</textalign>	
+						<markalign>left</markalign>							
 					</control>
 					
 					<control>

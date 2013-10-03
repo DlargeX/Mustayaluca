@@ -4,7 +4,9 @@
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
+	
 		<import>TVSeries.dummy.xml</import>
+
 		<!-- Default Background -->
 		<control>
 			<description>Default Background when no Fanart Displayed</description>
@@ -19,6 +21,7 @@
 			<!-- Avoid default artwork flash when first entering plugin -->
 			<visible>!string.equals(#TVSeries.Title,)</visible>
 		</control>
+		
 		<!-- Fanart Fading -->
 		<control>
 			<description>Fanart Background #1</description>
@@ -32,6 +35,7 @@
 			<animation effect="fade" time="300">visible</animation>
 			<animation effect="fade" time="300" delay="300">hidden</animation>
 		</control>
+		
 		<control>
 			<description>Fanart Background #2</description>
 			<type>image</type>
@@ -44,6 +48,7 @@
 			<animation effect="fade" time="300">visible</animation>
 			<animation effect="fade" time="300" delay="300">hidden</animation>
 		</control>
+		
 		<control>
 			<description>Backdrop Overlay</description>
 			<type>image</type>
@@ -56,6 +61,7 @@
 			<shouldCache>true</shouldCache>
 			<visible>!facadeview.filmstrip+!facadeview.coverflow</visible>
 		</control>
+		
 		<control>
 			<description>Backdrop Overlay</description>
 			<type>image</type>
@@ -68,6 +74,7 @@
 			<shouldCache>true</shouldCache>
 			<visible>facadeview.filmstrip|facadeview.coverflow</visible>
 		</control>
+		
 		<control>
 			<description>Backdrop Overlay</description>
 			<type>image</type>
@@ -80,6 +87,7 @@
 			<visible>facadeview.coverflow</visible>
 			<shouldCache>true</shouldCache>
 		</control>
+		
 		<control>
 			<description>Backdrop Overlay - Filmstrip</description>
 			<type>image</type>

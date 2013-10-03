@@ -28,6 +28,7 @@
         <layout>StackLayout(0, Vertical, true)</layout>
         <animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
         <animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+				
         <control>
           <description>Record</description>
           <id>2</id>
@@ -38,6 +39,7 @@
           <onup>17</onup>
           <ondown>3</ondown>
         </control>
+				
         <control>
           <description>Priority</description>
           <id>3</id>
@@ -47,6 +49,7 @@
           <onright>10</onright>
           <ondown>4</ondown>
         </control>
+				
         <control>
           <description>Keep</description>
           <id>4</id>
@@ -56,6 +59,7 @@
           <onright>10</onright>
           <ondown>5</ondown>
         </control>
+				
         <control>
           <description>Only new episodes</description>
           <id>5</id>
@@ -64,7 +68,10 @@
           <onleft>10</onleft>
           <onright>10</onright>
           <ondown>8</ondown>
+					<textalign>right</textalign>	
+					<markalign>left</markalign>						
         </control>
+				
         <control>
           <description>PreRecord</description>
           <type>button</type>
@@ -74,6 +81,7 @@
           <onright>10</onright>
           <ondown>9</ondown>
         </control>
+				
         <control>
           <description>PostRecord</description>
           <type>button</type>
@@ -83,6 +91,7 @@
           <onright>10</onright>
           <ondown>2</ondown>
         </control>
+				
       </control>
     </control>
 	

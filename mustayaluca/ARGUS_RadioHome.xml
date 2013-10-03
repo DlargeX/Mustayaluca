@@ -87,7 +87,10 @@
         <onup>17</onup>
         <ondown>5</ondown>
         <onright>6</onright>
+				<textalign>right</textalign>	
+				<markalign>left</markalign>					
       </control>	
+			
       <control>
         <description>Channel button</description>
         <type>button</type>
@@ -97,6 +100,7 @@
         <onup>6</onup>
         <ondown>2</ondown>
       </control>	  
+			
       <control>
         <description>RadioGuide</description>
         <type>button</type>
@@ -106,6 +110,7 @@
         <ondown>4</ondown>
         <onright>2</onright>
       </control>
+			
       <control>
         <description>Recordings</description>
         <type>button</type>
@@ -115,6 +120,7 @@
         <onup>2</onup>
         <ondown>7</ondown>
       </control>
+			
       <control>
         <description>Upcoming Recordings</description>
         <type>button</type>
@@ -124,6 +130,7 @@
         <ondown>3</ondown>
         <onright>7</onright>
       </control>
+			
       <control>
         <description>Search</description>
         <type>button</type>
@@ -132,7 +139,8 @@
         <onup>7</onup>
         <ondown>8</ondown>
         <onright>3</onright>
-      </control>	  
+      </control>	 
+			
       <control>
         <description>Active Recordings</description>
         <type>button</type>

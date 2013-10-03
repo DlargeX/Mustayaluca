@@ -9,18 +9,6 @@
 	
 		<import>common.settings.xml</import>	
 		<import>common.overlay.home.xml</import>
-	
-  	
-<!--   	<control>
-  		<type>label</type>
-  		<id>1</id>
-  		<posX>152</posX>
-  		<posY>225</posY>
-  		<width>500</width>
-  		<label>3</label>
-  		<textcolor>00b7ff</textcolor>
-  		<font>TitanLight20</font>
-  	</control> -->
   	
 		<control>
 			<description>button group</description>

@@ -124,7 +124,8 @@
         <label>Only new Episodes</label>
         <onup>4</onup>
         <onright>10</onright>
-        <textalign>right</textalign>
+				<textalign>right</textalign>	
+				<markalign>left</markalign>	
       </control>
 	  
       <control>

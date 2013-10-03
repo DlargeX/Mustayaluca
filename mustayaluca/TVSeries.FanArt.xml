@@ -200,6 +200,7 @@
 					<posY>230</posY>
 					<layout>StackLayout(0, Vertical, true)</layout>
 					<visible>!Control.HasFocus(50)</visible>
+					
 					<control>
 						<description>Change Layout</description>
 						<type>button</type>
@@ -208,6 +209,7 @@
 						<onleft>50</onleft>
 						<onright>50</onright>
 					</control>
+					
 					<control>
 						<description>Resolution Filter</description>
 						<type>button</type>
@@ -216,6 +218,7 @@
 						<onleft>50</onleft>
 						<onright>50</onright>
 					</control>		
+					
 					<control>
 						<description>Random Fanart</description>
 						<type>checkbutton</type>
@@ -223,7 +226,10 @@
 						<label>Random Fanart</label>
 						<onleft>50</onleft>
 						<onright>50</onright>
+						<textalign>right</textalign>	
+						<markalign>left</markalign>								
 					</control>
+					
 				</control>
 			</control>
 		</control>	

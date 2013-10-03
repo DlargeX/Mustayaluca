@@ -11,8 +11,6 @@
 			<posY>976</posY>
 			<width>40</width>
 			<height>40</height>
-			<AltTextureFocus>osd_subtitles_focus.png</AltTextureFocus>
-			<AltTextureNoFocus>osd_subtitles_nofocus.png</AltTextureNoFocus>
 			<textureFocus>osd_subtitles_focus.png</textureFocus>
 			<textureNoFocus>osd_subtitles_nofocus.png</textureNoFocus>
 			<label>-</label>
@@ -31,8 +29,6 @@
 			<posY>976</posY>
 			<width>40</width>
 			<height>40</height>
-			<AltTextureFocus>osd_settings_audio_focus.png</AltTextureFocus>
-			<AltTextureNoFocus>osd_settings_audio_nofocus.png</AltTextureNoFocus>
 			<textureFocus>osd_settings_audio_focus.png</textureFocus>
 			<textureNoFocus>osd_settings_audio_nofocus.png</textureNoFocus>
 			<label>-</label>
@@ -51,8 +47,6 @@
 			<posY>976</posY>
 			<width>40</width>
 			<height>40</height>
-			<AltTextureFocus>osd_settings_video_focus.png</AltTextureFocus>
-			<AltTextureNoFocus>osd_settings_video_nofocus.png</AltTextureNoFocus>
 			<textureFocus>osd_settings_video_focus.png</textureFocus>
 			<textureNoFocus>osd_settings_video_nofocus.png</textureNoFocus>
 			<label>-</label>
@@ -71,8 +65,6 @@
 			<posY>976</posY>
 			<width>40</width>
 			<height>40</height>
-			<AltTextureFocus>osd_settings_bookmark_focus.png</AltTextureFocus>
-			<AltTextureNoFocus>osd_settings_bookmark_nofocus.png</AltTextureNoFocus>
 			<textureFocus>osd_settings_bookmark_focus.png</textureFocus>
 			<textureNoFocus>osd_settings_bookmark_nofocus.png</textureNoFocus>
 			<label>-</label>
@@ -92,8 +84,6 @@
 			<posY>976</posY>
 			<width>40</width>
 			<height>40</height>
-			<AltTextureFocus>osd_back_focus.png</AltTextureFocus>
-			<AltTextureNoFocus>osd_back_nofocus.png</AltTextureNoFocus>
 			<textureFocus>osd_back_focus.png</textureFocus>
 			<textureNoFocus>osd_back_focus.png</textureNoFocus>
 			<label>-</label>
@@ -112,8 +102,6 @@
 			<posY>976</posY>
 			<width>40</width>
 			<height>40</height>
-			<AltTextureFocus>osd_rewind_focus.png</AltTextureFocus>
-			<AltTextureNoFocus>osd_rewind_nofocus.png</AltTextureNoFocus>
 			<textureFocus>osd_rewind_focus.png</textureFocus>
 			<textureNoFocus>osd_rewind_focus.png</textureNoFocus>
 			<label>-</label>
@@ -138,8 +126,6 @@
 			<onup>213</onup>
 			<textureFocus>osd_play_focus.png</textureFocus>
 			<textureNoFocus>osd_play_nofocus.png</textureNoFocus>
-			<AltTextureFocus>osd_pause_focus.png</AltTextureFocus>
-			<AltTextureNoFocus>osd_pause_nofocus.png</AltTextureNoFocus>
 		</control>
 
 		<control>
@@ -168,8 +154,6 @@
 			<posY>976</posY>
 			<width>40</width>
 			<height>40</height>
-			<AltTextureFocus>osd_fastforward_focus.png</AltTextureFocus>
-			<AltTextureNoFocus>osd_fastforward_nofocus.png</AltTextureNoFocus>
 			<textureFocus>osd_fastforward_focus.png</textureFocus>
 			<textureNoFocus>osd_fastforward_focus.png</textureNoFocus>
 			<label>-</label>
@@ -188,8 +172,6 @@
 			<posY>976</posY>
 			<width>40</width>
 			<height>40</height>
-			<AltTextureFocus>osd_next_focus.png</AltTextureFocus>
-			<AltTextureNoFocus>osd_next_nofocus.png</AltTextureNoFocus>
 			<textureFocus>osd_next_focus.png</textureFocus>
 			<textureNoFocus>osd_next_focus.png</textureNoFocus>
 			<label>-</label>

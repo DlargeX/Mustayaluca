@@ -6,6 +6,7 @@
 	<controls>
 
 		<!-- :::::::::::::::::::: BACKGROUNG / FANART AND DUMMY CONTROLS :::::::::::::::::::: -->
+		
 		<control>
 			<description>Default Background</description>
 			<type>image</type>
@@ -107,6 +108,7 @@
 		</control>
 
 		<!-- :::::::::::::::::::: BACKGROUNG FULL FANART VIEW :::::::::::::::::::: -->		
+		
 		<control>
 			<description>Backdrop Overlay - Wide List View</description>
 			<type>image</type>
@@ -132,6 +134,7 @@
 		</control>		
 
 		<!-- :::::::::::::::::::: MOVIE NAME / DATE :::::::::::::::::::: -->
+		
 		<control Style="BigTitle">
 			<description>Movie Title</description>
 			<type>label</type>
@@ -157,6 +160,7 @@
 		</control>
 
 		<!-- :::::::::::::::::::: HIDDEN MENU :::::::::::::::::::: -->
+		
 		<control>
 			<type>actiongroup</type>
 			<description>action menu</description>
@@ -181,6 +185,7 @@
 				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
 				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
 			</control>
+			
 			<control>
 				<type>image</type>
 				<id>1</id>
@@ -192,7 +197,8 @@
 				<visible>!control.hasfocus(10000)+!control.hasfocus(10002)+!control.hasfocus(10003)+!control.hasfocus(10004)</visible>
 				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
 				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
-			</control>		 
+			</control>	
+			
 			<control>
 				<type>label</type>
 				<id>0</id>
@@ -230,6 +236,7 @@
 						<onright>10000</onright>
 						<label>712</label>
 					</control>
+					
 					<control>
 						<type>button</type>
 						<description>Trailers</description>
@@ -239,6 +246,7 @@
 						<onright>10000</onright>
 						<label>5906</label>
 					</control>
+					
 					<control>
 						<type>button</type>
 						<description>Options</description>
@@ -248,6 +256,7 @@
 						<onright>10000</onright>
 						<label>496</label>
 					</control>
+					
 					<control>
 						<type>button</type>
 						<description>previous</description>
@@ -257,6 +266,7 @@
 						<ondown>103</ondown>
 						<label>210</label>
 					</control>
+					
 					<control>
 						<type>button</type>
 						<description>next</description>
@@ -266,6 +276,7 @@
 						<ondown>106</ondown>
 						<label>209</label>
 					</control>
+					
 					<control>
 						<type>button</type>
 						<description>First</description>
@@ -274,6 +285,7 @@
 						<onup>103</onup>
 						<ondown>105</ondown>
 					</control>
+					
 					<control>
 						<type>button</type>
 						<description>Last</description>
@@ -282,6 +294,7 @@
 						<onup>106</onup>
 						<ondown>10012</ondown>
 					</control>
+					
 					<control>
 						<description>TV-Series</description>
 						<type>button</type>
@@ -292,6 +305,7 @@
 						<onup>105</onup>
 						<ondown>10013</ondown>
 					</control>
+					
 					<control>
 						<description>Trakt</description>
 						<type>button</type>
@@ -305,6 +319,7 @@
 						<label>Trakt</label>
 						<visible>plugin.isenabled(Trakt)</visible>
 					</control>
+					
 				</control>
 			</control>
 		</control>
@@ -397,6 +412,7 @@
 		</control>		
 
 		<!-- :::::::::::::::::::: THUMB AND WATCHED ICON :::::::::::::::::::: -->
+		
 		<control>
 			<description>Default Cover Art</description>
 			<type>image</type>
@@ -408,6 +424,7 @@
 			<texture>poster_thumb_background_reflect.png</texture>
 			<visible>[control.hasfocus(10000)|control.hasfocus(10002)|control.hasfocus(10003)|control.hasfocus(10004)] + !Control.HasFocus(10099)</visible>
 		</control>
+		
 		<control>
 			<type>image</type>
 			<description>Cover Image</description>
@@ -419,6 +436,7 @@
 			<texture>#myfilms.picture</texture>
 			<visible>[control.hasfocus(10000)|control.hasfocus(10002)|control.hasfocus(10003)|control.hasfocus(10004)] + !Control.HasFocus(10099)</visible>
 		</control>
+		
 		<control>
 			<description>Default Cover Overlay</description>
 			<type>image</type>
@@ -431,6 +449,7 @@
 			<visible>control.hasfocus(10000) + !Control.HasFocus(10099)</visible>
 			<animation effect="fade" time="100">visiblechange</animation>
 		</control>
+		
 		<control>
 			<description>Default Cover Overlay</description>
 			<type>image</type>
@@ -442,6 +461,7 @@
 			<texture>poster_thumb_background_overlay_reflect.png</texture>
 			<visible>[control.hasfocus(10000)|control.hasfocus(10002)|control.hasfocus(10003)|control.hasfocus(10004)] + !Control.HasFocus(10099)</visible>
 		</control>
+		
 		<control>
 			<description>Watched Icon Background</description>
 			<type>image</type>
@@ -453,6 +473,7 @@
 			<texture>overlay_new.png</texture>
 			<visible>[control.hasfocus(10000)|control.hasfocus(10002)|control.hasfocus(10003)|control.hasfocus(10004)] + !Control.HasFocus(10099)</visible>
 		</control>
+		
 		<control Style="DetailWatched">
 			<description>Watched Icon</description>
 			<type>label</type>
@@ -463,6 +484,7 @@
 			<label>#SkinTranslation.Translations.media.watched.Label</label>
 			<visible>[control.hasfocus(10000)|control.hasfocus(10002)|control.hasfocus(10003)|control.hasfocus(10004)]+string.contains(#myfilms.user.watched.value) + !Control.HasFocus(10099)</visible>
 		</control>
+		
 		<control Style="DetailWatched">
 			<description>Un-Watched Icon</description>
 			<type>label</type>
@@ -485,6 +507,7 @@
 			<label>#myfilms.db.year.value</label>
 			<visible>string.equals(#myfilms.db.year.value)+!Control.HasFocus(10002)+!Control.HasFocus(10003)+!Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
 		</control>
+		
 		<control Style="BigTitleColour">
 			<description>certification</description>
 			<type>label</type>
@@ -495,6 +518,7 @@
 			<label>#SkinTranslation.Translations.movie.rated.Label #myfilms.user.item4.value</label>
 			<visible>string.equals(#myfilms.user.item4.value)+!Control.HasFocus(10002)+!Control.HasFocus(10003)+!Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
 		</control>
+		
 		<control Style="BigTitleColour">
 			<description>runtime</description>
 			<type>label</type>
@@ -537,6 +561,7 @@
 			<textcolor>ff9c9d9d</textcolor>
 			<visible>string.equals(#myfilms.db.rating.value)+!Control.HasFocus(10002)+!Control.HasFocus(10003)+!Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
 		</control>
+		
 		<control Style="ListTitle">
 			<description>Directors Label</description>
 			<type>label</type>
@@ -548,6 +573,7 @@
 			<align>right</align>
 			<visible>string.equals(#myfilms.db.director.value)+!Control.HasFocus(10002)+!Control.HasFocus(10003)+!Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
 		</control>
+		
 		<control Style="DetailText">
 			<description>Directors</description>
 			<type>label</type>
@@ -558,6 +584,7 @@
 			<width>985</width>
 			<visible>string.equals(#myfilms.db.director.value)+!Control.HasFocus(10002)+!Control.HasFocus(10003)+!Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
 		</control>
+		
 		<control Style="ListTitle">
 			<description>Producers</description>
 			<type>label</type>
@@ -568,7 +595,7 @@
 			<align>right</align>
 			<label>#myfilms.user.item2.label</label>
 			<visible>string.equals(#myfilms.user.item2.value)+!Control.HasFocus(10002)+!Control.HasFocus(10003)+!Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
-		</control>
+		</control>	
 		<control Style="DetailText">
 			<description>Producer</description>
 			<type>label</type>
@@ -579,6 +606,7 @@
 			<width>985</width>
 			<visible>string.equals(#myfilms.user.item2.value)+!Control.HasFocus(10002)+!Control.HasFocus(10003)+!Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
 		</control>
+		
 		<control Style="ListTitle">
 			<description>actors</description>
 			<type>label</type>
@@ -604,6 +632,7 @@
 			<scrollStartDelaySec>10</scrollStartDelaySec>
 			<visible>string.equals(#myfilms.db.actors.value)+!Control.HasFocus(10002)+!Control.HasFocus(10003)+!Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
 		</control>
+		
 		<control Style="BigTitleColourSmall">
 			<description>Genres</description>
 			<type>label</type>
@@ -614,6 +643,7 @@
 			<width>840</width>
 			<visible>string.equals(#myfilms.db.category.value)+!Control.HasFocus(10002)+!Control.HasFocus(10003)+!Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
 		</control>
+		
 		<control Style="DetailTextDroid">
 			<description>Summary</description>
 			<type>textboxscrollup</type>
@@ -627,6 +657,7 @@
 			<label>#myfilms.db.description.value</label>
 			<visible>string.equals(#myfilms.db.description.value)+!Control.HasFocus(10002)+!Control.HasFocus(10003)+!Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
 		</control>
+		
 		<control>
 			<type>image</type>
 			<description>thumb Logos ID 2012</description>
@@ -1068,5 +1099,6 @@
 		</control>
 
 		<import>common.overlay.xml</import>
+		
 	</controls>
 </window>

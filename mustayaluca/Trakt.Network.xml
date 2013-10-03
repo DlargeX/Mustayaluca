@@ -247,7 +247,7 @@
 				<posY>178</posY>
 				<width>380</width>
 				<font>font3</font>
-				<label>#Trakt.Translation.Friends.Label</label>
+				<label>#Trakt.Translation.Network.Label</label>
 				<align>right</align>
 				<visible>!Control.HasFocus(50)+Control.IsVisible(50)</visible>		  
 				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
@@ -287,6 +287,7 @@
             <label>#Trakt.Translation.Search.Label</label>
             <onleft>50</onleft>
             <onright>50</onright>
+            <onup>2</onup>						
           </control>
 					
 					<control>
@@ -296,6 +297,7 @@
             <label>#Trakt.Translation.Refresh.Label</label>
             <onleft>50</onleft>
             <onright>50</onright>
+            <onup>3</onup>						
             <ondown>2</ondown>
           </control>
 

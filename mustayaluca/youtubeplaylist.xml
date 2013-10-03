@@ -43,6 +43,7 @@
 				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
 				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
 			</control>
+			
 			<control>
 				<type>image</type>
 				<posX>272</posX>
@@ -53,7 +54,8 @@
 				<visible>!Control.HasFocus(50)</visible>		  
 				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
 				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
-			</control>		 
+			</control>		
+			
 			<control>
 				<type>label</type>
 				<posX>370</posX>
@@ -65,7 +67,8 @@
 				<visible>!Control.HasFocus(50)</visible>		  
 				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
 				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
-			</control>			
+			</control>	
+			
 			<control>
 				<description>group element</description>
 				<type>group</type>
@@ -81,6 +84,7 @@
 					<visible>!Control.HasFocus(50)</visible>
 					<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
 					<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+					
 					<control>
 						<description>View-As button</description>
 						<type>button</type>
@@ -90,6 +94,7 @@
 						<onup>17</onup>
 						<ondown>20</ondown>
 					</control>
+					
 					<control>
 						<description>Shuffle button</description>
 						<type>button</type>
@@ -99,6 +104,7 @@
 						<onup>2</onup>
 						<ondown>30</ondown>
 					</control>
+					
 					<control>
 						<description>Repeat on/off button</description>
 						<type>checkbutton</type>
@@ -107,7 +113,10 @@
 						<onright>50</onright>
 						<onup>20</onup>
 						<ondown>10</ondown>
+						<textalign>right</textalign>	
+						<markalign>left</markalign>								
 					</control>
+					
 					<control>
 						<description>My Playlists</description>
 						<type>button</type>
@@ -117,6 +126,7 @@
 						<onup>30</onup>
 						<ondown>21</ondown>
 					</control>
+					
 					<control>
 						<description>Save button</description>
 						<type>button</type>
@@ -126,6 +136,7 @@
 						<onup>10</onup>
 						<ondown>22</ondown>
 					</control>
+					
 					<control>
 						<description>Clear button</description>
 						<type>button</type>
@@ -135,6 +146,7 @@
 						<onup>21</onup>
 						<ondown>26</ondown>
 					</control>
+					
 					<!--    <control>
 								<description>Play button</description>
 								<type>button</type>
@@ -146,6 +158,7 @@
 								<visible>false</visible>
 							</control> -->
 					<control>
+					
 						<description>Now playing</description>
 						<type>button</type>
 						<id>26</id>
@@ -154,6 +167,7 @@
 						<onup>22</onup>
 						<ondown>28</ondown>
 					</control>
+					
 					<control>
 						<description>scrobble mode button</description>
 						<type>button</type>
@@ -163,6 +177,7 @@
 						<onup>26</onup>
 						<ondown>27</ondown>
 					</control>
+					
 					<control>
 						<description>scrobble on/off button</description>
 						<type>checkbutton</type>
@@ -171,7 +186,10 @@
 						<onright>50</onright>
 						<onup>28</onup>
 						<ondown>2</ondown>
+						<textalign>right</textalign>	
+						<markalign>left</markalign>								
 					</control>
+					
 				</control>
 			</control>
 		</control>

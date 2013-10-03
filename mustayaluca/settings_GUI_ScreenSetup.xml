@@ -21,8 +21,7 @@
 						<description>UI Calibration button</description>
 						<type>button</type>
 						<id>2</id>
-						<label>213</label>
-						<textalign>right</textalign>					
+						<label>213</label>				
 						<hyperlink>10</hyperlink>
 						<onup>4</onup>
 					</control>
@@ -31,8 +30,7 @@
 						<description>Screen Calibration button</description>
 						<type>button</type>
 						<id>3</id>
-						<label>214</label>
-						<textalign>right</textalign>						
+						<label>214</label>				
 						<hyperlink>11</hyperlink>
 					</control>
 					
@@ -40,8 +38,7 @@
 						<description>Scroll speed button</description>
 						<type>button</type>
 						<id>4</id>
-						<label>673</label>
-						<textalign>right</textalign>						
+						<label>673</label>			
 						<hyperlink>31</hyperlink>
 						<ondown>2</ondown>
 					</control>

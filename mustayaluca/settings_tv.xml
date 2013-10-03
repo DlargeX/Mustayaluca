@@ -11,24 +11,11 @@
 		<import>settings.menu.xml</import>	
 		<import>common.overlay.home.xml</import>
 
-<!-- 	<control>
-		<type>label</type>
-		<id>1</id>
-		<posX>685</posX>
-		<posY>225</posY>
-		<width>500</width>
-		<label>605</label>
-		<textcolor>00b7ff</textcolor>
-		<font>TitanLight20</font>
-	  <animation effect="fade" time="150">WindowOpen</animation>
-	  <animation effect="fade" time="150">WindowClose</animation>
-	</control> -->
-
 		<control>
 			<description>button group</description>
 			<type>group</type>
 			<posX>402</posX>
-			<posY>231</posY>
+			<posY>230</posY>
 			<layout>GridLayout(2, 0, 0, 0, 1)</layout>
 		
 		  <control>
@@ -38,8 +25,9 @@
 				<label>6000</label>
 				<onup>46</onup>
 				<width>842</width>	
-				<textalign>right</textalign>					
+				<textalign>left</textalign>					
 	      <onleft>#defaultcontrol.onleft</onleft>
+				<textureFocus>list_narrow_focus.png</textureFocus>				
 			</control>
 	
 		  <control>
@@ -48,8 +36,9 @@
 				<id>35</id>
 				<label>6036</label>
 				<width>842</width>	
-				<textalign>right</textalign>					
+				<textalign>left</textalign>					
 	      <onleft>#defaultcontrol.onleft</onleft>
+				<textureFocus>list_narrow_focus.png</textureFocus>					
 			</control>
 	
 		  <control>
@@ -58,8 +47,9 @@
 				<id>25</id>
 				<label>6001</label>
 				<width>842</width>	
-				<textalign>right</textalign>					
+				<textalign>left</textalign>					
 	      <onleft>#defaultcontrol.onleft</onleft>
+				<textureFocus>list_narrow_focus.png</textureFocus>					
 			</control>
 	
 		  <control>
@@ -68,8 +58,9 @@
 				<id>36</id>
 				<label>6039</label>
 				<width>842</width>	
-				<textalign>right</textalign>					
+				<textalign>left</textalign>					
 	      <onleft>#defaultcontrol.onleft</onleft>
+				<textureFocus>list_narrow_focus.png</textureFocus>					
 			</control>
 	
 		  <control>
@@ -78,8 +69,9 @@
 				<id>33</id>
 				<label>6002</label>
 				<width>842</width>	
-				<textalign>right</textalign>					
+				<textalign>left</textalign>					
 	      <onleft>#defaultcontrol.onleft</onleft>
+				<textureFocus>list_narrow_focus.png</textureFocus>					
 			</control>
 	
 		  <control>
@@ -88,8 +80,9 @@
 				<id>27</id>
 				<label>6003</label>
 				<width>842</width>	
-				<textalign>right</textalign>					
+				<textalign>left</textalign>					
 	      <onleft>#defaultcontrol.onleft</onleft>
+				<textureFocus>list_narrow_focus.png</textureFocus>					
 			</control>
 	
 		  <control>
@@ -99,8 +92,9 @@
 				<label>6004</label>
 				<ondown>30</ondown>
 				<width>842</width>	
-				<textalign>right</textalign>					
+				<textalign>left</textalign>					
 	      <onleft>#defaultcontrol.onleft</onleft>
+				<textureFocus>list_narrow_focus.png</textureFocus>	
 			</control>
 
 		  <control>
@@ -111,7 +105,9 @@
 				<ondown>29</ondown>
 				<onup>28</onup>
 				<width>842</width>	
-				<textalign>right</textalign>					
+				<textalign>left</textalign>					
+	      <onleft>#defaultcontrol.onleft</onleft>
+				<textureFocus>list_narrow_focus.png</textureFocus>			
 			</control>
 	
 		  <control>
@@ -122,7 +118,9 @@
 				<ondown>40</ondown>
 				<onup>30</onup>
 				<width>675</width>	
-				<textalign>right</textalign>					
+				<textalign>left</textalign>					
+	      <onleft>#defaultcontrol.onleft</onleft>
+				<textureFocus>list_narrow_focus.png</textureFocus>					
 			</control>
 	
 		  <control>
@@ -132,7 +130,9 @@
 				<label>1246</label>
 				<onup>29</onup>
 				<width>675</width>	
-				<textalign>right</textalign>					
+				<textalign>left</textalign>					
+	      <onleft>#defaultcontrol.onleft</onleft>
+				<textureFocus>list_narrow_focus.png</textureFocus>				
 				<selected>#(skin.hassetting('#skin.tvguide.usecolorsforbuttons'))</selected>
 				<onclick>#(skin.togglesetting('#skin.tvguide.usecolorsforbuttons'))</onclick>
 			</control>
@@ -143,7 +143,9 @@
 				<id>41</id>
 				<label>1247</label>
 				<width>675</width>	
-				<textalign>right</textalign>					
+				<textalign>left</textalign>					
+	      <onleft>#defaultcontrol.onleft</onleft>
+				<textureFocus>list_narrow_focus.png</textureFocus>					
 				<selected>#(skin.hassetting('#skin.tvguide.usecolorsforgenre'))</selected>
 				<onclick>#(skin.togglesetting('#skin.tvguide.usecolorsforgenre'))</onclick>
 			</control>
@@ -154,7 +156,9 @@
 				<id>42</id>	
 				<label>1248</label>
 				<width>675</width>	
-				<textalign>right</textalign>					
+				<textalign>left</textalign>					
+	      <onleft>#defaultcontrol.onleft</onleft>
+				<textureFocus>list_narrow_focus.png</textureFocus>					
 				<selected>#(skin.hassetting('#skin.tvguide.useborderhighlight'))</selected>
 				<onclick>#(skin.togglesetting('#skin.tvguide.useborderhighlight'))</onclick>
 			</control>
@@ -165,7 +169,9 @@
 				<id>43</id>	
 				<label>1249</label>	
 				<width>675</width>	
-				<textalign>right</textalign>					
+				<textalign>left</textalign>					
+	      <onleft>#defaultcontrol.onleft</onleft>
+				<textureFocus>list_narrow_focus.png</textureFocus>				
 				<selected>#(skin.hassetting('#skin.tvguide.showgenrekey'))</selected>
 				<onclick>#(skin.togglesetting('#skin.tvguide.showgenrekey'))</onclick>
 				<ondown>44</ondown>
@@ -176,9 +182,11 @@
         <type>button</type>
         <id>44</id>
         <label>ARGUS #TV.Settings.ChannelManagerName</label>
-				<width>675</width>	
-				<textalign>right</textalign>					
+				<width>675</width>			
         <hyperlink>49856</hyperlink>
+				<textalign>left</textalign>					
+	      <onleft>#defaultcontrol.onleft</onleft>
+				<textureFocus>list_narrow_focus.png</textureFocus>					
         <visible>plugin.isenabled(ARGUS TV)</visible>
 				<ondown>45</ondown>	
       </control>
@@ -188,9 +196,11 @@
         <type>button</type>
         <id>45</id>
         <label>#TV.Settings.ArgusClientSettingsName</label>
-				<width>675</width>	
-				<textalign>right</textalign>					
+				<width>675</width>				
         <hyperlink>49857</hyperlink>
+				<textalign>left</textalign>					
+	      <onleft>#defaultcontrol.onleft</onleft>
+				<textureFocus>list_narrow_focus.png</textureFocus>					
         <visible>plugin.isenabled(ARGUS TV)</visible>
 				<ondown>46</ondown>
       </control>
@@ -200,9 +210,11 @@
         <type>button</type>
         <id>46</id>
         <label>#TV.Settings.ArgusServerSettingsName</label>
-				<width>675</width>	
-				<textalign>right</textalign>					
+				<width>675</width>					
         <hyperlink>49855</hyperlink>
+				<textalign>left</textalign>					
+	      <onleft>#defaultcontrol.onleft</onleft>
+				<textureFocus>list_narrow_focus.png</textureFocus>					
         <visible>plugin.isenabled(ARGUS TV)</visible>
 				<ondown>24</ondown>
       </control>

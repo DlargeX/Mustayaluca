@@ -6,7 +6,7 @@
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
       <!-- CHANGE the ID value (represented as xxxx) of hasfocus(xxxx) to the value of the ID in basichome you want this to show.If you want it to show on multiple you can chain them like so; control.hasfocus(xxxx) + control.hasfocus(xxxx2) etc. -->
-      <visible>[control.isvisible(1004)]|control.hasfocus(91919991)|control.hasfocus(91919992)|control.hasfocus(91919993)</visible>
+      <visible>[control.isvisible(1000)|control.isvisible(1003)|control.isvisible(1004)]|control.hasfocus(91919991)|control.hasfocus(91919992)|control.hasfocus(91919993)</visible>
       <animation effect="fade" time="150">WindowOpen</animation>
       <animation effect="fade" time="150">WindowClose</animation>
       <!-- Background -->
@@ -333,4 +333,4 @@
     </control>
   </controls>
 </window>
-<!--Checksum:a0c25f5b2560b1209db84be6a2132aa6-->
+<!--Checksum:1d650584d5b236a0133c02c4055db63d-->

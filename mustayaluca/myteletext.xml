@@ -128,6 +128,7 @@
         <ondown>503</ondown>
         <onright>502</onright>
       </control>
+			
       <control>
         <description>Page200</description>
         <type>button</type>
@@ -137,6 +138,7 @@
         <ondown>504</ondown>
         <onright>503</onright>
       </control>
+			
       <control>
         <description>Page300</description>
         <type>button</type>
@@ -146,6 +148,7 @@
         <ondown>505</ondown>
         <onright>504</onright>
       </control>
+			
       <control>
         <description>hidden mode</description>
         <type>checkbutton</type>
@@ -157,7 +160,10 @@
         <onup>504</onup>
         <ondown>506</ondown>
         <onright>505</onright>
+				<textalign>right</textalign>	
+				<markalign>left</markalign>					
       </control>
+			
       <control>
         <description>subpage</description>
         <type>selectbutton</type>
@@ -204,7 +210,8 @@
           <subitem>./35</subitem>
           <subitem>./36</subitem>
         </subitems>
-      </control>	  
+      </control>	 
+			
       <control>
         <description>Fullscreen</description>
         <type>button</type>
@@ -215,8 +222,7 @@
         <onright>507</onright>
       </control>
     </control>
-	
-	
+		
     <control>
       <description>video preview window</description>
       <type>videowindow</type>

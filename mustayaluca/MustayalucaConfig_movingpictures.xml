@@ -40,6 +40,7 @@
 			<posX>400</posX>
 			<posY>230</posY>
 			<layout>StackLayout(0, Vertical, true)</layout>
+			
 			<control Style="SettingsToggleWide">
 				<description>MovingPictures Default/Fanart Style</description>
 				<type>checkbutton</type>
@@ -48,6 +49,7 @@
 				<onup>2</onup>
 				<ondown>3</ondown>
 			</control>
+			
 			<control Style="SettingsButtonWide">
 				<description>MovingPictures Thumbnail Mod</description>
 				<type>button</type>

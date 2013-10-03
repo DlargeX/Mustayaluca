@@ -291,9 +291,6 @@
       <width>126</width>
       <label>657</label>
       <font>font12</font>
-      <textcolor>White</textcolor>
-      <colordiffuse>White</colordiffuse>
-      <!--<disabledcolor>#60ffffff</disabledcolor>-->
       <onleft>11</onleft>
       <onup>16</onup>
       <ondown>11</ondown>
@@ -309,9 +306,6 @@
       <width>126</width>
       <label>658</label>
       <font>font12</font>
-      <textcolor>White</textcolor>
-      <colordiffuse>White</colordiffuse>
-      <!--<disabledcolor>#60ffffff</disabledcolor>-->
       <onleft>3</onleft>
       <onup>17</onup>
       <ondown>11</ondown>
@@ -327,9 +321,6 @@
       <width>126</width>
       <label>659</label>
       <font>font12</font>
-      <textcolor>White</textcolor>
-      <colordiffuse>White</colordiffuse>
-      <!--<disabledcolor>#60ffffff</disabledcolor>-->
       <onleft>4</onleft>
       <onup>18</onup>
       <ondown>11</ondown>
@@ -345,9 +336,6 @@
       <width>126</width>
       <label>660</label>
       <font>font12</font>
-      <textcolor>White</textcolor>
-      <colordiffuse>White</colordiffuse>
-      <!--<disabledcolor>#60ffffff</disabledcolor>-->
       <onleft>5</onleft>
       <ondown>11</ondown>
       <onright>7</onright>
@@ -362,9 +350,6 @@
       <width>126</width>
       <label>661</label>
       <font>font12</font>
-      <textcolor>White</textcolor>
-      <colordiffuse>White</colordiffuse>
-      <!--<disabledcolor>#60ffffff</disabledcolor>-->
       <onleft>6</onleft>
       <ondown>11</ondown>
       <onright>8</onright>
@@ -379,9 +364,6 @@
       <width>126</width>
       <label>662</label>
       <font>font12</font>
-      <textcolor>White</textcolor>
-      <colordiffuse>White</colordiffuse>
-      <!--<disabledcolor>#60ffffff</disabledcolor>-->
       <onleft>7</onleft>
       <ondown>11</ondown>
       <onright>9</onright>
@@ -396,9 +378,6 @@
       <width>126</width>
       <label>663</label>
       <font>font12</font>
-      <textcolor>White</textcolor>
-      <colordiffuse>White</colordiffuse>
-      <!--<disabledcolor>#60ffffff</disabledcolor>-->
       <onleft>8</onleft>
       <ondown>11</ondown>
       <onright>11</onright>

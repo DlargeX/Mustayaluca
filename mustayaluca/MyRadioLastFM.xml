@@ -123,6 +123,8 @@
 				<onup>30</onup>
 				<ondown>40</ondown>
 				<visible>true</visible>
+				<textalign>right</textalign>	
+				<markalign>left</markalign>					
 			</control>
 			
 			<control>
