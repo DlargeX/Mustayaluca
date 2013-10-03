@@ -41,3 +41,4 @@ Supported Plugins (Incl. All MediaPortal internal plugins.)
 - YouTube.fm 0.8.2.265
 - yrWeather v1.0.0.0
 - MusicInfoHandler
+- MPsteam 0.2.3.0
