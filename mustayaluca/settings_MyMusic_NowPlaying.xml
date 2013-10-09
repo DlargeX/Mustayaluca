@@ -7,22 +7,8 @@
 	<rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
   
-	<import>common.time.settings.xml</import>
 	<import>settings.menu.xml</import>
   <import>common.settings.xml</import>
-	
-	<control>
-		<type>label</type>
-		<id>1</id>
-		<posX>685</posX>
-		<posY>225</posY>
-		<width>500</width>
-		<label>#(L(2))/#(L(4540))</label>
-		<textcolor>00b7ff</textcolor>
-		<font>TitanLight20</font>
-	  <animation effect="fade" time="150">WindowOpen</animation>
-	  <animation effect="fade" time="150">WindowClose</animation>
-	</control>
 	
   <control>
     <description>Dynamic content label</description>
@@ -33,8 +19,6 @@
     <label>300175</label>
 		<textcolor>00b7ff</textcolor>
 		<font>fontB14</font>
-	  <animation effect="fade" time="150">WindowOpen</animation>
-	  <animation effect="fade" time="150">WindowClose</animation>
   </control>
   
 	<control>

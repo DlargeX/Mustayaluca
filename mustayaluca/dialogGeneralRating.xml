@@ -17,8 +17,8 @@
 			<height>32</height>
 			<textureFocus>star.png</textureFocus>
 			<textureNoFocus>star.png</textureNoFocus>
-			<AltTextureFocus>greystar.png</AltTextureFocus>
-			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+			<textureCheckmark>greystar.png</textureCheckmark>
+			<textureCheckmarkNoFocus>greystar.png</textureCheckmarkNoFocus>
 		</control>
 
 		<control>
@@ -31,8 +31,8 @@
 			<height>32</height>
 			<textureFocus>star.png</textureFocus>
 			<textureNoFocus>star.png</textureNoFocus>
-			<AltTextureFocus>greystar.png</AltTextureFocus>
-			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+			<textureCheckmark>greystar.png</textureCheckmark>
+			<textureCheckmarkNoFocus>greystar.png</textureCheckmarkNoFocus>
 		</control>
 
 		<control>
@@ -45,8 +45,8 @@
 			<height>32</height>
 			<textureFocus>star.png</textureFocus>
 			<textureNoFocus>star.png</textureNoFocus>
-			<AltTextureFocus>greystar.png</AltTextureFocus>
-			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+			<textureCheckmark>greystar.png</textureCheckmark>
+			<textureCheckmarkNoFocus>greystar.png</textureCheckmarkNoFocus>
 		</control>
 
 		<control>
@@ -59,8 +59,8 @@
 			<height>32</height>
 			<textureFocus>star.png</textureFocus>
 			<textureNoFocus>star.png</textureNoFocus>
-			<AltTextureFocus>greystar.png</AltTextureFocus>
-			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+			<textureCheckmark>greystar.png</textureCheckmark>
+			<textureCheckmarkNoFocus>greystar.png</textureCheckmarkNoFocus>
 		</control>
 
 		<control>
@@ -73,8 +73,8 @@
 			<height>32</height>
 			<textureFocus>star.png</textureFocus>
 			<textureNoFocus>star.png</textureNoFocus>
-			<AltTextureFocus>greystar.png</AltTextureFocus>
-			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+			<textureCheckmark>greystar.png</textureCheckmark>
+			<textureCheckmarkNoFocus>greystar.png</textureCheckmarkNoFocus>
 		</control>
 
 		<control Style="DetailTextLight">

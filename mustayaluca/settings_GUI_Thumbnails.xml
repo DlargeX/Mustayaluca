@@ -3,57 +3,12 @@
   <id>1005</id>
   <defaultcontrol>10</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-	<define>#header.label:897</define>
   <rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
-		<import>common.time.settings.xml</import>
+	
 		<import>settings.menu.xml</import>	
 	  <import>common.settings.xml</import>
-		
-		<control>
-			<type>label</type>
-			<id>1</id>
-			<posX>685</posX>
-			<posY>225</posY>
-			<label>#(L(101021))/#(L(101005))</label>
-			<textcolor>00b7ff</textcolor>
-			<font>TitanLight20</font>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
-		</control>
-		<control>
-			<type>image</type>
-			<id>0</id>
-			<posX>655</posX>
-			<posY>386</posY>
-			<width>1137</width>
-			<height>197</height>
-			<texture>settings_dark_background1.png</texture>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
-		</control>
-		<control>
-			<type>image</type>
-			<id>0</id>
-			<posX>646</posX>
-			<posY>312</posY>
-			<width>1155</width>
-			<height>280</height>
-			<texture>settings_border1.png</texture>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
-		</control>
-		<control>
-			<type>image</type>
-			<id>0</id>
-			<posX>655</posX>
-			<posY>321</posY>
-			<width>922</width>
-			<height>58</height>
-			<texture>settings_button_background.png</texture>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
-		</control>
+
     <control>
       <description>Thumb quality spin label</description>
       <type>label</type>
@@ -61,10 +16,9 @@
       <posX>688</posX>
       <posY>332</posY>
       <width>400</width>
-      <label>300145</label>
- 		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
+      <label>300145</label>		
     </control>
+		
     <control>
       <description>Thumb quality</description>
       <type>spincontrol</type>
@@ -87,10 +41,10 @@
       <onright>10</onright>
       <onup>12</onup>
       <ondown>3</ondown>
- 		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <!--Thumbs quality labels-->
+		
     <control>
       <description>Resolution label</description>
       <type>label</type>
@@ -99,11 +53,8 @@
       <posY>437</posY>
       <width>400</width>
       <label>169</label>
-      <font>TitanLight10</font>
-    	<textcolor>ff00b7ff</textcolor>
-			<animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Resolution label</description>
       <type>label</type>
@@ -112,11 +63,8 @@
       <posY>437</posY>
       <width>400</width>
       <label>#thumbResolution</label>
-      <font>TitanLight10</font>
-    	<textcolor>ff00b7ff</textcolor>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Compositing label</description>
       <type>label</type>
@@ -125,11 +73,8 @@
       <posY>469</posY>
       <width>400</width>
       <label>300146</label>
-      <font>TitanLight10</font>
-    	<textcolor>ff00b7ff</textcolor>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Compositing label</description>
       <type>label</type>
@@ -138,11 +83,8 @@
       <posY>469</posY>
       <width>400</width>
       <label>#thumbCompositing</label>
-      <font>TitanLight10</font>
-    	<textcolor>ff00b7ff</textcolor>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Interpolation label</description>
       <type>label</type>
@@ -151,11 +93,8 @@
       <posY>501</posY>
       <width>400</width>
       <label>300147</label>
-      <font>TitanLight10</font>
-    	<textcolor>ff00b7ff</textcolor>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Interpolation label</description>
       <type>label</type>
@@ -164,11 +103,8 @@
       <posY>501</posY>
       <width>400</width>
       <label>#thumbInterpolation</label>
-      <font>TitanLight10</font>
-    	<textcolor>ff00b7ff</textcolor>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Smoothing label</description>
       <type>label</type>
@@ -177,11 +113,8 @@
       <posY>533</posY>
       <width>400</width>
       <label>300148</label>
-      <font>TitanLight10</font>
-    	<textcolor>ff00b7ff</textcolor>
-			<animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Smoothing label</description>
       <type>label</type>
@@ -190,11 +123,8 @@
       <posY>533</posY>
       <width>400</width>
       <label>#thumbSmoothing</label>
-      <font>TitanLight10</font>
-    	<textcolor>ff00b7ff</textcolor>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Screen type label</description>
       <type>label</type>
@@ -203,11 +133,8 @@
       <posY>399</posY>
       <width>600</width>
       <label>300149</label>
-      <font>fontB12</font>
-    	<textcolor>ff00b7ff</textcolor>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Screen label</description>
       <type>label</type>
@@ -216,24 +143,10 @@
       <posY>399</posY>
       <width>600</width>
       <label>#thumbScreen</label>
-      <font>fontB12</font>
-    	<textcolor>ff00b7ff</textcolor>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
     
-		<control>
-			<type>image</type>
-			<id>0</id>
-			<posX>646</posX>
-			<posY>618</posY>
-			<width>570</width>
-			<height>142</height>
-			<texture>settings_border3.png</texture>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
-		</control>
     <!--Music-->
+		
     <control>
       <description>Music section label</description>
       <type>label</type>
@@ -242,11 +155,10 @@
       <posY>638</posY>
       <width>200</width>
       <label>249</label>
-      <font>fontB12</font>
-  		<textcolor>00b7ff</textcolor>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
+			<font>font3</font>
+			<textcolor>ffa9d0f7</textcolor>	
     </control>
+		
   	<control Style="SettingsCheckButtonMedium">
       <description>Create music thumb button</description>
       <type>checkbutton</type>
@@ -258,9 +170,8 @@
       <onright>4</onright>
       <onup>3</onup>
       <ondown>8</ondown>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
   	<control Style="SettingsButton">
       <description>Delete music thumbs button</description>
       <type>button</type>
@@ -278,21 +189,10 @@
       <ondown>2</ondown>
       <onleft>9992</onleft>
       <onright>5</onright>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-		<control>
-			<type>image</type>
-			<id>0</id>
-			<posX>1231</posX>
-			<posY>618</posY>
-			<width>570</width>
-			<height>142</height>
-			<texture>settings_border3.png</texture>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
-		</control>
+
     <!--pictures-->
+		
     <control>
       <description>Pictures section label</description>
       <type>label</type>
@@ -301,11 +201,10 @@
       <posY>638</posY>
       <width>250</width>
       <label>300152</label>
-      <font>fontB12</font>
-  		<textcolor>00b7ff</textcolor>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
+			<font>font3</font>
+			<textcolor>ffa9d0f7</textcolor>	
     </control>
+		
   	<control Style="SettingsCheckButtonMedium">
       <description>Create pictures thumbs button</description>
       <type>checkbutton</type>
@@ -317,8 +216,6 @@
       <ondown>11</ondown>
       <onleft>2</onleft>
       <onright>4</onright>
- 		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
   	<control Style="SettingsButton">
       <description>Delete pictures thumbs button</description>
@@ -337,21 +234,10 @@
       <ondown>4</ondown>
       <onleft>3</onleft>
       <onright>5</onright>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-		<control>
-			<type>image</type>
-			<id>0</id>
-			<posX>646</posX>
-			<posY>786</posY>
-			<width>1155</width>
-			<height>208</height>
-			<texture>settings_border2.png</texture>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
-		</control>
+		
     <!--Videos-->
+		
     <control>
       <description>Videos section label</description>
       <type>label</type>
@@ -360,11 +246,10 @@
       <posY>806</posY>
       <width>250</width>
       <label>300155</label>
-      <font>fontB12</font>
-  		<textcolor>00b7ff</textcolor>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
+			<font>font3</font>
+			<textcolor>ffa9d0f7</textcolor>	
     </control>
+		
   	<control Style="SettingsCheckButtonMedium">
       <description>Create video thumbs button</description>
       <type>checkbutton</type>
@@ -376,9 +261,8 @@
       <ondown>7</ondown>
       <onleft>9992</onleft>
       <onright>11</onright>
- 		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
   	<control Style="SettingsCheckButtonMedium">
       <description>Leave a thumb button</description>
       <type>checkbutton</type>
@@ -390,9 +274,8 @@
       <ondown>8</ondown>
       <onleft>9992</onleft>
       <onright>12</onright>
- 		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
   	<control Style="SettingsButton">
       <description>Delete video thumbs button</description>
       <type>button</type>
@@ -410,10 +293,10 @@
       <ondown>6</ondown>
       <onleft>9992</onleft>
       <onright>12</onright>
- 		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <!--Videos Thumb columns rows-->
+		
     <control>
       <description>Videos section preview label</description>
       <type>label</type>
@@ -422,22 +305,10 @@
       <posY>806</posY>
       <width>400</width>
       <label>300159</label>
-      <font>fontB12</font>
-  		<textcolor>00b7ff</textcolor>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
+			<font>font3</font>
+			<textcolor>ffa9d0f7</textcolor>	
     </control>
-		<control>
-			<type>image</type>
-			<id>0</id>
-      <posX>1240</posX>
-      <posY>861</posY>
-			<width>337</width>
-			<height>58</height>
-			<texture>settings_button_background_small.png</texture>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
-		</control>
+		
     <control>
       <description>Thumb columns/rows for videos</description>
       <type>label</type>
@@ -446,9 +317,8 @@
       <posY>872</posY>
       <width>250</width>
       <label>450</label>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Columns spincontrol</description>
       <type>spincontrol</type>
@@ -471,20 +341,8 @@
       <onright>11</onright>
       <onup>4</onup>
       <ondown>12</ondown>
- 		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-		<control>
-			<type>image</type>
-			<id>0</id>
-      <posX>1240</posX>
-      <posY>927</posY>
-			<width>337</width>
-			<height>58</height>
-			<texture>settings_button_background_small.png</texture>
-		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
-		</control>
+		
     <control>
       <description>Rows label</description>
       <type>label</type>
@@ -493,9 +351,8 @@
       <posY>938</posY>
       <width>250</width>
       <label>300160</label>
- 		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Rows spincontrol</description>
       <type>spincontrol</type>
@@ -518,8 +375,7 @@
       <onright>12</onright>
       <onup>11</onup>
       <ondown>99</ondown>
- 		  <animation effect="fade" time="150">WindowOpen</animation>
-		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
   </controls>
 </window>

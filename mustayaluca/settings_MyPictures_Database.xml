@@ -9,20 +9,6 @@
   
 	<import>settings.menu.xml</import>	
 	<import>common.settings.xml</import>	
-	<import>common.time.settings.xml</import>  
-
-	<control>
-		<type>label</type>
-		<id>1</id>
-		<posX>685</posX>
-		<posY>225</posY>
-		<width>500</width>
-		<label>#(L(300152))/#(L(300161))</label>
-		<textcolor>00b7ff</textcolor>
-		<font>TitanLight20</font>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
-	</control>
 
   <control>
     <description>Scan picture folder label</description>
