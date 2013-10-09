@@ -18,8 +18,8 @@
 			<onup>101</onup>
 			<textureFocus>star.png</textureFocus>
 			<textureNoFocus>star.png</textureNoFocus>
-			<AltTextureFocus>greystar.png</AltTextureFocus>
-			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+			<textureCheckmark>greystar.png</textureCheckmark>
+			<textureCheckmarkNoFocus>greystar.png</textureCheckmarkNoFocus>
 		</control>
 
 		<control>
@@ -33,8 +33,8 @@
 			<onup>102</onup>
 			<textureFocus>star.png</textureFocus>
 			<textureNoFocus>star.png</textureNoFocus>
-			<AltTextureFocus>greystar.png</AltTextureFocus>
-			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+			<textureCheckmark>greystar.png</textureCheckmark>
+			<textureCheckmarkNoFocus>greystar.png</textureCheckmarkNoFocus>
 		</control>
 
 		<control>
@@ -48,8 +48,8 @@
 			<onup>103</onup>
 			<textureFocus>star.png</textureFocus>
 			<textureNoFocus>star.png</textureNoFocus>
-			<AltTextureFocus>greystar.png</AltTextureFocus>
-			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+			<textureCheckmark>greystar.png</textureCheckmark>
+			<textureCheckmarkNoFocus>greystar.png</textureCheckmarkNoFocus>
 		</control>
 
 		<control>
@@ -63,8 +63,8 @@
 			<onup>104</onup>
 			<textureFocus>star.png</textureFocus>
 			<textureNoFocus>star.png</textureNoFocus>
-			<AltTextureFocus>greystar.png</AltTextureFocus>
-			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+			<textureCheckmark>greystar.png</textureCheckmark>
+			<textureCheckmarkNoFocus>greystar.png</textureCheckmarkNoFocus>
 		</control>
 
 		<control>
@@ -78,8 +78,8 @@
 			<onup>105</onup>
 			<textureFocus>star.png</textureFocus>
 			<textureNoFocus>star.png</textureNoFocus>
-			<AltTextureFocus>greystar.png</AltTextureFocus>
-			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+			<textureCheckmark>greystar.png</textureCheckmark>
+			<textureCheckmarkNoFocus>greystar.png</textureCheckmarkNoFocus>
 		</control>
 
 		<control>
@@ -93,8 +93,8 @@
 			<onup>106</onup>
 			<textureFocus>star.png</textureFocus>
 			<textureNoFocus>star.png</textureNoFocus>
-			<AltTextureFocus>greystar.png</AltTextureFocus>
-			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+			<textureCheckmark>greystar.png</textureCheckmark>
+			<textureCheckmarkNoFocus>greystar.png</textureCheckmarkNoFocus>
 		</control>
 
 		<control>
@@ -108,8 +108,8 @@
 			<onup>107</onup>
 			<textureFocus>star.png</textureFocus>
 			<textureNoFocus>star.png</textureNoFocus>
-			<AltTextureFocus>greystar.png</AltTextureFocus>
-			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+			<textureCheckmark>greystar.png</textureCheckmark>
+			<textureCheckmarkNoFocus>greystar.png</textureCheckmarkNoFocus>
 		</control>
 
 		<control>
@@ -123,8 +123,8 @@
 			<onup>108</onup>
 			<textureFocus>star.png</textureFocus>
 			<textureNoFocus>star.png</textureNoFocus>
-			<AltTextureFocus>greystar.png</AltTextureFocus>
-			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+			<textureCheckmark>greystar.png</textureCheckmark>
+			<textureCheckmarkNoFocus>greystar.png</textureCheckmarkNoFocus>
 		</control>
 
 		<control>
@@ -138,8 +138,8 @@
 			<onup>109</onup>
 			<textureFocus>star.png</textureFocus>
 			<textureNoFocus>star.png</textureNoFocus>
-			<AltTextureFocus>greystar.png</AltTextureFocus>
-			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+			<textureCheckmark>greystar.png</textureCheckmark>
+			<textureCheckmarkNoFocus>greystar.png</textureCheckmarkNoFocus>
 		</control>
 
 		<control>
@@ -152,8 +152,8 @@
 			<height>32</height>
 			<textureFocus>star.png</textureFocus>
 			<textureNoFocus>star.png</textureNoFocus>
-			<AltTextureFocus>greystar.png</AltTextureFocus>
-			<AltTextureNoFocus>greystar.png</AltTextureNoFocus>
+			<textureCheckmark>greystar.png</textureCheckmark>
+			<textureCheckmarkNoFocus>greystar.png</textureCheckmarkNoFocus>
 		</control>
 
 		<control Style="DetailTextLight">
