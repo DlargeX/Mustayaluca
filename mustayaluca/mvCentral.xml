@@ -236,7 +236,7 @@
 					
 					<control>
 						<description>View-As</description>
-						<type>button</type>
+						<type>menubutton</type>
 						<id>2</id>
 						<label>100</label>
 						<onright>50</onright>
@@ -246,7 +246,7 @@
 					
 					<control>
 						<description>Switch View</description>
-						<type>button</type>
+						<type>menubutton</type>
 						<id>5</id>
 						<label>457</label>
 						<onright>50</onright>
@@ -319,19 +319,19 @@
 						<type>button</type>
 						<id>11</id>
 						<onup>10</onup>
+						<ondown>15</ondown>						
 						<onright>50</onright>
 						<label>#mvCentral.Translation.Search.Label #mvCentral.Translation.Artists.Label</label>
 					</control>
 					
 					<control>
 						<description>Search Youtube.FM</description>
-						<id>12</id>
+						<id>15</id>
 						<type>button</type>
 						<label>#mvCentral.Translation.Search.Label Youtube.FM</label>
 						<hyperlink>29050</hyperlink>
 						<hyperlinkParameter>ARTISTVIDEOS:#mvCentral.ArtistName</hyperlinkParameter>
 						<onleft>50</onleft>
-						<visible>plugin.isenabled(YouTube.fm)</visible>
 					</control>
 					
 					<control>
@@ -909,6 +909,42 @@
 			<texture>overlay_coverflow_top.png</texture>
 			<visible>facadeview.coverflow</visible>
 		</control>
+
+    <!-- Background Metadata and Text Percentage -->
+
+    <control>
+      <type>label</type>
+      <description>Background Metadata Refresh Text Percentage</description>
+      <id>0</id>
+      <posX>320</posX>
+      <posY>600</posY>
+      <width>800</width>
+      <font>font14</font>
+      <align>left</align>
+      <label>Background Metadata Refresh: #mvCentral.Metadata.Update.Progress</label>
+      <visible>control.isvisible(12)</visible>
+      <animation effect="fade" time="70" reversible="false">visible</animation>
+    </control>
+		
+    <control>
+      <description>Background Metadata Refresh Progress Bar</description>
+      <type>progress</type>
+      <id>12</id>
+      <posX>320</posX>
+      <posY>630</posY>
+      <width>440</width>
+      <height>20</height>
+      <label>-</label>
+      <texturebg>osd_progress_background.png</texturebg>
+      <onlymidtexture>yes</onlymidtexture>
+      <midwidth>440</midwidth>
+      <midheight>18</midheight>
+      <midoffsetX>1</midoffsetX>
+      <midoffsetY>1</midoffsetY>
+      <midtexture>osd_progress_mid.png</midtexture>
+      <animation effect="fade" time="70" reversible="false">visible</animation>
+      <visible>string.equals(#mvCentral.Metadata.Scan.Active,true)</visible>
+    </control>
 		
 		<import>common.overlay.xml</import>
 		
