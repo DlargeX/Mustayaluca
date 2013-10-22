@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+This file should contain the list view
+-->
+<window>
+  <controls>  
+  
+	<control Style="BigTitle">
+		<description>Movie Title</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>70</posX>
+		<posY>45</posY>
+		<width>1220</width>
+		<label>#MovingPictures.SelectedMovie.title</label>
+		<visible>facadeview.list+control.isvisible(50)+string.equals(#ShowSideInfo,true)</visible>
+		<animation effect="fade" time="250">visiblechange</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+	<control Style="BigTitle">
+		<description>Movie Title</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>70</posX>
+		<posY>45</posY>
+		<width>1220</width>
+		<label>Netflix</label>
+		<visible>facadeview.list+control.isvisible(50)+string.equals(#ShowSideInfo,false)</visible>
+		<animation effect="fade" time="250">visiblechange</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+  
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>60</id>
+      <posX>600</posX>
+      <posY>230</posY>
+      <width>500</width>
+      <height>690</height>
+      <texture>#MovingPictures.Coverart</texture>
+      <visible>facadeview.list+control.isvisible(50)+string.equals(#ShowSideInfo,true)</visible>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>   
+	
+    <control>
+      <type>image</type>
+      <id>101</id>
+      <width>200</width>
+      <height>44</height>
+      <posX>1150</posX>
+      <posY>245</posY>
+      <align>right</align>
+      <texture>star#MovingPictures.SelectedMovie.score.rounded.png</texture>
+      <visible>facadeview.list+control.isvisible(50)+string.equals(#ShowSideInfo,true)</visible>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>Genre Label</description>
+      <id>0</id>
+      <type>label</type>
+      <label>Genre</label>
+      <posX>1150</posX>
+      <posY>325</posY>
+      <width>140</width>
+	  <textcolor>ffffff</textcolor>
+      <visible>facadeview.list+control.isvisible(50)+string.equals(#ShowSideInfo,true)</visible>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>Genres</description>
+      <type>label</type>
+      <label>#MovingPictures.SelectedMovie.genres</label>
+      <id>0</id>
+      <posX>1480</posX>
+      <posY>325</posY>
+      <width>900</width>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>3</shadowDistance>
+      <shadowColor>#shadow.dark</shadowColor>
+      <visible>facadeview.list+control.isvisible(50)+string.equals(#ShowSideInfo,true)</visible>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    
+    <control>
+      <description>Runtime Label</description>
+      <id>0</id>
+      <type>label</type>
+      <label>#MovingPictures.Translation.Runtime.Label</label>
+      <posX>1150</posX>
+      <posY>395</posY>
+      <width>140</width>
+	  <textcolor>ffffff</textcolor>
+      <visible>facadeview.list+control.isvisible(50)+string.equals(#ShowSideInfo,true)+!string.equals(#MovingPictures.SelectedMovie.extra.runtime.en.pretty, 0)</visible>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>Runtime</description>
+      <id>1002</id>
+      <type>label</type>
+      <label>#(iif(neq(#MovingPictures.SelectedMovie.extra.runtime.en.pretty,''),#MovingPictures.SelectedMovie.extra.runtime.en.pretty,'N/A'))</label>
+      <posX>1480</posX>
+      <posY>395</posY>
+      <width>250</width>
+      <visible>facadeview.list+control.isvisible(50)+string.equals(#ShowSideInfo,true)+!string.equals(#MovingPictures.SelectedMovie.extra.runtime.en.pretty, 0)</visible>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>Year Label</description>
+      <type>label</type>
+      <label>#MovingPictures.Translation.Year.Label</label>
+      <posX>1150</posX>
+      <posY>460</posY>
+      <width>140</width>
+	  <textcolor>ffffff</textcolor>
+      <visible>facadeview.list+control.isvisible(50)+string.equals(#ShowSideInfo,true)</visible>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>Year</description>
+      <id>1003</id>
+      <type>label</type>
+      <label>#(iif(neq(#MovingPictures.SelectedMovie.year,''),#MovingPictures.SelectedMovie.year,'N/A'))</label>
+      <posX>1480</posX>
+      <posY>460</posY>
+      <visible>facadeview.list+control.isvisible(50)+string.equals(#ShowSideInfo,true)</visible>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+	
+	<control>
+      <description>Movie Plot Label</description>
+      <type>label</type>
+      <label>#SkinTranslation.Translations.movie.plot.Label</label>
+      <posX>1150</posX>
+      <posY>525</posY>
+      <width>250</width>
+	  <textcolor>ffffff</textcolor>
+      <visible>facadeview.list+control.isvisible(50)+string.equals(#ShowSideInfo,true)</visible>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>Summary</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+      <posX>1150</posX>
+      <posY>590</posY>
+      <width>750</width>
+      <height>400</height>
+      <textcolor>ffFFFFFF</textcolor>
+      <font>font14</font>
+      <label>#MovingPictures.SelectedMovie.summary</label>
+      <visible>facadeview.list+control.isvisible(50)+string.equals(#ShowSideInfo,true)</visible>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>     
+  </controls>
+</window>
