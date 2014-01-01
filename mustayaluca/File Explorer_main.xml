@@ -3,15 +3,21 @@
 	<id>557311</id>
 	<defaultcontrol>11</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<controls>
-		<control>
-			<description>BG</description>
-			<type>image</type>
-			<id>5</id>
-			<width>1920</width>
-			<height>1080</height>
-			<texture>backgrounds\pluginsbg\default.jpg</texture>
-		</control>
+	<define>#header.hover:hover_file explorer.png</define>			
+  <controls>
+	
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
+		
 		<control>
 			<description>Backdrop Overlay</description>
 			<type>image</type>
@@ -22,6 +28,7 @@
 			<height>1085</height>
 			<texture>overlay_background.png</texture>
 		</control>
+		
 		<control>
 			<description>Backdrop Overlay</description>
 			<type>image</type>
@@ -32,6 +39,7 @@
 			<height>1085</height>
 			<texture>overlay_explorer.png</texture>
 		</control>
+		
 		<control>
 			<description>Backdrop Overlay Bar</description>
 			<type>image</type>
@@ -42,6 +50,7 @@
 			<height>82</height>
 			<texture>overlay_bar_bottom.png</texture>
 		</control>
+		
 		<control Style="BigTitle">
 			<description>Page Title</description>
 			<type>label</type>
@@ -52,6 +61,7 @@
 			<label>File Explorer</label>
 			<visible>!player.hasmedia</visible>
 		</control>
+		
 		<control Style="Time">
 			<description>Date</description>
 			<type>label</type>
@@ -60,6 +70,7 @@
 			<posY>120</posY>
 			<label>#date / #time</label>
 		</control>
+		
 		<control>
 			<description>Menu left</description>
 			<type>button</type>
@@ -80,6 +91,7 @@
 			<width>887</width>
 			<textureFocus>list_wide_focus.png</textureFocus>
 		</control>
+		
 		<control>
 			<description>file listcontrol left</description>
 			<type>listcontrol</type>
@@ -97,6 +109,7 @@
 			<spinPosX>2000</spinPosX>
 			<spinCanFocus>no</spinCanFocus>
 		</control>
+		
 		<control Style="DetailTitle">
 			<description>labeldir left</description>
 			<type>label</type>
@@ -107,6 +120,7 @@
 			<label>#SkinTranslation.Translations.summary.Label</label>
 			<visible>control.hastext(6)</visible>
 		</control>
+		
 		<control Style="Time">
 			<description>label left</description>
 			<type>label</type>
@@ -116,6 +130,7 @@
 			<width>890</width>
 			<label>Test</label>
 		</control>
+		
 		<control Style="DetailText">
 			<description>labeldir left</description>
 			<type>label</type>
@@ -125,6 +140,7 @@
 			<width>890</width>
 			<label>Test</label>
 		</control>
+		
 		<control>
 			<description>Menu right</description>
 			<type>button</type>
@@ -145,6 +161,7 @@
 			<width>889</width>
 			<textureFocus>list_wide_focus.png</textureFocus>
 		</control>
+		
 		<control>
 			<description>file listcontrol right</description>
 			<type>listcontrol</type>
@@ -162,6 +179,7 @@
 			<spinPosX>2000</spinPosX>
 			<spinCanFocus>no</spinCanFocus>
 		</control>
+		
 		<control Style="DetailTitle">
 			<description>labeldir left</description>
 			<type>label</type>
@@ -172,6 +190,7 @@
 			<label>#SkinTranslation.Translations.summary.Label</label>
 			<visible>control.hastext(7)</visible>
 		</control>
+		
 		<control Style="Time">
 			<description>label left</description>
 			<type>label</type>
@@ -181,6 +200,7 @@
 			<width>890</width>
 			<label>Test</label>
 		</control>
+		
 		<control Style="DetailText">
 			<description>labeldir left</description>
 			<type>label</type>
@@ -190,5 +210,6 @@
 			<width>890</width>
 			<label>Test</label>
 		</control>
+		
 	</controls>
 </window>

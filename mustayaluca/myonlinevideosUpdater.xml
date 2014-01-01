@@ -4,18 +4,21 @@
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<define>#header.label</define>
-	<define>#header.image</define>
-	<controls>
+	<define>#header.hover:hover_OnlineVideos.png</define>		
+  <controls>
 
-		<!-- *** WINDOW DEFAULTS *** -->
-
-		<control><!-- *** This is only needed for compatibility with 1.02 *** -->
-			<description>BG</description>
-			<type>image</type>
-			<width>1920</width>
-			<height>1080</height>
-			<texture>backgrounds\movies\default.jpg</texture>      
-		</control>
+ <!-- *** This is only needed for compatibility with 1.02 *** -->
+ 
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 
 		<control>
 			<description>Backdrop Overlay</description>

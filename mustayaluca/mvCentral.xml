@@ -4,17 +4,20 @@
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<define>#useSelectedFanart:Yes</define>
-	<controls>
+	<define>#header.hover:hover_mvcentral.png</define>		
+  <controls>
+  
+  <!--            :: BACKGROUND ::           	 -->
 	
-		<control>
-			<description>Default Background</description>
-			<type>image</type>
-			<id>1</id>
-			<texture>backgrounds\music\musicvideos.jpg</texture>
-			<width>1920</width>
-			<height>1080</height>
-			<shouldCache>true</shouldCache>
-		</control>
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 		
 		<import>common.music.fanart.xml</import>
 		
@@ -366,7 +369,8 @@
 			<visible>string.equals(#mpei.1f288e48_6f5b_481c_a1b4_605393c913db.haveupdate, true)+!control.hasfocus(98)</visible>
 		</control>
 		
-		<!-- :::::::::::::::::::: Artist View Listlayout :::::::::::::::::::: -->        
+		<!-- :::::::::::::::::::: Artist View Listlayout :::::::::::::::::::: -->    
+    
 		<control>
 			<description>Thumb Backround</description>
 			<type>image</type>

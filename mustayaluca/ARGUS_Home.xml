@@ -3,24 +3,21 @@
   <id>1</id>
   <defaultcontrol>6</defaultcontrol>
   <allowoverlay>no</allowoverlay>
+  <define>#header.label:Argus Home</define>	
+	<define>#header.hover:hover_my tv.png</define>			
   <controls>
- 
-		<control>
-			<description>Dummy label to hold global settings for this skin!</description>
-			<type>label</type>
-			<id>420</id>
-			<label>#settings:logo-icon-size=240,240;guide_time=Center</label>
-			<visible>no</visible>
-		</control>
 	
-		<control>
-			<description>Default Background</description>
-			<type>image</type>
-			<id>1</id>
-			<texture>backgrounds\tv\default.jpg</texture>
-			<width>1920</width>
-			<height>1080</height>
-		</control>
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 
 		<control>
 			<description>Backdrop Overlay</description>

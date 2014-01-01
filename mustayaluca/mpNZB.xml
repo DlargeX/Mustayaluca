@@ -3,18 +3,20 @@
 	<id>3847</id>
 	<defaultcontrol>2</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<controls>
+	<define>#header.hover:hover_mpnzb.png</define>			
+  <controls>
 	
-		<control>
-			<description>BG</description>
-			<type>image</type>
-			<id>0</id>
-			<texture>backgrounds\pluginsbg\download.jpg</texture>
-			<width>1920</width>
-			<height>1080</height>
-			<animation effect="fade" time="150">visible</animation>
-			<animation effect="fade" time="150" delay="300">hidden</animation>
-		</control>
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 		
 		<control>
 			<description>Backdrop Overlay</description>

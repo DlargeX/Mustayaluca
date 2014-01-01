@@ -4,16 +4,20 @@
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<define>#header.label:665</define>
-	<controls>
-
-		<control>
-			<description>Default Background</description>
-			<type>image</type>
-			<id>1</id>
-			<texture>backgrounds\music\default.jpg</texture>
-			<width>1920</width>
-			<height>1080</height>
-		</control>
+	<define>#header.hover:hover_my radio.png</define>			
+  <controls>
+	
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 
 		<import>common.window.xml</import>
 

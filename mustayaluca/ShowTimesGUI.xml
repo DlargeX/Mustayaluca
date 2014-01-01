@@ -3,19 +3,20 @@
 	<id>7111992</id>
 	<defaultcontrol>2</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<controls>
+	<define>#header.hover:hover_showtimes.png</define>			
+  <controls>
+
+  <!--            :: BACKGROUND ::           	 -->
 	
-	
-		<!-- Backgrounds -->
-		<control>
-			<type>image</type>
-			<id>1</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1920</width>
-			<height>1080</height>
-			<texture>backgrounds\videos\default.jpg</texture>
-		</control>
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 		
 		<control>
 			<description>Fan Art</description>
@@ -27,9 +28,9 @@
 			<height>1080</height>
 			<texture>#st_backdrop</texture>
 		</control>
-		
-		
+				
 		<!-- Overlays -->
+		
 		<control>
 			<description>Backdrop Overlay</description>
 			<type>image</type>
@@ -234,7 +235,7 @@
 			<type>label</type>
 			<label>#showtimes_nextupdate</label>
 			<posX>70</posX>
-			<posY>1030</posY>
+			<posY>1010</posY>
 			<width>800</width>
 			<align>left</align>
 			<visible>facadeview.list+control.isvisible(50)+!Control.HasText(46)+!Control.IsVisible(24)</visible>
@@ -377,6 +378,7 @@
 		</control>
 		
 		<!-- Information in List View Only-->
+		
 		<control>
 			<description>Poster Background</description>
 			<type>image</type>
@@ -386,7 +388,7 @@
 			<width>555</width>
 			<height>790</height>
 			<texture>poster_thumb_background_reflect.png</texture>
-			<visible>facadeview.list+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
+			<visible>facadeview.list+Control.HasFocus(50)+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
@@ -400,7 +402,7 @@
 			<width>464</width>
 			<height>670</height>
 			<texture>#st_poster</texture>
-			<visible>facadeview.list+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
+			<visible>facadeview.list+Control.HasFocus(50)+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
@@ -414,7 +416,7 @@
 			<width>555</width>
 			<height>790</height>
 			<texture>poster_thumb_background_overlay_reflect.png</texture>
-			<visible>facadeview.list+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
+			<visible>facadeview.list+Control.HasFocus(50)+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
@@ -425,6 +427,7 @@
 			<label>199</label>
 			<posX>1315</posX>
 			<posY>250</posY>
+			<width>200</width>				
 			<visible>facadeview.list+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -432,11 +435,11 @@
 		
 		<control Style="DetailText">
 			<description>Director Value</description>
-			<type>label</type>
+			<type>fadelabel</type>
 			<label>#st_director</label>
-			<posX>1470</posX>
+			<posX>1520</posX>
 			<posY>251</posY>
-			<width>425</width>
+			<width>370</width>
 			<visible>facadeview.list+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -448,6 +451,7 @@
 			<label>174</label>
 			<posX>1315</posX>
 			<posY>316</posY>
+			<width>200</width>				
 			<visible>facadeview.list+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -458,9 +462,9 @@
 			<type>fadelabel</type>
 			<label>#st_genre</label>
 			<id>0</id>
-			<posX>1425</posX>
+			<posX>1520</posX>
 			<posY>317</posY>
-			<width>470</width>
+			<width>370</width>
 			<visible>facadeview.list+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -472,6 +476,7 @@
 			<label>#SkinTranslation.Translations.media.released.Label:</label>
 			<posX>1315</posX>
 			<posY>390</posY>
+			<width>200</width>				
 			<visible>facadeview.list+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -481,8 +486,9 @@
 			<description>Year Value</description>
 			<type>label</type>
 			<label>#st_releasedate</label>
-			<posX>1470</posX>
+			<posX>1520</posX>
 			<posY>390</posY>
+			<width>370</width>			
 			<visible>facadeview.list+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -494,6 +500,7 @@
 			<label>299</label>
 			<posX>1315</posX>
 			<posY>458</posY>
+			<width>200</width>			
 			<visible>facadeview.list+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -503,8 +510,9 @@
 			<description>Runtime Value</description>
 			<type>label</type>
 			<label>#st_runtime</label>
-			<posX>1455</posX>
+			<posX>1520</posX>
 			<posY>457</posY>
+			<width>370</width>			
 			<visible>facadeview.list+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -516,6 +524,7 @@
 			<label>#(L(206)):</label>
 			<posX>1315</posX>
 			<posY>526</posY>
+			<width>200</width>				
 			<visible>facadeview.list+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -525,8 +534,9 @@
 			<description>Cast Value</description>
 			<type>fadelabel</type>
 			<label>#st_starring</label>
-			<posX>1420</posX>
+			<posX>1520</posX>
 			<posY>527</posY>
+			<width>370</width>			
 			<visible>facadeview.list+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -538,7 +548,7 @@
 			<label>204</label>
 			<posX>1315</posX>
 			<posY>596</posY>
-			<width>570</width>
+			<width>200</width>	
 			<visible>facadeview.list+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -548,8 +558,9 @@
 			<description>Rating Value</description>
 			<type>fadelabel</type>
 			<label>#SkinTranslation.Translations.movie.rated.Label #st_rating</label>
-			<posX>1440</posX>
+			<posX>1520</posX>
 			<posY>596</posY>
+			<width>370</width>			
 			<visible>facadeview.list+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -560,7 +571,7 @@
 			<type>imagelist</type>
 			<id>1</id>
 			<posX>1670</posX>
-			<posY>590</posY>
+			<posY>588</posY>
 			<width>220</width>
 			<height>44</height>
 			<textureWidth>44</textureWidth>
@@ -641,6 +652,7 @@
 		</control>
 		
 		<!-- Information in Details View Only -->
+		
 		<control Style="BigTitle">
 			<description>Movie Title</description>
 			<type>label</type>
@@ -934,8 +946,41 @@
 			<posX>2000</posX>
 			<posY>10</posY>
 		</control>
+
+		<control>
+			<description>listscroller bg</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>507</posY>
+			<width>70</width>
+			<height>67</height>
+			<texture>listscroller_bg.png</texture>
+			<colordiffuse>40ffffff</colordiffuse>
+			<visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+			<animation effect="slide" start="-70,0" end="0,0" tween="quadratic" easing="in" time="250">Visible</animation>
+			<animation effect="slide" start="0,0" end="-70,0" tween="quadratic" easing="in" time="250">Hidden</animation>
+		</control>
+		
+		<control>
+			<type>label</type>
+			<id>1</id>
+			<posX>-3</posX>
+			<posY>510</posY>
+			<width>69</width>
+			<height>69</height>
+			<font>font7</font>
+			<textcolor>ffffffff</textcolor>
+			<label>#selecteditem.scrolllabel</label>
+			<visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+			<align>center</align>
+			<valign>middle</valign>
+			<animation effect="slide" start="-70,0" end="0,0" tween="quadratic" easing="in" time="250">Visible</animation>
+			<animation effect="slide" start="0,0" end="-70,0" tween="quadratic" easing="in" time="250">Hidden</animation>
+		</control>
 		
 		<!-- Facade -->
+		
 		<control>
 			<description>composite control consisting of a list control and a thumbnail panel</description>
 			<type>facadeview</type>
@@ -949,11 +994,7 @@
 				<height>730</height>
 				<IconXOff>2000</IconXOff>
 				<spinPosX>2000</spinPosX>
-				<spinCanFocus>no</spinCanFocus>
-				<animation effect="zoom" time="250" end="65" center="0,0">unfocus</animation>
-				<animation effect="slide" time="250" end="260,0">unfocus</animation>
-				<animation effect="zoom" time="250" start="65" center="0,0">focus</animation>
-				<animation effect="slide" time="250" start="260,0">focus</animation>				
+				<spinCanFocus>no</spinCanFocus>			
 			</control>
 			
 			<control>

@@ -346,7 +346,7 @@
       <id>0</id>
       <posX>1684</posX>
       <posY>21</posY>
-      <font>mediastream10tc</font>
+      <font>font12</font>
       <textcolor>ff909090</textcolor>
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
@@ -358,7 +358,7 @@
       <posX>1869</posX>
       <posY>18</posY>
       <width>525</width>
-      <font>mediastream11c</font>
+      <font>font10</font>
       <textcolor>ff006698</textcolor>
       <align>right</align>
       <label>#(switch(eq(#MovingPictures.Importer.ListMode.Flag,'ALL'),#MovingPictures.Importer.All.Count,eq(#MovingPictures.Importer.ListMode.Flag,'PENDING'),#MovingPictures.Importer.NeedInput.Count,eq(#MovingPictures.Importer.ListMode.Flag,'COMPLETED'),#MovingPictures.Importer.Done.Count))</label>

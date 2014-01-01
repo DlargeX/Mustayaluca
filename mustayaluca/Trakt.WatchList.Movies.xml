@@ -5,20 +5,23 @@
 	<allowoverlay>no</allowoverlay>
 	<define>#Fanart.1:#Trakt.WatchListMovies.Fanart.1</define>
 	<define>#Fanart.2:#Trakt.WatchListMovies.Fanart.2</define>
-	<controls>
+	<define>#header.hover:hover_trakt.png</define>		
+  <controls>
+  
+  <!--            :: BACKGROUND ::           	 -->
 	
-		<control>
-			<description>Default Background</description>
-			<type>image</type>
-			<id>0</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1920</width>
-			<height>1080</height>
-			<texture>backgrounds\movies\default.jpg</texture>
-		</control>
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 		
 		<import>Trakt.Common.Fanart.xml</import>
+		
 		<control>
 			<description>Backdrop Overlay</description>
 			<type>image</type>

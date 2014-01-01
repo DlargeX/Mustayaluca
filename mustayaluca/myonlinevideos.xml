@@ -4,21 +4,21 @@
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<define>#header.label</define>
-	<define>#header.image</define>
 	<define>#useSelectedFanart:Yes</define>
-	<controls>
-
-		<!-- *** WINDOW DEFAULTS *** -->    
-
-		<control>
-			<description>BackGround</description>
-			<type>image</type>
-			<id>1</id>
-			<width>1920</width>
-			<height>1080</height>
-			<texture>backgrounds\movies\default.jpg</texture>			
-			<shouldCache>true</shouldCache>
-		</control>
+	<define>#header.hover:hover_OnlineVideos.png</define>		
+  <controls>
+  
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 
 		<import>common.video.fanart.xml</import>
 

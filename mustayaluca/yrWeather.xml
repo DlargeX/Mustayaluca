@@ -13,6 +13,7 @@
 			<width>1920</width>
 			<height>1080</height>
 		</control>
+		
 		<control>
 			<description>BG</description>
 			<type>image</type>
@@ -21,6 +22,7 @@
 			<width>1920</width>
 			<height>1080</height>
 		</control>
+		
 		<control>
 			<description>Backdrop Overlay</description>
 			<type>image</type>
@@ -31,6 +33,7 @@
 			<height>1085</height>
 			<texture>overlay_background.png</texture>
 		</control>
+		
 		<control>
 			<description>Backdrop Overlay</description>
 			<type>image</type>
@@ -41,6 +44,7 @@
 			<height>1085</height>
 			<texture>overlay_menu_bbcweather5day.png</texture>
 		</control>
+		
 		<control>
 			<description>Backdrop Overlay Bar</description>
 			<type>image</type>
@@ -62,6 +66,7 @@
 			<label>8</label>
 			<visible>!player.hasmedia</visible>
 		</control>
+		
 		<control Style="Time">
 			<description>Date</description>
 			<type>label</type>
@@ -70,6 +75,7 @@
 			<posY>120</posY>
 			<label>#date / #time</label>
 		</control>
+		
 		<control Style="BigTitle">
 			<description>location label</description>
 			<type>label</type>
@@ -93,6 +99,7 @@
 				<posX>0</posX>
 				<posY>230</posY>
 				<layout>StackLayout(0, Vertical, true)</layout>
+				
 				<control>
 					<description>Switch To Next Day</description>
 					<type>button</type>
@@ -100,12 +107,14 @@
 					<label>3014</label>
 					<onup>17</onup>
 				</control>
+				
 				<control>
 					<description>Switch To Previous Day</description>
 					<type>button</type>
 					<id>3</id>
 					<label>3014</label>
 				</control>
+				
 			</control>
 		</control>
 
@@ -117,6 +126,7 @@
 			<posY>249</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailText">
 			<description>Night Type of weather label</description>
 			<type>label</type>
@@ -125,6 +135,7 @@
 			<posY>318</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control>
 			<description>Night current weather icon</description>
 			<type>image</type>
@@ -135,6 +146,7 @@
 			<height>128</height>
 			<texture>-</texture>
 		</control> 
+		
 		<control Style="DetailTitle">
 			<description>Night Current Temp static label</description>
 			<type>label</type>
@@ -143,6 +155,7 @@
 			<posY>249</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailText">
 			<description>Night Current Temp label</description>
 			<type>label</type>
@@ -151,6 +164,7 @@
 			<posY>249</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailTitle">
 			<description>Night Current Wind static label</description>
 			<type>label</type>
@@ -159,6 +173,7 @@
 			<posY>318</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailText">
 			<description>Night Current Wind label</description>
 			<type>label</type>
@@ -167,6 +182,7 @@
 			<posY>318</posY>
 			<label>Temp</label>
 		</control>    
+		
 		<control Style="DetailTitle">
 			<description>Night Current Preciptation static label</description>
 			<type>label</type>
@@ -175,6 +191,7 @@
 			<posY>249</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailText">
 			<description>Night Current Preciptation label</description>
 			<type>label</type>
@@ -192,6 +209,7 @@
 			<posY>387</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailText">
 			<description>AM Type of weather label</description>
 			<type>label</type>
@@ -200,6 +218,7 @@
 			<posY>456</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control>
 			<description>AM current weather icon</description>
 			<type>image</type>
@@ -210,6 +229,7 @@
 			<height>128</height>
 			<texture>-</texture>
 		</control>
+		
 		<control Style="DetailTitle">
 			<description>AM Current Temp static label</description>
 			<type>label</type>
@@ -218,6 +238,7 @@
 			<posY>387</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailText">
 			<description>AM Current Temp label</description>
 			<type>label</type>
@@ -226,6 +247,7 @@
 			<posY>387</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailTitle">
 			<description>AM Current Wind static label</description>
 			<type>label</type>
@@ -234,6 +256,7 @@
 			<posY>456</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailText">
 			<description>AM Current Wind label</description>
 			<type>label</type>
@@ -242,6 +265,7 @@
 			<posY>456</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailTitle">
 			<description>AM Current Preciptation static label</description>
 			<type>label</type>
@@ -250,6 +274,7 @@
 			<posY>387</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailText">
 			<description>AM Current Preciptation label</description>
 			<type>label</type>
@@ -267,6 +292,7 @@
 			<posY>525</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailText">
 			<description>PM Type of weather label</description>
 			<type>label</type>
@@ -275,6 +301,7 @@
 			<posY>594</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control>
 			<description>PM current weather icon</description>
 			<type>image</type>
@@ -285,6 +312,7 @@
 			<height>128</height>
 			<texture>-</texture>
 		</control>
+		
 		<control Style="DetailTitle">
 			<description>PM Current Temp static label</description>
 			<type>label</type>
@@ -293,6 +321,7 @@
 			<posY>525</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailText">
 			<description>PM Current Temp label</description>
 			<type>label</type>
@@ -301,6 +330,7 @@
 			<posY>525</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailTitle">
 			<description>PM Current Wind static label</description>
 			<type>label</type>
@@ -309,6 +339,7 @@
 			<posY>594</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailText">
 			<description>PM Current Wind label</description>
 			<type>label</type>
@@ -317,6 +348,7 @@
 			<posY>594</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailTitle">
 			<description>PM Current Preciptation static label</description>
 			<type>label</type>
@@ -325,6 +357,7 @@
 			<posY>525</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailText">
 			<description>PM Current Preciptation label</description>
 			<type>label</type>
@@ -342,6 +375,7 @@
 			<posY>663</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailText">
 			<description>Evening Type of weather label</description>
 			<type>label</type>
@@ -350,6 +384,7 @@
 			<posY>732</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control>
 			<description>Evening current weather icon</description>
 			<type>image</type>
@@ -360,6 +395,7 @@
 			<height>128</height>
 			<texture>-</texture>
 		</control>
+		
 		<control Style="DetailTitle">
 			<description>Evening Current Temp static label</description>
 			<type>label</type>
@@ -370,6 +406,7 @@
 			<font>font2</font>
 			<textcolor>White</textcolor>
 		</control>
+		
 		<control Style="DetailText">
 			<description>Evening Current Temp label</description>
 			<type>label</type>
@@ -378,6 +415,7 @@
 			<posY>663</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailTitle">
 			<description>Evening Current Wind static label</description>
 			<type>label</type>
@@ -386,6 +424,7 @@
 			<posY>732</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailText">
 			<description>Evening Current Wind label</description>
 			<type>label</type>
@@ -394,6 +433,7 @@
 			<posY>732</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailTitle">
 			<description>Evening Current Preciptation static label</description>
 			<type>label</type>
@@ -402,6 +442,7 @@
 			<posY>663</posY>
 			<label>Temp</label>
 		</control>
+		
 		<control Style="DetailText">
 			<description>Evening Current Preciptation label</description>
 			<type>label</type>

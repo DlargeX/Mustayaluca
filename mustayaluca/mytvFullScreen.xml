@@ -68,6 +68,8 @@
 			<label>#TV.Record.percent1</label>
 			<label1>#TV.Record.percent2</label1>
 			<label2>#TV.Record.percent3</label2>
+      <labelmarkerstarts>#TV.Record.jumppoints</labelmarkerstarts>
+      <labelmarkerends>#TV.Record.chapters</labelmarkerends>			
 			<startlabel />
 			<endlabel />
 			<toplabel />
@@ -296,7 +298,7 @@
 			<visible>control.isVisible(501)|control.isVisible(500)</visible>
 		</control>
 
-		<control Style="DetailTextLight">
+<!-- 		<control Style="DetailTextLight">
 			<description>Volume Label</description>
 			<type>label</type>
 			<id>0</id>
@@ -320,7 +322,7 @@
 			<align>center</align>
 			<label>#SkinTranslation.Translations.volume.mute.Label</label>
 			<visible>control.isVisible(500)</visible>
-		</control>
+		</control> -->
 
 		<control>
 			<type>image</type>

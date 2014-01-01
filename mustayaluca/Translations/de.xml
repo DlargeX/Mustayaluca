@@ -1,19 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Skin translation file -->
 <!-- German (GER) -->
-<!-- Last Updated: 6th May 2011 -->
+<!-- Last Updated: 12th Oct 2013 -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
 <!-- #SkinTranslation.Translations.FIELD.Label -->
+
 <strings>
   <!-- # -->
+	
   <!-- A -->
   <string Field="album.info">Album Informationen</string>
   <string Field="artist.info">Künstler Informationen</string>
   <!-- B -->
   <string Field="browse">Durchsuche</string>
   <!-- C -->
+	
   <!-- D -->
+	
   <!-- E -->
+	
   <!-- F -->
   <string Field="file.details">Datei Details</string>
   <string Field="file.name">Datei Name</string>
@@ -31,7 +36,9 @@
   <string Field="global.search.Searchtype">Suchart</string>
   <string Field="global.search.songname">Liedname</string>
   <!-- H -->
+	
   <!-- I -->
+	
   <!-- L -->
   <string Field="lyrics">Liedtext</string>
   <string Field="list.empty">Leer</string>
@@ -55,8 +62,11 @@
   <string Field="musicvids.random">Spiele alle (Zufall)</string>
   <string Field="musicvids.SmartPlaylist">Kleine Playlist</string>
   <!-- N -->
+	
   <!-- O -->
+	
   <!-- P -->
+	
   <!-- R -->
   <string Field="recentlyAdded.Albums">Neuste Alben</string> 
   <string Field="recentlyAdded.Episodes">Neuste Folgen</string> 
@@ -71,6 +81,7 @@
   <string Field="Rockstar.popular.songs">Beliebte Lieder</string>
   <string Field="Rockstar.playlists">Wiedergabeliste</string>
   <string Field="Rockstar.track">Lied</string>
+	
   <!-- S -->
   <string Field="SleepControl">Schlafplaner</string>
   <string Field="series.network">Netzwerk</string>
@@ -78,15 +89,25 @@
   <string Field="series.update">Letztes Update</string>
   <string Field="screen.exit">Verlassen</string>
   <string Field="search">Suche</string>
+	<string Field="showtimes.theaters">Theater</string>
+	<string Field="search.history">Suchverlauf</string>
+	<string Field="similar.videos">Similar Videos</string>
+	<string Field="summary">Beschreibung</string>
+	
   <!-- T -->
   <string Field="time.minutes">Mins.</string>
   <string Field="tv">Fernsehen</string>
+	
   <!-- U -->
+	
   <!-- V -->
   <string Field="video.settings">Videoeinstellungen</string>
   <string Field="volume.volume">Lautstärke</string>
   <string Field="volume.mute">Lautlos</string>
+	
   <!-- W -->
+	
   <!-- Y -->
+	
 </strings>
 <!--Checksum:f70d1e78f9bca044674c184689444c51-->

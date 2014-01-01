@@ -14,6 +14,7 @@
 			<width>1920</width>
 			<height>1080</height>
 			<texture>#TVSeries.Current.Fanart</texture>
+			<shouldCache>true</shouldCache>				
 		</control>
 
 		<control>

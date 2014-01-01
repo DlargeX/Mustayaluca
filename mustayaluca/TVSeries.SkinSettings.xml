@@ -130,26 +130,84 @@
 <Enabled>1<Format><Series.FiveStarRatingPath><FormatAs>starEval(Round(<Series.Rating>)).png
 <Enabled>1<Format>star.png<FormatAs>star0.png
 
+<Enabled>1<Format>x () fps<FormatAs>N / A
+<Enabled>1<Format>0 bytes<FormatAs>N / A
+<Enabled>1<Format>2channels <FormatAs>2.0 
+<Enabled>1<Format>6channels <FormatAs>5.1 
+<Enabled>1<Format>V_MPEG4/ISO/AVC<FormatAs>H264
+<Enabled>1<Format>MPA1L3<FormatAs>MP3
+<Enabled>1<Format>MPA2L3<FormatAs>MP3
+<Enabled>1<Format>V_MPEG2<FormatAs>MPEG2
+<Enabled>1<Format>MPEG-2V<FormatAs>MPEG2
+<Enabled>1<Format>DIV3<FormatAs>DIVX
+<Enabled>1<Format>DX50<FormatAs>DIVX
+<Enabled>1<Format>A_FLAC<FormatAs>FLAC
+<Enabled>1<Format>A_AAC/MPEG4/LC/SBR<FormatAs>AAC
+<Enabled>1<Format>A_AAC<FormatAs>AAC
+<Enabled>1<Format>A_AC3<FormatAs>AC3
+
 <Enabled>1<Format>SeriesUnWatched<FormatAs><Series.EpisodesUnWatched>
 <Enabled>1<Format>SeasonUnWatched<FormatAs><Season.EpisodesUnWatched>
 
 <Enabled>1<Format>SMALLSPACE<FormatAs> 
 <Enabled>1<Format>SeriesWatchedAndUnWatched<FormatAs>Eval(PrettyNumber100(<Series.EpisodesUnWatched>))     Eval(PrettyNumber100(<Series.EpisodeCount>-<Series.EpisodesUnWatched>))    
-<Enabled>1<Format>SeasonWatchedAndUnWatched<FormatAs>Eval(PrettyNumber100(<Season.EpisodesUnWatched>))     Eval(PrettyNumber100(<Season.EpisodeCount>-<Season.EpisodesUnWatched>))    ]]></formatting>
+<Enabled>1<Format>SeasonWatchedAndUnWatched<FormatAs>Eval(PrettyNumber100(<Season.EpisodesUnWatched>))     Eval(PrettyNumber100(<Season.EpisodeCount>-<Season.EpisodesUnWatched>))    ]]>
+	</formatting>
 	<logos import="true"><![CDATA[skin\Mustayaluca\Media\Logos\Network\<Series.Network>.png;-;;-;=;-;;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Series>
 skin\Mustayaluca\Media\Logos\TV\<Series.ContentRating>.png;-;;-;=;-;;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Series>
-skin\Mustayaluca\Media\Logos\Video\<Episode.VideoCodec>.png;-;;-;=;-;;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+
+skin\Mustayaluca\Media\Logos\Video\H264.png;-;<Episode.VideoFormat>;-;=;-;AVC;-;OR;-;<Episode.VideoCodec>;-;=;-;h264;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Video\MP2V.png;-;<Episode.VideoFormat>;-;=;-;MPEG video;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPEG2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Video\MP1V.png;-;<Episode.VideoFormat>;-;=;-;MPEG video;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPEG1;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Video\DIVX.png;-;<Episode.VideoCodec>;-;contains;-;DIVX;-;OR;-;<Episode.VideoCodec>;-;contains;-;DX50;-;OR;-;<Episode.VideoCodec>;-;contains;-;DIV3;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Video\XVID.png;-;<Episode.VideoCodec>;-;contains;-;XVID;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPG4;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Video\VC-1.png;-;<Episode.VideoFormat>;-;contains;-;VC-1;-;OR;-;<Episode.VideoCodec>;-;contains;-;VC1;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Video\WMV.png;-;<Episode.VideoCodec>;-;contains;-;WMV;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Video\VP6.png;-;<Episode.VideoFormat>;-;=;-;VP6;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Video\REALVIDEO.png;-;<Episode.VideoCodec>;-;contains;-;REAL;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+
 skin\Mustayaluca\Media\Logos\Aspect\fullscreen.png;-;<Episode.VideoAspectRatio>;-;<;-;1.7;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;0;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Mustayaluca\Media\Logos\Aspect\widescreen.png;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Mustayaluca\Media\Logos\Aspect\720p.png;-;<Episode.videoHeight>;-;=;-;720;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Mustayaluca\Media\Logos\Aspect\1080p.png;-;<Episode.videoHeight>;-;=;-;1080;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Mustayaluca\Media\Logos\Audio\<Episode.AudioCodec>.png;-;;-;=;-;;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Mustayaluca\Media\Logos\Audio\mono.png;-;<Episode.AudioChannels>;-;=;-;1;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Mustayaluca\Media\Logos\Audio\stereo.png;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Mustayaluca\Media\Logos\Audio\5.1.png;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>]]></logos>
+
+skin\Mustayaluca\Media\Logos\Audio\1.0.png;-;<Episode.AudioChannels>;-;=;-;1;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\2.0.png;-;<Episode.AudioCodec>;-;contains;-;AC3;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\4.1.png;-;<Episode.AudioCodec>;-;contains;-;AC3;-;AND;-;<Episode.AudioChannels>;-;=;-;5;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\5.1.png;-;<Episode.AudioCodec>;-;contains;-;AC3;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+
+skin\Mustayaluca\Media\Logos\Audio\AC3+.png;-;<Episode.AudioFormat>;-;=;-;E-AC-3;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\AC3+.png;-;<Episode.AudioFormat>;-;=;-;E-AC-3;-;AND;-;<Episode.AudioChannels>;-;=;-;8;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+
+skin\Mustayaluca\Media\Logos\Audio\DTS.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;-1;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\DTS.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;-1;-;AND;-;<Episode.AudioChannels>;-;=;-;7;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\DTS-ES.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;-1;-;AND;-;<Episode.AudioChannels>;-;=;-;8;-;<Restrict:Episode>
+
+skin\Mustayaluca\Media\Logos\Audio\DTS MA.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;MA;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\DTS MA.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;MA;-;AND;-;<Episode.AudioChannels>;-;=;-;7;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\DTS MA.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;MA;-;AND;-;<Episode.AudioChannels>;-;=;-;8;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\DTS HRA.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;HRA;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\DTS HRA.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;HRA;-;AND;-;<Episode.AudioChannels>;-;=;-;7;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\DTS HRA.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;HRA;-;AND;-;<Episode.AudioChannels>;-;=;-;8;-;<Restrict:Episode>
+
+skin\Mustayaluca\Media\Logos\Audio\MP3.png;-;<Episode.AudioCodec>;-;contains;-;MPA1L3;-;OR;-;<Episode.AudioCodec>;-;contains;-;MPA2L3;-;OR;-;<Episode.AudioFormat>;-;=;-;MPEG Audio;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\AAC.png;-;<Episode.AudioCodec>;-;=;-;AAC;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\AAC.png;-;<Episode.AudioCodec>;-;=;-;AAC;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+
+skin\Mustayaluca\Media\Logos\Audio\AC-3 TrueHD.png;-;<Episode.AudioFormatProfile>;-;contains;-;TrueHD;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\TrueHD.png;-;<Episode.AudioFormatProfile>;-;contains;-;TrueHD;-;AND;-;<Episode.AudioChannels>;-;contains;-;8;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\FLAC.png;-;<Episode.AudioFormat>;-;contains;-;FLAC;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\FLAC.png;-;<Episode.AudioFormat>;-;contains;-;FLAC;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Mustayaluca\Media\Logos\Audio\FLAC.png;-;<Episode.AudioFormat>;-;contains;-;FLAC;-;AND;-;<Episode.AudioChannels>;-;=;-;8;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+
+skin\Mustayaluca\Media\Logos\Subtitles\SUBTITLES.png;-;<Episode.AvailableSubtitles>;-;=;-;1;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;subbed.;-;AND;-;;-;=;-;;-;
+skin\Mustayaluca\Media\Logos\Subtitles\NOSUBTITLES.png;-;<Episode.AvailableSubtitles>;-;=;-;0;-;AND;-;;-;=;-;;-;
+]]>
+</logos>
+	
 	<!-- Only used for Thumbnail view creation e.g. Filmstrip and WideBanners. Episode Thumbs are the exception -->
-	<!-- #TVSeries.SeriesBanner and #TVSeries.SeasonBanner properties dont use the values below, the image will be presented as they are but will be using a delay of 250ms to present image -->
-	<!-- the settings below are for optimal performance without too much loss to visual quality -->
+	<!-- #TVSeries.SeriesBanner and #TVSeries.SeasonBanner properties dont use the values below, those images will be presented as they are but will be using a delay of 250ms to present image -->
+	<!-- Note: Choosing higher quality settings will result in a drop in performance -->
 	<graphicsquality import="true">
 		<seriesbanners>60</seriesbanners>
 		<seriesposters>50</seriesposters>

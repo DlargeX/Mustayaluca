@@ -13,6 +13,8 @@
 			<height>40</height>
 			<textureFocus>osd_subtitles_focus.png</textureFocus>
 			<textureNoFocus>osd_subtitles_nofocus.png</textureNoFocus>
+			<textureCheckmark>-</textureCheckmark>
+			<textureCheckmarkNoFocus>-</textureCheckmarkNoFocus>			
 			<label>-</label>
 			<font>-</font>
 			<onleft>215</onleft>
@@ -31,6 +33,8 @@
 			<height>40</height>
 			<textureFocus>osd_settings_audio_focus.png</textureFocus>
 			<textureNoFocus>osd_settings_audio_nofocus.png</textureNoFocus>
+			<textureCheckmark>-</textureCheckmark>
+			<textureCheckmarkNoFocus>-</textureCheckmarkNoFocus>			
 			<label>-</label>
 			<font>-</font>
 			<onleft>218</onleft>
@@ -49,6 +53,8 @@
 			<height>40</height>
 			<textureFocus>osd_settings_video_focus.png</textureFocus>
 			<textureNoFocus>osd_settings_video_nofocus.png</textureNoFocus>
+			<textureCheckmark>-</textureCheckmark>
+			<textureCheckmarkNoFocus>-</textureCheckmarkNoFocus>			
 			<label>-</label>
 			<font>-</font>
 			<onleft>221</onleft>
@@ -67,6 +73,8 @@
 			<height>40</height>
 			<textureFocus>osd_settings_bookmark_focus.png</textureFocus>
 			<textureNoFocus>osd_settings_bookmark_nofocus.png</textureNoFocus>
+			<textureCheckmark>-</textureCheckmark>
+			<textureCheckmarkNoFocus>-</textureCheckmarkNoFocus>			
 			<label>-</label>
 			<font>-</font>
 			<onleft>220</onleft>
@@ -85,7 +93,9 @@
 			<width>40</width>
 			<height>40</height>
 			<textureFocus>osd_back_focus.png</textureFocus>
-			<textureNoFocus>osd_back_focus.png</textureNoFocus>
+			<textureNoFocus>osd_back_nofocus.png</textureNoFocus>
+			<textureCheckmark>-</textureCheckmark>
+			<textureCheckmarkNoFocus>-</textureCheckmarkNoFocus>			
 			<label>-</label>
 			<font>-</font>
 			<onleft>219</onleft>
@@ -103,7 +113,9 @@
 			<width>40</width>
 			<height>40</height>
 			<textureFocus>osd_rewind_focus.png</textureFocus>
-			<textureNoFocus>osd_rewind_focus.png</textureNoFocus>
+			<textureNoFocus>osd_rewind_nofocus.png</textureNoFocus>
+			<textureCheckmark>-</textureCheckmark>
+			<textureCheckmarkNoFocus>-</textureCheckmarkNoFocus>			
 			<label>-</label>
 			<font>-</font>
 			<onleft>210</onleft>
@@ -126,6 +138,8 @@
 			<onup>213</onup>
 			<textureFocus>osd_play_focus.png</textureFocus>
 			<textureNoFocus>osd_play_nofocus.png</textureNoFocus>
+			<textureCheckmark>-</textureCheckmark>
+			<textureCheckmarkNoFocus>-</textureCheckmarkNoFocus>			
 		</control>
 
 		<control>
@@ -138,6 +152,8 @@
 			<height>40</height>
 			<textureFocus>osd_stop_focus.png</textureFocus>
 			<textureNoFocus>osd_stop_nofocus.png</textureNoFocus>
+			<textureCheckmark>-</textureCheckmark>
+			<textureCheckmarkNoFocus>-</textureCheckmarkNoFocus>				
 			<label>-</label>
 			<font>-</font>
 			<onleft>213</onleft>
@@ -155,7 +171,9 @@
 			<width>40</width>
 			<height>40</height>
 			<textureFocus>osd_fastforward_focus.png</textureFocus>
-			<textureNoFocus>osd_fastforward_focus.png</textureNoFocus>
+			<textureNoFocus>osd_fastforward_nofocus.png</textureNoFocus>
+			<textureCheckmark>-</textureCheckmark>
+			<textureCheckmarkNoFocus>-</textureCheckmarkNoFocus>			
 			<label>-</label>
 			<font>-</font>
 			<onleft>212</onleft>
@@ -173,7 +191,9 @@
 			<width>40</width>
 			<height>40</height>
 			<textureFocus>osd_next_focus.png</textureFocus>
-			<textureNoFocus>osd_next_focus.png</textureNoFocus>
+			<textureNoFocus>osd_next_nofocus.png</textureNoFocus>
+			<textureCheckmark>-</textureCheckmark>
+			<textureCheckmarkNoFocus>-</textureCheckmarkNoFocus>			
 			<label>-</label>
 			<font>-</font>
 			<onleft>214</onleft>
@@ -615,10 +635,10 @@
 			<posY>10</posY>
 			<width>10</width>
 			<height>10</height>
-			<AltTextureFocus>-</AltTextureFocus>
-			<AltTextureNoFocus>-</AltTextureNoFocus>
 			<textureFocus>-</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
+			<textureCheckmark>-</textureCheckmark>
+			<textureCheckmarkNoFocus>-</textureCheckmarkNoFocus>			
 			<label>-</label>
 			<visible>no</visible>
 		</control>

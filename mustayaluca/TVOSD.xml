@@ -5,6 +5,7 @@
 	<allowoverlay>no</allowoverlay>
 	<disabletopbar>true</disabletopbar>
 	<controls>
+	
 		<control>
 			<description>background top</description>
 			<type>image</type>
@@ -15,6 +16,7 @@
 			<width>950</width>
 			<texture>zaposd_back.png</texture>
 		</control>
+		
 		<control Style="Time">
 			<description>On Now Label</description>
 			<id>1</id>
@@ -27,6 +29,7 @@
 			<shadowDistance>0</shadowDistance>
 			<shadowColor>00000000</shadowColor>
 		</control>
+		
 		<control>
 			<description>TV thumb</description>
 			<type>image</type>
@@ -42,6 +45,7 @@
 			<valign>top</valign>
 			<colordiffuse>ccffffff</colordiffuse>
 		</control>
+		
 		<control Style="DetailTextDroid">
 			<description>Plot</description>
 			<type>textboxscrollup</type>
@@ -58,6 +62,7 @@
 			<shadowColor>00000000</shadowColor>
 			<visible>control.hasfocus(1237)</visible>
 		</control>
+		
 		<control Style="DetailText">
 			<description>Time Info</description>
 			<type>label</type>
@@ -69,6 +74,7 @@
 			<shadowDistance>0</shadowDistance>
 			<shadowColor>00000000</shadowColor>
 		</control>
+		
 		<control>
 			<description>rec logo</description>
 			<type>image</type>
@@ -81,6 +87,7 @@
 			<visible>!player.recording</visible>
 			<colordiffuse>b0ffffff</colordiffuse>
 		</control>
+		
 		<control>
 			<description>rec logo</description>
 			<type>image</type>
@@ -92,6 +99,7 @@
 			<texture>tv_is_recording.png</texture>
 			<visible>player.recording</visible>
 		</control>
+		
 		<control Style="DetailText">
 			<description>Channel</description>
 			<type>label</type>
@@ -105,6 +113,7 @@
 			<shadowDistance>0</shadowDistance>
 			<shadowColor>00000000</shadowColor>
 		</control>
+		
 		<control>
 			<description>Channel Button Down</description>
 			<type>button</type>
@@ -121,6 +130,7 @@
 			<onup>1237</onup>
 			<ondown>1237</ondown>
 		</control>
+		
 		<control>
 			<description>Channel Button Up</description>
 			<type>button</type>
@@ -137,6 +147,7 @@
 			<onup>1237</onup>
 			<ondown>1237</ondown>
 		</control>
+		
 		<control>
 			<description>Dummy Info Button</description>
 			<type>button</type>
@@ -153,6 +164,7 @@
 			<onup>32</onup>
 			<ondown>32</ondown>
 		</control>
+		
 		<control>
 			<description>dummy</description>
 			<type>image</type>
@@ -163,38 +175,41 @@
 			<height>20</height>
 			<texture>osd_progress_left_blue.png</texture>
 		</control>
+		
 		<control>
 			<description>TV Progress Bar</description>
 			<type>tvprogress</type>
 			<id>1</id>
-			<posX>51</posX>
+			<posX>35</posX>
 			<posY>1025</posY>
 			<width>900</width>
-			<height>20</height>
-			<toptexture>-</toptexture>
-			<TextureOffsetY>0</TextureOffsetY>
+			<offset>0</offset>
+			<height>20</height>			
+			<toptexture>osd_progress_indicator.png</toptexture>
+      <TextureOffsetY>23</TextureOffsetY>
 			<bottomtexture>-</bottomtexture>
 			<texturetick>-</texturetick>
-			<lefttexture>-</lefttexture>
+			<lefttexture>osd_progress_left_blue.png</lefttexture>
 			<midtexture>-</midtexture>
 			<righttexture>-</righttexture>
 			<logotexture>-</logotexture>
 			<fillbackgroundtexture>-</fillbackgroundtexture>
-			<fillbgxoff>0</fillbgxoff>
+			<fillbgxoff>-3</fillbgxoff>
 			<fillbgyoff>0</fillbgyoff>
 			<filltexture1>osd_progress_mid_blue.png</filltexture1>
-			<filltexture2>osd_progress_mid.png</filltexture2>
-			<filltexture3>osd_progress_mid_orange.png</filltexture3>
-			<fillheight>20</fillheight>
+      <filltexture2>osd_progress_mid_blue.png</filltexture2>
+      <filltexture3>osd_progress_mid_orange.png</filltexture3>
+      <markertexture>osd_progress_mid_orange.png</markertexture>
 			<label>#TV.Record.percent1</label>
 			<label1>#TV.Record.percent2</label1>
 			<label2>#TV.Record.percent3</label2>
+			<labelmarkerstarts>#jumppoints</labelmarkerstarts>
+      <labelmarkerends>#chapters</labelmarkerends>			
 			<startlabel />
 			<endlabel />
 			<toplabel />
-			<font>font2</font>
-			<textcolor>ffffffff</textcolor>
 		</control>
+		
 		<control>
 			<description>Current Time Info</description>
 			<type>label</type>
@@ -203,6 +218,7 @@
 			<posY>10</posY>
 			<visible>no</visible>
 		</control>
+		
 		<control>
 			<description>On tv NOW</description>
 			<id>36</id>
@@ -213,6 +229,7 @@
 			<height>30</height>
 			<visible>no</visible>
 		</control>
+		
 		<control Style="SmallTitle">
 			<description>On TV Now</description>
 			<id>1</id>
@@ -222,6 +239,7 @@
 			<width>735</width>
 			<label>#TV.View.title</label>
 		</control>
+		
 		<control>
 			<description>On tv NEXT</description>
 			<id>37</id>
@@ -232,6 +250,7 @@
 			<height>30</height>
 			<visible>no</visible>
 		</control>
+		
 		<control Style="Time">
 			<description>On TV Next</description>
 			<id>1</id>
@@ -242,6 +261,7 @@
 			<label>#TV.Next.title</label>
 			<visible>!control.hasfocus(1237)</visible>
 		</control>	
+		
 		<control>
 			<description>Program Button Up</description>
 			<type>button</type>
@@ -255,6 +275,7 @@
 			<label>-</label>
 			<visible>no</visible>
 		</control>
+		
 		<control>
 			<description>Program Button Down</description>
 			<type>button</type>
@@ -268,6 +289,7 @@
 			<label>-</label>
 			<visible>no</visible>
 		</control>
+		
 		<control>
 			<description>Sub Titles List Control</description>
 			<type>listcontrol</type>
@@ -283,6 +305,7 @@
 			<textYOff>0</textYOff>
 			<visible>no</visible>
 		</control>
+		
 		<control>
 			<description>Time Info</description>
 			<type>label</type>
@@ -292,5 +315,6 @@
 			<label>-</label>
 			<visible>no</visible>
 		</control>
+		
 	</controls>
 </window>

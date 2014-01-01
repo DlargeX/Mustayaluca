@@ -951,8 +951,8 @@
     <height>69</height>
     <textXOff>30</textXOff>
     <textYOff>20</textYOff>
-    <textpadding>30</textpadding>		
-    <font>font2</font>		
+    <textpadding>30</textpadding>
+    <font>font2</font>
     <textcolor>ffffffff</textcolor>
     <colordiffuse>ffffffff</colordiffuse>
     <disabledcolor>ff808080</disabledcolor>
@@ -971,4 +971,4 @@
     <label>-</label>
   </control>
 </controls>
-<!--Checksum:0afaeffa497e92eb94ffb0fe8c8f1780-->
+<!--Checksum:f488af77efaf7d9127e654e870fb5fb4-->

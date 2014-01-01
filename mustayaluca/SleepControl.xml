@@ -1,18 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <window>
   <id>7969</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
+	<define>#header.hover:hover_sleepcontrol.png</define>			
   <controls>
 
-		<control>
-			<description>Default Background</description>
-			<type>image</type>
-			<id>1</id>
-			<texture>backgrounds\pluginsbg\default.jpg</texture>
-			<width>1920</width>
-			<height>1080</height>
-		</control>
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 
 		<control>
 			<description>Backdrop Overlay</description>

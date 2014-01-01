@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 	<controls>
+	
 		<control>
 			<description>Fanart Background #1</description>
 			<type>image</type>

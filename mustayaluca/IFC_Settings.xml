@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>240782</id>
+    <defaultcontrol>3</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+		<define>#header.label:Intelligent Frame Correction</define>
+		<define>#header.hover:hover_ifc settings.png</define>
+  <controls>
+
+    <import>common.settings.xml</import>
+		
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#header.label</label>
+			<visible>!player.hasmedia</visible>
+		</control>
+
+		<import>common.time.xml</import>
+		
+		<control>
+			<description>group</description>
+			<type>group</type>
+			<posX>432</posX>
+			<posY>249</posY>			
+			<dimColor>ffffffff</dimColor>
+			<layout>TableLayout(1080, 2, 730, 35)</layout>
+   
+        <control>
+            <id>2</id>
+            <description>Single Black Bar Height Label</description>
+            <type>label</type>
+            <label>Single Black Bar Height</label>
+        </control>    
+				
+        <control>
+            <id>3</id>
+            <description>Single Black Bar Height</description>
+            <type>spincontrol</type>			
+            <digits>2</digits>
+            <spintype>INT</spintype>
+            <showrange>NO</showrange>
+            <align>RIGHT</align>
+            <onup>17</onup>
+        </control>
+        
+         <control>
+            <id>4</id>
+            <description>Double Black Bar Height Label</description>
+            <type>label</type>
+            <label>Double Black Bar Height</label>
+        </control>
+        
+        <control>
+            <id>5</id>
+            <description>Double Black Bar Height</description>
+            <type>spincontrol</type>
+            <digits>2</digits>
+            <spintype>INT</spintype>
+            <showrange>NO</showrange>
+            <align>RIGHT</align>
+        </control>
+        
+        <control>
+            <id>6</id>
+            <description>Stabilizer Label</description>
+            <type>label</type> 
+            <label>Stabilizer</label>
+        </control>
+        
+        <control>
+            <id>7</id>
+            <description>Stabilizer</description>
+            <type>spincontrol</type>
+            <digits>2</digits>
+            <spintype>INT</spintype>
+            <showrange>NO</showrange>
+            <align>RIGHT</align>
+        </control>
+        
+        <control>
+            <id>8</id>
+            <description>Max Brightness Threshold Label</description>
+            <type>label</type>
+            <label>Max Brightness Threshold</label>
+        </control>
+        
+        <control>
+            <id>9</id>
+            <description>Max Brightness Treshold</description>
+            <type>spincontrol</type>
+            <digits>2</digits>
+            <spintype>INT</spintype>
+            <showrange>NO</showrange>
+            <align>RIGHT</align>
+        </control>
+        
+        <control>
+            <id>10</id>
+            <description>Min Brightness Threshold Label</description>
+            <type>label</type>
+            <label>Min Brightness Threshold</label>
+        </control>
+        
+        <control>
+            <id>11</id>
+            <description>Min Brightness Treshold</description>
+            <type>spincontrol</type>
+            <digits>2</digits>
+            <spintype>INT</spintype>
+            <showrange>NO</showrange>
+            <align>RIGHT</align>
+        </control>
+        
+        <control>
+            <id>12</id>
+            <description>Detection Counter Label</description>
+            <type>label</type>
+            <label>Detection Counter</label>
+        </control>
+        
+        <control>
+            <id>13</id>
+            <description>Detection Counter</description>
+            <type>spincontrol</type>
+            <digits>2</digits>
+            <spintype>INT</spintype>
+            <showrange>NO</showrange>
+            <align>RIGHT</align>
+        </control>
+        
+        <control>
+            <id>14</id>
+            <description>Scan Interval Label</description>
+            <type>label</type>
+            <label>Scan Interval</label>
+        </control>
+        
+        <control>
+            <id>15</id>
+            <description>Scan Interval</description>
+            <type>spincontrol</type>
+            <visible/>
+            <digits>2</digits>
+            <spintype>INT</spintype>
+            <showrange>NO</showrange>
+            <align>RIGHT</align>
+        </control>
+		</control>
+
+		<control Style="SettingsCheckButtonWide">
+					<id>8</id>
+					<description>Verbose Logging</description>
+					<type>checkbutton</type>
+					<onleft>8</onleft>
+					<onup>15</onup>
+					<ondown>3</ondown>
+					<posX>402</posX>
+					<posY>713</posY>
+					<width>848</width>					
+					<label>Verbose Logging</label>				
+				</control>
+		
+    </controls>
+</window>

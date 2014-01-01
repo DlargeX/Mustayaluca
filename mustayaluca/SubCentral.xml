@@ -3,8 +3,9 @@
 	<id>84623</id>
 	<defaultcontrol>500</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-
+	<define>#header.hover:hover_subcentral.png</define>		
 	<controls>
+	
 		<!-- 
 		This is the main subcentral skin file and should contain all screen elements that are common
 		to all views in the GUI. Anything that belongs only in a specific view should be placed in the
@@ -50,12 +51,13 @@
 		</control>
 
 		<control>
-			<description>BG</description>
-			<type>image</type>
-			<id>0</id>
-			<width>1920</width>
-			<height>1080</height>
-			<texture>backgrounds\pluginsbg\download.jpg</texture>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>		
 			<visible>!Control.HasThumb(500)</visible>	
 		</control>
 

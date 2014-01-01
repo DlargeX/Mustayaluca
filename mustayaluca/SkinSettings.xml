@@ -13,7 +13,7 @@
     <entry name="guidecolorchannelbutton">FF122F3F</entry>
     <entry name="guidecolorchannelbuttonselected">FFFFFFFF</entry>
     <entry name="guidecolorprogramselected">FFFFFFFF</entry>
-    <entry name="guidecolorprogramended">FF122F3F</entry>
+    <entry name="guidecolorprogramended">FF000000</entry>
     <entry name="guidecolorborderhighlight">99FFFFFF</entry>
     <entry name="defaultgenre">FF276688,FF122F3F</entry>
     <entry name="genre0">FF8A8965,FF8A8965</entry>

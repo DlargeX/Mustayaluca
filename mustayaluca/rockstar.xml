@@ -5,19 +5,20 @@
 	<allowoverlay>no</allowoverlay>
 	<define>#usePlayFanart:Yes</define>
 	<define>#useSelectedFanart:Yes</define>
-	<controls>
-
-		<control>
-			<description>BG</description>
-			<type>image</type>
-			<id>0</id>
-			<texture>backgrounds\music\plugins.jpg</texture>
-			<width>1920</width>
-			<height>1080</height>
-			<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
-			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
-			<animation effect="fade" start="100" end="0" time="200" delay="200">Hidden</animation>
-		</control>
+	<define>#header.hover:hover_rockstar.png</define>		
+  <controls>
+  
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 
 		<import>rockstar.autofanart.xml</import>
 

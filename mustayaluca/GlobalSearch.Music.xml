@@ -5,16 +5,20 @@
 	<allowoverlay>no</allowoverlay>
 	<define>#usePlayFanart:Yes</define>
 	<define>#useSelectedFanart:Yes</define>  
-	<controls>
-
-		<control>
-			<description>BG</description>
-			<type>image</type>
-			<id>0</id>
-			<texture>backgrounds\music\plugins.jpg</texture>
-			<width>1920</width>
-			<height>1080</height>
-		</control>
+	<define>#header.hover:hover_search music.png</define>			
+  <controls>
+	
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 
 		<import>common.music.fanart.xml</import>
 

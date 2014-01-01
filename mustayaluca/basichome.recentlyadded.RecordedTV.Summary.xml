@@ -6,7 +6,7 @@
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
       <!-- CHANGE the ID value (represented as xxxx) of hasfocus(xxxx) to the value of the ID in basichome you want this to show.If you want it to show on multiple you can chain them like so; control.hasfocus(xxxx) + control.hasfocus(xxxx2) etc. -->
-      <visible>[[control.isvisible(1005)]]+![string.starts(#latestMediaHandler.tvrecordings.latest1.title,#)|string.equals(#latestMediaHandler.tvrecordings.latest1.title,)]|control.hasfocus(91919984)|control.hasfocus(91919985)|control.hasfocus(91919986)</visible>
+      <visible>[[control.isvisible(1004)]]+![string.starts(#latestMediaHandler.tvrecordings.latest1.title,#)|string.equals(#latestMediaHandler.tvrecordings.latest1.title,)]|control.hasfocus(91919984)|control.hasfocus(91919985)|control.hasfocus(91919986)</visible>
       <animation effect="fade" time="150">WindowOpen</animation>
       <animation effect="fade" time="150">WindowClose</animation>
       <!-- Background -->
@@ -179,8 +179,8 @@
         <height>112</height>
         <textureFocus>recently_added_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
-        <onup>160501</onup>
-        <ondown>1905</ondown>
+        <onup>160401</onup>
+        <ondown>1904</ondown>
         <onright>91919985</onright>
         <onleft>91919986</onleft>
         <label>-</label>
@@ -243,8 +243,8 @@
         <height>112</height>
         <textureFocus>recently_added_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
-        <onup>160501</onup>
-        <ondown>1905</ondown>
+        <onup>160401</onup>
+        <ondown>1904</ondown>
         <onright>91919986</onright>
         <onleft>91919984</onleft>
         <label>-</label>
@@ -307,8 +307,8 @@
         <height>112</height>
         <textureFocus>recently_added_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
-        <onup>160501</onup>
-        <ondown>1905</ondown>
+        <onup>160401</onup>
+        <ondown>1904</ondown>
         <onright>91919984</onright>
         <onleft>91919985</onleft>
         <label>-</label>
@@ -316,4 +316,4 @@
     </control>
   </controls>
 </window>
-<!--Checksum:f7cec5963fcdcaba0f7c0eab42614f0c-->
+<!--Checksum:6ee067275ec2f973dc7d8bb645813089-->

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <id>757278</id>
+  <defaultcontrol>290</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+	<define>#header.hover:hover_my tv.png</define>
+  <define>#header.label:Logo Manager</define>
+  <controls>
+	
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background.png</texture>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_logomanager.png</texture>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay Bar</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>998</posY>
+			<width>1920</width>
+			<height>82</height>
+			<texture>overlay_bar_bottom.png</texture>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#header.label</label>
+			<visible>!player.hasmedia</visible>
+		</control>
+
+		<import>common.time.xml</import>
+
+		<control Style="DetailText">
+			<id>1</id>
+			<description>Country</description>
+			<type>label</type>
+			<label>Country: #LogoManager.Country</label>
+			<posX>70</posX>
+			<posY>1030</posY>
+			<width>500</width>
+		</control>
+		
+    <control>
+      <description>Local List</description>
+      <type>listcontrol</type>
+      <id>270</id>
+      <scrollOffset>0</scrollOffset>
+      <posX>402</posX>
+      <posY>231</posY>
+      <height>730</height>
+      <width>700</width>
+      <textureHeight>136</textureHeight>
+      <textXOff>-80</textXOff>
+      <font>font7</font>
+      <textYOff>46</textYOff>
+      <textXOff2>-2000</textXOff2>
+      <dimColor>ffffffff</dimColor>
+      <PinIconXOff>1200</PinIconXOff>
+      <PinIconHeight>135</PinIconHeight>
+      <PinIconWidth>135</PinIconWidth>
+      <keepaspectratio>true</keepaspectratio>
+      <IconXOff>700</IconXOff>
+      <IconYOff>0</IconYOff>
+      <itemWidth>135</itemWidth>
+      <itemHeight>135</itemHeight>
+      <onright>290</onright>
+      <onleft>290</onleft>
+    </control>
+
+		<control>
+			<description>button group</description>
+			<type>group</type>
+			<posX>0</posX>
+			<posY>230</posY>
+			<layout>StackLayout(0, Vertical, true)</layout>
+
+    <control>
+      <description>Grab Now</description>
+      <type>button</type>
+      <id>290</id>
+      <label>#LogoManager.State</label>
+      <onright>270</onright>
+      <onleft>270</onleft>
+      <onup>280</onup>
+      <ondown>260</ondown>
+			<textalign>right</textalign>				
+    </control>
+
+    <control>
+      <description>Logo Pack</description>
+      <type>button</type>
+      <id>260</id>
+      <label>Package: #LogoManager.Package</label>
+      <onright>270</onright>
+      <onleft>270</onleft>
+      <onup>290</onup>
+      <ondown>300</ondown>
+			<textalign>right</textalign>			
+    </control>
+		
+    <control>
+      <description>Channel Group</description>
+      <type>button</type>
+      <id>300</id>
+      <label>Channel Group: #LogoManager.Group</label>
+      <onright>270</onright>
+      <onleft>270</onleft>
+      <onup>260</onup>
+      <ondown>280</ondown>
+			<textalign>right</textalign>				
+    </control>
+		
+    <control>
+      <description>Design</description>
+      <type>button</type>
+      <id>280</id>
+      <label>Design: #LogoManager.Design</label>
+      <onright>270</onright>
+      <onleft>270</onleft>
+      <onup>300</onup>
+      <ondown>290</ondown>
+			<textalign>right</textalign>				
+    </control>
+      
+  </control>
+		
+    <import>common.overlay.xml</import>   
+		
+  </controls>
+</window>

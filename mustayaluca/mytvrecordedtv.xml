@@ -3,16 +3,20 @@
 	<id>603</id>
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<controls>
-
-		<control>
-			<description>Default Background</description>
-			<type>image</type>
-			<id>1</id>
-			<texture>backgrounds\tv\default.jpg</texture>
-			<width>1920</width>
-			<height>1080</height>
-		</control>
+	<define>#header.hover:hover_my tv.png</define>		
+  <controls>
+  
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 
 		<import>common.window.recordings.xml</import>
 
@@ -161,8 +165,8 @@
 			<keepaspectratio>yes</keepaspectratio>
 			<zoom>no</zoom>  
 			<centered>yes</centered>
-			<texture>#TV.RecordedTV.thumb</texture>
-			<visible>facadeview.list|facadeview.album</visible>
+			<texture>defaultVideoBigSquare.png</texture>
+      <visible>[facadeview.list|facadeview.album]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
 			<animation effect="fade" time="150">WindowOpen</animation>
 			<animation effect="fade" time="150">WindowClose</animation>
 		</control>
@@ -177,7 +181,7 @@
 			<keepaspectratio>yes</keepaspectratio>
 			<zoom>yes</zoom>            
 			<texture>#selectedthumb</texture>
-			<visible>facadeview.list|facadeview.album</visible>
+      <visible>[facadeview.list|facadeview.album]+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
 			<animation effect="fade" time="150">WindowOpen</animation>
 			<animation effect="fade" time="150">WindowClose</animation>
 		</control>

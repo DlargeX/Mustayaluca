@@ -8,7 +8,8 @@
   <controls>
   
 	<import>settings.menu.xml</import>	
-	<import>common.settings.xml</import>	  
+	<import>common.settings.xml</import>	
+	<import>common.time.settings.xml</import>  
     
 	<control>
 		<type>label</type>

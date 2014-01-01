@@ -3,17 +3,20 @@
   <id>7984</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-  <define>#header.background:hover_updatecontrol.png</define>
- <controls>
-  
-		<control>
-			<description>background image</description>
-			<type>image</type>
-			<id>1</id>
-			<width>1920</width>
-			<height>1080</height>
-			<texture>hover_updatecontrol.png</texture>
-		</control>
+	<define>#header.hover:hover_updatecontrol.png</define>			
+  <controls>
+
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 
 		<control>
 			<description>Backdrop Overlay</description>

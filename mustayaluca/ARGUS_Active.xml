@@ -3,16 +3,20 @@
   <id>49849</id>
   <defaultcontrol>10</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
-  <define>#header.image:4tr_television_logo.png</define>
   <define>#header.label:Active Recordings</define>
+	<define>#header.hover:hover_my tv.png</define>			
   <controls>
+
+  <!--            :: BACKGROUND ::           	 -->
+	
     <control>
       <description>Default Background</description>
       <type>image</type>
       <id>1</id>
-      <texture>backgrounds\tv\default.jpg</texture>
+      <texture>#header.hover</texture>
       <width>1920</width>
       <height>1080</height>
+			<shouldCache>true</shouldCache>					
     </control>
 	
     <import>common.window.recordings.list.xml</import>
@@ -27,6 +31,7 @@
       <height>583</height>
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
+			
       <mpe>
         <layout>Grid</layout>
         <spring>no</spring>
@@ -38,6 +43,7 @@
           <left>0</left>
         </padding>
       </mpe>
+			
       <control>
         <description>active recordings listcontrol</description>
         <type>listcontrol</type>
@@ -58,6 +64,7 @@
         <animation effect="fade" time="150">WindowOpen</animation>
         <animation effect="fade" time="150">WindowClose</animation>
       </control>
+			
       <control Style="DetailTitle">
         <description>Current program title</description>
         <type>fadelabel</type>
@@ -69,6 +76,7 @@
         <animation effect="fade" time="150">WindowOpen</animation>
         <animation effect="fade" time="150">WindowClose</animation>
       </control>
+			
       <control Style="Time">
         <description>Current program time</description>
         <id>14</id>
@@ -80,6 +88,7 @@
         <animation effect="fade" time="150">WindowOpen</animation>
         <animation effect="fade" time="150">WindowClose</animation>
       </control>
+			
       <control Style="DetailTextDroid">
         <description>Description1</description>
         <type>textboxscrollup</type>
@@ -107,6 +116,8 @@
       <zoom>no</zoom>
       <texture>#selectedthumb</texture>
     </control>
+		
     <import>common.overlays.xml</import>
+		
   </controls>
 </window>

@@ -3,6 +3,7 @@
 	<defaultcontrol>10</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
+	
 		<control>
 			<type>image</type>
 			<id>0</id>
@@ -12,6 +13,7 @@
 			<height>351</height>
 			<texture>dialog_background.png</texture>
 		</control>
+		
 		<control Style="Time">
 			<description>dialog Heading</description>
 			<type>fadelabel</type>
@@ -23,6 +25,7 @@
 			<animation effect="fade" time="150">WindowOpen</animation>
 			<animation effect="fade" time="150">WindowClose</animation>
 		</control>
+		
 		<control Style="DetailTextLight">
 			<description>dialog line 1</description>
 			<type>fadelabel</type>
@@ -34,6 +37,7 @@
 			<animation effect="fade" time="150">WindowOpen</animation>
 			<animation effect="fade" time="150">WindowClose</animation>
 		</control>
+		
 		<control Style="DetailTextLight">
 			<description>dialog line 2</description>
 			<type>label</type>
@@ -45,5 +49,6 @@
 			<animation effect="fade" time="150">WindowOpen</animation>
 			<animation effect="fade" time="150">WindowClose</animation>
 		</control>
+		
 	</controls>
 </window>

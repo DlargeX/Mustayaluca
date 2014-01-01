@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-    <id>8465</id>
-    <defaultcontrol>2</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
-   <define>#header.label:Steam</define>
-    <controls>
-
-		<control>
-			<description>background image</description>
-			<type>image</type>
-			<id>1</id>
-			<width>1920</width>
-			<height>1080</height>
-			<texture>hover_steam.jpg</texture>
-		</control>
+  <id>8465</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:Steam</define>
+	<define>#header.hover:hover_steam.jpg</define>		
+  <controls>
+  
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 
 		<control>
 			<description>Backdrop Overlay</description>

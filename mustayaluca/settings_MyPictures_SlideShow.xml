@@ -9,6 +9,20 @@
   
 	<import>settings.menu.xml</import>	
 	<import>common.settings.xml</import>	
+	<import>common.time.settings.xml</import>  
+
+	<control>
+		<type>label</type>
+		<id>1</id>
+		<posX>685</posX>
+		<posY>225</posY>
+		<width>800</width>
+		<label>#(L(1))/#(L(129))</label>
+		<textcolor>00b7ff</textcolor>
+		<font>TitanLight20</font>
+		<animation effect="fade" time="150">WindowOpen</animation>
+		<animation effect="fade" time="150">WindowClose</animation>
+	</control>
   
   <control>
     <description>Slideshow transition label</description>

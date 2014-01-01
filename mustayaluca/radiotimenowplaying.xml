@@ -3,16 +3,20 @@
 	<id>25652</id>
 	<defaultcontrol>155</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<controls>
-
-		<control>
-			<description>Default Background</description>
-			<type>image</type>
-			<id>0</id>
-			<texture>backgrounds\music\default.jpg</texture>
-			<width>1920</width>
-			<height>1080</height>
-		</control>
+	<define>#header.hover:hover_radiotime.png</define>		
+  <controls>
+  
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 
 		<control>
 			<description>Backdrop Overlay</description>

@@ -4,18 +4,18 @@
   <defaultcontrol>70</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <define>#header.label:World Clock</define>
-  <define>#header.background:hover_worldclock.png</define>
+	<define>#header.hover:hover_worldclock.png</define>			
   <controls>
-  
-		<control>
-			<description>background image</description>
-			<type>image</type>
-			<id>1</id>
-			<width>1920</width>
-			<height>1080</height>
-			<texture>backgrounds\news\default.jpg</texture>
-		</control>
 
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+    </control>
+		
 		<control>
 			<description>Backdrop Overlay</description>
 			<type>image</type>
@@ -105,8 +105,6 @@
       <height>319</height>
       <keepaspectratio>yes</keepaspectratio>
       <texture>-</texture>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -118,8 +116,6 @@
       <width>421</width>
       <height>421</height>
       <texture>WorldClock/worldclock_frame.png</texture>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -132,8 +128,6 @@
       <height>42</height>
       <keepaspectratio>yes</keepaspectratio>
       <texture>-</texture>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -151,8 +145,6 @@
       <ondown>72</ondown>
       <onleft>71</onleft>
       <onright>73</onright>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -165,8 +157,6 @@
       <textcolor>ff6aa5cb</textcolor>
       <label>#WorldClock.MainClockDateTime</label>
       <font>font12</font>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -178,8 +168,6 @@
       <align>center</align>
       <label>#WorldClock.MainClockDescription</label>
       <font>font12</font>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <!-- *** Additional Clock 1 *** -->
@@ -192,8 +180,6 @@
       <width>245</width>
       <height>246</height>
       <texture>-</texture>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -206,8 +192,6 @@
       <height>35</height>
       <keepaspectratio>yes</keepaspectratio>
       <texture>-</texture>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -224,8 +208,6 @@
       <ondown>70</ondown>
       <onleft>73</onleft>
       <onright>72</onright>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -237,8 +219,6 @@
       <width>323</width>
       <height>323</height>
       <texture>WorldClock/worldclock_frame.png</texture>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -251,8 +231,6 @@
       <label>#WorldClock.AdditionalClock1DateTime</label>
       <font>font10</font>
       <textcolor>ff6aa5cb</textcolor>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -266,8 +244,6 @@
       <height>70</height>
       <label>#WorldClock.AdditionalClock1Description</label>
       <font>font10</font>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
 	
@@ -281,8 +257,6 @@
       <width>245</width>
       <height>246</height>
       <texture>-</texture>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -295,8 +269,6 @@
       <height>35</height>
       <keepaspectratio>yes</keepaspectratio>
       <texture>-</texture>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -313,8 +285,6 @@
       <ondown>70</ondown>
       <onleft>71</onleft>
       <onright>73</onright>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -326,8 +296,6 @@
       <width>323</width>
       <height>323</height>
       <texture>WorldClock/worldclock_frame.png</texture>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -340,8 +308,6 @@
       <label>#WorldClock.AdditionalClock2DateTime</label>
       <font>font10</font>
       <textcolor>ff6aa5cb</textcolor>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -355,8 +321,6 @@
       <height>70</height>
       <label>#WorldClock.AdditionalClock2Description</label>
       <font>font10</font>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
 	
@@ -370,8 +334,6 @@
       <width>245</width>
       <height>246</height>
       <texture>-</texture>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -384,8 +346,6 @@
       <height>35</height>
       <keepaspectratio>yes</keepaspectratio>
       <texture>-</texture>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -402,8 +362,6 @@
       <ondown>70</ondown>
       <onleft>72</onleft>
       <onright>71</onright>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -415,8 +373,6 @@
       <width>323</width>
       <height>323</height>
       <texture>WorldClock/worldclock_frame.png</texture>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -429,8 +385,6 @@
       <label>#WorldClock.AdditionalClock3DateTime</label>
       <font>font10</font>
       <textcolor>ff6aa5cb</textcolor>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -444,8 +398,6 @@
       <height>70</height>
       <label>#WorldClock.AdditionalClock3Description</label>
       <font>font10</font>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
     </control>
 	
 	

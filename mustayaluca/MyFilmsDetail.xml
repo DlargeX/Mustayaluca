@@ -232,7 +232,7 @@
 						<description>Back</description>
 						<id>102</id>
 						<onup>10014</onup>
-						<ondown>109</ondown>
+						<ondown>11899</ondown>
 						<onright>10000</onright>
 						<label>712</label>
 					</control>
@@ -240,18 +240,18 @@
 					<control>
 						<type>button</type>
 						<description>Trailers</description>
-						<id>109</id>
+						<id>11899</id>
 						<onup>102</onup>
 						<ondown>107</ondown>
 						<onright>10000</onright>
-						<label>5906</label>
+						<label>#Trailers.Translation.Trailers.Label...</label>
 					</control>
 					
 					<control>
 						<type>button</type>
 						<description>Options</description>
 						<id>107</id>
-						<onup>109</onup>
+						<onup>11899</onup>
 						<ondown>104</ondown>
 						<onright>10000</onright>
 						<label>496</label>

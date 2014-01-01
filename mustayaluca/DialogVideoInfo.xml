@@ -187,7 +187,27 @@
 						<onleft>22</onleft>
 						<onright>123</onright>
 						<onup>5</onup>
-						<ondown>10</ondown>
+						<ondown>11899</ondown>
+					</control>
+                    <control>
+						<description>Trailers</description>
+						<type>button</type>
+						<id>11899</id>
+						<label>#Trailers.Translation.Trailers.Label...</label>
+						<onleft>22</onleft>
+						<onright>123</onright>
+						<onup>6</onup>
+						<ondown>97270</ondown>
+					</control>
+                    <control>
+						<description>Trakt</description>
+						<type>button</type>
+						<id>97270</id>
+						<label>Trakt...</label>
+						<onleft>22</onleft>
+						<onright>123</onright>
+						<onup>11899</onup>
+						<ondown>2</ondown>
 					</control>
 				</control>
 			</control>

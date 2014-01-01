@@ -4,6 +4,7 @@
 	<defaultcontrol>10</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
+
 		<import>common.dialog.xml</import>
 
 		<control>

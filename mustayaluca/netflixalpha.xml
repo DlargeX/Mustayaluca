@@ -1,0 +1,81 @@
+<window>
+  <id>18764</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>yes</disabletopbar>
+
+  <!-- Change the values below to adjust the delay  in (seconds) that text scrolls in movie overviews -->
+  <define>#textboxscrolldelay.list:10</define>
+  <define>#textboxscrolldelay.thumbs:10</define>
+  <define>#textboxscrolldelay.filmstrip:10</define>
+  <define>#textboxscrolldelay.details:10</define>
+  
+  <controls>
+
+    <!--            :: BACKGROUNDS :: MOVIE BACKDROP :: OVERLAYS ::            -->
+
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>netflixalpha\background.jpg</texture>
+      <!--<texture>background.png</texture>      -->
+    </control>
+	
+	<import>common.time.xml</import>
+
+    <control>
+      <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#MovingPictures.Backdrop</texture>
+      <animation effect="fade" start="0" end="100" time="3000">WindowOpen</animation>
+      <animation effect="fade" start="0" end="100" time="200">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="200" delay="200">Hidden</animation>
+      <!-- Do not modify the visibility for this component. It is handled by the plug-in. Use the above 
+			   defines for conditional visibility if you dont want to use fan-art only specific views. -->
+    </control>
+
+ 	<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background.png</texture>
+			<visible>!facadeview.filmstrip+!facadeview.coverflow|[!control.isvisible(51)+!control.isvisible(50)]</visible>
+			<shouldCache>true</shouldCache>			
+		</control>
+		
+				<control>
+			<description>Backdrop Overlay - List View</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_netflixalpha.png</texture>
+			<shouldCache>true</shouldCache>
+			<visible>facadeview.list+control.isvisible(50)</visible>
+		</control>
+		
+    <import>netflixalpha.facade.xml</import>
+    <import>netflixalpha.details.xml</import>
+    <import>netflixalpha.listview.xml</import>
+    
+
+
+
+  </controls>
+</window>

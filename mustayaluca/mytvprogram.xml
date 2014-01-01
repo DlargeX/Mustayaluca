@@ -3,16 +3,20 @@
 	<id>748</id>
 	<defaultcontrol>10</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<controls>
-
-		<control>
-			<description>BG</description>
-			<type>image</type>
-			<id>1</id>
-			<texture>backgrounds\tv\default.jpg</texture>
-			<width>1920</width>
-			<height>1080</height>
-		</control>
+	<define>#header.hover:hover_my tv.png</define>		
+  <controls>
+  
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 
 		<import>common.window.recordings.list.xml</import>
 

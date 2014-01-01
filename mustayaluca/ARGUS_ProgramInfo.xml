@@ -4,15 +4,19 @@
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <define>#header.label:1037</define>
+	<define>#header.hover:hover_my tv.png</define>			
   <controls>
-  
+	
+  <!--            :: BACKGROUND ::           	 -->
+	
     <control>
       <description>Default Background</description>
       <type>image</type>
       <id>1</id>
-      <texture>backgrounds\tv\default.jpg</texture>
+      <texture>#header.hover</texture>
       <width>1920</width>
       <height>1080</height>
+			<shouldCache>true</shouldCache>					
     </control>
 	
     <import>common.window.recordings.list.xml</import>

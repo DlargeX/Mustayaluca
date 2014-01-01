@@ -4,16 +4,20 @@
 	<defaultcontrol>2</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<define>#useSelectedFanart:Yes</define>
-	<controls>
+	<define>#header.hover:hover_mvcentral.png</define>		
+  <controls>
+  
+  <!--            :: BACKGROUND ::           	 -->
 	
-		<control>
-			<description>Default Background</description>
-			<type>image</type>
-			<id>1</id>
-			<texture>backgrounds\music\plugins.jpg</texture>
-			<width>1920</width>
-			<height>1080</height>
-		</control>
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 		
 		<import>common.music.fanart.xml</import>
 		

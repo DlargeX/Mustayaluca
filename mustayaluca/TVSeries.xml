@@ -3,22 +3,21 @@
 	<id>9811</id>
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<define>#header.hover:hover_my tv series.png</define>			
 	<controls>
 	
 		<import>TVSeries.dummy.xml</import>
 
-		<!-- Default Background -->
+  <!--            :: BACKGROUND ::           	 -->
+		
 		<control>
 			<description>Default Background when no Fanart Displayed</description>
 			<type>image</type>
 			<id>0</id>
-			<posX>0</posX>
-			<posY>0</posY>
 			<width>1920</width>
 			<height>1080</height>
-			<texture>backgrounds\tvshows\default.jpg</texture>
+			<texture>#header.hover</texture>
 			<shouldCache>true</shouldCache>
-			<!-- Avoid default artwork flash when first entering plugin -->
 			<visible>!string.equals(#TVSeries.Title,)</visible>
 		</control>
 		
@@ -100,6 +99,7 @@
 			<shouldCache>true</shouldCache>
 			<visible>facadeview.filmstrip+control.isvisible(50)</visible>
 		</control>
+		
 		<control>
 			<description>Backdrop Overlay - List View</description>
 			<type>image</type>
@@ -112,6 +112,7 @@
 			<shouldCache>true</shouldCache>
 			<visible>facadeview.list+control.isvisible(50)</visible>
 		</control>
+		
 		<control>
 			<description>Backdrop Overlay - Widebanner View</description>
 			<type>image</type>
@@ -124,6 +125,7 @@
 			<shouldCache>true</shouldCache>
 			<visible>facadeview.largeicons+control.isvisible(50)</visible>
 		</control>
+		
 		<control>
 			<description>Backdrop Overlay Bar</description>
 			<type>image</type>
@@ -135,6 +137,7 @@
 			<shouldCache>true</shouldCache>
 			<texture>overlay_bar_bottom.png</texture>
 		</control>
+		
 		<import>TVSeries.HiddenMenu.xml</import>
 		<import>TVSeries.Facade.xml</import>
 		<import>TVSeries.SeriesAndSeasonFilmstrip.xml</import>
@@ -145,7 +148,9 @@
 		<import>TVSeries.GroupList.xml</import>
 		<import>TVSeries.TopBar.xml</import>
 		<import>common.overlay.xml</import>
+		
 		<!-- IMPORT PROCESS ANIMATION -->
+		
 		<control>
 			<description>Import Animation</description>
 			<type>animation</type>
@@ -158,5 +163,6 @@
 			<Duration>0:0:01.5</Duration>
 			<keepaspectratio>yes</keepaspectratio>
 		</control>
+		
 	</controls>
 </window>

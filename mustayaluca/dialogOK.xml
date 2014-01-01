@@ -4,7 +4,9 @@
 	<defaultcontrol>10</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
+	
 		<import>common.dialog.xml</import>
+		
 		<control>
 			<description>OK button</description>
 			<type>button</type>
@@ -21,5 +23,6 @@
 			<onup>10</onup>
 			<ondown>10</ondown>
 		</control>
+		
 	</controls>
 </window>

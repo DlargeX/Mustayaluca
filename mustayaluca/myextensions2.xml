@@ -4,17 +4,20 @@
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<define>#header.label:14001</define>
-	<controls>
-
-		<control>
-			<description>background image</description>
-			<type>image</type>
-			<id>1</id>
-			<width>1920</width>
-			<height>1080</height>
-			<texture>hover_extensions.png</texture>
-      <shouldCache>true</shouldCache>					
-		</control>
+	<define>#header.hover:hover_extensions.png</define>		
+  <controls>
+  
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 
 		<import>common.window.xml</import>
 
@@ -42,6 +45,7 @@
 				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
 				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
 			</control>
+			
 			<control>
 				<type>image</type>
 				<posX>272</posX>
@@ -52,7 +56,8 @@
 				<visible>!Control.HasFocus(50)+Control.IsVisible(50)</visible>		  
 				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
 				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
-			</control>		 
+			</control>		
+			
 			<control>
 				<type>label</type>
 				<posX>370</posX>
@@ -64,7 +69,8 @@
 				<visible>!Control.HasFocus(50)+Control.IsVisible(50)</visible>		  
 				<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
 				<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
-			</control>			
+			</control>	
+			
 			<control>
 				<description>group element</description>
 				<type>group</type>
