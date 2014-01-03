@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<controls>
-	<define>#header.hover:hover_trakt.png</define>		
-  <controls>
+	<controls>	
   
   <!--            :: BACKGROUND ::           	 -->
 	
@@ -10,7 +8,7 @@
       <description>Default Background</description>
       <type>image</type>
       <id>1</id>
-      <texture>#header.hover</texture>
+      <texture>hover_trakt.png</texture>
       <width>1920</width>
       <height>1080</height>
 			<shouldCache>true</shouldCache>					
@@ -162,5 +160,6 @@
       </control>
 			
 		</control>
+		
 	</controls>
 </window>

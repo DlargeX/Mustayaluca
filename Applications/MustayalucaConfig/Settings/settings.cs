@@ -27,7 +27,6 @@ namespace MustayalucaConfig
 
     #region XML Configuration Strings
     public const string cXMLSettingTVGuideSize = "tvGuideSize";	
-/*     public const string cXMLSettingTVMiniGuideSize = "tvMiniGuideSize"; */
 
     public const string cXMLSettingDisableVideoBackground = "videoDisableVideoBackground";
 
@@ -134,7 +133,6 @@ namespace MustayalucaConfig
           #region TV
           case settings.cXMLSectionTV:
             TVConfig.TVGuideRowSize = (TVConfig.TVGuideRows)xmlreader.GetValueAsInt(section, settings.cXMLSettingTVGuideSize, 10);
-            //TVConfig.TVMiniGuideRowSize = (TVConfig.TVMiniGuideRows)xmlreader.GetValueAsInt(section, settings.cXMLSettingTVMiniGuideSize, 7);
             break;
           #endregion
 
@@ -169,7 +167,6 @@ namespace MustayalucaConfig
           #region TV
           case settings.cXMLSectionTV:
             xmlwriter.SetValue(section, settings.cXMLSettingTVGuideSize, (int)TVConfig.TVGuideRowSize);
-            //xmlwriter.SetValue(section, settings.cXMLSettingTVMiniGuideSize, (int)TVConfig.TVMiniGuideRowSize);
             break;
           #endregion
 

@@ -3,11 +3,9 @@
   <id>600</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-	<define>#header.hover:hover_my tv.png</define>		
+  <define>#header.hover:hover_my tv.png</define>
   <controls>
-  
-  <!--            :: BACKGROUND ::           	 -->
-	
+    <!--            :: BACKGROUND ::           	 -->
     <control>
       <description>Default Background</description>
       <type>image</type>
@@ -15,9 +13,8 @@
       <texture>#header.hover</texture>
       <width>1920</width>
       <height>1080</height>
-			<shouldCache>true</shouldCache>					
+      <shouldCache>true</shouldCache>
     </control>
-		
     <control>
       <description>Backdrop Overlay</description>
       <type>image</type>
@@ -28,7 +25,6 @@
       <height>1085</height>
       <texture>overlay_background.png</texture>
     </control>
-		
     <control>
       <description>Backdrop Overlay - Filmstrip/Coverflow</description>
       <type>image</type>
@@ -39,7 +35,6 @@
       <height>1085</height>
       <texture>overlay_background_top.png</texture>
     </control>
-		
     <control Style="BigTitle">
       <description>Guide Group Title</description>
       <type>label</type>
@@ -50,7 +45,6 @@
       <label>#TV.Guide.Group</label>
       <visible>!player.hasmedia</visible>
     </control>
-		
     <control Style="Time">
       <description>Date</description>
       <type>label</type>
@@ -59,7 +53,6 @@
       <posY>120</posY>
       <label>#date / #time</label>
     </control>
-		
     <control Style="BigTitle">
       <description>Single Channel Label</description>
       <type>label</type>
@@ -69,7 +62,6 @@
       <width>400</width>
       <align>right</align>
     </control>
-		
     <control>
       <description>Single Channel Image</description>
       <type>image</type>
@@ -83,7 +75,6 @@
       <keepaspectratio>yes</keepaspectratio>
       <texture>DefaultMyEPGBig.png</texture>
     </control>
-		
     <!-- Timeheader background must be dedfined before Timeheader label template -->
     <!-- b/c Timeheader is on the background and will be rendered first -->
     <control>
@@ -144,7 +135,7 @@
       <onleft>6</onleft>
       <onright>8</onright>
     </control>
-    <import tag="TVGuideChannelTemplate">mytvguide.common.8rows.channeltemplate.xml</import>
+    <import tag="TVGuideChannelTemplate">mytvguide.common.10rows.channeltemplate.xml</import>
     <control Style="NoShadow">
       <description>Current program title</description>
       <type>fadelabel</type>
@@ -267,4 +258,4 @@
     <import>common.overlay.home.xml</import>
   </controls>
 </window>
-<!--Checksum:6bf93e0d6149d61fc475156b564e0b89-->
+<!--Checksum:6b91a6cade87e4abc055fe765102643f-->

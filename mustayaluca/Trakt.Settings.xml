@@ -65,7 +65,7 @@
 			<id>1000</id>
 			<label>#Trakt.Translation.AdvancedSettings.Label</label>
 			<onright>#defaultcontrol.onright</onright>
-            <ondown>2</ondown>	
+      <ondown>2</ondown>	
 			<posX>402</posX>
 			<posY>438</posY>			
 			<width>664</width>

@@ -3,8 +3,8 @@
 	<id>47286</id>
 	<defaultcontrol>2</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<define>#useRandomMusicFanart:Yes</define>
 	<define>#usePlayFanart:Yes</define>
-	<define>#useSelectedFanart:Yes</define>
 	<define>#header.hover:hover_rockstar.png</define>		
   <controls>
   
@@ -76,6 +76,29 @@
 			<label>#date / #time</label>
 		</control>
 
+		<control Style="DetailText">
+			<description>Number of Files Label</description>
+			<type>label</type>
+			<label>#(iif(and(neq(L(102012), #currentmodule), neq(L(102002), #currentmodule), neq(L(100100), #currentmodule), neq(L(100101), #currentmodule), neq(L(102015), #currentmodule), neq(L(101002), #currentmodule)), #itemcount, ' ')) #(iif(and(neq(L(102012), #currentmodule), neq(L(102002), #currentmodule), neq(L(100100), #currentmodule), neq(L(100101), #currentmodule), neq(L(102015), #currentmodule), neq(L(101002), #currentmodule)), #currentmodule, ' '))</label>
+			<posX>1850</posX>
+			<posY>1030</posY>
+			<width>425</width>
+			<align>right</align>
+			<visible>string.equals(#itemcount)+!string.equals(#itemcount,0)+!string.equals(#itemcount,1)</visible>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Selected Index Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1850</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<align>right</align>
+			<label>#selectedindex/#itemcount</label>
+			<visible>string.equals(#selectedindex)+string.equals(#itemcount)+!string.equals(#itemcount,1)+!player.hasmedia</visible>
+		</control>
+		
 		<control>
 			<description>group element</description>
 			<type>group</type>
@@ -164,7 +187,20 @@
 					<type>checkbutton</type>
 					<onright>200</onright>
 					<onup>32</onup>
+					<ondown>40</ondown>					
 					<label>486</label>
+					<textalign>right</textalign>	
+					<markalign>left</markalign>				
+				</control>
+				
+				<control>
+					<id>40</id>
+					<description>Settings button</description>
+					<type>button</type>
+					<onright>200</onright>
+					<onup>30</onup>
+					<ondown>18</ondown>					
+					<label>Settings</label>
 					<textalign>right</textalign>	
 					<markalign>left</markalign>				
 				</control>
@@ -173,18 +209,56 @@
 		</control>
 
 		<control>
+			<description>listscroller bg</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>507</posY>
+			<width>70</width>
+			<height>67</height>
+			<texture>listscroller_bg.png</texture>
+			<colordiffuse>40ffffff</colordiffuse>
+			<visible>string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+			<animation effect="slide" start="-70,0" end="0,0" tween="quadratic" easing="in" time="250">Visible</animation>
+			<animation effect="slide" start="0,0" end="-70,0" tween="quadratic" easing="in" time="250">Hidden</animation>
+		</control>
+		
+		<control>
+			<type>label</type>
+			<id>1</id>
+			<posX>-3</posX>
+			<posY>510</posY>
+			<width>69</width>
+			<height>69</height>
+			<font>font7</font>
+			<textcolor>ffffffff</textcolor>
+			<label>#selecteditem.scrolllabel</label>
+			<visible>string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+			<align>center</align>
+			<valign>middle</valign>
+			<animation effect="slide" start="-70,0" end="0,0" tween="quadratic" easing="in" time="250">Visible</animation>
+			<animation effect="slide" start="0,0" end="-70,0" tween="quadratic" easing="in" time="250">Hidden</animation>
+		</control>
+		
+		<control>
 			<id>300</id>
 			<type>playlistcontrol</type>
 			<onleft>2</onleft>
 			<onright>2</onright>
 			<posX>402</posX>
-			<width>842</width>
+			<width>600</width>
+			<textXOff>-20</textXOff>
+			<textYOff>18</textYOff>
+			<textXOff2>680</textXOff2>
+			<textYOff2>18</textYOff2>
+			<textXOff3>0</textXOff3>
+			<textYOff3>18</textYOff3>			
 			<IconXOff>2000</IconXOff>  
 			<spinPosX>2000</spinPosX>
 			<spinCanFocus>no</spinCanFocus>
-			<upBtnXOffset>725</upBtnXOffset>
-			<downBtnXOffset>765</downBtnXOffset>
-			<deleteBtnXOffset>801</deleteBtnXOffset>
+			<upBtnXOffset>715</upBtnXOffset>
+			<downBtnXOffset>755</downBtnXOffset>
+			<deleteBtnXOffset>791</deleteBtnXOffset>
 		</control>
 
 		<control>
@@ -195,6 +269,13 @@
 			<onright>2</onright>
 			<posX>402</posX>
 			<width>842</width>
+			<textXOff>-20</textXOff>
+			<textYOff>18</textYOff>
+			<textXOff2>680</textXOff2>
+			<textYOff2>18</textYOff2>
+			<textXOff3>0</textXOff3>
+			<textYOff3>18</textYOff3>			
+			<IconXOff>2000</IconXOff>  			
 			<textureFocus>list_narrow_focus.png</textureFocus>
 			<IconXOff>2000</IconXOff>  
 			<spinPosX>2000</spinPosX>
@@ -252,9 +333,9 @@
 			<id>0</id>
 			<description>Artist Name</description>
 			<type>fadelabel</type>
-			<posX>1405</posX>
+			<posX>1500</posX>
 			<posY>733</posY>
-			<width>500</width>
+			<width>400</width>
 			<label>#Rockstar.SelectedTrack.ArtistName</label>
 			<visible>Control.HasThumb(10)</visible>
 		</control>
@@ -275,9 +356,9 @@
 			<description>Selected item Label</description>
 			<type>fadelabel</type>
 			<id>0</id>
-			<posX>1405</posX>
+			<posX>1500</posX>
 			<posY>803</posY>
-			<width>500</width>
+			<width>400</width>
 			<label>#Rockstar.SelectedTrack.AlbumName (#Rockstar.SelectedTrack.AlbumYear)</label>
 			<visible>Control.HasThumb(10)+!string.equals(#Rockstar.SelectedTrack.AlbumYear,unknown)+!string.equals(#currentmodule,Artists)</visible>
 			<animation effect="fade" time="150" reversible="false">visible</animation>
@@ -287,9 +368,9 @@
 			<description>Selected item Label</description>
 			<type>fadelabel</type>
 			<id>0</id>
-			<posX>1405</posX>
+			<posX>1500</posX>
 			<posY>803</posY>
-			<width>500</width>
+			<width>400</width>
 			<label>#year</label>
 			<label>#Rockstar.SelectedTrack.AlbumName</label>
 			<visible>Control.HasThumb(10)+string.equals(#Rockstar.SelectedTrack.AlbumYear,unknown)+!string.equals(#currentmodule,Artists)</visible>
@@ -312,9 +393,9 @@
 			<description>Selected item Label</description>
 			<type>fadelabel</type>
 			<id>0</id>
-			<posX>1405</posX>
+			<posX>1500</posX>
 			<posY>870</posY>
-			<width>500</width>
+			<width>400</width>
 			<label>#Rockstar.SelectedTrack.TrackName</label>
 			<visible>Control.HasThumb(10)+!string.equals(#Rockstar.SelectedTrack.TrackName,)+!string.equals(#currentmodule,Artists)+!string.equals(#currentmodule,Albums)</visible>
 			<animation effect="fade" time="150" reversible="false">visible</animation>

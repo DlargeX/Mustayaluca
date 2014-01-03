@@ -82,6 +82,7 @@
 				<posX>0</posX>
 				<posY>230</posY>
 				<layout>StackLayout(0, Vertical, true)</layout>
+				
 				<control>
 					<id>2</id>
 					<description>Install</description>

@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <controls>
+	
+		<!-- Information in Details View Only -->
+		
+		<control Style="BigTitle">
+			<description>Movie Title</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#selecteditem</label>
+			<visible>Control.IsVisible(24)+!player.hasmedia</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control>
+			<description>Poster Background</description>
+			<type>image</type>
+			<id>23</id>
+			<posX>55</posX>
+			<posY>195</posY>
+			<width>555</width>
+			<height>790</height>
+			<texture>poster_thumb_background_reflect.png</texture>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control>
+			<description>Poster</description>
+			<type>image</type>
+			<id>24</id>
+			<posX>100</posX>
+			<posY>240</posY>
+			<width>464</width>
+			<height>670</height>
+			<texture>empty.png</texture>
+		</control>
+		
+		<control>
+			<description>Poster Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>55</posX>
+			<posY>195</posY>
+			<width>555</width>
+			<height>790</height>
+			<texture>poster_thumb_background_overlay_reflect.png</texture>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control Style="BigTitleColour">
+			<description>certification</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>665</posX>
+			<posY>235</posY>
+			<width>840</width>
+			<label>#st_rating</label>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control Style="BigTitleColour">
+			<description>year</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1085</posX>
+			<posY>235</posY>
+			<width>840</width>
+			<label>#st_releasedate</label>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control Style="BigTitleColour">
+			<description>runtime</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>825</posX>
+			<posY>235</posY>
+			<width>840</width>
+			<label>#st_runtime</label>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control>
+			<description>5 star rating</description>
+			<type>imagelist</type>
+			<id>1</id>
+			<posX>1590</posX>
+			<posY>245</posY>
+			<width>204</width>
+			<height>44</height>
+			<textureWidth>44</textureWidth>
+			<textureHeight>44</textureHeight>
+			<subitems>
+				<subitem>greystar.png</subitem>
+				<subitem>starbest.png</subitem>
+			</subitems>
+			<orientation>horizontal</orientation>
+			<align>left</align>
+			<imagesToDraw>5</imagesToDraw>
+			<percentage>#st_userrating</percentage>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control Style="ListTitle">
+			<description>Director Label</description>
+			<type>label</type>
+			<label>199</label>
+			<id>0</id>
+			<posX>875</posX>
+			<posY>319</posY>
+			<width>150</width>
+			<align>right</align>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control Style="DetailText">
+			<description>Directors</description>
+			<type>label</type>
+			<label>#st_director</label>
+			<id>0</id>
+			<posX>925</posX>
+			<posY>319</posY>
+			<width>630</width>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control Style="ListTitle">
+			<description>actors</description>
+			<type>label</type>
+			<label>#(L(206)):</label>
+			<id>0</id>
+			<posX>875</posX>
+			<posY>375</posY>
+			<width>150</width>
+			<align>right</align>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control Style="DetailTextDroid">
+			<description>actors</description>
+			<id>0</id>
+			<label>#st_starring</label>
+			<type>textboxscrollup</type>
+			<posX>925</posX>
+			<posY>372</posY>
+			<width>800</width>
+			<height>240</height>
+			<seperator>-----------------------------------------------------------------------------------</seperator>
+			<lineSpacing>0.95</lineSpacing>
+			<scrollStartDelaySec>5</scrollStartDelaySec>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control Style="BigTitleColourSmall">
+			<description>Genres</description>
+			<type>label</type>
+			<label>#st_genre</label>
+			<id>0</id>
+			<posX>660</posX>
+			<posY>518</posY>
+			<width>840</width>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control>
+			<type>button</type>
+			<description>ShowTimes</description>
+			<id>40</id>
+			<posX>630</posX>
+			<posY>575</posY>
+			<width>312</width>
+			<textureFocus>menu_list_focus_small.png</textureFocus>
+			<label>4</label>
+			<onright>41</onright>
+			<onleft>43</onleft>
+			<onup>40</onup>
+			<ondown>40</ondown>
+			<visible>control.isvisible(24)</visible>
+		</control>
+		
+		<control>
+			<type>button</type>
+			<description>Next</description>
+			<id>42</id>
+			<posX>1258</posX>
+			<posY>575</posY>
+			<width>312</width>
+			<textureFocus>menu_list_focus_small.png</textureFocus>
+			<label>209</label>
+			<onright>43</onright>
+			<onleft>41</onleft>
+			<onup>42</onup>
+			<ondown>42</ondown>
+			<visible>control.isvisible(24)</visible>
+		</control>
+		
+		<control>
+			<type>button</type>
+			<description>Previous</description>
+			<id>43</id>
+			<posX>1572</posX>
+			<posY>575</posY>
+			<width>312</width>
+			<textureFocus>menu_list_focus_small.png</textureFocus>
+			<label>210</label>
+			<onright>40</onright>
+			<onleft>42</onleft>
+			<onup>42</onup>
+			<ondown>42</ondown>
+			<visible>control.isvisible(24)</visible>
+		</control>
+
+		<control>
+			<type>button</type>
+			<description>Play Trailer</description>
+			<id>41</id>
+			<posX>944</posX>
+			<posY>575</posY>
+			<width>312</width>
+			<textureFocus>menu_list_focus_small.png</textureFocus>
+			<label>3</label>
+			<onright>42</onright>
+			<onleft>40</onleft>
+			<onup>41</onup>
+			<ondown>41</ondown>
+			<visible>control.isvisible(24)</visible>
+		</control>
+		
+		<control Style="DetailTextDroid">
+			<description>Summary</description>
+			<type>textboxscrollup</type>
+			<id>0</id>
+			<posX>650</posX>
+			<posY>662</posY>
+			<width>1200</width>
+			<height>240</height>
+			<seperator>-----------------------------------------------------------------------------------</seperator>
+			<scrollStartDelaySec>10</scrollStartDelaySec>
+			<label>#st_plot</label>
+			<visible>control.isvisible(24)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+  </controls>
+</window>

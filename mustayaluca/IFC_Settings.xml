@@ -153,10 +153,10 @@
 		</control>
 
 		<control Style="SettingsCheckButtonWide">
-					<id>8</id>
+					<id>16</id>
 					<description>Verbose Logging</description>
 					<type>checkbutton</type>
-					<onleft>8</onleft>
+					<onleft>16</onleft>
 					<onup>15</onup>
 					<ondown>3</ondown>
 					<posX>402</posX>

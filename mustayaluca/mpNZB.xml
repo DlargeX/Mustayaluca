@@ -1,12 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<window>
-	<id>3847</id>
-	<defaultcontrol>2</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
-	<define>#header.hover:hover_mpnzb.png</define>			
-  <controls>
-	
-  <!--            :: BACKGROUND ::           	 -->
+﻿<window>
+<id>3847</id>
+<defaultcontrol>2</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<define>#header.hover:hover_mpnzb.png</define>	
+<controls>
+
+   <!--            :: BACKGROUND ::           	 -->
 	
     <control>
       <description>Default Background</description>
@@ -79,7 +78,7 @@
 			<width>1920</width>
 			<align>center</align>
 			<label>Paused: #Paused | Speed: #KBps | Queued: #MBStatus | Count: #JobCount | D/L DIR: #DiskSpace1 | Temp DIR: #DiskSpace2 | ETA: #TimeLeft</label>
-			<visible>control.isvisible(50)+!string.equals(#Paused)</visible>
+			<visible>control.isvisible(50)</visible>
 		</control>
 		
 		<control Style="DetailText">
@@ -91,7 +90,7 @@
 			<width>1825</width>
 			<label>#Status</label>
 		</control>
-		
+
 		<control>
 			<description>group element</description>
 			<type>group</type>
@@ -188,7 +187,7 @@
 					<visible>string.equals(#mpei.9091eb3e_3573_40a0_b322_c3f9a9ba3ece.haveupdate, true)</visible> 
 				</control>
 			</control>
-			
+
 			<control>  
 				<description>Update Indicator</description>   
 				<type>image</type>   
@@ -202,8 +201,10 @@
 				<animation effect="fade" time="1000">visiblechange</animation>
 				<visible>string.equals(#mpei.9091eb3e_3573_40a0_b322_c3f9a9ba3ece.haveupdate, true)+!control.hasfocus(999998)</visible>
 			</control>
-		</control>
-		
+		</control>		
+
+<!-- Listscroller		 -->
+
 		<control>
 			<description>listscroller bg</description>
 			<type>image</type>
@@ -235,7 +236,16 @@
 			<animation effect="slide" start="-70,0" end="0,0" tween="quadratic" easing="in" time="250">Visible</animation>
 			<animation effect="slide" start="0,0" end="-70,0" tween="quadratic" easing="in" time="250">Hidden</animation>
 		</control>
-		
+
+<!-- Listview		 -->
+
+    <control>
+      <type>group</type>
+      <description>Content</description>
+			<dimColor>ffffffff</dimColor>
+		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		  <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+
 		<control>
 			<description>listcontrol</description>
 			<type>listcontrol</type>
@@ -251,8 +261,10 @@
 			<spinPosX>2000</spinPosX>
 			<spinCanFocus>no</spinCanFocus>
 		</control>
+
+    </control>
 		
 		<import>common.overlay.xml</import>
 		
-	</controls>
+  </controls>
 </window>
