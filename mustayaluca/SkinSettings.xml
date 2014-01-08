@@ -8,6 +8,8 @@
     <entry name="#skin.tvguide.usecolorsforgenre">True</entry>
     <entry name="#skin.tvguide.useborderhighlight">False</entry>
     <entry name="#skin.tvguide.showgenrekey">True</entry>
+    <entry name="#AlbumInfo.ShowTracks">True</entry>
+    <entry name="#ArtistInfo.ShowAlbums">False</entry>
   </section>
   <section name="tvguidecolors">
     <entry name="guidecolorchannelbutton">FF122F3F</entry>

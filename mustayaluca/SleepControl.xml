@@ -77,6 +77,7 @@
         <onup>10</onup>
         <ondown>3</ondown>
         <label>Sleep Mode</label>
+				<textalign>left</textalign>						
       </control>
 	  
       <control>
@@ -86,6 +87,7 @@
         <onup>2</onup>
         <ondown>4</ondown>
         <label>Set Timer</label>
+				<textalign>left</textalign>						
       </control>
 	  
       <control>
@@ -95,6 +97,7 @@
         <onup>3</onup>
         <ondown>5</ondown>
         <label>Set Timer by Recording Selection</label>
+				<textalign>left</textalign>						
       </control>	
 	  
       <control>
@@ -104,6 +107,7 @@
         <onup>4</onup>
         <ondown>6</ondown>
         <label>Start Timer</label>
+				<textalign>left</textalign>						
       </control>
 	  
       <control>
@@ -113,6 +117,7 @@
         <onup>5</onup>
         <ondown>7</ondown>
         <label>Pause timer</label>
+				<textalign>left</textalign>						
       </control>
 	  
       <control>
@@ -122,6 +127,7 @@
         <onup>6</onup>
         <ondown>8</ondown>
         <label>Increment Timer</label>
+				<textalign>left</textalign>						
       </control>
 	  
       <control>
@@ -131,6 +137,7 @@
         <onup>7</onup>
         <ondown>9</ondown>
         <label>Decrement Timer</label>
+				<textalign>left</textalign>					
       </control>
 	  
       <control>
@@ -139,9 +146,7 @@
         <type>checkbutton</type>
         <onup>8</onup>
         <ondown>10</ondown>
-        <label>Wait until tasks finished</label>
-				<textalign>right</textalign>	
-				<markalign>left</markalign>					
+        <label>Wait until tasks finished</label>		
       </control>
 	  
       <control>
@@ -150,9 +155,7 @@
         <type>checkbutton</type>
         <onup>9</onup>
         <ondown>2</ondown>
-        <label>Volume Reduction</label>
-				<textalign>right</textalign>	
-				<markalign>left</markalign>				
+        <label>Volume Reduction</label>		
       </control>
 	</control>
 

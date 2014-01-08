@@ -4,75 +4,79 @@
   <defaultcontrol>24</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <define>#header.label:6014</define>
-  <define>#header.hover:hover_my tv.png</define>
+	<define>#header.hover:hover_settings.png</define>	
   <controls>
 	
-    <import>common.settings.xml</import>
+    <import>common.settings.xml</import>	
 		
-    <control>
-      <type>group</type>
-      <animation effect="fade" time="150">WindowOpen</animation>
-      <animation effect="fade" time="150">WindowClose</animation>
-      <layout>GridLayout(2, 6, 52, 8, 1)</layout>
-      <posX>0</posX>
-      <posY>188</posY>
+		<control>
+			<description>button group</description>
+			<type>group</type>
+			<posX>0</posX>
+			<posY>230</posY>
+			<layout>StackLayout(0, Vertical, true)</layout>
+			
       <control>
+				<description>General Main setttings</description>			
         <type>button</type>
         <id>24</id>
         <label>6029</label>
+        <onup>21</onup>				
       </control>
-    </control>
-		
-    <control>
-      <type>group</type>
-      <animation effect="fade" time="150">WindowOpen</animation>
-      <animation effect="fade" time="150">WindowClose</animation>
-      <layout>GridLayout(2, 6, 52, 8, 1)</layout>
-      <posX>0</posX>
-      <posY>230</posY>
+
       <control>
+				<description>General Main setttings</description>			
         <type>button</type>
         <id>25</id>
         <label>8008</label>
+        <onup>24</onup>	
+        <ondown>24</ondown>				
       </control>
+			
     </control>
 		
     <control>
       <type>label</type>
       <description>Please specify the IP address or hostname</description>
       <id>1</id>
-      <posX>462</posX>
-      <posY>120</posY>
+      <posX>432</posX>
+      <posY>250</posY>
       <label>6026</label>
+      <font>font2</font>			
     </control>
 		
     <control>
       <type>label</type>
       <description>of the master TV-Server</description>
       <id>1</id>
-      <posX>462</posX>
-      <posY>140</posY>
+      <posX>432</posX>
+      <posY>321</posY>
       <label>6027</label>
+      <font>font2</font>			
     </control>
 		
     <control>
       <type>label</type>
       <description>Current setting:</description>
       <id>1</id>
-      <posX>462</posX>
-      <posY>200</posY>
+      <posX>432</posX>
+      <posY>458</posY>
       <label>6028</label>
+      <font>font2</font>				
+			<textcolor>ffa9d0f7</textcolor>			
     </control>
 		
     <control>
       <type>label</type>
       <description>:</description>
       <id>30</id>
-      <posX>462</posX>
-      <posY>225</posY>
-      <font>font2</font>
+      <posX>432</posX>
+      <posY>522</posY>
+      <font>font8</font>
       <label>-</label>
     </control>
+	
+		<import>common.overlay.home.xml</import>	
 		
   </controls>
 </window>

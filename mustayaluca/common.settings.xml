@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
+	<define>#header.hover:hover_settings.png</define>	
 	<controls>
 
-		<control>
-			<description>BG</description>
-			<type>image</type>
-			<id>1</id>
-			<texture>backgrounds\settings\default.jpg</texture>
-			<width>1920</width>
-			<height>1080</height>
-		</control>
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 
 		<control>
 			<description>Backdrop Overlay</description>

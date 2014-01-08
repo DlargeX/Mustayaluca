@@ -69,16 +69,19 @@
 			<layout>StackLayout(0, Vertical, true)</layout>
 			<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
 			<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			
 			<control>
 				<description>Bio/Albums</description>
 				<type>button</type>
 				<id>5</id>
-				<label>689</label>
+				<onclick>#(skin.togglesetting('#ArtistInfo.ShowAlbums'))</onclick>
+				<label>#(L(689)) / #(L(132))</label>
 				<onleft>4</onleft>
 				<onright>4</onright>
 				<onup>6</onup>
 				<ondown>6</ondown>
 			</control>
+			
 			<control>
 				<description>Refresh</description>
 				<type>button</type>
@@ -89,138 +92,158 @@
 				<onup>5</onup>
 				<ondown>5</ondown>
 			</control>
+			
 		</control>
 
 		<control Style="DetailTitle">
 			<description>Artist</description>
 			<type>label</type>
-			<id>1</id>
+			<id>0</id>
 			<posX>440</posX>
 			<posY>250</posY>
 			<label>171</label>
 		</control>
 
+		<control Style="DetailText">
+			<description>Artist value</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>680</posX>
+			<posY>250</posY>
+			<width>650</width>
+			<label>#ArtistInfo.Artist</label>
+		</control>
+		
 		<control Style="DetailTitle">
 			<description>Born</description>
 			<type>label</type>
-			<id>1</id>
+			<id>0</id>
 			<posX>440</posX>
 			<posY>319</posY>
 			<label>686</label>
 		</control>
 
+		<control Style="DetailText">
+			<description>Born value</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>680</posX>
+			<posY>319</posY>
+			<width>650</width>			
+			<label>#ArtistInfo.Born</label>
+		</control>
+		
 		<control Style="DetailTitle">
 			<description>Years Active</description>
 			<type>label</type>
-			<id>1</id>
+			<id>0</id>
 			<posX>440</posX>
 			<posY>388</posY>
 			<label>687</label>
 		</control>
 
+		<control Style="DetailText">
+			<description>Years Active value</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>680</posX>
+			<posY>388</posY>
+			<width>650</width>
+			<label>#ArtistInfo.YearsActive</label>
+		</control>
+		
 		<control Style="DetailTitle">
 			<description>Genres</description>
 			<type>label</type>
-			<id>1</id>
+			<id>0</id>
 			<posX>440</posX>
 			<posY>455</posY>
-			<label>135</label>
+			<label>174</label>
 		</control>
 
+		<control Style="DetailText">
+			<description>Genres value</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>680</posX>
+			<posY>455</posY>
+			<width>650</width>
+			<label>#ArtistInfo.Genres</label>
+		</control>
+		
 		<control Style="DetailTitle">
 			<description>Tones</description>
 			<type>label</type>
-			<id>1</id>
+			<id>0</id>
 			<posX>440</posX>
 			<posY>524</posY>
 			<label>175</label>
 		</control>
 
+		<control Style="DetailText">
+			<description>Tones value</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>680</posX>
+			<posY>524</posY>
+			<width>650</width>
+			<label>#ArtistInfo.Tones</label>
+		</control>
+		
 		<control Style="DetailTitle">
 			<description>Styles</description>
 			<type>label</type>
-			<id>1</id>
+			<id>0</id>
 			<posX>440</posX>
 			<posY>593</posY>
 			<label>176</label>
 		</control>
 
-		<control Style="DetailTitle">
-			<description>Instruments</description>
-			<type>label</type>
-			<id>1</id>
-			<posX>440</posX>
-			<posY>662</posY>
-			<label>688</label>
-		</control>
-
-		<control Style="DetailText">
-			<description>Artist value</description>
-			<type>label</type>
-			<id>20</id>
-			<posX>570</posX>
-			<posY>250</posY>
-			<width>800</width>
-			<label>-</label>
-		</control>
-
-		<control Style="DetailText">
-			<description>Born value</description>
-			<type>label</type>
-			<id>22</id>
-			<posX>570</posX>
-			<posY>319</posY>
-			<label>-</label>
-		</control>
-		
-		<control Style="DetailText">
-			<description>Years Active value</description>
-			<type>label</type>
-			<id>23</id>
-			<posX>670</posX>
-			<posY>388</posY>
-			<width>700</width>
-			<label>-</label>
-		</control>
-		
-		<control Style="DetailText">
-			<description>Genres value</description>
-			<type>label</type>
-			<id>24</id>
-			<posX>570</posX>
-			<posY>455</posY>
-			<width>800</width>
-			<label>-</label>
-		</control>
-		
-		<control Style="DetailText">
-			<description>Tones value</description>
-			<type>fadelabel</type>
-			<id>25</id>
-			<posX>570</posX>
-			<posY>524</posY>
-			<width>800</width>
-			<label>-</label>
-		</control>
-		
 		<control Style="DetailText">
 			<description>Styles value</description>
 			<type>fadelabel</type>
-			<id>26</id>
-			<posX>570</posX>
+			<id>0</id>
+			<posX>680</posX>
 			<posY>593</posY>
-			<width>800</width>
-			<label>-</label>
+			<width>650</width>
+			<label>#ArtistInfo.Styles</label>
+		</control>
+		
+<!-- 		<control Style="DetailTitle">
+			<description>Instruments</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>440</posX>
+			<posY>662</posY>
+			<label>688</label>
 		</control>
 		
 		<control Style="DetailText">
 			<description>Instruments value</description>
 			<type>label</type>
-			<id>27</id>
+			<id>0</id>
 			<posX>670</posX>
 			<posY>662</posY>
-			<label>-</label>
+			<label>#ArtistInfo.Instruments</label>
 			<width>700</width>
+		</control> -->
+
+		<control Style="DetailTextDroid">
+			<description>textarea</description>
+			<type>textbox</type>
+			<id>4</id>
+			<posX>440</posX>
+			<posY>725</posY>
+			<width>1400</width>
+			<height>230</height>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<onup>5</onup>
+			<ondown>5</ondown>
+			<spinPosX>445</spinPosX>
+			<spinPosY>935</spinPosY>
+			<label>#ArtistInfo.Bio</label>
+			<visible>!skin.hassetting(#ArtistInfo.ShowAlbums)</visible>			
 		</control>
 
 		<control Style="DetailTextDroid">
@@ -228,17 +251,19 @@
 			<type>textbox</type>
 			<id>4</id>
 			<posX>440</posX>
-			<posY>720</posY>
+			<posY>725</posY>
 			<width>1400</width>
-			<height>225</height>
+			<height>230</height>
 			<onleft>5</onleft>
 			<onright>5</onright>
 			<onup>5</onup>
 			<ondown>5</ondown>
 			<spinPosX>445</spinPosX>
-			<spinPosY>880</spinPosY>
+			<spinPosY>935</spinPosY>
+			<label>#ArtistInfo.Albums</label>
+			<visible>skin.hassetting(#ArtistInfo.ShowAlbums)</visible>			
 		</control>
-
+		
 		<control>
 			<type>image</type>
 			<id>1</id>

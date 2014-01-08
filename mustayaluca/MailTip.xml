@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<id>7970</id>
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:MailTip</define>
+	<define>#header.hover:hover_MailTip.png</define>			
+	<controls>
+
+  <!--     :: BACKGROUND ::     -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_background.png</texture>
+		</control>
+
+		<control>
+			<description>Backdrop Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1925</width>
+			<height>1085</height>
+			<texture>overlay_menu_widelist.png</texture>
+		</control>
+		
+		<control>
+			<description>Backdrop Overlay Bar</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>998</posY>
+			<width>1920</width>
+			<height>82</height>
+			<texture>overlay_bar_bottom.png</texture>
+		</control>
+				
+		<control Style="BigTitle">
+			<description>Page Title</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<label>#header.label</label>
+			<visible>!player.hasmedia</visible>
+		</control>
+
+		<control Style="Time">
+			<description>Date</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>70</posX>
+			<posY>120</posY>
+			<label>#date / #time</label>
+		</control>
+
+		<control Style="BigTitle">
+			<description>Selected Index Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1850</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<align>right</align>
+			<label>#MailTip.MailNumber/#MailTip.MailCount</label>
+			<visible>!player.hasmedia+control.isvisible(50)+!string.equals(#MailTip.MailSender, )</visible>
+		</control>
+
+    <control>
+			<description>Mail Provider Image</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1800</posX>
+			<posY>1020</posY>
+			<width>46</width>
+			<height>46</height>			
+			<keepaspectratio>yes</keepaspectratio>
+			<texture>#MailTip.MailboxProviderImage</texture>
+			<align>left</align>
+		</control>
+
+		<control>
+      <description>Selected Item Label</description>		
+			<type>fadelabel</type>
+			<posX>1750</posX>
+			<posY>1030</posY>
+      <width>600</width>		
+			<align>right</align>			
+			<label>#MailTip.MailboxDescription</label>
+			<visible>!string.equals(#MailTip.MailSender, )</visible>	
+		</control>
+		
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
+			<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>0</posX>
+				<posY>230</posY>
+				<layout>StackLayout(0, Vertical, true)</layout>
+					
+			<control>
+			  <description>Mailbox</description>
+				<type>button</type>				
+				<id>2</id>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>17</onup>
+				<ondown>5</ondown>
+				<textalign>left</textalign>						
+			</control>
+
+			<control>
+				<description>Delete messages</description>
+				<type>button</type>
+				<id>3</id>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>2</onup>
+				<ondown>4</ondown>	
+				<textalign>left</textalign>						
+			</control>
+
+			<control>
+				<description>Delete all messages</description>
+				<type>button</type>
+				<id>4</id>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>3</onup>
+				<ondown>5</ondown>	
+				<textalign>left</textalign>						
+			</control>
+
+			<control>
+				<description>Refresh</description>
+				<type>button</type>
+				<id>5</id>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>4</onup>
+				<ondown>8</ondown>			
+				<textalign>left</textalign>						
+			</control>
+			
+		</control>
+	</control>
+
+	<!-- *** Action *** -->
+
+		<control Style="DetailText">
+      <description>Action</description>
+      <type>label</type>
+			<id>0</id>
+			<posX>70</posX>
+			<posY>1030</posY>
+			<width>1825</width>
+			<label>Action: #MailTip.TranslationAction</label>
+		</control>
+
+  <!-- *** Progress *** -->
+		
+		<control>
+			<description>Progress Text</description>
+			<type>label</type>
+			<id>12</id>
+			<posX>70</posX>
+			<posY>160</posY>
+      <width>1510</width>
+			<label>Receiving message #MailTip.ReceiveProgress...</label>
+			<visible>string.equals(#MailTip.Action,Receive)+string.equals(#MailTip.MailSender, )</visible>
+		</control>
+
+  <!-- *** Item Selection Mail Priority *** -->
+		
+		<!--control>
+			<type>image</type>
+			<id>0</id>
+			<posX>1270</posX>
+			<posY>250</posY>
+			<width>64</width>
+			<height>64</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<texture>#MailTip.MailPriorityImage</texture>
+			<visible>!string.equals(#MailTip.MailSender, )</visible>
+		</control-->
+		
+	<!-- *** List *** -->
+    
+    <control>
+			<description>listcontrol</description>
+			<type>listcontrol</type>
+			<id>50</id>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<posX>402</posX>
+			<posY>231</posY>
+			<width>842</width>			
+			<textureFocus>list_wider_focus.png</textureFocus>
+			<textXOff>15</textXOff>
+			<textYOff>18</textYOff>			
+			<PinIconXOff>15</PinIconXOff>
+			<PinIconYOff>15</PinIconYOff>
+			<PinIconWidth>36</PinIconWidth>
+			<PinIconHeight>36</PinIconHeight>			
+			<IconXOff>15</IconXOff>  
+			<IconYOff>18</IconYOff>  			
+			<spinPosX>2000</spinPosX>
+			<spinCanFocus>no</spinCanFocus>
+      <visible>string.equals(#MailTip.Action,Idle)</visible>			
+    </control>
+
+		<control Style="DetailTitle">
+      <description>Selected Item Label</description>		
+			<type>fadelabel</type>
+			<posX>1270</posX>
+			<posY>250</posY>
+      <width>600</width>			
+			<label>#MailTip.MailSender, #MailTip.MailDate #MailTip.MailTime, #MailTip.TranslationPriority: #MailTip.MailPriority (#MailTip.MailSize)</label>
+			<visible>!string.equals(#MailTip.MailSender, )</visible>	
+		</control>
+
+		<control Style="DetailTextDroid">
+			<description>Empty Mailbox Text</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>1270</posX>
+			<posY>321</posY>
+			<width>600</width>
+			<label>#MailTip.TranslationMailboxEmpty</label>
+			<visible>!string.equals(#MailTip.MailboxIncomingHost, )+string.equals(#MailTip.MailCount,0)</visible>
+		</control>
+		
+		<control Style="DetailTextDroid">
+			<description>Chosen Update description</description>
+			<type>textboxscrollup</type>
+			<id>0</id>
+			<posX>1270</posX>
+			<posY>321</posY>
+			<width>600</width>
+			<height>570</height>
+			<label>#MailTip.MailText</label>
+			<visible>!string.equals(#MailTip.MailSender, )</visible>
+			<seperator>----------------------------------------------------------------------------------------------</seperator>	
+		</control>
+
+	</controls>
+</window>

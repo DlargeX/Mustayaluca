@@ -76,6 +76,7 @@
 			<type>group</type>
 			<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
 			<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			
 			<control>
 				<description>button group</description>
 				<type>group</type>

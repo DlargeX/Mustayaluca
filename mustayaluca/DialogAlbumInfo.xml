@@ -70,16 +70,19 @@
 			<layout>StackLayout(0, Vertical, true)</layout>
 			<animation effect="slide" time="250" start="-300,0" reversible="false">visible</animation>
 			<animation effect="slide" time="250" end="-300,0" reversible="false">hidden</animation>
+			
 			<control>
 				<description>Tracks/Review</description>
 				<type>button</type>
 				<id>5</id>
-				<label>182</label>
+				<onclick>#(skin.togglesetting('#AlbumInfo.ShowTracks'))</onclick>
+				<label>#(L(183)) /#(L(182))</label>
 				<onleft>4</onleft>
 				<onright>4</onright>
 				<onup>6</onup>
 				<ondown>6</ondown>
 			</control>
+			
 			<control>
 				<description>Refresh</description>
 				<type>button</type>
@@ -90,12 +93,13 @@
 				<onup>5</onup>
 				<ondown>5</ondown>
 			</control>
+			
 		</control>
 
 		<control Style="DetailTitle">
 			<description>Album</description>
 			<type>label</type>
-			<id>1</id>
+			<id>0</id>
 			<posX>440</posX>
 			<posY>250</posY>
 			<label>170</label>
@@ -103,6 +107,18 @@
 			<animation effect="fade" time="150">WindowClose</animation>
 		</control>
 
+		<control Style="DetailText">
+			<description>Album value</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>600</posX>
+			<posY>250</posY>
+			<width>600</width>
+			<label>#AlbumInfo.Title</label>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+		
 		<control Style="DetailTitle">
 			<description>Artist</description>
 			<type>label</type>
@@ -114,10 +130,22 @@
 			<animation effect="fade" time="150">WindowClose</animation>
 		</control>
 
+		<control Style="DetailText">
+			<description>Artist value</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>600</posX>
+			<posY>319</posY>
+			<width>600</width>
+			<label>#AlbumInfo.Artist</label>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+		
 		<control Style="DetailTitle">
-			<description>Date of Release</description>
+			<description>Year</description>
 			<type>label</type>
-			<id>1</id>
+			<id>0</id>
 			<posX>440</posX>
 			<posY>388</posY>
 			<label>201</label>
@@ -125,10 +153,22 @@
 			<animation effect="fade" time="150">WindowClose</animation>
 		</control>
 
+		<control Style="DetailText">
+			<description>Year value</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>600</posX>
+			<posY>388</posY>
+			<width>600</width>
+			<label>#AlbumInfo.Year</label>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+		
 		<control Style="DetailTitle">
 			<description>Rating</description>
 			<type>label</type>
-			<id>1</id>
+			<id>0</id>
 			<posX>440</posX>
 			<posY>455</posY>
 			<label>173</label>
@@ -136,10 +176,22 @@
 			<animation effect="fade" time="150">WindowClose</animation>
 		</control>
 
+		<control Style="DetailText">
+			<description>Rating value</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>600</posX>
+			<posY>455</posY>
+			<width>600</width>
+			<label>#AlbumInfo.Rating</label>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+		
 		<control Style="DetailTitle">
 			<description>Genre</description>
 			<type>label</type>
-			<id>1</id>
+			<id>0</id>
 			<posX>440</posX>
 			<posY>524</posY>
 			<label>174</label>
@@ -147,10 +199,22 @@
 			<animation effect="fade" time="150">WindowClose</animation>
 		</control>
 
+		<control Style="DetailText">
+			<description>Genre value</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>600</posX>
+			<posY>524</posY>
+			<width>600</width>
+			<label>#AlbumInfo.Genre</label>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+		
 		<control Style="DetailTitle">
 			<description>Tones</description>
 			<type>label</type>
-			<id>1</id>
+			<id>0</id>
 			<posX>440</posX>
 			<posY>593</posY>
 			<label>175</label>
@@ -158,6 +222,18 @@
 			<animation effect="fade" time="150">WindowClose</animation>
 		</control>
 
+		<control Style="DetailText">
+			<description>Tones value</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>600</posX>
+			<posY>593</posY>
+			<width>600</width>
+			<label>#AlbumInfo.Tones</label>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+		
 		<control Style="DetailTitle">
 			<description>Styles</description>
 			<type>label</type>
@@ -165,79 +241,7 @@
 			<posX>440</posX>
 			<posY>662</posY>
 			<label>176</label>
-			<width>850</width>
-			<animation effect="fade" time="150">WindowOpen</animation>
-			<animation effect="fade" time="150">WindowClose</animation>
-		</control>
-
-		<control Style="DetailText">
-			<description>Album value</description>
-			<type>label</type>
-			<id>20</id>
-			<posX>560</posX>
-			<posY>250</posY>
-			<width>650</width>
-			<label>-</label>
-			<animation effect="fade" time="150">WindowOpen</animation>
-			<animation effect="fade" time="150">WindowClose</animation>
-		</control>
-
-		<control Style="DetailText">
-			<description>Artist value</description>
-			<type>label</type>
-			<id>21</id>
-			<posX>560</posX>
-			<posY>319</posY>
-			<width>650</width>
-			<label>-</label>
-			<animation effect="fade" time="150">WindowOpen</animation>
-			<animation effect="fade" time="150">WindowClose</animation>
-		</control>
-
-		<control Style="DetailText">
-			<description>Date of Release value</description>
-			<type>label</type>
-			<id>22</id>
-			<posX>560</posX>
-			<posY>388</posY>
-			<width>650</width>
-			<label>-</label>
-			<animation effect="fade" time="150">WindowOpen</animation>
-			<animation effect="fade" time="150">WindowClose</animation>
-		</control>
-
-		<control Style="DetailText">
-			<description>Rating value</description>
-			<type>label</type>
-			<id>23</id>
-			<posX>560</posX>
-			<posY>455</posY>
-			<width>650</width>
-			<label>-</label>
-			<animation effect="fade" time="150">WindowOpen</animation>
-			<animation effect="fade" time="150">WindowClose</animation>
-		</control>
-
-		<control Style="DetailText">
-			<description>Genre value</description>
-			<type>label</type>
-			<id>24</id>
-			<posX>560</posX>
-			<posY>524</posY>
-			<width>650</width>
-			<label>-</label>
-			<animation effect="fade" time="150">WindowOpen</animation>
-			<animation effect="fade" time="150">WindowClose</animation>
-		</control>
-
-		<control Style="DetailText">
-			<description>Tones value</description>
-			<type>fadelabel</type>
-			<id>25</id>
-			<posX>560</posX>
-			<posY>593</posY>
-			<width>650</width>
-			<label>-</label>
+			<width>600</width>
 			<animation effect="fade" time="150">WindowOpen</animation>
 			<animation effect="fade" time="150">WindowClose</animation>
 		</control>
@@ -246,10 +250,10 @@
 			<description>Styles value</description>
 			<type>fadelabel</type>
 			<id>26</id>
-			<posX>560</posX>
+			<posX>600</posX>
 			<posY>662</posY>
-			<width>650</width>
-			<label>-</label>
+			<width>600</width>
+			<label>#AlbumInfo.Styles</label>
 			<animation effect="fade" time="150">WindowOpen</animation>
 			<animation effect="fade" time="150">WindowClose</animation>
 		</control>
@@ -312,18 +316,41 @@
 			<id>4</id>
 			<posX>440</posX>
 			<posY>731</posY>
-			<width>650</width>
-			<height>135</height>
+			<width>740</width>
+			<height>230</height>
 			<onleft>5</onleft>
 			<onright>5</onright>
 			<onup>5</onup>
 			<ondown>5</ondown>
-			<spinPosX>1000</spinPosX>
-			<spinPosY>870</spinPosY>
+			<spinPosX>1080</spinPosX>
+			<spinPosY>935</spinPosY>
+			<label>#AlbumInfo.Review</label>		
+			<visible>skin.hassetting(#AlbumInfo.ShowTracks)</visible>			
 			<animation effect="fade" time="150">WindowOpen</animation>
 			<animation effect="fade" time="150">WindowClose</animation>
 		</control>
 
+		<control Style="DetailTextDroid">
+			<description>textarea</description>
+			<type>textbox</type>
+			<id>4</id>
+			<posX>440</posX>
+			<posY>731</posY>
+			<width>740</width>
+			<height>230</height>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<onup>5</onup>
+			<ondown>5</ondown>
+			<spinPosX>1080</spinPosX>
+			<spinPosY>935</spinPosY>
+			<label>#AlbumInfo.Tracks</label>
+			<visible>!skin.hassetting(#AlbumInfo.ShowTracks)</visible>	
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>
+		
 		<import>common.overlay.home.xml</import>
+		
 	</controls>
 </window>
