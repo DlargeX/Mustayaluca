@@ -1973,13 +1973,6 @@
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\mustayaluca\SkinSettings.xml.bak</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{0d94ac9a-1073-4281-bdf8-9905ab71f319}-SkinSettings.xml.bak</ZipFileName>
-              <DestinationFilename>%Skin%\mustayaluca\SkinSettings.xml.bak</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
               <LocalFileName>..\mustayaluca\SleepControl.xml</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{29c6887b-f749-4572-b72b-067692c25c3a}-SleepControl.xml</ZipFileName>
               <DestinationFilename>%Skin%\mustayaluca\SleepControl.xml</DestinationFilename>
@@ -15332,7 +15325,7 @@
       <GroupItem Name="Extensions">
         <ParentGroup />
         <DisplayName>Extensions</DisplayName>
-        <DefaulChecked>true</DefaulChecked>
+        <DefaulChecked>false</DefaulChecked>
         <Description>The Extensions plugin for MediaPortal allows you to browse, install, update and uninstall plugin/skin extensions all from the GUI. </Description>
         <Files>
           <Items />
@@ -15341,7 +15334,7 @@
       <GroupItem Name="FanartHandler">
         <ParentGroup />
         <DisplayName>Fanart Handler</DisplayName>
-        <DefaulChecked>true</DefaulChecked>
+        <DefaulChecked>false</DefaulChecked>
         <Description>The Fanart-Handler plugin can search and download music fanart and display fanart that you store on your local harddrive.
 </Description>
         <Files>
@@ -15351,7 +15344,7 @@
       <GroupItem Name="GlobalSearch">
         <ParentGroup />
         <DisplayName>Global Search</DisplayName>
-        <DefaulChecked>true</DefaulChecked>
+        <DefaulChecked>false</DefaulChecked>
         <Description>Global Search allows you to search through your complete music library and provides functionality to control what you want to do with the search results such as 'Play Now' or 'Add to Playlist'.</Description>
         <Files>
           <Items />
@@ -15360,7 +15353,7 @@
       <GroupItem Name="InfoService">
         <ParentGroup />
         <DisplayName>InfoService</DisplayName>
-        <DefaulChecked>true</DefaulChecked>
+        <DefaulChecked>false</DefaulChecked>
         <Description>InfoService is a plugin for that provides weather/feed and twitter informations on the home screen. It has also a feed reader and a little twitter client built in.</Description>
         <Files>
           <Items />
@@ -15369,7 +15362,7 @@
       <GroupItem Name="LatestMediaHandler">
         <ParentGroup />
         <DisplayName>Latest Media Handler</DisplayName>
-        <DefaulChecked>true</DefaulChecked>
+        <DefaulChecked>false</DefaulChecked>
         <Description>Latest Media Handler allows you to display the latest media added to your database on the Homescreen e.g. Most Recently Added Movies and TVShows.</Description>
         <Files>
           <Items />
@@ -15378,7 +15371,7 @@
       <GroupItem Name="MovingPictures">
         <ParentGroup />
         <DisplayName>Moving Pictures</DisplayName>
-        <DefaulChecked>true</DefaulChecked>
+        <DefaulChecked>false</DefaulChecked>
         <Description>Moving Pictures is a movies plug-in for the MediaPortal media center application. The goal of the plug-in is to create a very focused and refined experience that requires minimal user interaction.</Description>
         <Files>
           <Items>
@@ -15395,7 +15388,7 @@
       <GroupItem Name="TVSeries">
         <ParentGroup />
         <DisplayName>MP-TVSeries</DisplayName>
-        <DefaulChecked>true</DefaulChecked>
+        <DefaulChecked>false</DefaulChecked>
         <Description>MP-TVSeries focuses on managing the user's TV Series library with minimal user interaction, allowing for a more user friendly and ease of use experience.</Description>
         <Files>
           <Items />
@@ -15404,7 +15397,7 @@
       <GroupItem Name="OnlineVideos">
         <ParentGroup />
         <DisplayName>OnlineVideos</DisplayName>
-        <DefaulChecked>true</DefaulChecked>
+        <DefaulChecked>false</DefaulChecked>
         <Description>The main goal of this plug-in is the seamless integration of video content provided by various websites with the main application</Description>
         <Files>
           <Items />
@@ -15413,7 +15406,7 @@
       <GroupItem Name="WebBrowser">
         <ParentGroup />
         <DisplayName>WebBrowser</DisplayName>
-        <DefaulChecked>true</DefaulChecked>
+        <DefaulChecked>false</DefaulChecked>
         <Description>The WebBrowser plugin is used together with the InfoService plugin to view webcontent on selected feeds.</Description>
         <Files>
           <Items>
@@ -15523,7 +15516,7 @@
       <GroupItem Name="SubCentral">
         <ParentGroup />
         <DisplayName>SubCentral</DisplayName>
-        <DefaulChecked>true</DefaulChecked>
+        <DefaulChecked>false</DefaulChecked>
         <Description>The purpose of the plugin is to allow user to search and download subtitles for movies or TV shows managed by popular Moving Pictures and MP-TVSeries plugins. It also has the interfaces to allow easy implementation and integration in any other plugin.</Description>
         <Files>
           <Items />
@@ -15532,7 +15525,7 @@
       <GroupItem Name="WorldWeather">
         <ParentGroup />
         <DisplayName>World Weather</DisplayName>
-        <DefaulChecked>true</DefaulChecked>
+        <DefaulChecked>false</DefaulChecked>
         <Description>World Weather is a MediaPortal plugin, which can be used to display weather data, satellite images and geo clock information for up to 5 self-defined locations.</Description>
         <Files>
           <Items />
@@ -15623,26 +15616,26 @@ Click Next to continue or Cancel to exit Setup.</Value>
         <PanelName>Welcome Screen</PanelName>
         <WizardButtonsEnum>NextCancel</WizardButtonsEnum>
       </SectionItem>
-      <SectionItem Guid="f168a49c-6fe9-4b9a-bbb1-a04085c96026" Name="Tree View Selector" ConditionGroup="">
+      <SectionItem Guid="884f98b2-3e25-4579-8512-687acc18e26e" Name="Tree View Selector" ConditionGroup="">
         <Params>
           <Items>
             <SectionParam Name="Header Title">
-              <Value>Plugins</Value>
+              <Value />
               <ValueType>String</ValueType>
               <Description>Header title</Description>
             </SectionParam>
             <SectionParam Name="Header description">
-              <Value>Select plugins to install</Value>
+              <Value />
               <ValueType>String</ValueType>
               <Description>Description of section, shown in under section title</Description>
             </SectionParam>
             <SectionParam Name="Header image">
-              <Value>Images\icon.png</Value>
+              <Value />
               <ValueType>File</ValueType>
               <Description>Image in upper right part</Description>
             </SectionParam>
             <SectionParam Name="Description ">
-              <Value>It is recommended that all included plugins are installed as they are an integral part of the Mustayaluca experience.</Value>
+              <Value />
               <ValueType>String</ValueType>
               <Description>Description of this operation</Description>
             </SectionParam>
@@ -15652,19 +15645,16 @@ Click Next to continue or Cancel to exit Setup.</Value>
           <Items />
         </Actions>
         <IncludedGroups>
-          <string>FanartHandler</string>
-          <string>LatestMediaHandler</string>
-          <string>TVSeries</string>
-          <string>MovingPictures</string>
-          <string>InfoService</string>
           <string>Extensions</string>
-          <string>MusicInfoHandler</string>
+          <string>FanartHandler</string>
           <string>GlobalSearch</string>
-          <string>MyLyrics</string>
-          <string>WebBrowser</string>
+          <string>InfoService</string>
+          <string>LatestMediaHandler</string>
+          <string>MovingPictures</string>
+          <string>TVSeries</string>
           <string>OnlineVideos</string>
+          <string>WebBrowser</string>
           <string>SubCentral</string>
-          <string>WorldWeather</string>
         </IncludedGroups>
         <PanelName>Tree View Selector</PanelName>
         <WizardButtonsEnum>BackNextCancel</WizardButtonsEnum>
@@ -15792,6 +15782,16 @@ public class Script
                     <ValueType>Bool</ValueType>
                     <Description>Silent install, No wizard screen will be displayed </Description>
                   </SectionParam>
+                  <SectionParam Name="Extension Id">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Global Id of the extension package - it will be downloaded when no file is set.</Description>
+                  </SectionParam>
+                  <SectionParam Name="Extension Version">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Minimum Version of the extension package - older versions will be updated (only used when downloading via Id).</Description>
+                  </SectionParam>
                 </Items>
               </Params>
               <ExecuteLocation>AfterPanelShow</ExecuteLocation>
@@ -15808,6 +15808,16 @@ public class Script
                     <Value>YES</Value>
                     <ValueType>Bool</ValueType>
                     <Description>Silent install, No wizard screen will be displayed </Description>
+                  </SectionParam>
+                  <SectionParam Name="Extension Id">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Global Id of the extension package - it will be downloaded when no file is set.</Description>
+                  </SectionParam>
+                  <SectionParam Name="Extension Version">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Minimum Version of the extension package - older versions will be updated (only used when downloading via Id).</Description>
                   </SectionParam>
                 </Items>
               </Params>
@@ -15826,6 +15836,16 @@ public class Script
                     <ValueType>Bool</ValueType>
                     <Description>Silent install, No wizard screen will be displayed </Description>
                   </SectionParam>
+                  <SectionParam Name="Extension Id">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Global Id of the extension package - it will be downloaded when no file is set.</Description>
+                  </SectionParam>
+                  <SectionParam Name="Extension Version">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Minimum Version of the extension package - older versions will be updated (only used when downloading via Id).</Description>
+                  </SectionParam>
                 </Items>
               </Params>
               <ExecuteLocation>AfterPanelShow</ExecuteLocation>
@@ -15842,6 +15862,16 @@ public class Script
                     <Value>YES</Value>
                     <ValueType>Bool</ValueType>
                     <Description>Silent install, No wizard screen will be displayed </Description>
+                  </SectionParam>
+                  <SectionParam Name="Extension Id">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Global Id of the extension package - it will be downloaded when no file is set.</Description>
+                  </SectionParam>
+                  <SectionParam Name="Extension Version">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Minimum Version of the extension package - older versions will be updated (only used when downloading via Id).</Description>
                   </SectionParam>
                 </Items>
               </Params>
@@ -15860,6 +15890,16 @@ public class Script
                     <ValueType>Bool</ValueType>
                     <Description>Silent install, No wizard screen will be displayed </Description>
                   </SectionParam>
+                  <SectionParam Name="Extension Id">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Global Id of the extension package - it will be downloaded when no file is set.</Description>
+                  </SectionParam>
+                  <SectionParam Name="Extension Version">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Minimum Version of the extension package - older versions will be updated (only used when downloading via Id).</Description>
+                  </SectionParam>
                 </Items>
               </Params>
               <ExecuteLocation>AfterPanelShow</ExecuteLocation>
@@ -15876,6 +15916,16 @@ public class Script
                     <Value>YES</Value>
                     <ValueType>Bool</ValueType>
                     <Description>Silent install, No wizard screen will be displayed </Description>
+                  </SectionParam>
+                  <SectionParam Name="Extension Id">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Global Id of the extension package - it will be downloaded when no file is set.</Description>
+                  </SectionParam>
+                  <SectionParam Name="Extension Version">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Minimum Version of the extension package - older versions will be updated (only used when downloading via Id).</Description>
                   </SectionParam>
                 </Items>
               </Params>
@@ -15894,6 +15944,16 @@ public class Script
                     <ValueType>Bool</ValueType>
                     <Description>Silent install, No wizard screen will be displayed </Description>
                   </SectionParam>
+                  <SectionParam Name="Extension Id">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Global Id of the extension package - it will be downloaded when no file is set.</Description>
+                  </SectionParam>
+                  <SectionParam Name="Extension Version">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Minimum Version of the extension package - older versions will be updated (only used when downloading via Id).</Description>
+                  </SectionParam>
                 </Items>
               </Params>
               <ExecuteLocation>AfterPanelShow</ExecuteLocation>
@@ -15910,6 +15970,16 @@ public class Script
                     <Value>YES</Value>
                     <ValueType>Bool</ValueType>
                     <Description>Silent install, No wizard screen will be displayed </Description>
+                  </SectionParam>
+                  <SectionParam Name="Extension Id">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Global Id of the extension package - it will be downloaded when no file is set.</Description>
+                  </SectionParam>
+                  <SectionParam Name="Extension Version">
+                    <Value />
+                    <ValueType>String</ValueType>
+                    <Description>Minimum Version of the extension package - older versions will be updated (only used when downloading via Id).</Description>
                   </SectionParam>
                 </Items>
               </Params>
@@ -18224,13 +18294,6 @@ greetz dlarge500</ExtensionDescription>
         <LocalFileName>..\mustayaluca\SkinSettings.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{31513d4e-337f-4558-928f-e90da27801a7}-SkinSettings.xml</ZipFileName>
         <DestinationFilename>%Skin%\mustayaluca\SkinSettings.xml</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\mustayaluca\SkinSettings.xml.bak</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{0d94ac9a-1073-4281-bdf8-9905ab71f319}-SkinSettings.xml.bak</ZipFileName>
-        <DestinationFilename>%Skin%\mustayaluca\SkinSettings.xml.bak</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
