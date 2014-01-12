@@ -3,15 +3,21 @@
 	<id>7977</id>
 	<defaultcontrol>2</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+  <define>#header.label:#(L(8))  #WorldWeather.Location #WorldWeather.LocationCountry</define>	
+  <define>#header.hover:hover_worldweather.png</define>	
 	<controls>
-		<control>
-			<description>Default Background</description>
-			<type>image</type>
-			<id>1</id>
-			<texture>backgrounds\weatherbg\default.jpg</texture>
-			<width>1920</width>
-			<height>1080</height>
-		</control>
+	
+  <!--            :: BACKGROUND ::           	 -->
+	
+    <control>
+      <description>Default Background</description>
+      <type>image</type>
+      <id>1</id>
+      <texture>#header.hover</texture>
+      <width>1920</width>
+      <height>1080</height>
+			<shouldCache>true</shouldCache>					
+    </control>
 
 		<control>
 			<description>BG</description>
@@ -83,7 +89,7 @@
 			<posY>45</posY>
 			<width>1220</width>
 			<align>right</align>
-			<label>#WorldWeather.Location</label>
+			<label>#WorldWeather.Location  #WorldWeather.LocationCountry</label>
 			<visible>!player.hasmedia</visible>
 		</control>
 

@@ -3,30 +3,33 @@
   <allowoverlay>yes</allowoverlay>
   <controls>
   
-		<!-- *** Current Weather Icon *** -->
+   <!-- *** Current Weather Information *** -->
+		
 		<control>
 			<description>current weather icon</description>
 			<type>image</type>
 			<id>0</id>
-			<posX>490</posX>
-			<posY>230</posY>
-			<width>144</width>
-			<height>144</height>
+			<posX>510</posX>
+			<posY>223</posY>
+			<width>160</width>
+			<height>160</height>
 			<texture>#WorldWeather.TodayIconImage</texture>
-			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 		
 		<!-- *** Current condition label *** -->
+		
 		<control>
 			<description>current condition label</description>
 			<type>label</type>
 			<id>0</id>
-			<posX>360</posX>
+			<posX>450</posX>
 			<posY>403</posY>
-			<width>400</width>
+			<width>280</width>
 			<align>center</align>
-			<label>#WorldWeather.TodayCondition</label>
-			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+			<textcolor>tomato</textcolor>					
+			<label>#WorldWeather.TodayTemperature</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 		
 		<!-- *** Temperature label *** -->
@@ -156,6 +159,28 @@
 			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
 		</control>
 
+    <!-- *** Daylight label *** -->
+		
+		<control Style="DetailTitle">
+      <description>Daylight label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>800</posX>
+      <posY>456</posY>
+      <label>#WorldWeather.TranslationDaylight:</label>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+		
+		<control Style="DetailText">
+      <description>Daylight label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1030</posX>
+      <posY>456</posY>		
+      <label>#WorldWeather.LocationDaylightStart - #WorldWeather.LocationDaylightEnd</label>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+    </control>
+		
 		<!-- *** Forecast (Day 0) *** -->
 		
 		<control Style="DetailTitle">
@@ -167,6 +192,7 @@
 			<align>center</align>
 			<width>300</width>
 			<label>#WorldWeather.ForecastDay0Day, #WorldWeather.ForecastDay0Date</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>		
 		</control>
 		
 		<control>
@@ -180,6 +206,7 @@
 			<font>font2</font>			
 			<textcolor>tomato</textcolor>			
 			<label>#WorldWeather.ForecastDay0High</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 		
 		<control>
@@ -193,6 +220,7 @@
 			<font>font2</font>
 			<textcolor>lightskyblue</textcolor>
 			<label>#WorldWeather.ForecastDay0Low</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 
 		<control>
@@ -205,6 +233,7 @@
       <height>162</height>
       <keepaspectratio>yes</keepaspectratio>			
 			<texture>#WorldWeather.ForecastDay0IconImage</texture>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 		
 		<control>
@@ -217,6 +246,7 @@
 			<width>280</width>
 			<font>font2</font>
 			<label>#WorldWeather.ForecastDay0Condition</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 
 		<!-- *** Forecast (Day 1) *** -->
@@ -230,6 +260,7 @@
 			<align>center</align>
 			<width>300</width>
 			<label>#WorldWeather.ForecastDay1Day, #WorldWeather.ForecastDay1Date</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 		
 		<control>
@@ -243,6 +274,7 @@
 			<font>font2</font>
 			<textcolor>tomato</textcolor>
 			<label>#WorldWeather.ForecastDay1High</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 		
 		<control>
@@ -256,6 +288,7 @@
 			<font>font2</font>
 			<textcolor>lightskyblue</textcolor>
 			<label>#WorldWeather.ForecastDay1Low</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>		
 
 		<control>
@@ -268,6 +301,7 @@
       <height>162</height>
       <keepaspectratio>yes</keepaspectratio>			
 			<texture>#WorldWeather.ForecastDay1IconImage</texture>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 		
 		<control>
@@ -280,6 +314,7 @@
 			<width>280</width>
 			<font>font2</font>
 			<label>#WorldWeather.ForecastDay1Condition</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 
 		<!-- *** Forecast (Day 2) *** -->
@@ -293,6 +328,7 @@
 			<align>center</align>
 			<width>300</width>
 			<label>#WorldWeather.ForecastDay2Day, #WorldWeather.ForecastDay2Date</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 		
 		<control>
@@ -306,6 +342,7 @@
 			<font>font2</font>
 			<textcolor>tomato</textcolor>
 			<label>#WorldWeather.ForecastDay2High</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 		
 		<control>
@@ -319,6 +356,7 @@
 			<font>font2</font>
 			<textcolor>lightskyblue</textcolor>
 			<label>#WorldWeather.ForecastDay2Low</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 
 		<control>
@@ -331,6 +369,7 @@
       <height>162</height>
       <keepaspectratio>yes</keepaspectratio>			
 			<texture>#WorldWeather.ForecastDay2IconImage</texture>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 		
 		<control>
@@ -343,6 +382,7 @@
 			<width>280</width>
 			<font>font2</font>
 			<label>#WorldWeather.ForecastDay2Condition</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 
 		<!-- *** Forecast (Day 3) *** -->
@@ -356,6 +396,7 @@
 			<align>center</align>
 			<width>300</width>
 			<label>#WorldWeather.ForecastDay3Day, #WorldWeather.ForecastDay3Date</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 		
 		<control>
@@ -369,6 +410,7 @@
 			<font>font2</font>
 			<textcolor>tomato</textcolor>
 			<label>#WorldWeather.ForecastDay3High</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 		
 		<control>
@@ -382,6 +424,7 @@
 			<font>font2</font>
 			<textcolor>lightskyblue</textcolor>
 			<label>#WorldWeather.ForecastDay3Low</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 
 		<control>
@@ -394,6 +437,7 @@
       <height>162</height>
       <keepaspectratio>yes</keepaspectratio>			
 			<texture>#WorldWeather.ForecastDay3IconImage</texture>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 		
 		<control>
@@ -406,6 +450,7 @@
 			<width>280</width>
 			<font>font2</font>
 			<label>#WorldWeather.ForecastDay3Condition</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>			
 		</control>
 
 	<!-- *** Actual Weather Feed *** -->

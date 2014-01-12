@@ -6,7 +6,7 @@
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
       <!-- CHANGE the ID value (represented as xxxx) of hasfocus(xxxx) to the value of the ID in basichome you want this to show.If you want it to show on multiple you can chain them like so; control.hasfocus(xxxx) + control.hasfocus(xxxx2) etc. -->
-      <visible>[[control.isvisible(1001)]]|control.hasfocus(91919997)|control.hasfocus(91919998)|control.hasfocus(91919999)</visible>
+      <visible>[[control.isvisible(1002)]]|control.hasfocus(91919997)|control.hasfocus(91919998)|control.hasfocus(91919999)</visible>
       <animation effect="fade" time="150">WindowOpen</animation>
       <animation effect="fade" time="150">WindowClose</animation>
       <!-- Background -->
@@ -152,8 +152,8 @@
         <height>125</height>
         <textureFocus>recently_added_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
-        <onup>160101</onup>
-        <ondown>1901</ondown>
+        <onup>160201</onup>
+        <ondown>1902</ondown>
         <onright>91919998</onright>
         <onleft>91919999</onleft>
         <label>-</label>
@@ -217,8 +217,8 @@
         <height>125</height>
         <textureFocus>recently_added_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
-        <onup>160101</onup>
-        <ondown>1901</ondown>
+        <onup>160201</onup>
+        <ondown>1902</ondown>
         <onright>91919999</onright>
         <onleft>91919997</onleft>
         <label>-</label>
@@ -282,8 +282,8 @@
         <height>125</height>
         <textureFocus>recently_added_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
-        <onup>160101</onup>
-        <ondown>1901</ondown>
+        <onup>160201</onup>
+        <ondown>1902</ondown>
         <onright>91919997</onright>
         <onleft>91919998</onleft>
         <label>-</label>
@@ -291,4 +291,4 @@
     </control>
   </controls>
 </window>
-<!--Checksum:f9c240355d37e9eb6842492492de77d0-->
+<!--Checksum:6de36d41157502b490aa187ad68c0f64-->

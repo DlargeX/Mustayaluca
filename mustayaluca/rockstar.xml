@@ -247,13 +247,16 @@
 			<onright>2</onright>
 			<posX>402</posX>
 			<width>600</width>
-			<textXOff>-20</textXOff>
+			<textXOff>18</textXOff>
 			<textYOff>18</textYOff>
 			<textXOff2>680</textXOff2>
 			<textYOff2>18</textYOff2>
 			<textXOff3>0</textXOff3>
-			<textYOff3>18</textYOff3>			
-			<IconXOff>2000</IconXOff>  
+			<textYOff3>18</textYOff3>					
+			<IconXOff>15</IconXOff>
+			<IconYOff>15</IconYOff>
+      <itemWidth>40</itemWidth>
+      <itemHeight>40</itemHeight>			
 			<spinPosX>2000</spinPosX>
 			<spinCanFocus>no</spinCanFocus>
 			<upBtnXOffset>715</upBtnXOffset>
@@ -269,15 +272,17 @@
 			<onright>2</onright>
 			<posX>402</posX>
 			<width>842</width>
-			<textXOff>-20</textXOff>
+			<textXOff>18</textXOff>
 			<textYOff>18</textYOff>
 			<textXOff2>680</textXOff2>
 			<textYOff2>18</textYOff2>
 			<textXOff3>0</textXOff3>
-			<textYOff3>18</textYOff3>			
-			<IconXOff>2000</IconXOff>  			
+			<textYOff3>18</textYOff3>			 			
 			<textureFocus>list_narrow_focus.png</textureFocus>
-			<IconXOff>2000</IconXOff>  
+			<IconXOff>15</IconXOff>
+			<IconYOff>15</IconYOff>
+      <itemWidth>40</itemWidth>
+      <itemHeight>40</itemHeight>				
 			<spinPosX>2000</spinPosX>
 			<spinCanFocus>no</spinCanFocus>
 		</control>

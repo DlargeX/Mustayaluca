@@ -6,7 +6,7 @@
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
       <!-- CHANGE the ID value (represented as xxxx) of hasfocus(xxxx) to the value of the ID in basichome you want this to show.If you want it to show on multiple you can chain them like so; control.hasfocus(xxxx) + control.hasfocus(xxxx2) etc. -->
-      <visible>[control.isvisible(1004)]|control.hasfocus(91919991)|control.hasfocus(91919992)|control.hasfocus(91919993)</visible>
+      <visible>[control.isvisible(1005)]|control.hasfocus(91919991)|control.hasfocus(91919992)|control.hasfocus(91919993)</visible>
       <animation effect="fade" time="150">WindowOpen</animation>
       <animation effect="fade" time="150">WindowClose</animation>
       <!-- Background -->
@@ -166,8 +166,8 @@
         <height>136</height>
         <textureFocus>recently_added_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
-        <onup>160401</onup>
-        <ondown>1904</ondown>
+        <onup>160501</onup>
+        <ondown>1905</ondown>
         <onright>91919992</onright>
         <onleft>91919993</onleft>
         <label>-</label>
@@ -245,8 +245,8 @@
         <height>136</height>
         <textureFocus>recently_added_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
-        <onup>160401</onup>
-        <ondown>1904</ondown>
+        <onup>160501</onup>
+        <ondown>1905</ondown>
         <onright>91919993</onright>
         <onleft>91919991</onleft>
         <label>-</label>
@@ -324,8 +324,8 @@
         <height>136</height>
         <textureFocus>recently_added_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
-        <onup>160401</onup>
-        <ondown>1904</ondown>
+        <onup>160501</onup>
+        <ondown>1905</ondown>
         <onright>91919991</onright>
         <onleft>91919992</onleft>
         <label>-</label>
@@ -333,4 +333,4 @@
     </control>
   </controls>
 </window>
-<!--Checksum:a0c25f5b2560b1209db84be6a2132aa6-->
+<!--Checksum:ad19d449c85b53774b4b645a180a7db3-->
