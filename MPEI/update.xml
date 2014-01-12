@@ -69,22 +69,6 @@
               <Items />
             </Files>
           </GroupItem>
-          <GroupItem Name="MusicInfoHandler">
-            <DisplayName>MusicInfoHandler</DisplayName>
-            <DefaulChecked>true</DefaulChecked>
-            <Description>MusicInfoHandler</Description>
-            <Files>
-              <Items />
-            </Files>
-          </GroupItem>
-          <GroupItem Name="MyLyrics">
-            <DisplayName>MyLyrics</DisplayName>
-            <DefaulChecked>true</DefaulChecked>
-            <Description>MyLyrics</Description>
-            <Files>
-              <Items />
-            </Files>
-          </GroupItem>
           <GroupItem Name="OnlineVideos">
             <DisplayName>OnlineVideos</DisplayName>
             <DefaulChecked>true</DefaulChecked>
@@ -121,14 +105,6 @@
             <DisplayName>TranslationsPlugin</DisplayName>
             <DefaulChecked>true</DefaulChecked>
             <Description>TranslationsPlugin</Description>
-            <Files>
-              <Items />
-            </Files>
-          </GroupItem>
-          <GroupItem Name="Trakt">
-            <DisplayName>Trakt</DisplayName>
-            <DefaulChecked>true</DefaulChecked>
-            <Description>Trakt</Description>
             <Files>
               <Items />
             </Files>
@@ -180,7 +156,7 @@
               <Revision>27644</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
-            <Message>This skin only supports MediaPortal 1.4.</Message>
+            <Message>This skin only supports MediaPortal 1.3.0</Message>
             <Name>MediaPortal</Name>
           </DependencyItem>
           <DependencyItem>
@@ -280,14 +256,14 @@
           <Build>0</Build>
           <Revision>0</Revision>
         </Version>
-        <ExtensionDescription>This is a continuation of the skin Mustayaluca orginally started by macardi and development now taken over by Psycho Reptile, trevor and ltfearme.
+        <ExtensionDescription>This is a continuation of the skin Mustayaluca orginally started by macardi and development now taken over by Psycho Reptile, trevor and ltfearme and last dlarge500.
 
 The best description is a quote from macardi's inital post.
 
 "...inspiration comes from various sources as you can see. Some parts are more or less rip off's from other skins like the home screen which originates from djh's AEON over at XBMC. Other inspirations come from crj's work over at Meedios and some inspiration has been taken from joostzilla and his Maya skin. So basically Mustayaluca is a blend from varios sources combined with my own ideas."</ExtensionDescription>
         <VersionDescription></VersionDescription>
         <DevelopmentStatus>Stable</DevelopmentStatus>
-        <OnlineLocation>http://mustayaluca.googlecode.com/files/Mustayaluca-v0.4.0.220.mpe1</OnlineLocation>
+        <OnlineLocation>http://mustayaluca.googlecode.com/files/Mustayaluca-v0.6.1.0.mpe1</OnlineLocation>
         <ReleaseDate>2011-12-03T12:22:22</ReleaseDate>
         <Tags>skin,fullhd</Tags>
         <Location>.\Release\[Name]-v[Version].mpe1</Location>
